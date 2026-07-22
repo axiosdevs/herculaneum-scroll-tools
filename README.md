@@ -118,3 +118,37 @@ python registration/render_new_scan.py --u0 <col> --v0 <row> --w 1500 --h 1245 -
 
 Feedback and PRs welcome. Released under MIT so any of it can be folded into VC3D or the
 community tooling.
+
+---
+
+## 3. CT-consistency QA for surface predictions (`ct_support/`)
+
+Addresses [ScrollPrize/villa#1114](https://github.com/ScrollPrize/villa/issues/1114):
+published surface-prediction volumes can contain large *phantom* regions — positive
+voxels sitting where the masked CT reads exactly 0 (outside the scroll). On the
+PHerc0332 m7 predictions ~70% of positive voxels are phantoms, and seed-growers that
+don't consult the CT can ride the phantom shell.
+
+`ct_support.py` streams the prediction zarr and the masked CT zarr together
+(no local copies) and provides three CPU-only, resumable modes:
+
+- **`survey`** — per-plane phantom/support statistics (spot planes or a z-stride
+  across the whole scroll), JSON + CSV report;
+- **`chunks`** — per-cube support map for cube-level filtering (on PHerc0332 the
+  distribution is strongly bimodal — in our 128³ test window 96.5% of cubes are
+  cleanly keep/drop at a 0.5 threshold);
+- **`clean`** — write a cleaned (`preds AND ct>0`) copy of a z-window to a local zarr.
+
+**Independent reproduction of villa#1114** (this tool, 2026-07-23, live S3 objects):
+planes z∈{2000, 4224, 6000} → phantom fractions **0.6810 / 0.6717 / 0.6459**, positive
+counts 2,259,758 / 2,379,932 / 2,110,813 — matching the issue's reported numbers
+exactly. Full strided survey report: `ct_support/survey_pherc0332.json`.
+
+```bash
+PRED=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/representations/predictions/surfaces/20251211183505-surface-20260413222639-surface-m7-L2-th0.2.zarr
+CT=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/volumes/20251211183505-2.399um-0.2m-78keV-masked.zarr
+
+python ct_support/ct_support.py survey --preds $PRED --ct $CT --planes 2000,4224,6000
+python ct_support/ct_support.py chunks --preds $PRED --ct $CT --z0 4224 --z1 4352 --out cubes.npz
+python ct_support/ct_support.py clean  --preds $PRED --ct $CT --z0 4200 --z1 4400 --out cleaned.zarr
+```
