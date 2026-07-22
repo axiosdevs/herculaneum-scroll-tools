@@ -152,3 +152,45 @@ python ct_support/ct_support.py survey --preds $PRED --ct $CT --planes 2000,4224
 python ct_support/ct_support.py chunks --preds $PRED --ct $CT --z0 4224 --z1 4352 --out cubes.npz
 python ct_support/ct_support.py clean  --preds $PRED --ct $CT --z0 4200 --z1 4400 --out cleaned.zarr
 ```
+
+---
+
+## 4. Winding-constraint annotator + verifier (`winding/`)
+
+Winding constraints are the organizers' stated #1 lever for unrolling scrolls at
+scale ("we believe that the fastest way to unroll scrolls at scale is to develop
+methods for creating winding constraints…", and explicitly: "There is no required
+annotation tool or generation method" — scrollprize.org/open_problems/winding_annotations).
+
+This module is a lightweight path: annotate on the *flattened* segment render,
+export **native spiral-input files**.
+
+- `annotator.py` — click paths on a flattened render; each collection is a
+  same-winding (or relative-winding, with `wind_a`) constraint. Points are mapped
+  through the segment's tifxyz to full-resolution volume voxels and written in the
+  exact `same_windings.json` / `relative_windings.json` schema used by the
+  spiral-input dataset (VC3D point collections) — verified against the released
+  PHercParis4 files field-for-field. `--selftest` runs headless and validates the
+  round-trip on a real tifxyz.
+- `tifxyz_map.py` — flattened (u,v) → (x,y,z) bilinear lookup with missing-cell
+  handling and remote fetch helper.
+- `verify.py` — per-collection geometry report + a CT cross-section overlay with
+  the umbilicus marked (see `examples/winding_verify_overlay.png`, drawn from the
+  released PHercParis4 annotations over the Scroll 1 volume). Flags gross errors
+  (>12σ trend outliers); honest scope note in the docstring: subtle single-gap
+  hops need the spiral fit itself — the overlay is the fast human check.
+
+Validation: on the released human-verified PHercParis4 `same_windings.json`
+(125 collections, ~6k points) the verifier reports **125/125 CONSISTENT**, and
+the annotator's exported files match the native schema exactly.
+
+```bash
+# annotate (GUI): draw on a flattened render, export native constraint JSONs
+python winding/annotator.py --image flat.png --tifxyz /path/to/tifxyz --out out/
+
+# verify + overlay
+python winding/verify.py --constraints out/same_windings.json \
+  --umbilicus umbilicus.json \
+  --ct https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/volumes_zarr_standardized/54keV_7.91um_Scroll1A.zarr \
+  --ct-level 3 --ct-scale 8 --overlay overlay.png
+```
