@@ -1,0 +1,8 @@
+{
+ "angle": 300.5,
+ "flip": true,
+ "z0": 1056,
+ "shift_dx": -66.6,
+ "shift_dy": -55.6,
+ "note": "24L5(76.77um) flipped-x then rotated ang about center, placed at shift in r791(76um) frame; z791=Z0-z24"
+}

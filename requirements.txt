@@ -1,0 +1,10 @@
+numpy
+scipy
+opencv-python
+pillow
+zarr>=2.16
+fsspec
+aiohttp
+requests
+tifffile
+imagecodecs
