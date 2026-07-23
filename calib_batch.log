@@ -1,0 +1,10 @@
+=== SURVEY PHercMANBp (ct-level 2) ===
+wrote ct_support/survey_PHercMANBp.json
+SAMPLED phantom fraction: 0.9549 (support 0.0451)
+=== SURVEY PHerc1203 (ct-level 2) ===
+wrote ct_support/survey_PHerc1203.json
+SAMPLED phantom fraction: 0.3024 (support 0.6976)
+=== SURVEY PHerc0257 (ct-level 0) ===
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 500, message='Internal Server Error', url='https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0257/volumes/20250821151750-9.362um-1.2m-113keV-masked.zarr/0/3/60/43'
+CALIB_BATCH_COMPLETE
