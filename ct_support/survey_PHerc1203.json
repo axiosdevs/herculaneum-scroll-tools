@@ -1,0 +1,241 @@
+{
+ "preds": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1203/representations/predictions/surfaces/20260319130212-surface-20260413222639-surface-m7-L2-th0.2.zarr",
+ "ct": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1203/volumes/20260319130212-2.403um-0.2m-77keV-masked.zarr",
+ "threshold": 127,
+ "planes_sampled": 38,
+ "stride": 100,
+ "sampled_positives": 136835937,
+ "sampled_phantom": 41379993,
+ "sampled_phantom_frac": 0.30240588771647026,
+ "sampled_support_frac": 0.6975941122835297,
+ "per_plane": [
+  {
+   "z": 0,
+   "positives": 1486124,
+   "phantom": 1486124,
+   "phantom_frac": 1.0
+  },
+  {
+   "z": 100,
+   "positives": 4037761,
+   "phantom": 1034006,
+   "phantom_frac": 0.2560840029907664
+  },
+  {
+   "z": 200,
+   "positives": 3964332,
+   "phantom": 1297341,
+   "phantom_frac": 0.32725336828499735
+  },
+  {
+   "z": 300,
+   "positives": 3804064,
+   "phantom": 1182466,
+   "phantom_frac": 0.3108428249366993
+  },
+  {
+   "z": 400,
+   "positives": 3555440,
+   "phantom": 950772,
+   "phantom_frac": 0.2674133159327678
+  },
+  {
+   "z": 500,
+   "positives": 3443415,
+   "phantom": 879422,
+   "phantom_frac": 0.2553923938880443
+  },
+  {
+   "z": 600,
+   "positives": 3562993,
+   "phantom": 1067094,
+   "phantom_frac": 0.29949371216839327
+  },
+  {
+   "z": 700,
+   "positives": 3616269,
+   "phantom": 1108170,
+   "phantom_frac": 0.3064401459072873
+  },
+  {
+   "z": 800,
+   "positives": 3311479,
+   "phantom": 859588,
+   "phantom_frac": 0.2595782730314763
+  },
+  {
+   "z": 900,
+   "positives": 3322298,
+   "phantom": 887053,
+   "phantom_frac": 0.2669998296359929
+  },
+  {
+   "z": 1000,
+   "positives": 3432006,
+   "phantom": 984995,
+   "phantom_frac": 0.2870027033752272
+  },
+  {
+   "z": 1100,
+   "positives": 3537637,
+   "phantom": 1029083,
+   "phantom_frac": 0.29089558934396037
+  },
+  {
+   "z": 1200,
+   "positives": 3414628,
+   "phantom": 1035377,
+   "phantom_frac": 0.3032180957925724
+  },
+  {
+   "z": 1300,
+   "positives": 3581300,
+   "phantom": 1255301,
+   "phantom_frac": 0.35051545528160166
+  },
+  {
+   "z": 1400,
+   "positives": 3378802,
+   "phantom": 1044663,
+   "phantom_frac": 0.3091814791159707
+  },
+  {
+   "z": 1500,
+   "positives": 3366828,
+   "phantom": 1045794,
+   "phantom_frac": 0.3106169961756288
+  },
+  {
+   "z": 1600,
+   "positives": 4216264,
+   "phantom": 1883132,
+   "phantom_frac": 0.44663522018545326
+  },
+  {
+   "z": 1700,
+   "positives": 3809183,
+   "phantom": 1380032,
+   "phantom_frac": 0.3622908114417186
+  },
+  {
+   "z": 1800,
+   "positives": 3614258,
+   "phantom": 854888,
+   "phantom_frac": 0.23653209040417147
+  },
+  {
+   "z": 1900,
+   "positives": 3882010,
+   "phantom": 877841,
+   "phantom_frac": 0.22613053547002712
+  },
+  {
+   "z": 2000,
+   "positives": 3901097,
+   "phantom": 963861,
+   "phantom_frac": 0.24707434857426
+  },
+  {
+   "z": 2100,
+   "positives": 4025687,
+   "phantom": 1053611,
+   "phantom_frac": 0.26172203651202885
+  },
+  {
+   "z": 2200,
+   "positives": 3938173,
+   "phantom": 1148305,
+   "phantom_frac": 0.2915831782910502
+  },
+  {
+   "z": 2300,
+   "positives": 3695630,
+   "phantom": 1118010,
+   "phantom_frac": 0.3025221680741849
+  },
+  {
+   "z": 2400,
+   "positives": 3479304,
+   "phantom": 946097,
+   "phantom_frac": 0.27192133829064663
+  },
+  {
+   "z": 2500,
+   "positives": 3469200,
+   "phantom": 862583,
+   "phantom_frac": 0.24864032053499366
+  },
+  {
+   "z": 2600,
+   "positives": 3332781,
+   "phantom": 905684,
+   "phantom_frac": 0.27175022901294743
+  },
+  {
+   "z": 2700,
+   "positives": 3548764,
+   "phantom": 1172663,
+   "phantom_frac": 0.3304426555273893
+  },
+  {
+   "z": 2800,
+   "positives": 3747318,
+   "phantom": 1228083,
+   "phantom_frac": 0.32772318762378855
+  },
+  {
+   "z": 2900,
+   "positives": 3612581,
+   "phantom": 981478,
+   "phantom_frac": 0.2716833200418205
+  },
+  {
+   "z": 3000,
+   "positives": 3657970,
+   "phantom": 1024005,
+   "phantom_frac": 0.2799380530731526
+  },
+  {
+   "z": 3100,
+   "positives": 3717408,
+   "phantom": 1218067,
+   "phantom_frac": 0.32766567457755513
+  },
+  {
+   "z": 3200,
+   "positives": 3738530,
+   "phantom": 1161752,
+   "phantom_frac": 0.3107510171110035
+  },
+  {
+   "z": 3300,
+   "positives": 3679900,
+   "phantom": 1121020,
+   "phantom_frac": 0.30463327807820867
+  },
+  {
+   "z": 3400,
+   "positives": 3755274,
+   "phantom": 1094039,
+   "phantom_frac": 0.291334001194054
+  },
+  {
+   "z": 3500,
+   "positives": 3760360,
+   "phantom": 1165360,
+   "phantom_frac": 0.3099064983139912
+  },
+  {
+   "z": 3600,
+   "positives": 3725221,
+   "phantom": 1035550,
+   "phantom_frac": 0.2779835075556591
+  },
+  {
+   "z": 3700,
+   "positives": 3713648,
+   "phantom": 1036683,
+   "phantom_frac": 0.2791548902857783
+  }
+ ]
+}

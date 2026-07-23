@@ -52,9 +52,19 @@ def open_arrays(preds_url, ct_url, preds_level="0", ct_level="2"):
     return P, C
 
 
+def _read_plane(A, z, tries=5):
+    for i in range(tries):
+        try:
+            return np.asarray(A[z])
+        except Exception as e:
+            print(f"  plane {z} read retry {i+1}: {type(e).__name__}", flush=True)
+            time.sleep(min(60, 3 * 2 ** i))
+    raise RuntimeError(f"plane {z} unreadable after {tries} tries")
+
+
 def plane_stats(P, C, z, thr):
-    p = np.asarray(P[z]) > thr
-    c = np.asarray(C[z]) > 0
+    p = _read_plane(P, z) > thr
+    c = _read_plane(C, z) > 0
     pos = int(p.sum())
     phant = int((p & ~c).sum())
     return {"z": int(z), "positives": pos, "phantom": phant,

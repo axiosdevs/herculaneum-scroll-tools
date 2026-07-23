@@ -1,1 +1,8 @@
 === SURVEY PHerc1451 (ct-level 2) ===
+  File "/Users/pc/defi/vesuvius/.venv/lib/python3.12/site-packages/aiohttp/client_reqrep.py", line 655, in raise_for_status
+    raise ClientResponseError(
+aiohttp.client_exceptions.ClientResponseError: 503, message='Service Unavailable', url='https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1451/volumes/20260319101107-2.399um-0.2m-78keV-masked.zarr/2/50/18/31'
+=== SURVEY PHerc1299 (ct-level 2) ===
+[4/124] z=300 positives=942,795 phantom_frac=1.0000 (133s)
+/Users/pc/.pyenv/versions/3.12.2/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
