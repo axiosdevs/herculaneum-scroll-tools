@@ -12,7 +12,8 @@ current pipeline does not address directly:
    being redone.
 3. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
    measure and clean *phantom* voxels in published surface predictions; includes exact
-   voxel-level phantom fractions for **all 13 grand-prize-eligible scrolls** (below).
+   voxel-level phantom fractions for **the entire published m7 batch — all 36 samples**,
+   including all 13 grand-prize-eligible scrolls (below).
 4. **Winding-constraint annotator + verifier** — annotate winding constraints on
    flattened renders and export native spiral-input files; validated 125/125 on the
    released PHercParis4 annotations.
@@ -180,8 +181,6 @@ exactly (`full_batch.py` is the driver; per-plane data in each
 | PHerc1203 | 136,835,937 | 41,379,993 | **30.2%** | 38 |
 | **total** | **126,458,465,745** | **53,178,923,783** | **42.1%** | **16,336** |
 
-Additional measured anchors: PHerc0139 37.1%, PHerc0332 69.4%, PHercMANBp 95.5%.
-
 In other words: across 16,336 exactly-measured planes of the 13 grand-prize scrolls,
 **126.5 billion prediction-positive voxels were checked and 53.2 billion of them
 (42.1%) sit outside the scroll** (masked CT reads exactly 0). Roughly every second
@@ -189,10 +188,46 @@ In other words: across 16,336 exactly-measured planes of the 13 grand-prize scro
 grower/trainer consuming these predictions without a CT filter inherits that
 contamination; `clean` mode removes it in one pass.
 
-**Chunk→voxel calibration** (`ct_support/calibrate.py`): fitting
-`p_voxel = 1 − (1 − p_chunk)^k` over all 16 measured anchors against the chunk-level
-audit gives **k = 3.30** (max residual ±6.6 pts); estimates for the remaining
-m7-batch samples are in `ct_support/calibration_m7_batch.json`.
+### The rest of the m7 batch — all 36 samples measured
+
+The remaining 23 samples of the same prediction batch, measured the same way
+(per-plane JSONs in `ct_support/`):
+
+| sample | phantom % | positive voxels sampled | planes |
+|---|---|---|---|
+| PHercMANBp | **95.5%** | 33,635,665 | 43 |
+| PHerc0500P2 | **84.7%** | 876,184,025 | 688 |
+| PHercMANB | **77.8%** | 10,543,151,549 | 1536 |
+| PHerc0009B | **69.9%** | 1,465,879,157 | 768 |
+| PHerc0332 | **69.4%** | 178,528,306 | 84 |
+| PHercMAN5 | **67.3%** | 1,086,916,183 | 768 |
+| PHerc1299 | **65.4%** | 2,144,356,890 | 1152 |
+| PHerc1451 | **59.5%** | 3,475,795,862 | 1344 |
+| PHerc0846A | **58.2%** | 2,455,117,471 | 384 |
+| PHerc0343P | **52.2%** | 930,500,460 | 576 |
+| PHerc0814 | **51.0%** | 6,524,484,887 | 1728 |
+| PHerc0846B | **50.5%** | 7,727,895,283 | 1254 |
+| PHercParis4 | **49.0%** | 9,991,378,931 | 1728 |
+| PHerc0841 | **47.4%** | 1,870,586,753 | 384 |
+| PHerc0175A | **47.1%** | 9,255,663,035 | 1152 |
+| PHerc0306B | **45.6%** | 10,923,864,913 | 1344 |
+| PHerc0483A | **44.8%** | 9,896,158,872 | 1344 |
+| PHerc0483B | **39.8%** | 8,434,099,832 | 1152 |
+| PHerc0139 | **37.1%** | 8,499,786,481 | 1920 |
+| PHerc0343 | **37.0%** | 14,500,885,560 | 1536 |
+| PHerc0175B | **36.7%** | 16,950,943,195 | 1344 |
+| PHerc0490B | **29.0%** | 9,885,741,658 | 960 |
+| PHerc0490A | **25.9%** | 16,841,154,203 | 1138 |
+
+**Batch grand total: 40,663 exactly-measured planes, 280,951,174,916 positive
+voxels checked, 121,535,016,150 phantoms (43.3%).**
+
+**Why direct measurement was necessary** (`ct_support/calibrate.py`): fitting
+`p_voxel = 1 − (1 − p_chunk)^k` against the chunk-level audit over all 36 measured
+samples gives k = 3.32 but a **max residual of 28.5 points** — e.g. PHercMANB sits at
+18.5% chunk-level yet 77.8% voxel-level, while other samples at the same chunk share
+measure 43–50%. Chunk-level counts cannot reliably predict voxel-level contamination;
+`calibration_m7_batch.json` now carries the measured value for every sample.
 
 ```bash
 PRED=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/representations/predictions/surfaces/20251211183505-surface-20260413222639-surface-m7-L2-th0.2.zarr
