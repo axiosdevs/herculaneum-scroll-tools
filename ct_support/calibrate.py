@@ -36,6 +36,8 @@ def main(anchor_files):
     for f in anchor_files:
         d = json.load(open(f))
         name = f.split("survey_")[-1].replace(".json", "").split("_")[0]
+        if name.lower().startswith("pherc"):
+            name = "PHerc" + name[5:]
         anchors[name] = d["sampled_phantom_frac"]
     print("anchors (voxel-level, measured):", {k: round(v, 4) for k, v in anchors.items()})
 
