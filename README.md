@@ -155,6 +155,8 @@ exactly. Full strided survey report: `ct_support/survey_pherc0332.json`.
 
 ### Measured voxel-level phantom fractions — all 13 grand-prize scrolls
 
+![Phantom share per grand-prize scroll](examples/gp13_phantom_bars.png)
+
 Exact voxel-level measurements of the published m7 surface predictions
 (run `20260413222639`), preds level 0 vs. the masked CT level on the same grid,
 threshold 127. Every 12th z-chunk slab, all planes inside each slab measured
