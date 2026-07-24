@@ -1,9 +1,0 @@
-[1/38] z=0 positives=5,935,263 phantom_frac=0.8822 (84s)
-  plane 100 read retry 1: TimeoutError
-[2/38] z=100 positives=5,483,566 phantom_frac=0.6959 (7951s)
-  plane 200 read retry 1: TimeoutError
-  plane 200 read retry 2: TimeoutError
-  plane 200 read retry 3: TimeoutError
-[3/38] z=200 positives=6,583,798 phantom_frac=0.6924 (23891s)
-  plane 300 read retry 1: ClientOSError
-[4/38] z=300 positives=5,466,097 phantom_frac=0.5766 (28447s)

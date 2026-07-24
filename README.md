@@ -1,6 +1,6 @@
-# Herculaneum Scroll Tools: Dual-Energy Ink Contrast & Cross-Scan Registration
+# Herculaneum Scroll Tools
 
-Two open-source utilities for the Vesuvius Challenge, built to attack problems the
+Four open-source utilities for the Vesuvius Challenge, built to attack problems the
 current pipeline does not address directly:
 
 1. **Dual-energy co-rendering** — combine the two X-ray energies a scroll was scanned
@@ -10,6 +10,12 @@ current pipeline does not address directly:
    segmentation / label built on it) to a *newer, higher-resolution* scan of the same
    scroll, so years of prior segmentation work transfers onto the new data instead of
    being redone.
+3. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
+   measure and clean *phantom* voxels in published surface predictions; includes exact
+   voxel-level phantom fractions for **all 13 grand-prize-eligible scrolls** (below).
+4. **Winding-constraint annotator + verifier** — annotate winding constraints on
+   flattened renders and export native spiral-input files; validated 125/125 on the
+   released PHercParis4 annotations.
 
 Both stream data directly from the public `vesuvius-challenge-open-data` S3 bucket and
 `dl.ash2txt.org` — no local copy of a full scroll is needed. Everything runs on a laptop.
@@ -130,10 +136,13 @@ PHerc0332 m7 predictions ~70% of positive voxels are phantoms, and seed-growers 
 don't consult the CT can ride the phantom shell.
 
 `ct_support.py` streams the prediction zarr and the masked CT zarr together
-(no local copies) and provides three CPU-only, resumable modes:
+(no local copies) and provides four CPU-only, resumable modes:
 
 - **`survey`** — per-plane phantom/support statistics (spot planes or a z-stride
   across the whole scroll), JSON + CSV report;
+- **`slabs`** — chunk-aligned slab survey: reads whole z-chunk slabs in bounded-memory
+  Y-stripes, so **100% of transferred bytes are used** (plane mode pays ~chunk-depth×
+  amplification on remote zarrs) and every plane inside a slab is measured exactly;
 - **`chunks`** — per-cube support map for cube-level filtering (on PHerc0332 the
   distribution is strongly bimodal — in our 128³ test window 96.5% of cubes are
   cleanly keep/drop at a 0.5 threshold);
@@ -144,13 +153,53 @@ planes z∈{2000, 4224, 6000} → phantom fractions **0.6810 / 0.6717 / 0.6459**
 counts 2,259,758 / 2,379,932 / 2,110,813 — matching the issue's reported numbers
 exactly. Full strided survey report: `ct_support/survey_pherc0332.json`.
 
+### Measured voxel-level phantom fractions — all 13 grand-prize scrolls
+
+Exact voxel-level measurements of the published m7 surface predictions
+(run `20260413222639`), preds level 0 vs. the masked CT level on the same grid,
+threshold 127. Every 12th z-chunk slab, all planes inside each slab measured
+exactly (`full_batch.py` is the driver; per-plane data in each
+`ct_support/survey_PHerc*.json`):
+
+| scroll (GP-eligible) | phantom voxels | planes measured |
+|---|---|---|
+| PHerc1218 | **50.2%** | 224 |
+| PHerc0358 | **49.3%** | 148 |
+| PHerc0257 | **48.4%** | 1728 |
+| PHerc1545 | **48.4%** | 1920 |
+| PHerc0826 | **48.4%** | 1536 |
+| PHerc0125 | **47.6%** | 182 |
+| PHerc1447 | **43.9%** | 2112 |
+| PHerc0813 | **43.4%** | 1536 |
+| PHerc0211 | **43.4%** | 1728 |
+| PHerc0800 | **41.7%** | 2112 |
+| PHerc0191 | **39.9%** | 1728 |
+| PHerc0268 | **33.2%** | 1344 |
+| PHerc1203 | **30.2%** | 38 |
+
+Additional measured anchors: PHerc0139 37.1%, PHerc0332 69.4%, PHercMANBp 95.5%.
+
+In other words: **in every grand-prize scroll, 30–50% of the positive voxels in the
+published surface predictions sit outside the scroll** (masked CT reads exactly 0).
+Any grower/trainer consuming these predictions without a CT filter inherits that
+contamination; `clean` mode removes it in one pass.
+
+**Chunk→voxel calibration** (`ct_support/calibrate.py`): fitting
+`p_voxel = 1 − (1 − p_chunk)^k` over all 16 measured anchors against the chunk-level
+audit gives **k = 3.30** (max residual ±6.6 pts); estimates for the remaining
+m7-batch samples are in `ct_support/calibration_m7_batch.json`.
+
 ```bash
 PRED=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/representations/predictions/surfaces/20251211183505-surface-20260413222639-surface-m7-L2-th0.2.zarr
 CT=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/volumes/20251211183505-2.399um-0.2m-78keV-masked.zarr
 
 python ct_support/ct_support.py survey --preds $PRED --ct $CT --planes 2000,4224,6000
+python ct_support/ct_support.py slabs  --preds $PRED --ct $CT --slab-stride 12 --out report.json
 python ct_support/ct_support.py chunks --preds $PRED --ct $CT --z0 4224 --z1 4352 --out cubes.npz
 python ct_support/ct_support.py clean  --preds $PRED --ct $CT --z0 4200 --z1 4400 --out cleaned.zarr
+
+# measure every sample in the m7 batch (auto-discovers preds+CT on S3, resumable):
+python ct_support/full_batch.py
 ```
 
 ---

@@ -1,0 +1,10382 @@
+{
+ "preds": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0191/representations/predictions/surfaces/20250821151635-surface-20260413222639-surface-m7-L0-th0.2.zarr",
+ "ct": "https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0191/volumes/20250821151635-9.362um-1.2m-113keV-masked.zarr",
+ "threshold": 127,
+ "mode": "slabs",
+ "slab_stride": 12,
+ "planes_sampled": 1728,
+ "sampled_positives": 12232136550,
+ "sampled_phantom": 4874448732,
+ "sampled_phantom_frac": 0.39849528429275094,
+ "sampled_support_frac": 0.6015047157072491,
+ "per_plane": [
+  {
+   "z": 0,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 1,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 2,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 3,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 4,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 5,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 6,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 7,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 8,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 9,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 10,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 11,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 12,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 13,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 14,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 15,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 16,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 17,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 18,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 19,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 20,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 21,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 22,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 23,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 24,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 25,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 26,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 27,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 28,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 29,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 30,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 31,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 32,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 33,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 34,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 35,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 36,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 37,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 38,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 39,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 40,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 41,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 42,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 43,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 44,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 45,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 46,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 47,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 48,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 49,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 50,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 51,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 52,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 53,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 54,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 55,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 56,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 57,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 58,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 59,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 60,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 61,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 62,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 63,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 64,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 65,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 66,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 67,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 68,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 69,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 70,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 71,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 72,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 73,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 74,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 75,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 76,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 77,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 78,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 79,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 80,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 81,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 82,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 83,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 84,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 85,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 86,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 87,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 88,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 89,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 90,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 91,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 92,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 93,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 94,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 95,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 96,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 97,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 98,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 99,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 100,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 101,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 102,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 103,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 104,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 105,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 106,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 107,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 108,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 109,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 110,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 111,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 112,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 113,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 114,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 115,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 116,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 117,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 118,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 119,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 120,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 121,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 122,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 123,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 124,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 125,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 126,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 127,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 128,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 129,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 130,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 131,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 132,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 133,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 134,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 135,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 136,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 137,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 138,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 139,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 140,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 141,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 142,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 143,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 144,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 145,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 146,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 147,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 148,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 149,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 150,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 151,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 152,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 153,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 154,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 155,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 156,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 157,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 158,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 159,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 160,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 161,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 162,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 163,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 164,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 165,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 166,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 167,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 168,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 169,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 170,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 171,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 172,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 173,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 174,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 175,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 176,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 177,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 178,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 179,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 180,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 181,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 182,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 183,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 184,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 185,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 186,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 187,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 188,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 189,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 190,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 191,
+   "positives": 0,
+   "phantom": 0,
+   "phantom_frac": 0.0
+  },
+  {
+   "z": 2304,
+   "positives": 5653376,
+   "phantom": 3961518,
+   "phantom_frac": 0.7007349236986891
+  },
+  {
+   "z": 2305,
+   "positives": 5652307,
+   "phantom": 3961140,
+   "phantom_frac": 0.7008005757649045
+  },
+  {
+   "z": 2306,
+   "positives": 5676732,
+   "phantom": 3960916,
+   "phantom_frac": 0.6977458157263722
+  },
+  {
+   "z": 2307,
+   "positives": 5679904,
+   "phantom": 3961086,
+   "phantom_frac": 0.6973860825816774
+  },
+  {
+   "z": 2308,
+   "positives": 5682197,
+   "phantom": 3961503,
+   "phantom_frac": 0.697178045745334
+  },
+  {
+   "z": 2309,
+   "positives": 5678129,
+   "phantom": 3961722,
+   "phantom_frac": 0.6977160962704441
+  },
+  {
+   "z": 2310,
+   "positives": 5682264,
+   "phantom": 3961577,
+   "phantom_frac": 0.6971828482449953
+  },
+  {
+   "z": 2311,
+   "positives": 5679455,
+   "phantom": 3961886,
+   "phantom_frac": 0.697582074336358
+  },
+  {
+   "z": 2312,
+   "positives": 5680505,
+   "phantom": 3960701,
+   "phantom_frac": 0.6972445231541914
+  },
+  {
+   "z": 2313,
+   "positives": 5683143,
+   "phantom": 3960135,
+   "phantom_frac": 0.6968212835749514
+  },
+  {
+   "z": 2314,
+   "positives": 5710256,
+   "phantom": 3959556,
+   "phantom_frac": 0.6934112936442779
+  },
+  {
+   "z": 2315,
+   "positives": 5713246,
+   "phantom": 3959151,
+   "phantom_frac": 0.6929775122583554
+  },
+  {
+   "z": 2316,
+   "positives": 5709018,
+   "phantom": 3958608,
+   "phantom_frac": 0.6933956067400734
+  },
+  {
+   "z": 2317,
+   "positives": 5701841,
+   "phantom": 3958368,
+   "phantom_frac": 0.6942263033992003
+  },
+  {
+   "z": 2318,
+   "positives": 5707337,
+   "phantom": 3958154,
+   "phantom_frac": 0.6935202880082252
+  },
+  {
+   "z": 2319,
+   "positives": 5703894,
+   "phantom": 3958173,
+   "phantom_frac": 0.693942243667221
+  },
+  {
+   "z": 2320,
+   "positives": 5706763,
+   "phantom": 3958051,
+   "phantom_frac": 0.6935719951923709
+  },
+  {
+   "z": 2321,
+   "positives": 5707049,
+   "phantom": 3958113,
+   "phantom_frac": 0.693548101654638
+  },
+  {
+   "z": 2322,
+   "positives": 5733733,
+   "phantom": 3958129,
+   "phantom_frac": 0.6903232152595874
+  },
+  {
+   "z": 2323,
+   "positives": 5736816,
+   "phantom": 3958616,
+   "phantom_frac": 0.6900371216368104
+  },
+  {
+   "z": 2324,
+   "positives": 5738550,
+   "phantom": 3958702,
+   "phantom_frac": 0.6898436016066777
+  },
+  {
+   "z": 2325,
+   "positives": 5733956,
+   "phantom": 3958827,
+   "phantom_frac": 0.6904180987785745
+  },
+  {
+   "z": 2326,
+   "positives": 5739743,
+   "phantom": 3958705,
+   "phantom_frac": 0.6897007409565202
+  },
+  {
+   "z": 2327,
+   "positives": 5735578,
+   "phantom": 3959079,
+   "phantom_frac": 0.6902667874100918
+  },
+  {
+   "z": 2328,
+   "positives": 5739495,
+   "phantom": 3957914,
+   "phantom_frac": 0.6895927254923996
+  },
+  {
+   "z": 2329,
+   "positives": 5740474,
+   "phantom": 3957794,
+   "phantom_frac": 0.6894542158016916
+  },
+  {
+   "z": 2330,
+   "positives": 5765301,
+   "phantom": 3957601,
+   "phantom_frac": 0.6864517568120034
+  },
+  {
+   "z": 2331,
+   "positives": 5763162,
+   "phantom": 3957590,
+   "phantom_frac": 0.6867046249957922
+  },
+  {
+   "z": 2332,
+   "positives": 5757467,
+   "phantom": 3957535,
+   "phantom_frac": 0.68737432624451
+  },
+  {
+   "z": 2333,
+   "positives": 5744311,
+   "phantom": 3957363,
+   "phantom_frac": 0.6889186536035392
+  },
+  {
+   "z": 2334,
+   "positives": 5744885,
+   "phantom": 3957072,
+   "phantom_frac": 0.6887991665629513
+  },
+  {
+   "z": 2335,
+   "positives": 5731894,
+   "phantom": 3957107,
+   "phantom_frac": 0.6903663954706769
+  },
+  {
+   "z": 2336,
+   "positives": 5726152,
+   "phantom": 3957205,
+   "phantom_frac": 0.6910757870206728
+  },
+  {
+   "z": 2337,
+   "positives": 5715074,
+   "phantom": 3957026,
+   "phantom_frac": 0.6923840356222859
+  },
+  {
+   "z": 2338,
+   "positives": 5728912,
+   "phantom": 3956945,
+   "phantom_frac": 0.6906974657666237
+  },
+  {
+   "z": 2339,
+   "positives": 5715467,
+   "phantom": 3957069,
+   "phantom_frac": 0.6923439501968955
+  },
+  {
+   "z": 2340,
+   "positives": 5701456,
+   "phantom": 3957106,
+   "phantom_frac": 0.694051835180347
+  },
+  {
+   "z": 2341,
+   "positives": 5680919,
+   "phantom": 3957062,
+   "phantom_frac": 0.6965531457146282
+  },
+  {
+   "z": 2342,
+   "positives": 5670298,
+   "phantom": 3957136,
+   "phantom_frac": 0.6978709055502903
+  },
+  {
+   "z": 2343,
+   "positives": 5651914,
+   "phantom": 3957191,
+   "phantom_frac": 0.700150603848537
+  },
+  {
+   "z": 2344,
+   "positives": 5640877,
+   "phantom": 3956553,
+   "phantom_frac": 0.7014074229946868
+  },
+  {
+   "z": 2345,
+   "positives": 5633058,
+   "phantom": 3956494,
+   "phantom_frac": 0.7023705418974916
+  },
+  {
+   "z": 2346,
+   "positives": 5652701,
+   "phantom": 3956597,
+   "phantom_frac": 0.699948042537541
+  },
+  {
+   "z": 2347,
+   "positives": 5647034,
+   "phantom": 3956610,
+   "phantom_frac": 0.7006527674527903
+  },
+  {
+   "z": 2348,
+   "positives": 5637777,
+   "phantom": 3956543,
+   "phantom_frac": 0.7017913266168563
+  },
+  {
+   "z": 2349,
+   "positives": 5626095,
+   "phantom": 3956472,
+   "phantom_frac": 0.7032359034108027
+  },
+  {
+   "z": 2350,
+   "positives": 5626260,
+   "phantom": 3956392,
+   "phantom_frac": 0.703201060740172
+  },
+  {
+   "z": 2351,
+   "positives": 5621705,
+   "phantom": 3956461,
+   "phantom_frac": 0.7037831049476982
+  },
+  {
+   "z": 2352,
+   "positives": 5621480,
+   "phantom": 3956491,
+   "phantom_frac": 0.7038166105723048
+  },
+  {
+   "z": 2353,
+   "positives": 5621955,
+   "phantom": 3956454,
+   "phantom_frac": 0.7037505636384496
+  },
+  {
+   "z": 2354,
+   "positives": 5651812,
+   "phantom": 3956548,
+   "phantom_frac": 0.7000494708599649
+  },
+  {
+   "z": 2355,
+   "positives": 5660986,
+   "phantom": 3956615,
+   "phantom_frac": 0.6989268300610529
+  },
+  {
+   "z": 2356,
+   "positives": 5667240,
+   "phantom": 3956681,
+   "phantom_frac": 0.6981671854377086
+  },
+  {
+   "z": 2357,
+   "positives": 5670867,
+   "phantom": 3956938,
+   "phantom_frac": 0.6977659677082887
+  },
+  {
+   "z": 2358,
+   "positives": 5682846,
+   "phantom": 3957487,
+   "phantom_frac": 0.6963917375202495
+  },
+  {
+   "z": 2359,
+   "positives": 5688156,
+   "phantom": 3958302,
+   "phantom_frac": 0.6958849229873443
+  },
+  {
+   "z": 2360,
+   "positives": 5697675,
+   "phantom": 3956923,
+   "phantom_frac": 0.6944802923999701
+  },
+  {
+   "z": 2361,
+   "positives": 5708754,
+   "phantom": 3956896,
+   "phantom_frac": 0.6931277823497036
+  },
+  {
+   "z": 2362,
+   "positives": 5744277,
+   "phantom": 3956951,
+   "phantom_frac": 0.6888510077073233
+  },
+  {
+   "z": 2363,
+   "positives": 5755686,
+   "phantom": 3957052,
+   "phantom_frac": 0.6875031056245945
+  },
+  {
+   "z": 2364,
+   "positives": 5757792,
+   "phantom": 3957099,
+   "phantom_frac": 0.6872598037581072
+  },
+  {
+   "z": 2365,
+   "positives": 5754487,
+   "phantom": 3956868,
+   "phantom_frac": 0.6876143781365741
+  },
+  {
+   "z": 2366,
+   "positives": 5760857,
+   "phantom": 3956849,
+   "phantom_frac": 0.6868507584895789
+  },
+  {
+   "z": 2367,
+   "positives": 5760104,
+   "phantom": 3956933,
+   "phantom_frac": 0.6869551313656836
+  },
+  {
+   "z": 2368,
+   "positives": 5761302,
+   "phantom": 3957027,
+   "phantom_frac": 0.6868286022846919
+  },
+  {
+   "z": 2369,
+   "positives": 5761996,
+   "phantom": 3957153,
+   "phantom_frac": 0.6867677450661195
+  },
+  {
+   "z": 2370,
+   "positives": 5789745,
+   "phantom": 3957215,
+   "phantom_frac": 0.6834869238627953
+  },
+  {
+   "z": 2371,
+   "positives": 5796921,
+   "phantom": 3956977,
+   "phantom_frac": 0.6825997801246558
+  },
+  {
+   "z": 2372,
+   "positives": 5797732,
+   "phantom": 3957211,
+   "phantom_frac": 0.6825446571176453
+  },
+  {
+   "z": 2373,
+   "positives": 5795889,
+   "phantom": 3957865,
+   "phantom_frac": 0.6828745340016001
+  },
+  {
+   "z": 2374,
+   "positives": 5802520,
+   "phantom": 3958652,
+   "phantom_frac": 0.6822297898154595
+  },
+  {
+   "z": 2375,
+   "positives": 5801711,
+   "phantom": 3960211,
+   "phantom_frac": 0.6825936348777111
+  },
+  {
+   "z": 2376,
+   "positives": 5806019,
+   "phantom": 3957625,
+   "phantom_frac": 0.6816417583201158
+  },
+  {
+   "z": 2377,
+   "positives": 5811854,
+   "phantom": 3957511,
+   "phantom_frac": 0.6809377868060691
+  },
+  {
+   "z": 2378,
+   "positives": 5845167,
+   "phantom": 3957500,
+   "phantom_frac": 0.6770550781526002
+  },
+  {
+   "z": 2379,
+   "positives": 5853618,
+   "phantom": 3957442,
+   "phantom_frac": 0.6760676901020873
+  },
+  {
+   "z": 2380,
+   "positives": 5850439,
+   "phantom": 3957523,
+   "phantom_frac": 0.6764488955444198
+  },
+  {
+   "z": 2381,
+   "positives": 5843315,
+   "phantom": 3957387,
+   "phantom_frac": 0.6772503279388498
+  },
+  {
+   "z": 2382,
+   "positives": 5848667,
+   "phantom": 3957343,
+   "phantom_frac": 0.6766230664183822
+  },
+  {
+   "z": 2383,
+   "positives": 5846627,
+   "phantom": 3957278,
+   "phantom_frac": 0.6768480356280638
+  },
+  {
+   "z": 2384,
+   "positives": 5846263,
+   "phantom": 3957520,
+   "phantom_frac": 0.6769315715013163
+  },
+  {
+   "z": 2385,
+   "positives": 5845692,
+   "phantom": 3957609,
+   "phantom_frac": 0.6770129182310666
+  },
+  {
+   "z": 2386,
+   "positives": 5876372,
+   "phantom": 3957752,
+   "phantom_frac": 0.6735026305346223
+  },
+  {
+   "z": 2387,
+   "positives": 5883224,
+   "phantom": 3958001,
+   "phantom_frac": 0.6727605476181087
+  },
+  {
+   "z": 2388,
+   "positives": 5883509,
+   "phantom": 3958413,
+   "phantom_frac": 0.6727979850120056
+  },
+  {
+   "z": 2389,
+   "positives": 5880749,
+   "phantom": 3958998,
+   "phantom_frac": 0.6732132250500744
+  },
+  {
+   "z": 2390,
+   "positives": 5887535,
+   "phantom": 3959532,
+   "phantom_frac": 0.6725279764791208
+  },
+  {
+   "z": 2391,
+   "positives": 5885612,
+   "phantom": 3960839,
+   "phantom_frac": 0.6729697778242942
+  },
+  {
+   "z": 2392,
+   "positives": 5889444,
+   "phantom": 3958118,
+   "phantom_frac": 0.6720698931851632
+  },
+  {
+   "z": 2393,
+   "positives": 5893521,
+   "phantom": 3958125,
+   "phantom_frac": 0.6716061586952858
+  },
+  {
+   "z": 2394,
+   "positives": 5923262,
+   "phantom": 3958311,
+   "phantom_frac": 0.668265391603478
+  },
+  {
+   "z": 2395,
+   "positives": 5929567,
+   "phantom": 3958355,
+   "phantom_frac": 0.6675622351514031
+  },
+  {
+   "z": 2396,
+   "positives": 4966112,
+   "phantom": 3000049,
+   "phantom_frac": 0.6041041764664188
+  },
+  {
+   "z": 2397,
+   "positives": 4955171,
+   "phantom": 2999287,
+   "phantom_frac": 0.6052842575967611
+  },
+  {
+   "z": 2398,
+   "positives": 4957723,
+   "phantom": 2998834,
+   "phantom_frac": 0.6048813134578112
+  },
+  {
+   "z": 2399,
+   "positives": 4947867,
+   "phantom": 2998501,
+   "phantom_frac": 0.6060189168383063
+  },
+  {
+   "z": 2400,
+   "positives": 4941561,
+   "phantom": 2998144,
+   "phantom_frac": 0.6067200222763617
+  },
+  {
+   "z": 2401,
+   "positives": 4934946,
+   "phantom": 2997889,
+   "phantom_frac": 0.6074816218860348
+  },
+  {
+   "z": 2402,
+   "positives": 4959087,
+   "phantom": 2997570,
+   "phantom_frac": 0.6044600548447728
+  },
+  {
+   "z": 2403,
+   "positives": 4957979,
+   "phantom": 2997671,
+   "phantom_frac": 0.6046155096663378
+  },
+  {
+   "z": 2404,
+   "positives": 4955053,
+   "phantom": 2997649,
+   "phantom_frac": 0.6049681002403001
+  },
+  {
+   "z": 2405,
+   "positives": 4945688,
+   "phantom": 2997761,
+   "phantom_frac": 0.6061362948896089
+  },
+  {
+   "z": 2406,
+   "positives": 4948190,
+   "phantom": 2997626,
+   "phantom_frac": 0.60580252577205
+  },
+  {
+   "z": 2407,
+   "positives": 4941078,
+   "phantom": 2997674,
+   "phantom_frac": 0.6066842093972206
+  },
+  {
+   "z": 2408,
+   "positives": 4939641,
+   "phantom": 2996200,
+   "phantom_frac": 0.6065622987581486
+  },
+  {
+   "z": 2409,
+   "positives": 4942434,
+   "phantom": 2997321,
+   "phantom_frac": 0.6064463379784131
+  },
+  {
+   "z": 2410,
+   "positives": 4969258,
+   "phantom": 2998222,
+   "phantom_frac": 0.603354062115511
+  },
+  {
+   "z": 2411,
+   "positives": 4972559,
+   "phantom": 2999101,
+   "phantom_frac": 0.6031302997108732
+  },
+  {
+   "z": 2412,
+   "positives": 4968875,
+   "phantom": 2999501,
+   "phantom_frac": 0.6036579708686574
+  },
+  {
+   "z": 2413,
+   "positives": 4958392,
+   "phantom": 2999760,
+   "phantom_frac": 0.6049864552863106
+  },
+  {
+   "z": 2414,
+   "positives": 4961137,
+   "phantom": 3000195,
+   "phantom_frac": 0.6047393974405464
+  },
+  {
+   "z": 2415,
+   "positives": 4954959,
+   "phantom": 3000826,
+   "phantom_frac": 0.6056207528659672
+  },
+  {
+   "z": 2416,
+   "positives": 4953488,
+   "phantom": 3000996,
+   "phantom_frac": 0.6058349187481629
+  },
+  {
+   "z": 2417,
+   "positives": 4951266,
+   "phantom": 3001040,
+   "phantom_frac": 0.6061156883916154
+  },
+  {
+   "z": 2418,
+   "positives": 4975962,
+   "phantom": 3001536,
+   "phantom_frac": 0.6032071788329574
+  },
+  {
+   "z": 2419,
+   "positives": 4977962,
+   "phantom": 3002180,
+   "phantom_frac": 0.6030941979870477
+  },
+  {
+   "z": 2420,
+   "positives": 4974971,
+   "phantom": 3002706,
+   "phantom_frac": 0.6035625132287203
+  },
+  {
+   "z": 2421,
+   "positives": 4966140,
+   "phantom": 3003319,
+   "phantom_frac": 0.6047592295021889
+  },
+  {
+   "z": 2422,
+   "positives": 4967288,
+   "phantom": 3003923,
+   "phantom_frac": 0.6047410578971866
+  },
+  {
+   "z": 2423,
+   "positives": 4959723,
+   "phantom": 3005350,
+   "phantom_frac": 0.6059511791283505
+  },
+  {
+   "z": 2424,
+   "positives": 4962997,
+   "phantom": 3002307,
+   "phantom_frac": 0.6049383064305701
+  },
+  {
+   "z": 2425,
+   "positives": 4994605,
+   "phantom": 3002123,
+   "phantom_frac": 0.6010731579374144
+  },
+  {
+   "z": 2426,
+   "positives": 5018661,
+   "phantom": 3002682,
+   "phantom_frac": 0.5983034120057122
+  },
+  {
+   "z": 2427,
+   "positives": 5013563,
+   "phantom": 3003151,
+   "phantom_frac": 0.5990053381198162
+  },
+  {
+   "z": 2428,
+   "positives": 4996267,
+   "phantom": 3003081,
+   "phantom_frac": 0.6010649550954743
+  },
+  {
+   "z": 2429,
+   "positives": 4973613,
+   "phantom": 3002804,
+   "phantom_frac": 0.6037470144942921
+  },
+  {
+   "z": 2430,
+   "positives": 4968673,
+   "phantom": 3003179,
+   "phantom_frac": 0.6044227502997279
+  },
+  {
+   "z": 2431,
+   "positives": 4951780,
+   "phantom": 3003416,
+   "phantom_frac": 0.6065326003982406
+  },
+  {
+   "z": 2432,
+   "positives": 4939916,
+   "phantom": 3003337,
+   "phantom_frac": 0.6079732934730064
+  },
+  {
+   "z": 2433,
+   "positives": 4925724,
+   "phantom": 3003380,
+   "phantom_frac": 0.6097337163024157
+  },
+  {
+   "z": 2434,
+   "positives": 4939682,
+   "phantom": 3003712,
+   "phantom_frac": 0.6080780098799883
+  },
+  {
+   "z": 2435,
+   "positives": 4925174,
+   "phantom": 3004124,
+   "phantom_frac": 0.6099528666398385
+  },
+  {
+   "z": 2436,
+   "positives": 4904096,
+   "phantom": 3004436,
+   "phantom_frac": 0.6126380886507932
+  },
+  {
+   "z": 2437,
+   "positives": 4878022,
+   "phantom": 3004485,
+   "phantom_frac": 0.6159228064162072
+  },
+  {
+   "z": 2438,
+   "positives": 4865116,
+   "phantom": 3005219,
+   "phantom_frac": 0.6177075736734746
+  },
+  {
+   "z": 2439,
+   "positives": 4846551,
+   "phantom": 3005651,
+   "phantom_frac": 0.6201628745885476
+  },
+  {
+   "z": 2440,
+   "positives": 4833432,
+   "phantom": 3005225,
+   "phantom_frac": 0.6217579972160568
+  },
+  {
+   "z": 2441,
+   "positives": 4825345,
+   "phantom": 3004926,
+   "phantom_frac": 0.6227380632887389
+  },
+  {
+   "z": 2442,
+   "positives": 4841621,
+   "phantom": 3005226,
+   "phantom_frac": 0.620706577404551
+  },
+  {
+   "z": 2443,
+   "positives": 4837985,
+   "phantom": 3005367,
+   "phantom_frac": 0.6212022153851242
+  },
+  {
+   "z": 2444,
+   "positives": 4824819,
+   "phantom": 3005127,
+   "phantom_frac": 0.6228476135581459
+  },
+  {
+   "z": 2445,
+   "positives": 4814708,
+   "phantom": 3004889,
+   "phantom_frac": 0.6241061763247117
+  },
+  {
+   "z": 2446,
+   "positives": 4816202,
+   "phantom": 3004851,
+   "phantom_frac": 0.623904686722027
+  },
+  {
+   "z": 2447,
+   "positives": 4812765,
+   "phantom": 3004902,
+   "phantom_frac": 0.6243608403900877
+  },
+  {
+   "z": 2448,
+   "positives": 4812608,
+   "phantom": 3004982,
+   "phantom_frac": 0.6243978316954134
+  },
+  {
+   "z": 2449,
+   "positives": 4815154,
+   "phantom": 3004907,
+   "phantom_frac": 0.6240521071600202
+  },
+  {
+   "z": 2450,
+   "positives": 4846299,
+   "phantom": 3005115,
+   "phantom_frac": 0.6200845222302627
+  },
+  {
+   "z": 2451,
+   "positives": 4859964,
+   "phantom": 3005245,
+   "phantom_frac": 0.6183677492261259
+  },
+  {
+   "z": 2452,
+   "positives": 4867890,
+   "phantom": 3005275,
+   "phantom_frac": 0.6173670727974543
+  },
+  {
+   "z": 2453,
+   "positives": 4872443,
+   "phantom": 3005100,
+   "phantom_frac": 0.6167542647497364
+  },
+  {
+   "z": 2454,
+   "positives": 4884912,
+   "phantom": 3005385,
+   "phantom_frac": 0.6152383093083356
+  },
+  {
+   "z": 2455,
+   "positives": 4890958,
+   "phantom": 3005681,
+   "phantom_frac": 0.6145382969962122
+  },
+  {
+   "z": 2456,
+   "positives": 4898477,
+   "phantom": 3005737,
+   "phantom_frac": 0.6136064331832118
+  },
+  {
+   "z": 2457,
+   "positives": 4913349,
+   "phantom": 3005565,
+   "phantom_frac": 0.6117141281842589
+  },
+  {
+   "z": 2458,
+   "positives": 4948190,
+   "phantom": 3005756,
+   "phantom_frac": 0.6074455507973623
+  },
+  {
+   "z": 2459,
+   "positives": 4961292,
+   "phantom": 3005861,
+   "phantom_frac": 0.6058625454821043
+  },
+  {
+   "z": 2460,
+   "positives": 4962448,
+   "phantom": 3005745,
+   "phantom_frac": 0.6056980345184474
+  },
+  {
+   "z": 2461,
+   "positives": 4963070,
+   "phantom": 3005394,
+   "phantom_frac": 0.6055514026600471
+  },
+  {
+   "z": 2462,
+   "positives": 4973035,
+   "phantom": 3005642,
+   "phantom_frac": 0.6043878637491994
+  },
+  {
+   "z": 2463,
+   "positives": 4975744,
+   "phantom": 3005578,
+   "phantom_frac": 0.6040459477014894
+  },
+  {
+   "z": 2464,
+   "positives": 4977112,
+   "phantom": 3005565,
+   "phantom_frac": 0.6038773087686192
+  },
+  {
+   "z": 2465,
+   "positives": 4977812,
+   "phantom": 3005456,
+   "phantom_frac": 0.6037704919350108
+  },
+  {
+   "z": 2466,
+   "positives": 5006842,
+   "phantom": 3005685,
+   "phantom_frac": 0.6003155282311685
+  },
+  {
+   "z": 2467,
+   "positives": 5014943,
+   "phantom": 3006018,
+   "phantom_frac": 0.5994121967089158
+  },
+  {
+   "z": 2468,
+   "positives": 5017157,
+   "phantom": 3006243,
+   "phantom_frac": 0.5991925307499845
+  },
+  {
+   "z": 2469,
+   "positives": 5015080,
+   "phantom": 3006876,
+   "phantom_frac": 0.5995669062108681
+  },
+  {
+   "z": 2470,
+   "positives": 5022260,
+   "phantom": 3007564,
+   "phantom_frac": 0.598846734338724
+  },
+  {
+   "z": 2471,
+   "positives": 5024021,
+   "phantom": 3008796,
+   "phantom_frac": 0.5988820508513002
+  },
+  {
+   "z": 2472,
+   "positives": 5027491,
+   "phantom": 3005691,
+   "phantom_frac": 0.5978510951088724
+  },
+  {
+   "z": 2473,
+   "positives": 5035900,
+   "phantom": 3005673,
+   "phantom_frac": 0.5968492225818622
+  },
+  {
+   "z": 2474,
+   "positives": 5063528,
+   "phantom": 3005866,
+   "phantom_frac": 0.5936307649528155
+  },
+  {
+   "z": 2475,
+   "positives": 5070742,
+   "phantom": 3005881,
+   "phantom_frac": 0.5927891815438451
+  },
+  {
+   "z": 2476,
+   "positives": 5067958,
+   "phantom": 3005731,
+   "phantom_frac": 0.5930852228846412
+  },
+  {
+   "z": 2477,
+   "positives": 5060026,
+   "phantom": 3005568,
+   "phantom_frac": 0.5939827186658725
+  },
+  {
+   "z": 2478,
+   "positives": 5063921,
+   "phantom": 3005743,
+   "phantom_frac": 0.5935604050695104
+  },
+  {
+   "z": 2479,
+   "positives": 5061629,
+   "phantom": 3005744,
+   "phantom_frac": 0.5938293778544417
+  },
+  {
+   "z": 2480,
+   "positives": 5057681,
+   "phantom": 3005768,
+   "phantom_frac": 0.5942976632966769
+  },
+  {
+   "z": 2481,
+   "positives": 5052823,
+   "phantom": 3005564,
+   "phantom_frac": 0.5948286730012114
+  },
+  {
+   "z": 2482,
+   "positives": 5075116,
+   "phantom": 3005779,
+   "phantom_frac": 0.5922581868079468
+  },
+  {
+   "z": 2483,
+   "positives": 5078445,
+   "phantom": 3006278,
+   "phantom_frac": 0.5919682107416738
+  },
+  {
+   "z": 2484,
+   "positives": 5076494,
+   "phantom": 3006628,
+   "phantom_frac": 0.5922646613982012
+  },
+  {
+   "z": 2485,
+   "positives": 5068697,
+   "phantom": 3007309,
+   "phantom_frac": 0.5933100755480156
+  },
+  {
+   "z": 2486,
+   "positives": 5073293,
+   "phantom": 3008139,
+   "phantom_frac": 0.5929361856293338
+  },
+  {
+   "z": 2487,
+   "positives": 5070792,
+   "phantom": 3009425,
+   "phantom_frac": 0.5934822410384808
+  },
+  {
+   "z": 2488,
+   "positives": 5075445,
+   "phantom": 3005735,
+   "phantom_frac": 0.5922111263150325
+  },
+  {
+   "z": 2489,
+   "positives": 5082142,
+   "phantom": 3005545,
+   "phantom_frac": 0.59139335343247
+  },
+  {
+   "z": 2490,
+   "positives": 5111675,
+   "phantom": 3005619,
+   "phantom_frac": 0.5879910205558844
+  },
+  {
+   "z": 2491,
+   "positives": 5117247,
+   "phantom": 3005615,
+   "phantom_frac": 0.5873499950266227
+  },
+  {
+   "z": 2492,
+   "positives": 3984286,
+   "phantom": 1876386,
+   "phantom_frac": 0.4709466137722041
+  },
+  {
+   "z": 2493,
+   "positives": 3973518,
+   "phantom": 1875066,
+   "phantom_frac": 0.47189065206197633
+  },
+  {
+   "z": 2494,
+   "positives": 3978456,
+   "phantom": 1874674,
+   "phantom_frac": 0.4712064177660881
+  },
+  {
+   "z": 2495,
+   "positives": 3972818,
+   "phantom": 1874150,
+   "phantom_frac": 0.47174323112712435
+  },
+  {
+   "z": 4608,
+   "positives": 7919897,
+   "phantom": 2958573,
+   "phantom_frac": 0.37356205516309116
+  },
+  {
+   "z": 4609,
+   "positives": 7895890,
+   "phantom": 2957955,
+   "phantom_frac": 0.37461958056659855
+  },
+  {
+   "z": 4610,
+   "positives": 7862009,
+   "phantom": 2957159,
+   "phantom_frac": 0.3761327416440251
+  },
+  {
+   "z": 4611,
+   "positives": 7873715,
+   "phantom": 2961019,
+   "phantom_frac": 0.3760637767559532
+  },
+  {
+   "z": 4612,
+   "positives": 7865421,
+   "phantom": 2961486,
+   "phantom_frac": 0.37651970568390425
+  },
+  {
+   "z": 4613,
+   "positives": 7841055,
+   "phantom": 2962483,
+   "phantom_frac": 0.37781688816109565
+  },
+  {
+   "z": 4614,
+   "positives": 7820218,
+   "phantom": 2963120,
+   "phantom_frac": 0.3789050381971449
+  },
+  {
+   "z": 4615,
+   "positives": 7900622,
+   "phantom": 2965169,
+   "phantom_frac": 0.3753082985111805
+  },
+  {
+   "z": 4616,
+   "positives": 7921353,
+   "phantom": 2965632,
+   "phantom_frac": 0.37438452749170503
+  },
+  {
+   "z": 4617,
+   "positives": 7895889,
+   "phantom": 2966342,
+   "phantom_frac": 0.3756818263275991
+  },
+  {
+   "z": 4618,
+   "positives": 7861663,
+   "phantom": 2966512,
+   "phantom_frac": 0.37733899303493423
+  },
+  {
+   "z": 4619,
+   "positives": 7872847,
+   "phantom": 2968224,
+   "phantom_frac": 0.3770204095164049
+  },
+  {
+   "z": 4620,
+   "positives": 7862897,
+   "phantom": 2968834,
+   "phantom_frac": 0.37757508460304134
+  },
+  {
+   "z": 4621,
+   "positives": 7839036,
+   "phantom": 2969331,
+   "phantom_frac": 0.3787877744151194
+  },
+  {
+   "z": 4622,
+   "positives": 7816459,
+   "phantom": 2968360,
+   "phantom_frac": 0.3797576370579056
+  },
+  {
+   "z": 4623,
+   "positives": 7893649,
+   "phantom": 2968292,
+   "phantom_frac": 0.37603546851399144
+  },
+  {
+   "z": 4624,
+   "positives": 7905735,
+   "phantom": 2968763,
+   "phantom_frac": 0.37552017617590266
+  },
+  {
+   "z": 4625,
+   "positives": 7880221,
+   "phantom": 2968542,
+   "phantom_frac": 0.3767079628858125
+  },
+  {
+   "z": 4626,
+   "positives": 7844951,
+   "phantom": 2968501,
+   "phantom_frac": 0.3783963723928932
+  },
+  {
+   "z": 4627,
+   "positives": 7852330,
+   "phantom": 2969367,
+   "phantom_frac": 0.37815107108336
+  },
+  {
+   "z": 4628,
+   "positives": 7836871,
+   "phantom": 2969721,
+   "phantom_frac": 0.37894218240928046
+  },
+  {
+   "z": 4629,
+   "positives": 7808918,
+   "phantom": 2969595,
+   "phantom_frac": 0.3802825180133791
+  },
+  {
+   "z": 4630,
+   "positives": 7783761,
+   "phantom": 2968689,
+   "phantom_frac": 0.38139518929216865
+  },
+  {
+   "z": 4631,
+   "positives": 7856234,
+   "phantom": 2969388,
+   "phantom_frac": 0.3779658294292151
+  },
+  {
+   "z": 4632,
+   "positives": 7855465,
+   "phantom": 2969016,
+   "phantom_frac": 0.3779554743099231
+  },
+  {
+   "z": 4633,
+   "positives": 7807207,
+   "phantom": 2966628,
+   "phantom_frac": 0.3799858259170021
+  },
+  {
+   "z": 4634,
+   "positives": 7759860,
+   "phantom": 2964890,
+   "phantom_frac": 0.3820803468103806
+  },
+  {
+   "z": 4635,
+   "positives": 7763387,
+   "phantom": 2964873,
+   "phantom_frac": 0.38190457335181155
+  },
+  {
+   "z": 4636,
+   "positives": 7739911,
+   "phantom": 2963881,
+   "phantom_frac": 0.38293476501215584
+  },
+  {
+   "z": 4637,
+   "positives": 7700310,
+   "phantom": 2962996,
+   "phantom_frac": 0.38478918381208027
+  },
+  {
+   "z": 4638,
+   "positives": 7673391,
+   "phantom": 2962934,
+   "phantom_frac": 0.3861309817263319
+  },
+  {
+   "z": 4639,
+   "positives": 7724924,
+   "phantom": 2963012,
+   "phantom_frac": 0.3835651975346295
+  },
+  {
+   "z": 4640,
+   "positives": 7704307,
+   "phantom": 2962714,
+   "phantom_frac": 0.38455295200463846
+  },
+  {
+   "z": 4641,
+   "positives": 7650235,
+   "phantom": 2961650,
+   "phantom_frac": 0.38713189856259317
+  },
+  {
+   "z": 4642,
+   "positives": 7600299,
+   "phantom": 2961651,
+   "phantom_frac": 0.3896755903945358
+  },
+  {
+   "z": 4643,
+   "positives": 7589570,
+   "phantom": 2961404,
+   "phantom_frac": 0.3901939108539746
+  },
+  {
+   "z": 4644,
+   "positives": 7560218,
+   "phantom": 2961098,
+   "phantom_frac": 0.39166833548979674
+  },
+  {
+   "z": 4645,
+   "positives": 7520819,
+   "phantom": 2960177,
+   "phantom_frac": 0.39359769195349603
+  },
+  {
+   "z": 4646,
+   "positives": 7526706,
+   "phantom": 2960584,
+   "phantom_frac": 0.39334391432321125
+  },
+  {
+   "z": 4647,
+   "positives": 7573002,
+   "phantom": 2960578,
+   "phantom_frac": 0.3909384944042006
+  },
+  {
+   "z": 4648,
+   "positives": 7557975,
+   "phantom": 2960322,
+   "phantom_frac": 0.39168189892133803
+  },
+  {
+   "z": 4649,
+   "positives": 7522485,
+   "phantom": 2959003,
+   "phantom_frac": 0.39335445667223
+  },
+  {
+   "z": 4650,
+   "positives": 7521269,
+   "phantom": 2959579,
+   "phantom_frac": 0.39349463501438386
+  },
+  {
+   "z": 4651,
+   "positives": 7540442,
+   "phantom": 2959819,
+   "phantom_frac": 0.39252592885138565
+  },
+  {
+   "z": 4652,
+   "positives": 7547710,
+   "phantom": 2960028,
+   "phantom_frac": 0.392175640028565
+  },
+  {
+   "z": 4653,
+   "positives": 7552512,
+   "phantom": 2959373,
+   "phantom_frac": 0.39183956278387905
+  },
+  {
+   "z": 4654,
+   "positives": 7642866,
+   "phantom": 2960056,
+   "phantom_frac": 0.38729659789926973
+  },
+  {
+   "z": 4655,
+   "positives": 7713856,
+   "phantom": 2960587,
+   "phantom_frac": 0.3838011754432543
+  },
+  {
+   "z": 4656,
+   "positives": 7738993,
+   "phantom": 2960442,
+   "phantom_frac": 0.38253581570625533
+  },
+  {
+   "z": 4657,
+   "positives": 7742014,
+   "phantom": 2959629,
+   "phantom_frac": 0.38228153552809385
+  },
+  {
+   "z": 4658,
+   "positives": 7783226,
+   "phantom": 2960261,
+   "phantom_frac": 0.38033856398362326
+  },
+  {
+   "z": 4659,
+   "positives": 7809460,
+   "phantom": 2960445,
+   "phantom_frac": 0.379084469348713
+  },
+  {
+   "z": 4660,
+   "positives": 7811733,
+   "phantom": 2960552,
+   "phantom_frac": 0.3789878635124882
+  },
+  {
+   "z": 4661,
+   "positives": 7813989,
+   "phantom": 2960229,
+   "phantom_frac": 0.37883710867778286
+  },
+  {
+   "z": 4662,
+   "positives": 7917823,
+   "phantom": 2961111,
+   "phantom_frac": 0.37398044891885057
+  },
+  {
+   "z": 4663,
+   "positives": 7963403,
+   "phantom": 2961872,
+   "phantom_frac": 0.37193546527784666
+  },
+  {
+   "z": 4664,
+   "positives": 7953424,
+   "phantom": 2962918,
+   "phantom_frac": 0.37253364085706986
+  },
+  {
+   "z": 4665,
+   "positives": 7932028,
+   "phantom": 2961619,
+   "phantom_frac": 0.37337475359391065
+  },
+  {
+   "z": 4666,
+   "positives": 7959749,
+   "phantom": 2962853,
+   "phantom_frac": 0.3722294509537926
+  },
+  {
+   "z": 4667,
+   "positives": 7969212,
+   "phantom": 2963287,
+   "phantom_frac": 0.3718419085851901
+  },
+  {
+   "z": 4668,
+   "positives": 7960227,
+   "phantom": 2963124,
+   "phantom_frac": 0.3722411433744289
+  },
+  {
+   "z": 4669,
+   "positives": 7951367,
+   "phantom": 2962561,
+   "phantom_frac": 0.3725851164963207
+  },
+  {
+   "z": 4670,
+   "positives": 8047696,
+   "phantom": 2963404,
+   "phantom_frac": 0.36823011207182776
+  },
+  {
+   "z": 4671,
+   "positives": 8075533,
+   "phantom": 2963803,
+   "phantom_frac": 0.36701020229872133
+  },
+  {
+   "z": 4672,
+   "positives": 8061995,
+   "phantom": 2963724,
+   "phantom_frac": 0.36761670033285804
+  },
+  {
+   "z": 4673,
+   "positives": 8035555,
+   "phantom": 2963273,
+   "phantom_frac": 0.36877017206652185
+  },
+  {
+   "z": 4674,
+   "positives": 8054398,
+   "phantom": 2964190,
+   "phantom_frac": 0.3680212971844699
+  },
+  {
+   "z": 4675,
+   "positives": 8057447,
+   "phantom": 2964459,
+   "phantom_frac": 0.3679154203558522
+  },
+  {
+   "z": 4676,
+   "positives": 8048998,
+   "phantom": 2964666,
+   "phantom_frac": 0.3683273371418405
+  },
+  {
+   "z": 4677,
+   "positives": 8040209,
+   "phantom": 2964450,
+   "phantom_frac": 0.36870310212085283
+  },
+  {
+   "z": 4678,
+   "positives": 8139239,
+   "phantom": 2965433,
+   "phantom_frac": 0.3643378699163398
+  },
+  {
+   "z": 4679,
+   "positives": 8166093,
+   "phantom": 2965988,
+   "phantom_frac": 0.36320771757069137
+  },
+  {
+   "z": 4680,
+   "positives": 8137810,
+   "phantom": 2966692,
+   "phantom_frac": 0.36455655759964906
+  },
+  {
+   "z": 4681,
+   "positives": 8093898,
+   "phantom": 2965584,
+   "phantom_frac": 0.3663975009321837
+  },
+  {
+   "z": 4682,
+   "positives": 8098711,
+   "phantom": 2966138,
+   "phantom_frac": 0.3662481597380126
+  },
+  {
+   "z": 4683,
+   "positives": 8083199,
+   "phantom": 2966011,
+   "phantom_frac": 0.3669352938112745
+  },
+  {
+   "z": 4684,
+   "positives": 8054142,
+   "phantom": 2965747,
+   "phantom_frac": 0.3682263113811502
+  },
+  {
+   "z": 4685,
+   "positives": 8026717,
+   "phantom": 2964939,
+   "phantom_frac": 0.36938377172136505
+  },
+  {
+   "z": 4686,
+   "positives": 8108615,
+   "phantom": 2965459,
+   "phantom_frac": 0.36571707992055363
+  },
+  {
+   "z": 4687,
+   "positives": 8119700,
+   "phantom": 2965261,
+   "phantom_frac": 0.3651934184760521
+  },
+  {
+   "z": 4688,
+   "positives": 8093838,
+   "phantom": 2964895,
+   "phantom_frac": 0.3663150905664284
+  },
+  {
+   "z": 4689,
+   "positives": 8055420,
+   "phantom": 2963872,
+   "phantom_frac": 0.36793512939114287
+  },
+  {
+   "z": 4690,
+   "positives": 8063708,
+   "phantom": 2964465,
+   "phantom_frac": 0.3676304995170956
+  },
+  {
+   "z": 4691,
+   "positives": 8052040,
+   "phantom": 2964550,
+   "phantom_frac": 0.3681737795639366
+  },
+  {
+   "z": 4692,
+   "positives": 8029743,
+   "phantom": 2964845,
+   "phantom_frac": 0.3692328633681053
+  },
+  {
+   "z": 4693,
+   "positives": 8006938,
+   "phantom": 2964689,
+   "phantom_frac": 0.3702650126677639
+  },
+  {
+   "z": 4694,
+   "positives": 8096037,
+   "phantom": 2965659,
+   "phantom_frac": 0.3663099612810564
+  },
+  {
+   "z": 4695,
+   "positives": 8116003,
+   "phantom": 2966459,
+   "phantom_frac": 0.3655073809115152
+  },
+  {
+   "z": 4696,
+   "positives": 7755179,
+   "phantom": 2636031,
+   "phantom_frac": 0.33990588740762784
+  },
+  {
+   "z": 4697,
+   "positives": 7989762,
+   "phantom": 2905672,
+   "phantom_frac": 0.36367441232917824
+  },
+  {
+   "z": 4698,
+   "positives": 7989963,
+   "phantom": 2906099,
+   "phantom_frac": 0.36371870558098957
+  },
+  {
+   "z": 4699,
+   "positives": 7964234,
+   "phantom": 2905476,
+   "phantom_frac": 0.3648154988916699
+  },
+  {
+   "z": 4700,
+   "positives": 7932827,
+   "phantom": 2904557,
+   "phantom_frac": 0.36614399885438065
+  },
+  {
+   "z": 4701,
+   "positives": 7900744,
+   "phantom": 2902853,
+   "phantom_frac": 0.36741514470029657
+  },
+  {
+   "z": 4702,
+   "positives": 7982254,
+   "phantom": 2902976,
+   "phantom_frac": 0.36367873034358467
+  },
+  {
+   "z": 4703,
+   "positives": 7994352,
+   "phantom": 2902652,
+   "phantom_frac": 0.3630878400150506
+  },
+  {
+   "z": 4704,
+   "positives": 7964932,
+   "phantom": 2902046,
+   "phantom_frac": 0.3643528908972481
+  },
+  {
+   "z": 4705,
+   "positives": 7918666,
+   "phantom": 2900602,
+   "phantom_frac": 0.3662993236487055
+  },
+  {
+   "z": 4706,
+   "positives": 7919388,
+   "phantom": 2901063,
+   "phantom_frac": 0.36632414019871234
+  },
+  {
+   "z": 4707,
+   "positives": 7899703,
+   "phantom": 2903435,
+   "phantom_frac": 0.36753723526061677
+  },
+  {
+   "z": 4708,
+   "positives": 7874719,
+   "phantom": 2906684,
+   "phantom_frac": 0.36911590115152043
+  },
+  {
+   "z": 4709,
+   "positives": 7848552,
+   "phantom": 2908773,
+   "phantom_frac": 0.37061269390837953
+  },
+  {
+   "z": 4710,
+   "positives": 7931177,
+   "phantom": 2910111,
+   "phantom_frac": 0.3669204457295557
+  },
+  {
+   "z": 4711,
+   "positives": 7942551,
+   "phantom": 2910938,
+   "phantom_frac": 0.36649912603645857
+  },
+  {
+   "z": 4712,
+   "positives": 7913003,
+   "phantom": 2912311,
+   "phantom_frac": 0.36804118487001714
+  },
+  {
+   "z": 4713,
+   "positives": 7866212,
+   "phantom": 2911275,
+   "phantom_frac": 0.37009872095997415
+  },
+  {
+   "z": 4714,
+   "positives": 7865920,
+   "phantom": 2911543,
+   "phantom_frac": 0.3701465308571661
+  },
+  {
+   "z": 4715,
+   "positives": 7839383,
+   "phantom": 2910082,
+   "phantom_frac": 0.37121314266696753
+  },
+  {
+   "z": 4716,
+   "positives": 7809306,
+   "phantom": 2907948,
+   "phantom_frac": 0.372369580600376
+  },
+  {
+   "z": 4717,
+   "positives": 7779620,
+   "phantom": 2906130,
+   "phantom_frac": 0.3735568061164941
+  },
+  {
+   "z": 4718,
+   "positives": 7862115,
+   "phantom": 2906232,
+   "phantom_frac": 0.36965015139056095
+  },
+  {
+   "z": 4719,
+   "positives": 7867991,
+   "phantom": 2905728,
+   "phantom_frac": 0.369310030985038
+  },
+  {
+   "z": 4720,
+   "positives": 7837892,
+   "phantom": 2905006,
+   "phantom_frac": 0.3706361353282235
+  },
+  {
+   "z": 4721,
+   "positives": 7789637,
+   "phantom": 2902892,
+   "phantom_frac": 0.372660754281618
+  },
+  {
+   "z": 4722,
+   "positives": 7785075,
+   "phantom": 2902851,
+   "phantom_frac": 0.3728738644136376
+  },
+  {
+   "z": 4723,
+   "positives": 7756675,
+   "phantom": 2901771,
+   "phantom_frac": 0.37409985593053724
+  },
+  {
+   "z": 4724,
+   "positives": 7717250,
+   "phantom": 2900395,
+   "phantom_frac": 0.3758327124299459
+  },
+  {
+   "z": 4725,
+   "positives": 7672330,
+   "phantom": 2898102,
+   "phantom_frac": 0.37773427368218
+  },
+  {
+   "z": 4726,
+   "positives": 7736816,
+   "phantom": 2897444,
+   "phantom_frac": 0.3745008282476926
+  },
+  {
+   "z": 4727,
+   "positives": 7731410,
+   "phantom": 2897579,
+   "phantom_frac": 0.3747801500631838
+  },
+  {
+   "z": 4728,
+   "positives": 7680632,
+   "phantom": 2896144,
+   "phantom_frac": 0.3770710535278868
+  },
+  {
+   "z": 4729,
+   "positives": 7638582,
+   "phantom": 2894885,
+   "phantom_frac": 0.3789819890655098
+  },
+  {
+   "z": 4730,
+   "positives": 7632638,
+   "phantom": 2894599,
+   "phantom_frac": 0.3792396547563241
+  },
+  {
+   "z": 4731,
+   "positives": 7599339,
+   "phantom": 2894160,
+   "phantom_frac": 0.3808436496911113
+  },
+  {
+   "z": 4732,
+   "positives": 7554546,
+   "phantom": 2893773,
+   "phantom_frac": 0.3830505499602491
+  },
+  {
+   "z": 4733,
+   "positives": 7509640,
+   "phantom": 2893743,
+   "phantom_frac": 0.3853371133636233
+  },
+  {
+   "z": 4734,
+   "positives": 7570994,
+   "phantom": 2893655,
+   "phantom_frac": 0.3822027860542486
+  },
+  {
+   "z": 4735,
+   "positives": 7561616,
+   "phantom": 2893840,
+   "phantom_frac": 0.38270126385682635
+  },
+  {
+   "z": 4736,
+   "positives": 7511966,
+   "phantom": 2893879,
+   "phantom_frac": 0.3852359022924225
+  },
+  {
+   "z": 4737,
+   "positives": 7454476,
+   "phantom": 2893731,
+   "phantom_frac": 0.3881870435963574
+  },
+  {
+   "z": 4738,
+   "positives": 7441725,
+   "phantom": 2893753,
+   "phantom_frac": 0.3888551377536794
+  },
+  {
+   "z": 4739,
+   "positives": 7411428,
+   "phantom": 2894146,
+   "phantom_frac": 0.3904977556282001
+  },
+  {
+   "z": 4740,
+   "positives": 7367915,
+   "phantom": 2894398,
+   "phantom_frac": 0.3928381367048887
+  },
+  {
+   "z": 4741,
+   "positives": 7330004,
+   "phantom": 2894585,
+   "phantom_frac": 0.39489541888380963
+  },
+  {
+   "z": 4742,
+   "positives": 7403829,
+   "phantom": 2895460,
+   "phantom_frac": 0.3910760229605519
+  },
+  {
+   "z": 4743,
+   "positives": 7408929,
+   "phantom": 2896518,
+   "phantom_frac": 0.3909496230831744
+  },
+  {
+   "z": 4744,
+   "positives": 7374789,
+   "phantom": 2895936,
+   "phantom_frac": 0.3926805227919063
+  },
+  {
+   "z": 4745,
+   "positives": 7353682,
+   "phantom": 2895039,
+   "phantom_frac": 0.3936856393844607
+  },
+  {
+   "z": 4746,
+   "positives": 7385037,
+   "phantom": 2895200,
+   "phantom_frac": 0.3920359505307827
+  },
+  {
+   "z": 4747,
+   "positives": 7401315,
+   "phantom": 2895228,
+   "phantom_frac": 0.39117751372560144
+  },
+  {
+   "z": 4748,
+   "positives": 7407460,
+   "phantom": 2894995,
+   "phantom_frac": 0.3908215501669938
+  },
+  {
+   "z": 4749,
+   "positives": 7417486,
+   "phantom": 2894527,
+   "phantom_frac": 0.3902301938958833
+  },
+  {
+   "z": 4750,
+   "positives": 7530440,
+   "phantom": 2894586,
+   "phantom_frac": 0.3843847105879603
+  },
+  {
+   "z": 4751,
+   "positives": 7573855,
+   "phantom": 2894334,
+   "phantom_frac": 0.3821480606639551
+  },
+  {
+   "z": 4752,
+   "positives": 7578641,
+   "phantom": 2894349,
+   "phantom_frac": 0.38190870896246437
+  },
+  {
+   "z": 4753,
+   "positives": 7576727,
+   "phantom": 2894181,
+   "phantom_frac": 0.3819830119258619
+  },
+  {
+   "z": 4754,
+   "positives": 7616375,
+   "phantom": 2894163,
+   "phantom_frac": 0.37999218788465644
+  },
+  {
+   "z": 4755,
+   "positives": 7635363,
+   "phantom": 2894242,
+   "phantom_frac": 0.37905755102933547
+  },
+  {
+   "z": 4756,
+   "positives": 7643405,
+   "phantom": 2894274,
+   "phantom_frac": 0.37866291266784896
+  },
+  {
+   "z": 4757,
+   "positives": 7648321,
+   "phantom": 2894485,
+   "phantom_frac": 0.37844711277154813
+  },
+  {
+   "z": 4758,
+   "positives": 7748892,
+   "phantom": 2894669,
+   "phantom_frac": 0.3735590843181193
+  },
+  {
+   "z": 4759,
+   "positives": 7776667,
+   "phantom": 2895307,
+   "phantom_frac": 0.37230692789083036
+  },
+  {
+   "z": 4760,
+   "positives": 7767599,
+   "phantom": 2896490,
+   "phantom_frac": 0.37289386334181257
+  },
+  {
+   "z": 4761,
+   "positives": 7749078,
+   "phantom": 2895888,
+   "phantom_frac": 0.3737074268706548
+  },
+  {
+   "z": 4762,
+   "positives": 7772843,
+   "phantom": 2895620,
+   "phantom_frac": 0.3725303598696127
+  },
+  {
+   "z": 4763,
+   "positives": 7772596,
+   "phantom": 2895368,
+   "phantom_frac": 0.37250977665634494
+  },
+  {
+   "z": 4764,
+   "positives": 7767478,
+   "phantom": 2895100,
+   "phantom_frac": 0.3727207209341307
+  },
+  {
+   "z": 4765,
+   "positives": 7759747,
+   "phantom": 2895077,
+   "phantom_frac": 0.3730890968481318
+  },
+  {
+   "z": 4766,
+   "positives": 7849850,
+   "phantom": 2894985,
+   "phantom_frac": 0.36879494512634
+  },
+  {
+   "z": 4767,
+   "positives": 7873867,
+   "phantom": 2895084,
+   "phantom_frac": 0.36768261389225904
+  },
+  {
+   "z": 4768,
+   "positives": 7867765,
+   "phantom": 2895141,
+   "phantom_frac": 0.36797502213144395
+  },
+  {
+   "z": 4769,
+   "positives": 7844185,
+   "phantom": 2894932,
+   "phantom_frac": 0.3690545289281168
+  },
+  {
+   "z": 4770,
+   "positives": 7854099,
+   "phantom": 2894870,
+   "phantom_frac": 0.36858078819734763
+  },
+  {
+   "z": 4771,
+   "positives": 7844560,
+   "phantom": 2894866,
+   "phantom_frac": 0.3690284732349552
+  },
+  {
+   "z": 4772,
+   "positives": 7831653,
+   "phantom": 2895042,
+   "phantom_frac": 0.3696591256022196
+  },
+  {
+   "z": 4773,
+   "positives": 7817814,
+   "phantom": 2895143,
+   "phantom_frac": 0.3703264109378913
+  },
+  {
+   "z": 4774,
+   "positives": 7902443,
+   "phantom": 2895478,
+   "phantom_frac": 0.36640289591459246
+  },
+  {
+   "z": 4775,
+   "positives": 7917446,
+   "phantom": 2896391,
+   "phantom_frac": 0.36582390331427583
+  },
+  {
+   "z": 4776,
+   "positives": 7893222,
+   "phantom": 2896217,
+   "phantom_frac": 0.36692455881767927
+  },
+  {
+   "z": 4777,
+   "positives": 7855349,
+   "phantom": 2895686,
+   "phantom_frac": 0.3686260152158739
+  },
+  {
+   "z": 4778,
+   "positives": 7860070,
+   "phantom": 2895642,
+   "phantom_frac": 0.36839900916912954
+  },
+  {
+   "z": 4779,
+   "positives": 7843693,
+   "phantom": 2895535,
+   "phantom_frac": 0.3691545551311098
+  },
+  {
+   "z": 4780,
+   "positives": 7828554,
+   "phantom": 2895464,
+   "phantom_frac": 0.3698593635555174
+  },
+  {
+   "z": 4781,
+   "positives": 7812444,
+   "phantom": 2895405,
+   "phantom_frac": 0.37061449656471135
+  },
+  {
+   "z": 4782,
+   "positives": 7896087,
+   "phantom": 2895376,
+   "phantom_frac": 0.36668491621229604
+  },
+  {
+   "z": 4783,
+   "positives": 7912206,
+   "phantom": 2895347,
+   "phantom_frac": 0.3659342287094143
+  },
+  {
+   "z": 4784,
+   "positives": 7895236,
+   "phantom": 2895465,
+   "phantom_frac": 0.3667357125233495
+  },
+  {
+   "z": 4785,
+   "positives": 7861093,
+   "phantom": 2895359,
+   "phantom_frac": 0.368315067637541
+  },
+  {
+   "z": 4786,
+   "positives": 7868333,
+   "phantom": 2895423,
+   "phantom_frac": 0.367984298580144
+  },
+  {
+   "z": 4787,
+   "positives": 7856994,
+   "phantom": 2895625,
+   "phantom_frac": 0.3685410730872392
+  },
+  {
+   "z": 4788,
+   "positives": 7844248,
+   "phantom": 2895791,
+   "phantom_frac": 0.3691610719089963
+  },
+  {
+   "z": 4789,
+   "positives": 7826174,
+   "phantom": 2895981,
+   "phantom_frac": 0.37003790102290085
+  },
+  {
+   "z": 4790,
+   "positives": 7909854,
+   "phantom": 2896118,
+   "phantom_frac": 0.3661405128337388
+  },
+  {
+   "z": 4791,
+   "positives": 7919960,
+   "phantom": 2896538,
+   "phantom_frac": 0.3657263420522326
+  },
+  {
+   "z": 4792,
+   "positives": 7606663,
+   "phantom": 2614361,
+   "phantom_frac": 0.3436935486691076
+  },
+  {
+   "z": 4793,
+   "positives": 7561430,
+   "phantom": 2611826,
+   "phantom_frac": 0.34541429332811385
+  },
+  {
+   "z": 4794,
+   "positives": 7563213,
+   "phantom": 2611378,
+   "phantom_frac": 0.34527362907801223
+  },
+  {
+   "z": 4795,
+   "positives": 7543137,
+   "phantom": 2610762,
+   "phantom_frac": 0.346110908498679
+  },
+  {
+   "z": 4796,
+   "positives": 7518994,
+   "phantom": 2609400,
+   "phantom_frac": 0.34704110682891887
+  },
+  {
+   "z": 4797,
+   "positives": 7496013,
+   "phantom": 2608325,
+   "phantom_frac": 0.3479616430761259
+  },
+  {
+   "z": 4798,
+   "positives": 7575449,
+   "phantom": 2608037,
+   "phantom_frac": 0.34427490700551217
+  },
+  {
+   "z": 4799,
+   "positives": 7585790,
+   "phantom": 2607814,
+   "phantom_frac": 0.343776192064373
+  },
+  {
+   "z": 6912,
+   "positives": 9229446,
+   "phantom": 3344812,
+   "phantom_frac": 0.3624065843171952
+  },
+  {
+   "z": 6913,
+   "positives": 9189565,
+   "phantom": 3344785,
+   "phantom_frac": 0.363976423258337
+  },
+  {
+   "z": 6914,
+   "positives": 9159691,
+   "phantom": 3344692,
+   "phantom_frac": 0.3651533659814507
+  },
+  {
+   "z": 6915,
+   "positives": 9266257,
+   "phantom": 3344891,
+   "phantom_frac": 0.3609754186614941
+  },
+  {
+   "z": 6916,
+   "positives": 9295021,
+   "phantom": 3344964,
+   "phantom_frac": 0.35986621224416815
+  },
+  {
+   "z": 6917,
+   "positives": 9242718,
+   "phantom": 3344980,
+   "phantom_frac": 0.3619043662264715
+  },
+  {
+   "z": 6918,
+   "positives": 9178557,
+   "phantom": 3345138,
+   "phantom_frac": 0.3644514055967621
+  },
+  {
+   "z": 6919,
+   "positives": 9182190,
+   "phantom": 3346570,
+   "phantom_frac": 0.36446316183829786
+  },
+  {
+   "z": 6920,
+   "positives": 9166653,
+   "phantom": 3345362,
+   "phantom_frac": 0.36494912592415135
+  },
+  {
+   "z": 6921,
+   "positives": 9124955,
+   "phantom": 3345184,
+   "phantom_frac": 0.3665973147264836
+  },
+  {
+   "z": 6922,
+   "positives": 9091595,
+   "phantom": 3345050,
+   "phantom_frac": 0.36792773985202815
+  },
+  {
+   "z": 6923,
+   "positives": 9186353,
+   "phantom": 3345151,
+   "phantom_frac": 0.3641435289934972
+  },
+  {
+   "z": 6924,
+   "positives": 9209347,
+   "phantom": 3345169,
+   "phantom_frac": 0.36323628591690593
+  },
+  {
+   "z": 6925,
+   "positives": 9168640,
+   "phantom": 3345076,
+   "phantom_frac": 0.36483884196565686
+  },
+  {
+   "z": 6926,
+   "positives": 9109299,
+   "phantom": 3344980,
+   "phantom_frac": 0.36720498470848306
+  },
+  {
+   "z": 6927,
+   "positives": 9110426,
+   "phantom": 3344791,
+   "phantom_frac": 0.36713881436499235
+  },
+  {
+   "z": 6928,
+   "positives": 9091516,
+   "phantom": 3344697,
+   "phantom_frac": 0.36789210952276824
+  },
+  {
+   "z": 6929,
+   "positives": 9042816,
+   "phantom": 3344585,
+   "phantom_frac": 0.3698610034750237
+  },
+  {
+   "z": 6930,
+   "positives": 9004721,
+   "phantom": 3344474,
+   "phantom_frac": 0.37141339526232964
+  },
+  {
+   "z": 6931,
+   "positives": 9096533,
+   "phantom": 3344420,
+   "phantom_frac": 0.36765875526423086
+  },
+  {
+   "z": 6932,
+   "positives": 9114707,
+   "phantom": 3344350,
+   "phantom_frac": 0.36691799308524126
+  },
+  {
+   "z": 6933,
+   "positives": 9053074,
+   "phantom": 3344253,
+   "phantom_frac": 0.36940524290423343
+  },
+  {
+   "z": 6934,
+   "positives": 8976852,
+   "phantom": 3344139,
+   "phantom_frac": 0.3725291449608393
+  },
+  {
+   "z": 6935,
+   "positives": 8967625,
+   "phantom": 3344159,
+   "phantom_frac": 0.3729146791932089
+  },
+  {
+   "z": 6936,
+   "positives": 8934443,
+   "phantom": 3344047,
+   "phantom_frac": 0.37428712679682435
+  },
+  {
+   "z": 6937,
+   "positives": 8879106,
+   "phantom": 3343688,
+   "phantom_frac": 0.37657935382233304
+  },
+  {
+   "z": 6938,
+   "positives": 8828010,
+   "phantom": 3343479,
+   "phantom_frac": 0.3787352982155661
+  },
+  {
+   "z": 6939,
+   "positives": 8903090,
+   "phantom": 3343191,
+   "phantom_frac": 0.3755090648303005
+  },
+  {
+   "z": 6940,
+   "positives": 8904125,
+   "phantom": 3343083,
+   "phantom_frac": 0.37545328710008
+  },
+  {
+   "z": 6941,
+   "positives": 8843854,
+   "phantom": 3342967,
+   "phantom_frac": 0.37799889052894814
+  },
+  {
+   "z": 6942,
+   "positives": 8770198,
+   "phantom": 3342680,
+   "phantom_frac": 0.38114076785951695
+  },
+  {
+   "z": 6943,
+   "positives": 8761087,
+   "phantom": 3342537,
+   "phantom_frac": 0.3815208090046361
+  },
+  {
+   "z": 6944,
+   "positives": 8731460,
+   "phantom": 3342541,
+   "phantom_frac": 0.3828158177441115
+  },
+  {
+   "z": 6945,
+   "positives": 8673097,
+   "phantom": 3342502,
+   "phantom_frac": 0.3853873650900019
+  },
+  {
+   "z": 6946,
+   "positives": 8627856,
+   "phantom": 3342423,
+   "phantom_frac": 0.38739902474032945
+  },
+  {
+   "z": 6947,
+   "positives": 8725440,
+   "phantom": 3342379,
+   "phantom_frac": 0.38306136997102724
+  },
+  {
+   "z": 6948,
+   "positives": 8749059,
+   "phantom": 3342385,
+   "phantom_frac": 0.3820279415191965
+  },
+  {
+   "z": 6949,
+   "positives": 8707910,
+   "phantom": 3342460,
+   "phantom_frac": 0.3838418173821273
+  },
+  {
+   "z": 6950,
+   "positives": 8670515,
+   "phantom": 3342581,
+   "phantom_frac": 0.3855112412584489
+  },
+  {
+   "z": 6951,
+   "positives": 8714165,
+   "phantom": 3342981,
+   "phantom_frac": 0.3836260846564186
+  },
+  {
+   "z": 6952,
+   "positives": 8740826,
+   "phantom": 3342622,
+   "phantom_frac": 0.3824148884785031
+  },
+  {
+   "z": 6953,
+   "positives": 8742340,
+   "phantom": 3342313,
+   "phantom_frac": 0.3823133165719933
+  },
+  {
+   "z": 6954,
+   "positives": 8756525,
+   "phantom": 3342164,
+   "phantom_frac": 0.38167697802495854
+  },
+  {
+   "z": 6955,
+   "positives": 8901266,
+   "phantom": 3342237,
+   "phantom_frac": 0.37547883638125185
+  },
+  {
+   "z": 6956,
+   "positives": 8972796,
+   "phantom": 3342292,
+   "phantom_frac": 0.37249169601092014
+  },
+  {
+   "z": 6957,
+   "positives": 8991439,
+   "phantom": 3342322,
+   "phantom_frac": 0.37172270200576346
+  },
+  {
+   "z": 6958,
+   "positives": 8996296,
+   "phantom": 3342321,
+   "phantom_frac": 0.37152190190273865
+  },
+  {
+   "z": 6959,
+   "positives": 9054261,
+   "phantom": 3342423,
+   "phantom_frac": 0.3691546996491486
+  },
+  {
+   "z": 6960,
+   "positives": 9083124,
+   "phantom": 3342388,
+   "phantom_frac": 0.3679778014700669
+  },
+  {
+   "z": 6961,
+   "positives": 9087685,
+   "phantom": 3342475,
+   "phantom_frac": 0.36780269122444276
+  },
+  {
+   "z": 6962,
+   "positives": 9097606,
+   "phantom": 3342596,
+   "phantom_frac": 0.3674149001396631
+  },
+  {
+   "z": 6963,
+   "positives": 9232503,
+   "phantom": 3342608,
+   "phantom_frac": 0.36204786502641806
+  },
+  {
+   "z": 6964,
+   "positives": 9289160,
+   "phantom": 3342802,
+   "phantom_frac": 0.35986052560188436
+  },
+  {
+   "z": 6965,
+   "positives": 9281625,
+   "phantom": 3343091,
+   "phantom_frac": 0.36018380402138633
+  },
+  {
+   "z": 6966,
+   "positives": 9257622,
+   "phantom": 3343351,
+   "phantom_frac": 0.3611457672391463
+  },
+  {
+   "z": 6967,
+   "positives": 9292339,
+   "phantom": 3343635,
+   "phantom_frac": 0.35982705753632105
+  },
+  {
+   "z": 6968,
+   "positives": 9295262,
+   "phantom": 3343921,
+   "phantom_frac": 0.3597446742222005
+  },
+  {
+   "z": 6969,
+   "positives": 9282523,
+   "phantom": 3343717,
+   "phantom_frac": 0.3602163980633283
+  },
+  {
+   "z": 6970,
+   "positives": 9273560,
+   "phantom": 3343453,
+   "phantom_frac": 0.36053608323017267
+  },
+  {
+   "z": 6971,
+   "positives": 9384007,
+   "phantom": 3343296,
+   "phantom_frac": 0.356275949069518
+  },
+  {
+   "z": 6972,
+   "positives": 9419153,
+   "phantom": 3343878,
+   "phantom_frac": 0.35500835372352485
+  },
+  {
+   "z": 6973,
+   "positives": 9405047,
+   "phantom": 3344895,
+   "phantom_frac": 0.35564894040401923
+  },
+  {
+   "z": 6974,
+   "positives": 9376462,
+   "phantom": 3345183,
+   "phantom_frac": 0.35676388386152474
+  },
+  {
+   "z": 6975,
+   "positives": 9396978,
+   "phantom": 3347343,
+   "phantom_frac": 0.35621483842997187
+  },
+  {
+   "z": 6976,
+   "positives": 9391469,
+   "phantom": 3349014,
+   "phantom_frac": 0.3566017201355826
+  },
+  {
+   "z": 6977,
+   "positives": 9368683,
+   "phantom": 3349999,
+   "phantom_frac": 0.3575741649066363
+  },
+  {
+   "z": 6978,
+   "positives": 9344425,
+   "phantom": 3350536,
+   "phantom_frac": 0.35855988998788046
+  },
+  {
+   "z": 6979,
+   "positives": 9440557,
+   "phantom": 3352008,
+   "phantom_frac": 0.3550646429018966
+  },
+  {
+   "z": 6980,
+   "positives": 9460069,
+   "phantom": 3352925,
+   "phantom_frac": 0.35442923302145046
+  },
+  {
+   "z": 6981,
+   "positives": 9420017,
+   "phantom": 3353073,
+   "phantom_frac": 0.35595190539465055
+  },
+  {
+   "z": 6982,
+   "positives": 9357931,
+   "phantom": 3352362,
+   "phantom_frac": 0.35823752066562575
+  },
+  {
+   "z": 6983,
+   "positives": 9352996,
+   "phantom": 3353736,
+   "phantom_frac": 0.3585734453430751
+  },
+  {
+   "z": 6984,
+   "positives": 9325076,
+   "phantom": 3355394,
+   "phantom_frac": 0.35982484217822996
+  },
+  {
+   "z": 6985,
+   "positives": 9287739,
+   "phantom": 3355289,
+   "phantom_frac": 0.3612600440214782
+  },
+  {
+   "z": 6986,
+   "positives": 9252630,
+   "phantom": 3355058,
+   "phantom_frac": 0.36260587530248156
+  },
+  {
+   "z": 6987,
+   "positives": 9339728,
+   "phantom": 3355762,
+   "phantom_frac": 0.3592997569094089
+  },
+  {
+   "z": 6988,
+   "positives": 9353955,
+   "phantom": 3356386,
+   "phantom_frac": 0.35881998577072477
+  },
+  {
+   "z": 6989,
+   "positives": 9319394,
+   "phantom": 3356639,
+   "phantom_frac": 0.3601778184289665
+  },
+  {
+   "z": 6990,
+   "positives": 9265485,
+   "phantom": 3356068,
+   "phantom_frac": 0.3622118000298959
+  },
+  {
+   "z": 6991,
+   "positives": 9265413,
+   "phantom": 3356872,
+   "phantom_frac": 0.36230138904763337
+  },
+  {
+   "z": 6992,
+   "positives": 9242342,
+   "phantom": 3357525,
+   "phantom_frac": 0.363276429285997
+  },
+  {
+   "z": 6993,
+   "positives": 9211522,
+   "phantom": 3358186,
+   "phantom_frac": 0.3645636410573627
+  },
+  {
+   "z": 6994,
+   "positives": 9182636,
+   "phantom": 3358574,
+   "phantom_frac": 0.365752709788344
+  },
+  {
+   "z": 6995,
+   "positives": 9271152,
+   "phantom": 3359423,
+   "phantom_frac": 0.36235227294299566
+  },
+  {
+   "z": 6996,
+   "positives": 8980564,
+   "phantom": 3058392,
+   "phantom_frac": 0.34055678462956224
+  },
+  {
+   "z": 6997,
+   "positives": 9223422,
+   "phantom": 3342270,
+   "phantom_frac": 0.3623676765521517
+  },
+  {
+   "z": 6998,
+   "positives": 9158530,
+   "phantom": 3341107,
+   "phantom_frac": 0.36480821703919736
+  },
+  {
+   "z": 6999,
+   "positives": 9146330,
+   "phantom": 3341079,
+   "phantom_frac": 0.3652917618323415
+  },
+  {
+   "z": 7000,
+   "positives": 9111918,
+   "phantom": 3341469,
+   "phantom_frac": 0.36671412100064993
+  },
+  {
+   "z": 7001,
+   "positives": 9078069,
+   "phantom": 3340780,
+   "phantom_frac": 0.36800557475383805
+  },
+  {
+   "z": 7002,
+   "positives": 9042254,
+   "phantom": 3340143,
+   "phantom_frac": 0.3693927421193875
+  },
+  {
+   "z": 7003,
+   "positives": 9120928,
+   "phantom": 3340161,
+   "phantom_frac": 0.3662084603671907
+  },
+  {
+   "z": 7004,
+   "positives": 9123684,
+   "phantom": 3339985,
+   "phantom_frac": 0.3660785489721038
+  },
+  {
+   "z": 7005,
+   "positives": 9083979,
+   "phantom": 3339603,
+   "phantom_frac": 0.36763658304361996
+  },
+  {
+   "z": 7006,
+   "positives": 9025799,
+   "phantom": 3338620,
+   "phantom_frac": 0.369897446198392
+  },
+  {
+   "z": 7007,
+   "positives": 9016770,
+   "phantom": 3338616,
+   "phantom_frac": 0.3702674017414218
+  },
+  {
+   "z": 7008,
+   "positives": 8986850,
+   "phantom": 3338366,
+   "phantom_frac": 0.37147231788669
+  },
+  {
+   "z": 7009,
+   "positives": 8955269,
+   "phantom": 3338282,
+   "phantom_frac": 0.37277294517897785
+  },
+  {
+   "z": 7010,
+   "positives": 8917512,
+   "phantom": 3337901,
+   "phantom_frac": 0.3743085515332079
+  },
+  {
+   "z": 7011,
+   "positives": 8993786,
+   "phantom": 3338225,
+   "phantom_frac": 0.3711701612646776
+  },
+  {
+   "z": 7012,
+   "positives": 9000415,
+   "phantom": 3338288,
+   "phantom_frac": 0.37090378610319635
+  },
+  {
+   "z": 7013,
+   "positives": 8957454,
+   "phantom": 3338123,
+   "phantom_frac": 0.37266426375173123
+  },
+  {
+   "z": 7014,
+   "positives": 8898276,
+   "phantom": 3337253,
+   "phantom_frac": 0.3750448963372231
+  },
+  {
+   "z": 7015,
+   "positives": 8886834,
+   "phantom": 3337613,
+   "phantom_frac": 0.37556828449816887
+  },
+  {
+   "z": 7016,
+   "positives": 8850594,
+   "phantom": 3337926,
+   "phantom_frac": 0.37714146643716795
+  },
+  {
+   "z": 7017,
+   "positives": 8816025,
+   "phantom": 3338054,
+   "phantom_frac": 0.37863481557731515
+  },
+  {
+   "z": 7018,
+   "positives": 8772570,
+   "phantom": 3337829,
+   "phantom_frac": 0.3804847382238044
+  },
+  {
+   "z": 7019,
+   "positives": 8831473,
+   "phantom": 3338168,
+   "phantom_frac": 0.37798541647582456
+  },
+  {
+   "z": 7020,
+   "positives": 8822986,
+   "phantom": 3338208,
+   "phantom_frac": 0.3783535415334446
+  },
+  {
+   "z": 7021,
+   "positives": 8777039,
+   "phantom": 3338273,
+   "phantom_frac": 0.38034159356019726
+  },
+  {
+   "z": 7022,
+   "positives": 8714769,
+   "phantom": 3337730,
+   "phantom_frac": 0.3829969560868452
+  },
+  {
+   "z": 7023,
+   "positives": 8698062,
+   "phantom": 3338278,
+   "phantom_frac": 0.3837956087229546
+  },
+  {
+   "z": 7024,
+   "positives": 8661485,
+   "phantom": 3338393,
+   "phantom_frac": 0.3854296347566266
+  },
+  {
+   "z": 7025,
+   "positives": 8620544,
+   "phantom": 3338815,
+   "phantom_frac": 0.3873090839742828
+  },
+  {
+   "z": 7026,
+   "positives": 8577101,
+   "phantom": 3338678,
+   "phantom_frac": 0.3892548309737754
+  },
+  {
+   "z": 7027,
+   "positives": 8632357,
+   "phantom": 3338870,
+   "phantom_frac": 0.3867854399441543
+  },
+  {
+   "z": 7028,
+   "positives": 8612237,
+   "phantom": 3338486,
+   "phantom_frac": 0.3876444644985966
+  },
+  {
+   "z": 7029,
+   "positives": 8546066,
+   "phantom": 3337963,
+   "phantom_frac": 0.3905847439043883
+  },
+  {
+   "z": 7030,
+   "positives": 8463077,
+   "phantom": 3336930,
+   "phantom_frac": 0.3942927613679989
+  },
+  {
+   "z": 7031,
+   "positives": 8431509,
+   "phantom": 3337254,
+   "phantom_frac": 0.3958074408744627
+  },
+  {
+   "z": 7032,
+   "positives": 8377815,
+   "phantom": 3342281,
+   "phantom_frac": 0.3989442354599618
+  },
+  {
+   "z": 7033,
+   "positives": 8322930,
+   "phantom": 3338959,
+   "phantom_frac": 0.40117590800355163
+  },
+  {
+   "z": 7034,
+   "positives": 8284188,
+   "phantom": 3338243,
+   "phantom_frac": 0.40296562559903276
+  },
+  {
+   "z": 7035,
+   "positives": 8328976,
+   "phantom": 3338949,
+   "phantom_frac": 0.4008834939613225
+  },
+  {
+   "z": 7036,
+   "positives": 8304632,
+   "phantom": 3338968,
+   "phantom_frac": 0.40206092214561706
+  },
+  {
+   "z": 7037,
+   "positives": 8252403,
+   "phantom": 3337770,
+   "phantom_frac": 0.40446037354210645
+  },
+  {
+   "z": 7038,
+   "positives": 8194892,
+   "phantom": 3336644,
+   "phantom_frac": 0.4071614366607882
+  },
+  {
+   "z": 7039,
+   "positives": 8172501,
+   "phantom": 3336526,
+   "phantom_frac": 0.40826253799173595
+  },
+  {
+   "z": 7040,
+   "positives": 8130079,
+   "phantom": 3336592,
+   "phantom_frac": 0.4104009321434638
+  },
+  {
+   "z": 7041,
+   "positives": 8086840,
+   "phantom": 3336669,
+   "phantom_frac": 0.4126047998971168
+  },
+  {
+   "z": 7042,
+   "positives": 8084461,
+   "phantom": 3336579,
+   "phantom_frac": 0.41271508391221134
+  },
+  {
+   "z": 7043,
+   "positives": 8131436,
+   "phantom": 3337161,
+   "phantom_frac": 0.4104024184658159
+  },
+  {
+   "z": 7044,
+   "positives": 8125059,
+   "phantom": 3337357,
+   "phantom_frac": 0.4107486481021245
+  },
+  {
+   "z": 7045,
+   "positives": 8100488,
+   "phantom": 3337132,
+   "phantom_frac": 0.4119667852109651
+  },
+  {
+   "z": 7046,
+   "positives": 8100987,
+   "phantom": 3336566,
+   "phantom_frac": 0.4118715410850554
+  },
+  {
+   "z": 7047,
+   "positives": 8118680,
+   "phantom": 3337141,
+   "phantom_frac": 0.4110447757517232
+  },
+  {
+   "z": 7048,
+   "positives": 8132412,
+   "phantom": 3336644,
+   "phantom_frac": 0.41028959182097513
+  },
+  {
+   "z": 7049,
+   "positives": 8143493,
+   "phantom": 3336466,
+   "phantom_frac": 0.4097094453203312
+  },
+  {
+   "z": 7050,
+   "positives": 8232009,
+   "phantom": 3336274,
+   "phantom_frac": 0.4052806550624519
+  },
+  {
+   "z": 7051,
+   "positives": 8304662,
+   "phantom": 3336370,
+   "phantom_frac": 0.4017466333970004
+  },
+  {
+   "z": 7052,
+   "positives": 8341233,
+   "phantom": 3335929,
+   "phantom_frac": 0.39993236011990074
+  },
+  {
+   "z": 7053,
+   "positives": 8359630,
+   "phantom": 3335320,
+   "phantom_frac": 0.39897938066636923
+  },
+  {
+   "z": 7054,
+   "positives": 8400626,
+   "phantom": 3334398,
+   "phantom_frac": 0.3969225626756863
+  },
+  {
+   "z": 7055,
+   "positives": 8432030,
+   "phantom": 3334277,
+   "phantom_frac": 0.3954299261269232
+  },
+  {
+   "z": 7056,
+   "positives": 8449436,
+   "phantom": 3334161,
+   "phantom_frac": 0.39460160417807766
+  },
+  {
+   "z": 7057,
+   "positives": 8460882,
+   "phantom": 3334219,
+   "phantom_frac": 0.3940746366631753
+  },
+  {
+   "z": 7058,
+   "positives": 8567614,
+   "phantom": 3333930,
+   "phantom_frac": 0.38913167656712827
+  },
+  {
+   "z": 7059,
+   "positives": 8621759,
+   "phantom": 3334129,
+   "phantom_frac": 0.3867109948213584
+  },
+  {
+   "z": 7060,
+   "positives": 8629119,
+   "phantom": 3333996,
+   "phantom_frac": 0.3863657460280708
+  },
+  {
+   "z": 7061,
+   "positives": 8621716,
+   "phantom": 3333794,
+   "phantom_frac": 0.38667406813214444
+  },
+  {
+   "z": 7062,
+   "positives": 8643131,
+   "phantom": 3332843,
+   "phantom_frac": 0.38560598005514435
+  },
+  {
+   "z": 7063,
+   "positives": 8642282,
+   "phantom": 3333055,
+   "phantom_frac": 0.3856683917511602
+  },
+  {
+   "z": 7064,
+   "positives": 8635255,
+   "phantom": 3333191,
+   "phantom_frac": 0.3859979815303659
+  },
+  {
+   "z": 7065,
+   "positives": 8627595,
+   "phantom": 3332675,
+   "phantom_frac": 0.3862808812884703
+  },
+  {
+   "z": 7066,
+   "positives": 8714265,
+   "phantom": 3331853,
+   "phantom_frac": 0.3823446957373915
+  },
+  {
+   "z": 7067,
+   "positives": 8746763,
+   "phantom": 3331641,
+   "phantom_frac": 0.38089988261943303
+  },
+  {
+   "z": 7068,
+   "positives": 8748019,
+   "phantom": 3331522,
+   "phantom_frac": 0.3808315917009325
+  },
+  {
+   "z": 7069,
+   "positives": 8732661,
+   "phantom": 3331330,
+   "phantom_frac": 0.3814793680872302
+  },
+  {
+   "z": 7070,
+   "positives": 8746199,
+   "phantom": 3330618,
+   "phantom_frac": 0.380807479912131
+  },
+  {
+   "z": 7071,
+   "positives": 8744327,
+   "phantom": 3330744,
+   "phantom_frac": 0.3809034131500343
+  },
+  {
+   "z": 7072,
+   "positives": 8734323,
+   "phantom": 3330394,
+   "phantom_frac": 0.3812996153222179
+  },
+  {
+   "z": 7073,
+   "positives": 8720150,
+   "phantom": 3330439,
+   "phantom_frac": 0.38192450817933177
+  },
+  {
+   "z": 7074,
+   "positives": 8807713,
+   "phantom": 3330282,
+   "phantom_frac": 0.3781097317771367
+  },
+  {
+   "z": 7075,
+   "positives": 8830495,
+   "phantom": 3330569,
+   "phantom_frac": 0.3771667386709352
+  },
+  {
+   "z": 7076,
+   "positives": 8809876,
+   "phantom": 3330653,
+   "phantom_frac": 0.3780590101381677
+  },
+  {
+   "z": 7077,
+   "positives": 8777173,
+   "phantom": 3330316,
+   "phantom_frac": 0.37942923080130697
+  },
+  {
+   "z": 7078,
+   "positives": 8784163,
+   "phantom": 3330770,
+   "phantom_frac": 0.37917898381439413
+  },
+  {
+   "z": 7079,
+   "positives": 8770091,
+   "phantom": 3332377,
+   "phantom_frac": 0.37997062972322637
+  },
+  {
+   "z": 7080,
+   "positives": 8752464,
+   "phantom": 3334696,
+   "phantom_frac": 0.38100082445354816
+  },
+  {
+   "z": 7081,
+   "positives": 8736043,
+   "phantom": 3336176,
+   "phantom_frac": 0.38188639868187463
+  },
+  {
+   "z": 7082,
+   "positives": 8814494,
+   "phantom": 3336937,
+   "phantom_frac": 0.37857385801158866
+  },
+  {
+   "z": 7083,
+   "positives": 8827450,
+   "phantom": 3336010,
+   "phantom_frac": 0.37791321389529253
+  },
+  {
+   "z": 7084,
+   "positives": 8813072,
+   "phantom": 3335108,
+   "phantom_frac": 0.3784274087401079
+  },
+  {
+   "z": 7085,
+   "positives": 8786114,
+   "phantom": 3333059,
+   "phantom_frac": 0.37935530998118167
+  },
+  {
+   "z": 7086,
+   "positives": 8796654,
+   "phantom": 3333207,
+   "phantom_frac": 0.3789175975319707
+  },
+  {
+   "z": 7087,
+   "positives": 8789408,
+   "phantom": 3333716,
+   "phantom_frac": 0.3792878883310457
+  },
+  {
+   "z": 7088,
+   "positives": 8773985,
+   "phantom": 3334207,
+   "phantom_frac": 0.3800105653246501
+  },
+  {
+   "z": 7089,
+   "positives": 8759859,
+   "phantom": 3334301,
+   "phantom_frac": 0.38063409468120435
+  },
+  {
+   "z": 7090,
+   "positives": 8845887,
+   "phantom": 3335367,
+   "phantom_frac": 0.3770528608380369
+  },
+  {
+   "z": 7091,
+   "positives": 8865064,
+   "phantom": 3335993,
+   "phantom_frac": 0.3763078303777615
+  },
+  {
+   "z": 7092,
+   "positives": 8728975,
+   "phantom": 3221666,
+   "phantom_frac": 0.36907723988211677
+  },
+  {
+   "z": 7093,
+   "positives": 8924883,
+   "phantom": 3450113,
+   "phantom_frac": 0.38657235058431577
+  },
+  {
+   "z": 7094,
+   "positives": 8927341,
+   "phantom": 3450583,
+   "phantom_frac": 0.38651856134990253
+  },
+  {
+   "z": 7095,
+   "positives": 8906379,
+   "phantom": 3450967,
+   "phantom_frac": 0.3874713842741253
+  },
+  {
+   "z": 7096,
+   "positives": 8884573,
+   "phantom": 3450245,
+   "phantom_frac": 0.38834111667493754
+  },
+  {
+   "z": 7097,
+   "positives": 8861920,
+   "phantom": 3449524,
+   "phantom_frac": 0.38925244190875113
+  },
+  {
+   "z": 7098,
+   "positives": 8936646,
+   "phantom": 3449752,
+   "phantom_frac": 0.3860231232164729
+  },
+  {
+   "z": 7099,
+   "positives": 8945251,
+   "phantom": 3449691,
+   "phantom_frac": 0.38564496401498405
+  },
+  {
+   "z": 7100,
+   "positives": 8928362,
+   "phantom": 3449432,
+   "phantom_frac": 0.3863454461187842
+  },
+  {
+   "z": 7101,
+   "positives": 8893753,
+   "phantom": 3449113,
+   "phantom_frac": 0.38781299638071803
+  },
+  {
+   "z": 7102,
+   "positives": 8899645,
+   "phantom": 3450559,
+   "phantom_frac": 0.38771872361200926
+  },
+  {
+   "z": 7103,
+   "positives": 8884639,
+   "phantom": 3452374,
+   "phantom_frac": 0.3885778589315784
+  },
+  {
+   "z": 9216,
+   "positives": 8764223,
+   "phantom": 2795574,
+   "phantom_frac": 0.3189756810158756
+  },
+  {
+   "z": 9217,
+   "positives": 8694345,
+   "phantom": 2796346,
+   "phantom_frac": 0.3216281387499576
+  },
+  {
+   "z": 9218,
+   "positives": 8620068,
+   "phantom": 2796933,
+   "phantom_frac": 0.3244676260094468
+  },
+  {
+   "z": 9219,
+   "positives": 8642432,
+   "phantom": 2798007,
+   "phantom_frac": 0.3237522725084791
+  },
+  {
+   "z": 9220,
+   "positives": 8637991,
+   "phantom": 2798221,
+   "phantom_frac": 0.32394349565772873
+  },
+  {
+   "z": 9221,
+   "positives": 8572077,
+   "phantom": 2798024,
+   "phantom_frac": 0.32641144030787406
+  },
+  {
+   "z": 9222,
+   "positives": 8527616,
+   "phantom": 2797579,
+   "phantom_frac": 0.32806108999279515
+  },
+  {
+   "z": 9223,
+   "positives": 8646058,
+   "phantom": 2797705,
+   "phantom_frac": 0.3235815674611482
+  },
+  {
+   "z": 9224,
+   "positives": 8683567,
+   "phantom": 2797567,
+   "phantom_frac": 0.32216795240941887
+  },
+  {
+   "z": 9225,
+   "positives": 8616972,
+   "phantom": 2797091,
+   "phantom_frac": 0.32460254019625456
+  },
+  {
+   "z": 9226,
+   "positives": 8538602,
+   "phantom": 2796456,
+   "phantom_frac": 0.3275074772193387
+  },
+  {
+   "z": 9227,
+   "positives": 8547373,
+   "phantom": 2796614,
+   "phantom_frac": 0.32718988629605844
+  },
+  {
+   "z": 9228,
+   "positives": 8533213,
+   "phantom": 2796166,
+   "phantom_frac": 0.3276803239295679
+  },
+  {
+   "z": 9229,
+   "positives": 8451950,
+   "phantom": 2795440,
+   "phantom_frac": 0.330744976011453
+  },
+  {
+   "z": 9230,
+   "positives": 8390390,
+   "phantom": 2794677,
+   "phantom_frac": 0.3330807030424092
+  },
+  {
+   "z": 9231,
+   "positives": 8499421,
+   "phantom": 2794657,
+   "phantom_frac": 0.32880557393262433
+  },
+  {
+   "z": 9232,
+   "positives": 8523159,
+   "phantom": 2794195,
+   "phantom_frac": 0.3278356064928508
+  },
+  {
+   "z": 9233,
+   "positives": 8437640,
+   "phantom": 2793668,
+   "phantom_frac": 0.3310958988532338
+  },
+  {
+   "z": 9234,
+   "positives": 8343985,
+   "phantom": 2793135,
+   "phantom_frac": 0.3347483246913795
+  },
+  {
+   "z": 9235,
+   "positives": 8347777,
+   "phantom": 2793171,
+   "phantom_frac": 0.3346005768961006
+  },
+  {
+   "z": 9236,
+   "positives": 8319750,
+   "phantom": 2792820,
+   "phantom_frac": 0.33568556747498424
+  },
+  {
+   "z": 9237,
+   "positives": 8232508,
+   "phantom": 2792292,
+   "phantom_frac": 0.33917877759730086
+  },
+  {
+   "z": 9238,
+   "positives": 8163451,
+   "phantom": 2791469,
+   "phantom_frac": 0.34194717405665814
+  },
+  {
+   "z": 9239,
+   "positives": 8259246,
+   "phantom": 2791138,
+   "phantom_frac": 0.33794101786046815
+  },
+  {
+   "z": 9240,
+   "positives": 8271249,
+   "phantom": 2789942,
+   "phantom_frac": 0.33730601025310686
+  },
+  {
+   "z": 9241,
+   "positives": 8187070,
+   "phantom": 2788671,
+   "phantom_frac": 0.3406189271619761
+  },
+  {
+   "z": 9242,
+   "positives": 8092760,
+   "phantom": 2787360,
+   "phantom_frac": 0.3444263761683282
+  },
+  {
+   "z": 9243,
+   "positives": 8096931,
+   "phantom": 2786883,
+   "phantom_frac": 0.3441900394112288
+  },
+  {
+   "z": 9244,
+   "positives": 8076134,
+   "phantom": 2786326,
+   "phantom_frac": 0.3450074008182628
+  },
+  {
+   "z": 9245,
+   "positives": 7991304,
+   "phantom": 2786081,
+   "phantom_frac": 0.34863909569702267
+  },
+  {
+   "z": 9246,
+   "positives": 7932127,
+   "phantom": 2785808,
+   "phantom_frac": 0.35120567282899023
+  },
+  {
+   "z": 9247,
+   "positives": 8064624,
+   "phantom": 2785826,
+   "phantom_frac": 0.3454378034239414
+  },
+  {
+   "z": 9248,
+   "positives": 8114551,
+   "phantom": 2785650,
+   "phantom_frac": 0.34329071318918325
+  },
+  {
+   "z": 9249,
+   "positives": 8058710,
+   "phantom": 2785642,
+   "phantom_frac": 0.3456684754756034
+  },
+  {
+   "z": 9250,
+   "positives": 8019064,
+   "phantom": 2785648,
+   "phantom_frac": 0.34737819775475043
+  },
+  {
+   "z": 9251,
+   "positives": 8092835,
+   "phantom": 2785758,
+   "phantom_frac": 0.34422523133117133
+  },
+  {
+   "z": 9252,
+   "positives": 8142096,
+   "phantom": 2785865,
+   "phantom_frac": 0.34215575448877045
+  },
+  {
+   "z": 9253,
+   "positives": 8133035,
+   "phantom": 2785996,
+   "phantom_frac": 0.34255305676171316
+  },
+  {
+   "z": 9254,
+   "positives": 8147319,
+   "phantom": 2786034,
+   "phantom_frac": 0.341957151794351
+  },
+  {
+   "z": 9255,
+   "positives": 8340563,
+   "phantom": 2786322,
+   "phantom_frac": 0.33406881525863424
+  },
+  {
+   "z": 9256,
+   "positives": 8444642,
+   "phantom": 2786354,
+   "phantom_frac": 0.32995525446786256
+  },
+  {
+   "z": 9257,
+   "positives": 8454095,
+   "phantom": 2786164,
+   "phantom_frac": 0.32956383858946464
+  },
+  {
+   "z": 9258,
+   "positives": 8452666,
+   "phantom": 2786075,
+   "phantom_frac": 0.3296090251288765
+  },
+  {
+   "z": 9259,
+   "positives": 8539983,
+   "phantom": 2786131,
+   "phantom_frac": 0.3262454972100062
+  },
+  {
+   "z": 9260,
+   "positives": 8595431,
+   "phantom": 2786049,
+   "phantom_frac": 0.3241313902700167
+  },
+  {
+   "z": 9261,
+   "positives": 8569672,
+   "phantom": 2786090,
+   "phantom_frac": 0.32511045930345994
+  },
+  {
+   "z": 9262,
+   "positives": 8564399,
+   "phantom": 2786088,
+   "phantom_frac": 0.3253103924747084
+  },
+  {
+   "z": 9263,
+   "positives": 8730598,
+   "phantom": 2786301,
+   "phantom_frac": 0.3191420564776892
+  },
+  {
+   "z": 9264,
+   "positives": 8803436,
+   "phantom": 2786395,
+   "phantom_frac": 0.3165122118227474
+  },
+  {
+   "z": 9265,
+   "positives": 8763812,
+   "phantom": 2786442,
+   "phantom_frac": 0.3179486278345542
+  },
+  {
+   "z": 9266,
+   "positives": 8721339,
+   "phantom": 2786486,
+   "phantom_frac": 0.3195020856315756
+  },
+  {
+   "z": 9267,
+   "positives": 8773818,
+   "phantom": 2786952,
+   "phantom_frac": 0.31764415446046407
+  },
+  {
+   "z": 9268,
+   "positives": 8794174,
+   "phantom": 2787189,
+   "phantom_frac": 0.3169358486652641
+  },
+  {
+   "z": 9269,
+   "positives": 8750734,
+   "phantom": 2787357,
+   "phantom_frac": 0.3185283657348058
+  },
+  {
+   "z": 9270,
+   "positives": 8732698,
+   "phantom": 2787628,
+   "phantom_frac": 0.31921726824859853
+  },
+  {
+   "z": 9271,
+   "positives": 8879885,
+   "phantom": 2788707,
+   "phantom_frac": 0.3140476481395874
+  },
+  {
+   "z": 9272,
+   "positives": 8939423,
+   "phantom": 2788990,
+   "phantom_frac": 0.3119876976399931
+  },
+  {
+   "z": 9273,
+   "positives": 8905159,
+   "phantom": 2788568,
+   "phantom_frac": 0.31314073112001706
+  },
+  {
+   "z": 9274,
+   "positives": 8854333,
+   "phantom": 2788274,
+   "phantom_frac": 0.3149050301135049
+  },
+  {
+   "z": 9275,
+   "positives": 8894112,
+   "phantom": 2788847,
+   "phantom_frac": 0.31356103903346394
+  },
+  {
+   "z": 9276,
+   "positives": 8903476,
+   "phantom": 2789098,
+   "phantom_frac": 0.3132594505786279
+  },
+  {
+   "z": 9277,
+   "positives": 8842862,
+   "phantom": 2789236,
+   "phantom_frac": 0.31542231463071574
+  },
+  {
+   "z": 9278,
+   "positives": 8804486,
+   "phantom": 2789324,
+   "phantom_frac": 0.31680713672552835
+  },
+  {
+   "z": 9279,
+   "positives": 8939359,
+   "phantom": 2790397,
+   "phantom_frac": 0.31214732510463
+  },
+  {
+   "z": 9280,
+   "positives": 8982264,
+   "phantom": 2790840,
+   "phantom_frac": 0.31070563056262873
+  },
+  {
+   "z": 9281,
+   "positives": 8906859,
+   "phantom": 2790666,
+   "phantom_frac": 0.3133165125887813
+  },
+  {
+   "z": 9282,
+   "positives": 8823877,
+   "phantom": 2790223,
+   "phantom_frac": 0.3162128166564425
+  },
+  {
+   "z": 9283,
+   "positives": 8837351,
+   "phantom": 2791177,
+   "phantom_frac": 0.31583864893450536
+  },
+  {
+   "z": 9284,
+   "positives": 8826424,
+   "phantom": 2791245,
+   "phantom_frac": 0.3162373572808195
+  },
+  {
+   "z": 9285,
+   "positives": 8761727,
+   "phantom": 2791336,
+   "phantom_frac": 0.318582854727156
+  },
+  {
+   "z": 9286,
+   "positives": 8720995,
+   "phantom": 2791467,
+   "phantom_frac": 0.3200858388291703
+  },
+  {
+   "z": 9287,
+   "positives": 8847774,
+   "phantom": 2792809,
+   "phantom_frac": 0.31565103267782385
+  },
+  {
+   "z": 9288,
+   "positives": 8894121,
+   "phantom": 2793249,
+   "phantom_frac": 0.3140556554155267
+  },
+  {
+   "z": 9289,
+   "positives": 8851070,
+   "phantom": 2792786,
+   "phantom_frac": 0.3155308906154849
+  },
+  {
+   "z": 9290,
+   "positives": 8789269,
+   "phantom": 2792167,
+   "phantom_frac": 0.31767909253886756
+  },
+  {
+   "z": 9291,
+   "positives": 8805402,
+   "phantom": 2792995,
+   "phantom_frac": 0.31719108338267804
+  },
+  {
+   "z": 9292,
+   "positives": 8800287,
+   "phantom": 2793427,
+   "phantom_frac": 0.31742453399531173
+  },
+  {
+   "z": 9293,
+   "positives": 8735576,
+   "phantom": 2793639,
+   "phantom_frac": 0.31980020550447963
+  },
+  {
+   "z": 9294,
+   "positives": 8691613,
+   "phantom": 2793643,
+   "phantom_frac": 0.3214182453820712
+  },
+  {
+   "z": 9295,
+   "positives": 8817177,
+   "phantom": 2794777,
+   "phantom_frac": 0.3169695924217014
+  },
+  {
+   "z": 9296,
+   "positives": 8858266,
+   "phantom": 2795371,
+   "phantom_frac": 0.3155663873719755
+  },
+  {
+   "z": 9297,
+   "positives": 8756621,
+   "phantom": 2759821,
+   "phantom_frac": 0.3151696299291702
+  },
+  {
+   "z": 9298,
+   "positives": 8675167,
+   "phantom": 2758602,
+   "phantom_frac": 0.31798834535404336
+  },
+  {
+   "z": 9299,
+   "positives": 8681036,
+   "phantom": 2758933,
+   "phantom_frac": 0.3178114916238108
+  },
+  {
+   "z": 9300,
+   "positives": 8661738,
+   "phantom": 2758687,
+   "phantom_frac": 0.3184911619353991
+  },
+  {
+   "z": 9301,
+   "positives": 8593269,
+   "phantom": 2758347,
+   "phantom_frac": 0.32098925333304473
+  },
+  {
+   "z": 9302,
+   "positives": 8544687,
+   "phantom": 2757929,
+   "phantom_frac": 0.32276536285062285
+  },
+  {
+   "z": 9303,
+   "positives": 8655852,
+   "phantom": 2758984,
+   "phantom_frac": 0.31874204873188683
+  },
+  {
+   "z": 9304,
+   "positives": 8693507,
+   "phantom": 2756802,
+   "phantom_frac": 0.31711045956482237
+  },
+  {
+   "z": 9305,
+   "positives": 8643998,
+   "phantom": 2756141,
+   "phantom_frac": 0.31885025887326673
+  },
+  {
+   "z": 9306,
+   "positives": 8576777,
+   "phantom": 2754912,
+   "phantom_frac": 0.32120597282638924
+  },
+  {
+   "z": 9307,
+   "positives": 8592269,
+   "phantom": 2756329,
+   "phantom_frac": 0.3207917489547871
+  },
+  {
+   "z": 9308,
+   "positives": 8590097,
+   "phantom": 2757383,
+   "phantom_frac": 0.3209955603528109
+  },
+  {
+   "z": 9309,
+   "positives": 8532238,
+   "phantom": 2756625,
+   "phantom_frac": 0.3230834629788808
+  },
+  {
+   "z": 9310,
+   "positives": 8492890,
+   "phantom": 2755566,
+   "phantom_frac": 0.3244556328882159
+  },
+  {
+   "z": 9311,
+   "positives": 8616556,
+   "phantom": 2755020,
+   "phantom_frac": 0.3197356345156928
+  },
+  {
+   "z": 9312,
+   "positives": 8663304,
+   "phantom": 2754317,
+   "phantom_frac": 0.3179291642080204
+  },
+  {
+   "z": 9313,
+   "positives": 8610559,
+   "phantom": 2753821,
+   "phantom_frac": 0.3198190733029064
+  },
+  {
+   "z": 9314,
+   "positives": 8534196,
+   "phantom": 2752897,
+   "phantom_frac": 0.32257250712310803
+  },
+  {
+   "z": 9315,
+   "positives": 8546147,
+   "phantom": 2753184,
+   "phantom_frac": 0.3221550015463109
+  },
+  {
+   "z": 9316,
+   "positives": 8534370,
+   "phantom": 2753138,
+   "phantom_frac": 0.32259416922397316
+  },
+  {
+   "z": 9317,
+   "positives": 8474674,
+   "phantom": 2752987,
+   "phantom_frac": 0.32484871984456276
+  },
+  {
+   "z": 9318,
+   "positives": 8429831,
+   "phantom": 2752791,
+   "phantom_frac": 0.3265535216542301
+  },
+  {
+   "z": 9319,
+   "positives": 8537151,
+   "phantom": 2753210,
+   "phantom_frac": 0.3224975170288074
+  },
+  {
+   "z": 9320,
+   "positives": 8572775,
+   "phantom": 2754011,
+   "phantom_frac": 0.3212508201836628
+  },
+  {
+   "z": 9321,
+   "positives": 8521441,
+   "phantom": 2752730,
+   "phantom_frac": 0.3230357400819885
+  },
+  {
+   "z": 9322,
+   "positives": 8452927,
+   "phantom": 2751701,
+   "phantom_frac": 0.3255323274411337
+  },
+  {
+   "z": 9323,
+   "positives": 8462404,
+   "phantom": 2751448,
+   "phantom_frac": 0.3251378686245658
+  },
+  {
+   "z": 9324,
+   "positives": 8451167,
+   "phantom": 2751217,
+   "phantom_frac": 0.32554285106423764
+  },
+  {
+   "z": 9325,
+   "positives": 8381976,
+   "phantom": 2751116,
+   "phantom_frac": 0.32821807172914835
+  },
+  {
+   "z": 9326,
+   "positives": 8329046,
+   "phantom": 2751018,
+   "phantom_frac": 0.3302920886737809
+  },
+  {
+   "z": 9327,
+   "positives": 8438952,
+   "phantom": 2750989,
+   "phantom_frac": 0.325987041992892
+  },
+  {
+   "z": 9328,
+   "positives": 8465416,
+   "phantom": 2750916,
+   "phantom_frac": 0.32495934045060515
+  },
+  {
+   "z": 9329,
+   "positives": 8390289,
+   "phantom": 2750783,
+   "phantom_frac": 0.32785318837050786
+  },
+  {
+   "z": 9330,
+   "positives": 8304559,
+   "phantom": 2750851,
+   "phantom_frac": 0.3312458855431095
+  },
+  {
+   "z": 9331,
+   "positives": 8306215,
+   "phantom": 2751157,
+   "phantom_frac": 0.33121668533742504
+  },
+  {
+   "z": 9332,
+   "positives": 8282553,
+   "phantom": 2750397,
+   "phantom_frac": 0.3320711621163185
+  },
+  {
+   "z": 9333,
+   "positives": 8205385,
+   "phantom": 2750134,
+   "phantom_frac": 0.3351620917239106
+  },
+  {
+   "z": 9334,
+   "positives": 8139775,
+   "phantom": 2750429,
+   "phantom_frac": 0.33789988052495307
+  },
+  {
+   "z": 9335,
+   "positives": 8231036,
+   "phantom": 2751383,
+   "phantom_frac": 0.3342693434945492
+  },
+  {
+   "z": 9336,
+   "positives": 8253727,
+   "phantom": 2748923,
+   "phantom_frac": 0.33305232896605375
+  },
+  {
+   "z": 9337,
+   "positives": 8190705,
+   "phantom": 2748804,
+   "phantom_frac": 0.3356004153488619
+  },
+  {
+   "z": 9338,
+   "positives": 8115992,
+   "phantom": 2748777,
+   "phantom_frac": 0.3386865093016356
+  },
+  {
+   "z": 9339,
+   "positives": 8128284,
+   "phantom": 2748818,
+   "phantom_frac": 0.33817937463799247
+  },
+  {
+   "z": 9340,
+   "positives": 8117280,
+   "phantom": 2748807,
+   "phantom_frac": 0.33863646443143514
+  },
+  {
+   "z": 9341,
+   "positives": 8048972,
+   "phantom": 2748631,
+   "phantom_frac": 0.3414884534323141
+  },
+  {
+   "z": 9342,
+   "positives": 8001595,
+   "phantom": 2748626,
+   "phantom_frac": 0.3435097627410535
+  },
+  {
+   "z": 9343,
+   "positives": 8139065,
+   "phantom": 2748643,
+   "phantom_frac": 0.33770992122559534
+  },
+  {
+   "z": 9344,
+   "positives": 8199731,
+   "phantom": 2748752,
+   "phantom_frac": 0.3352246555405293
+  },
+  {
+   "z": 9345,
+   "positives": 8171251,
+   "phantom": 2748838,
+   "phantom_frac": 0.3364035690495862
+  },
+  {
+   "z": 9346,
+   "positives": 8144792,
+   "phantom": 2748871,
+   "phantom_frac": 0.33750045427802206
+  },
+  {
+   "z": 9347,
+   "positives": 8231055,
+   "phantom": 2748792,
+   "phantom_frac": 0.33395378842687845
+  },
+  {
+   "z": 9348,
+   "positives": 8291223,
+   "phantom": 2748853,
+   "phantom_frac": 0.3315376995649496
+  },
+  {
+   "z": 9349,
+   "positives": 8304408,
+   "phantom": 2749060,
+   "phantom_frac": 0.3310362400305958
+  },
+  {
+   "z": 9350,
+   "positives": 8339059,
+   "phantom": 2749277,
+   "phantom_frac": 0.3296867188492131
+  },
+  {
+   "z": 9351,
+   "positives": 8543323,
+   "phantom": 2749601,
+   "phantom_frac": 0.32184209820932674
+  },
+  {
+   "z": 9352,
+   "positives": 8659876,
+   "phantom": 2749866,
+   "phantom_frac": 0.3175410363843547
+  },
+  {
+   "z": 9353,
+   "positives": 8684312,
+   "phantom": 2749521,
+   "phantom_frac": 0.31660780957662504
+  },
+  {
+   "z": 9354,
+   "positives": 8692836,
+   "phantom": 2749419,
+   "phantom_frac": 0.3162856172600058
+  },
+  {
+   "z": 9355,
+   "positives": 8785162,
+   "phantom": 2749433,
+   "phantom_frac": 0.31296326692666565
+  },
+  {
+   "z": 9356,
+   "positives": 8843269,
+   "phantom": 2749527,
+   "phantom_frac": 0.31091748990107615
+  },
+  {
+   "z": 9357,
+   "positives": 8835327,
+   "phantom": 2749638,
+   "phantom_frac": 0.311209534180229
+  },
+  {
+   "z": 9358,
+   "positives": 8839937,
+   "phantom": 2749692,
+   "phantom_frac": 0.31105334800462947
+  },
+  {
+   "z": 9359,
+   "positives": 9003904,
+   "phantom": 2749719,
+   "phantom_frac": 0.30539186113046074
+  },
+  {
+   "z": 9360,
+   "positives": 9076385,
+   "phantom": 2749796,
+   "phantom_frac": 0.3029615865787976
+  },
+  {
+   "z": 9361,
+   "positives": 9050077,
+   "phantom": 2749952,
+   "phantom_frac": 0.303859514123471
+  },
+  {
+   "z": 9362,
+   "positives": 9008483,
+   "phantom": 2750060,
+   "phantom_frac": 0.30527448406130087
+  },
+  {
+   "z": 9363,
+   "positives": 9060888,
+   "phantom": 2750199,
+   "phantom_frac": 0.303524224115782
+  },
+  {
+   "z": 9364,
+   "positives": 9083257,
+   "phantom": 2750167,
+   "phantom_frac": 0.30277322330525275
+  },
+  {
+   "z": 9365,
+   "positives": 9061550,
+   "phantom": 2750327,
+   "phantom_frac": 0.3035161754887409
+  },
+  {
+   "z": 9366,
+   "positives": 9052574,
+   "phantom": 2750536,
+   "phantom_frac": 0.3038402116348345
+  },
+  {
+   "z": 9367,
+   "positives": 9200081,
+   "phantom": 2750965,
+   "phantom_frac": 0.29901530214788324
+  },
+  {
+   "z": 9368,
+   "positives": 9269182,
+   "phantom": 2750869,
+   "phantom_frac": 0.29677581042210627
+  },
+  {
+   "z": 9369,
+   "positives": 9250545,
+   "phantom": 2750635,
+   "phantom_frac": 0.29734842649811444
+  },
+  {
+   "z": 9370,
+   "positives": 9207199,
+   "phantom": 2750450,
+   "phantom_frac": 0.29872820170390585
+  },
+  {
+   "z": 9371,
+   "positives": 9246677,
+   "phantom": 2750362,
+   "phantom_frac": 0.29744328692350774
+  },
+  {
+   "z": 9372,
+   "positives": 9262198,
+   "phantom": 2750203,
+   "phantom_frac": 0.29692768390397184
+  },
+  {
+   "z": 9373,
+   "positives": 9216102,
+   "phantom": 2750237,
+   "phantom_frac": 0.2984165105811546
+  },
+  {
+   "z": 9374,
+   "positives": 9183665,
+   "phantom": 2750234,
+   "phantom_frac": 0.29947020062251833
+  },
+  {
+   "z": 9375,
+   "positives": 9311585,
+   "phantom": 2750337,
+   "phantom_frac": 0.29536722265865584
+  },
+  {
+   "z": 9376,
+   "positives": 9359858,
+   "phantom": 2750401,
+   "phantom_frac": 0.2938507186754329
+  },
+  {
+   "z": 9377,
+   "positives": 9300319,
+   "phantom": 2750606,
+   "phantom_frac": 0.2957539413433023
+  },
+  {
+   "z": 9378,
+   "positives": 9227430,
+   "phantom": 2750739,
+   "phantom_frac": 0.29810456432614496
+  },
+  {
+   "z": 9379,
+   "positives": 9245385,
+   "phantom": 2750855,
+   "phantom_frac": 0.2975381771554132
+  },
+  {
+   "z": 9380,
+   "positives": 9233982,
+   "phantom": 2751137,
+   "phantom_frac": 0.2979361449914024
+  },
+  {
+   "z": 9381,
+   "positives": 9174235,
+   "phantom": 2751564,
+   "phantom_frac": 0.2999229908542783
+  },
+  {
+   "z": 9382,
+   "positives": 9131172,
+   "phantom": 2752041,
+   "phantom_frac": 0.3013896792219005
+  },
+  {
+   "z": 9383,
+   "positives": 9248541,
+   "phantom": 2752995,
+   "phantom_frac": 0.2976680321793459
+  },
+  {
+   "z": 9384,
+   "positives": 9287804,
+   "phantom": 2752889,
+   "phantom_frac": 0.29639826594101254
+  },
+  {
+   "z": 9385,
+   "positives": 9235868,
+   "phantom": 2752617,
+   "phantom_frac": 0.29803555009664495
+  },
+  {
+   "z": 9386,
+   "positives": 9161958,
+   "phantom": 2752714,
+   "phantom_frac": 0.30045040590668504
+  },
+  {
+   "z": 9387,
+   "positives": 9179993,
+   "phantom": 2753004,
+   "phantom_frac": 0.2998917319435864
+  },
+  {
+   "z": 9388,
+   "positives": 9171859,
+   "phantom": 2753322,
+   "phantom_frac": 0.3001923601311359
+  },
+  {
+   "z": 9389,
+   "positives": 9105172,
+   "phantom": 2753784,
+   "phantom_frac": 0.3024417331160795
+  },
+  {
+   "z": 9390,
+   "positives": 9057909,
+   "phantom": 2754098,
+   "phantom_frac": 0.3040545008787348
+  },
+  {
+   "z": 9391,
+   "positives": 9178056,
+   "phantom": 2754371,
+   "phantom_frac": 0.3001039653713161
+  },
+  {
+   "z": 9392,
+   "positives": 9163365,
+   "phantom": 2702096,
+   "phantom_frac": 0.2948803196205761
+  },
+  {
+   "z": 9393,
+   "positives": 9259965,
+   "phantom": 2870463,
+   "phantom_frac": 0.3099863768383574
+  },
+  {
+   "z": 9394,
+   "positives": 9172853,
+   "phantom": 2870157,
+   "phantom_frac": 0.31289687079908507
+  },
+  {
+   "z": 9395,
+   "positives": 9185718,
+   "phantom": 2869889,
+   "phantom_frac": 0.3124294693131228
+  },
+  {
+   "z": 9396,
+   "positives": 9169643,
+   "phantom": 2869808,
+   "phantom_frac": 0.3129683456596947
+  },
+  {
+   "z": 9397,
+   "positives": 9099519,
+   "phantom": 2870049,
+   "phantom_frac": 0.31540667149549334
+  },
+  {
+   "z": 9398,
+   "positives": 9049345,
+   "phantom": 2870577,
+   "phantom_frac": 0.31721378729620764
+  },
+  {
+   "z": 9399,
+   "positives": 9157734,
+   "phantom": 2870986,
+   "phantom_frac": 0.3135039737996321
+  },
+  {
+   "z": 9400,
+   "positives": 9187015,
+   "phantom": 2870171,
+   "phantom_frac": 0.31241605679320217
+  },
+  {
+   "z": 9401,
+   "positives": 9125431,
+   "phantom": 2869944,
+   "phantom_frac": 0.31449955624013815
+  },
+  {
+   "z": 9402,
+   "positives": 9042094,
+   "phantom": 2869572,
+   "phantom_frac": 0.3173570192922126
+  },
+  {
+   "z": 9403,
+   "positives": 9056058,
+   "phantom": 2869353,
+   "phantom_frac": 0.3168434875306673
+  },
+  {
+   "z": 9404,
+   "positives": 9046397,
+   "phantom": 2869275,
+   "phantom_frac": 0.31717323482487003
+  },
+  {
+   "z": 9405,
+   "positives": 8976811,
+   "phantom": 2869105,
+   "phantom_frac": 0.3196129449533916
+  },
+  {
+   "z": 9406,
+   "positives": 8926549,
+   "phantom": 2868878,
+   "phantom_frac": 0.32138713404250624
+  },
+  {
+   "z": 9407,
+   "positives": 9039335,
+   "phantom": 2868733,
+   "phantom_frac": 0.31736106693689303
+  },
+  {
+   "z": 11520,
+   "positives": 8591501,
+   "phantom": 3095954,
+   "phantom_frac": 0.3603507699062131
+  },
+  {
+   "z": 11521,
+   "positives": 8548428,
+   "phantom": 3095755,
+   "phantom_frac": 0.36214319170729403
+  },
+  {
+   "z": 11522,
+   "positives": 8517115,
+   "phantom": 3096018,
+   "phantom_frac": 0.36350548278378303
+  },
+  {
+   "z": 11523,
+   "positives": 8602974,
+   "phantom": 3097889,
+   "phantom_frac": 0.3600951252438982
+  },
+  {
+   "z": 11524,
+   "positives": 8626368,
+   "phantom": 3099952,
+   "phantom_frac": 0.35935772737726934
+  },
+  {
+   "z": 11525,
+   "positives": 8592648,
+   "phantom": 3098586,
+   "phantom_frac": 0.3606089764179797
+  },
+  {
+   "z": 11526,
+   "positives": 8536322,
+   "phantom": 3097440,
+   "phantom_frac": 0.36285416599795556
+  },
+  {
+   "z": 11527,
+   "positives": 8530569,
+   "phantom": 3098582,
+   "phantom_frac": 0.3632327456703064
+  },
+  {
+   "z": 11528,
+   "positives": 8504403,
+   "phantom": 3097097,
+   "phantom_frac": 0.3641757099234361
+  },
+  {
+   "z": 11529,
+   "positives": 8451714,
+   "phantom": 3095630,
+   "phantom_frac": 0.366272450771524
+  },
+  {
+   "z": 11530,
+   "positives": 8407352,
+   "phantom": 3094786,
+   "phantom_frac": 0.3681047254831248
+  },
+  {
+   "z": 11531,
+   "positives": 8484554,
+   "phantom": 3094776,
+   "phantom_frac": 0.36475411671609376
+  },
+  {
+   "z": 11532,
+   "positives": 8494106,
+   "phantom": 3094532,
+   "phantom_frac": 0.364315208687059
+  },
+  {
+   "z": 11533,
+   "positives": 8439417,
+   "phantom": 3094311,
+   "phantom_frac": 0.36664985270902006
+  },
+  {
+   "z": 11534,
+   "positives": 8367661,
+   "phantom": 3094105,
+   "phantom_frac": 0.369769401508976
+  },
+  {
+   "z": 11535,
+   "positives": 8356501,
+   "phantom": 3094127,
+   "phantom_frac": 0.37026585648706317
+  },
+  {
+   "z": 11536,
+   "positives": 8321554,
+   "phantom": 3094256,
+   "phantom_frac": 0.3718363180723216
+  },
+  {
+   "z": 11537,
+   "positives": 8257926,
+   "phantom": 3094334,
+   "phantom_frac": 0.374710793000567
+  },
+  {
+   "z": 11538,
+   "positives": 8201634,
+   "phantom": 3094273,
+   "phantom_frac": 0.3772751868712991
+  },
+  {
+   "z": 11539,
+   "positives": 8258958,
+   "phantom": 3094319,
+   "phantom_frac": 0.37466215471733844
+  },
+  {
+   "z": 11540,
+   "positives": 8248930,
+   "phantom": 3094342,
+   "phantom_frac": 0.3751204095561485
+  },
+  {
+   "z": 11541,
+   "positives": 8180894,
+   "phantom": 3094372,
+   "phantom_frac": 0.3782437469547949
+  },
+  {
+   "z": 11542,
+   "positives": 8093498,
+   "phantom": 3094347,
+   "phantom_frac": 0.38232504659913424
+  },
+  {
+   "z": 11543,
+   "positives": 8068883,
+   "phantom": 3094326,
+   "phantom_frac": 0.38348876790009223
+  },
+  {
+   "z": 11544,
+   "positives": 8030919,
+   "phantom": 3094836,
+   "phantom_frac": 0.3853651120127099
+  },
+  {
+   "z": 11545,
+   "positives": 7968685,
+   "phantom": 3094604,
+   "phantom_frac": 0.3883456304271031
+  },
+  {
+   "z": 11546,
+   "positives": 7921861,
+   "phantom": 3094452,
+   "phantom_frac": 0.3906218500930526
+  },
+  {
+   "z": 11547,
+   "positives": 8007171,
+   "phantom": 3094586,
+   "phantom_frac": 0.3864768218388242
+  },
+  {
+   "z": 11548,
+   "positives": 8027024,
+   "phantom": 3094831,
+   "phantom_frac": 0.3855514820934882
+  },
+  {
+   "z": 11549,
+   "positives": 7979841,
+   "phantom": 3094837,
+   "phantom_frac": 0.3878319129416238
+  },
+  {
+   "z": 11550,
+   "positives": 7938894,
+   "phantom": 3094751,
+   "phantom_frac": 0.3898214285264421
+  },
+  {
+   "z": 11551,
+   "positives": 7968946,
+   "phantom": 3095088,
+   "phantom_frac": 0.38839364703939516
+  },
+  {
+   "z": 11552,
+   "positives": 7983929,
+   "phantom": 3095339,
+   "phantom_frac": 0.38769620822028855
+  },
+  {
+   "z": 11553,
+   "positives": 7973014,
+   "phantom": 3095542,
+   "phantom_frac": 0.38825242248414465
+  },
+  {
+   "z": 11554,
+   "positives": 7978313,
+   "phantom": 3095631,
+   "phantom_frac": 0.38800570997903944
+  },
+  {
+   "z": 11555,
+   "positives": 8100341,
+   "phantom": 3096424,
+   "phantom_frac": 0.3822584752913488
+  },
+  {
+   "z": 11556,
+   "positives": 8157617,
+   "phantom": 3097212,
+   "phantom_frac": 0.37967117112754867
+  },
+  {
+   "z": 11557,
+   "positives": 8164958,
+   "phantom": 3096857,
+   "phantom_frac": 0.3792863355818854
+  },
+  {
+   "z": 11558,
+   "positives": 8163344,
+   "phantom": 3096251,
+   "phantom_frac": 0.3792870911724411
+  },
+  {
+   "z": 11559,
+   "positives": 8210532,
+   "phantom": 3096738,
+   "phantom_frac": 0.3771665465770062
+  },
+  {
+   "z": 11560,
+   "positives": 8238742,
+   "phantom": 3097371,
+   "phantom_frac": 0.3759519353804258
+  },
+  {
+   "z": 11561,
+   "positives": 8236435,
+   "phantom": 3097014,
+   "phantom_frac": 0.3760138943608491
+  },
+  {
+   "z": 11562,
+   "positives": 8243288,
+   "phantom": 3096638,
+   "phantom_frac": 0.37565568496454327
+  },
+  {
+   "z": 11563,
+   "positives": 8366556,
+   "phantom": 3097099,
+   "phantom_frac": 0.37017609157220727
+  },
+  {
+   "z": 11564,
+   "positives": 8419713,
+   "phantom": 3097025,
+   "phantom_frac": 0.36783023364335576
+  },
+  {
+   "z": 11565,
+   "positives": 8402467,
+   "phantom": 3096467,
+   "phantom_frac": 0.36851879334961984
+  },
+  {
+   "z": 11566,
+   "positives": 8377883,
+   "phantom": 3096023,
+   "phantom_frac": 0.3695471755812298
+  },
+  {
+   "z": 11567,
+   "positives": 8408204,
+   "phantom": 3096621,
+   "phantom_frac": 0.36828566481022584
+  },
+  {
+   "z": 11568,
+   "positives": 8416931,
+   "phantom": 3096906,
+   "phantom_frac": 0.3679376722940939
+  },
+  {
+   "z": 11569,
+   "positives": 8397262,
+   "phantom": 3097420,
+   "phantom_frac": 0.3688607072162331
+  },
+  {
+   "z": 11570,
+   "positives": 8391954,
+   "phantom": 3099502,
+   "phantom_frac": 0.3693421103118535
+  },
+  {
+   "z": 11571,
+   "positives": 8496378,
+   "phantom": 3103495,
+   "phantom_frac": 0.3652727079703846
+  },
+  {
+   "z": 11572,
+   "positives": 8536088,
+   "phantom": 3106135,
+   "phantom_frac": 0.3638827294189095
+  },
+  {
+   "z": 11573,
+   "positives": 8519060,
+   "phantom": 3106227,
+   "phantom_frac": 0.36462086192608106
+  },
+  {
+   "z": 11574,
+   "positives": 8489111,
+   "phantom": 3106374,
+   "phantom_frac": 0.36592453556090854
+  },
+  {
+   "z": 11575,
+   "positives": 8503134,
+   "phantom": 3107251,
+   "phantom_frac": 0.36542420712175067
+  },
+  {
+   "z": 11576,
+   "positives": 8505084,
+   "phantom": 3108740,
+   "phantom_frac": 0.3655154963784014
+  },
+  {
+   "z": 11577,
+   "positives": 8480873,
+   "phantom": 3108560,
+   "phantom_frac": 0.36653773732963574
+  },
+  {
+   "z": 11578,
+   "positives": 8467792,
+   "phantom": 3108379,
+   "phantom_frac": 0.36708258776313824
+  },
+  {
+   "z": 11579,
+   "positives": 8570233,
+   "phantom": 3109296,
+   "phantom_frac": 0.36280180480507357
+  },
+  {
+   "z": 11580,
+   "positives": 8606304,
+   "phantom": 3109696,
+   "phantom_frac": 0.361327696535005
+  },
+  {
+   "z": 11581,
+   "positives": 8571128,
+   "phantom": 3109607,
+   "phantom_frac": 0.36280020552720715
+  },
+  {
+   "z": 11582,
+   "positives": 8524410,
+   "phantom": 3109346,
+   "phantom_frac": 0.3647579128643507
+  },
+  {
+   "z": 11583,
+   "positives": 8530206,
+   "phantom": 3110117,
+   "phantom_frac": 0.3646004563078547
+  },
+  {
+   "z": 11584,
+   "positives": 8518356,
+   "phantom": 3110617,
+   "phantom_frac": 0.36516635369547834
+  },
+  {
+   "z": 11585,
+   "positives": 8487927,
+   "phantom": 3110950,
+   "phantom_frac": 0.36651469787617164
+  },
+  {
+   "z": 11586,
+   "positives": 8467117,
+   "phantom": 3111093,
+   "phantom_frac": 0.36743238578137044
+  },
+  {
+   "z": 11587,
+   "positives": 8557583,
+   "phantom": 3112084,
+   "phantom_frac": 0.36366389902382484
+  },
+  {
+   "z": 11588,
+   "positives": 8585455,
+   "phantom": 3112681,
+   "phantom_frac": 0.3625528291744584
+  },
+  {
+   "z": 11589,
+   "positives": 8559327,
+   "phantom": 3112959,
+   "phantom_frac": 0.3636920285905656
+  },
+  {
+   "z": 11590,
+   "positives": 8518842,
+   "phantom": 3113095,
+   "phantom_frac": 0.36543640555840806
+  },
+  {
+   "z": 11591,
+   "positives": 8522516,
+   "phantom": 3114112,
+   "phantom_frac": 0.36539819931109546
+  },
+  {
+   "z": 11592,
+   "positives": 8515622,
+   "phantom": 3115299,
+   "phantom_frac": 0.3658334059449797
+  },
+  {
+   "z": 11593,
+   "positives": 8485015,
+   "phantom": 3115333,
+   "phantom_frac": 0.36715704097164237
+  },
+  {
+   "z": 11594,
+   "positives": 8468253,
+   "phantom": 3115563,
+   "phantom_frac": 0.3679109492831638
+  },
+  {
+   "z": 11595,
+   "positives": 8567030,
+   "phantom": 3116577,
+   "phantom_frac": 0.3637873335333249
+  },
+  {
+   "z": 11596,
+   "positives": 8600456,
+   "phantom": 3117378,
+   "phantom_frac": 0.36246659479450855
+  },
+  {
+   "z": 11597,
+   "positives": 8577480,
+   "phantom": 3131646,
+   "phantom_frac": 0.3651009387372515
+  },
+  {
+   "z": 11598,
+   "positives": 8529585,
+   "phantom": 3130818,
+   "phantom_frac": 0.3670539656970415
+  },
+  {
+   "z": 11599,
+   "positives": 8529429,
+   "phantom": 3130495,
+   "phantom_frac": 0.36702281008494236
+  },
+  {
+   "z": 11600,
+   "positives": 8509797,
+   "phantom": 3130212,
+   "phantom_frac": 0.3678362715350319
+  },
+  {
+   "z": 11601,
+   "positives": 8470789,
+   "phantom": 3130004,
+   "phantom_frac": 0.36950560331511034
+  },
+  {
+   "z": 11602,
+   "positives": 8445346,
+   "phantom": 3129695,
+   "phantom_frac": 0.3705822117885993
+  },
+  {
+   "z": 11603,
+   "positives": 8533150,
+   "phantom": 3129951,
+   "phantom_frac": 0.3667990132600505
+  },
+  {
+   "z": 11604,
+   "positives": 8554446,
+   "phantom": 3129990,
+   "phantom_frac": 0.3658904387262483
+  },
+  {
+   "z": 11605,
+   "positives": 8527371,
+   "phantom": 3129980,
+   "phantom_frac": 0.3670509937939841
+  },
+  {
+   "z": 11606,
+   "positives": 8485204,
+   "phantom": 3131409,
+   "phantom_frac": 0.369043454936381
+  },
+  {
+   "z": 11607,
+   "positives": 8488109,
+   "phantom": 3136592,
+   "phantom_frac": 0.36952777114431495
+  },
+  {
+   "z": 11608,
+   "positives": 8473191,
+   "phantom": 3137602,
+   "phantom_frac": 0.37029756558066496
+  },
+  {
+   "z": 11609,
+   "positives": 8438848,
+   "phantom": 3136981,
+   "phantom_frac": 0.37173095190243977
+  },
+  {
+   "z": 11610,
+   "positives": 8415782,
+   "phantom": 3136055,
+   "phantom_frac": 0.37263976181892544
+  },
+  {
+   "z": 11611,
+   "positives": 8504538,
+   "phantom": 3136089,
+   "phantom_frac": 0.3687547753916791
+  },
+  {
+   "z": 11612,
+   "positives": 8527098,
+   "phantom": 3135776,
+   "phantom_frac": 0.3677424605651301
+  },
+  {
+   "z": 11613,
+   "positives": 8485170,
+   "phantom": 3134400,
+   "phantom_frac": 0.36939743104734496
+  },
+  {
+   "z": 11614,
+   "positives": 8432906,
+   "phantom": 3132504,
+   "phantom_frac": 0.37146198475353576
+  },
+  {
+   "z": 11615,
+   "positives": 8425359,
+   "phantom": 3129951,
+   "phantom_frac": 0.37149170735632747
+  },
+  {
+   "z": 11616,
+   "positives": 8399361,
+   "phantom": 3129063,
+   "phantom_frac": 0.37253583933349216
+  },
+  {
+   "z": 11617,
+   "positives": 8360551,
+   "phantom": 3129642,
+   "phantom_frac": 0.37433441886784735
+  },
+  {
+   "z": 11618,
+   "positives": 8332937,
+   "phantom": 3130222,
+   "phantom_frac": 0.37564450565268886
+  },
+  {
+   "z": 11619,
+   "positives": 8411247,
+   "phantom": 3131147,
+   "phantom_frac": 0.37225716947796206
+  },
+  {
+   "z": 11620,
+   "positives": 8426616,
+   "phantom": 3131680,
+   "phantom_frac": 0.37164147505950196
+  },
+  {
+   "z": 11621,
+   "positives": 8402656,
+   "phantom": 3131807,
+   "phantom_frac": 0.3727163173168103
+  },
+  {
+   "z": 11622,
+   "positives": 8358275,
+   "phantom": 3131907,
+   "phantom_frac": 0.3747073409286007
+  },
+  {
+   "z": 11623,
+   "positives": 8352304,
+   "phantom": 3132427,
+   "phantom_frac": 0.37503747468961857
+  },
+  {
+   "z": 11624,
+   "positives": 8327123,
+   "phantom": 3132244,
+   "phantom_frac": 0.37614960172919265
+  },
+  {
+   "z": 11625,
+   "positives": 8286250,
+   "phantom": 3131811,
+   "phantom_frac": 0.3779527530547594
+  },
+  {
+   "z": 11626,
+   "positives": 8248751,
+   "phantom": 3131260,
+   "phantom_frac": 0.3796041364322914
+  },
+  {
+   "z": 11627,
+   "positives": 8323856,
+   "phantom": 3131055,
+   "phantom_frac": 0.37615439286792085
+  },
+  {
+   "z": 11628,
+   "positives": 8329037,
+   "phantom": 3130820,
+   "phantom_frac": 0.3758921949800439
+  },
+  {
+   "z": 11629,
+   "positives": 8278952,
+   "phantom": 3130447,
+   "phantom_frac": 0.3781211679932436
+  },
+  {
+   "z": 11630,
+   "positives": 8213575,
+   "phantom": 3129844,
+   "phantom_frac": 0.38105745671038493
+  },
+  {
+   "z": 11631,
+   "positives": 8194572,
+   "phantom": 3129477,
+   "phantom_frac": 0.3818963333289402
+  },
+  {
+   "z": 11632,
+   "positives": 8153036,
+   "phantom": 3128672,
+   "phantom_frac": 0.38374318474737507
+  },
+  {
+   "z": 11633,
+   "positives": 8100861,
+   "phantom": 3127675,
+   "phantom_frac": 0.3860916759342001
+  },
+  {
+   "z": 11634,
+   "positives": 8051365,
+   "phantom": 3126618,
+   "phantom_frac": 0.3883339036300056
+  },
+  {
+   "z": 11635,
+   "positives": 8107744,
+   "phantom": 3126178,
+   "phantom_frac": 0.38557926841301354
+  },
+  {
+   "z": 11636,
+   "positives": 8098060,
+   "phantom": 3125765,
+   "phantom_frac": 0.3859893604147166
+  },
+  {
+   "z": 11637,
+   "positives": 8047027,
+   "phantom": 3125352,
+   "phantom_frac": 0.388385921906314
+  },
+  {
+   "z": 11638,
+   "positives": 7984614,
+   "phantom": 3124912,
+   "phantom_frac": 0.39136669599807833
+  },
+  {
+   "z": 11639,
+   "positives": 7963815,
+   "phantom": 3124626,
+   "phantom_frac": 0.3923529112617508
+  },
+  {
+   "z": 11640,
+   "positives": 7928608,
+   "phantom": 3125238,
+   "phantom_frac": 0.3941723439978367
+  },
+  {
+   "z": 11641,
+   "positives": 7877653,
+   "phantom": 3124450,
+   "phantom_frac": 0.39662193803154316
+  },
+  {
+   "z": 11642,
+   "positives": 7840788,
+   "phantom": 3124217,
+   "phantom_frac": 0.39845701733040095
+  },
+  {
+   "z": 11643,
+   "positives": 7922298,
+   "phantom": 3124183,
+   "phantom_frac": 0.39435312834735575
+  },
+  {
+   "z": 11644,
+   "positives": 7943803,
+   "phantom": 3124183,
+   "phantom_frac": 0.39328555856684766
+  },
+  {
+   "z": 11645,
+   "positives": 7918141,
+   "phantom": 3123987,
+   "phantom_frac": 0.3945354092583095
+  },
+  {
+   "z": 11646,
+   "positives": 7896285,
+   "phantom": 3123968,
+   "phantom_frac": 0.39562503126470233
+  },
+  {
+   "z": 11647,
+   "positives": 7927743,
+   "phantom": 3123891,
+   "phantom_frac": 0.39404544269409336
+  },
+  {
+   "z": 11648,
+   "positives": 7949327,
+   "phantom": 3123942,
+   "phantom_frac": 0.39298194677360737
+  },
+  {
+   "z": 11649,
+   "positives": 7951654,
+   "phantom": 3124066,
+   "phantom_frac": 0.39288253739410695
+  },
+  {
+   "z": 11650,
+   "positives": 7968386,
+   "phantom": 3124284,
+   "phantom_frac": 0.3920849215888889
+  },
+  {
+   "z": 11651,
+   "positives": 8096640,
+   "phantom": 3124726,
+   "phantom_frac": 0.38592873093036123
+  },
+  {
+   "z": 11652,
+   "positives": 8160514,
+   "phantom": 3124799,
+   "phantom_frac": 0.38291693390882
+  },
+  {
+   "z": 11653,
+   "positives": 8178085,
+   "phantom": 3124710,
+   "phantom_frac": 0.38208333613553785
+  },
+  {
+   "z": 11654,
+   "positives": 8187557,
+   "phantom": 3124641,
+   "phantom_frac": 0.3816328851206776
+  },
+  {
+   "z": 11655,
+   "positives": 8231453,
+   "phantom": 3125189,
+   "phantom_frac": 0.37966431928846583
+  },
+  {
+   "z": 11656,
+   "positives": 8256769,
+   "phantom": 3124082,
+   "phantom_frac": 0.3783661623572126
+  },
+  {
+   "z": 11657,
+   "positives": 8257569,
+   "phantom": 3124053,
+   "phantom_frac": 0.3783259940062263
+  },
+  {
+   "z": 11658,
+   "positives": 8265290,
+   "phantom": 3123951,
+   "phantom_frac": 0.3779602409594824
+  },
+  {
+   "z": 11659,
+   "positives": 8385077,
+   "phantom": 3123843,
+   "phantom_frac": 0.37254792054980534
+  },
+  {
+   "z": 11660,
+   "positives": 8433555,
+   "phantom": 3123821,
+   "phantom_frac": 0.37040382140153233
+  },
+  {
+   "z": 11661,
+   "positives": 8426858,
+   "phantom": 3123880,
+   "phantom_frac": 0.37070519047550105
+  },
+  {
+   "z": 11662,
+   "positives": 8412996,
+   "phantom": 3123659,
+   "phantom_frac": 0.37128972841541824
+  },
+  {
+   "z": 11663,
+   "positives": 8442099,
+   "phantom": 3123325,
+   "phantom_frac": 0.36997019343175197
+  },
+  {
+   "z": 11664,
+   "positives": 8446836,
+   "phantom": 3123276,
+   "phantom_frac": 0.3697569125291411
+  },
+  {
+   "z": 11665,
+   "positives": 8429303,
+   "phantom": 3123650,
+   "phantom_frac": 0.3705703781202313
+  },
+  {
+   "z": 11666,
+   "positives": 8421581,
+   "phantom": 3124049,
+   "phantom_frac": 0.3709575434826311
+  },
+  {
+   "z": 11667,
+   "positives": 8528337,
+   "phantom": 3124544,
+   "phantom_frac": 0.3663720136762888
+  },
+  {
+   "z": 11668,
+   "positives": 8567557,
+   "phantom": 3125557,
+   "phantom_frac": 0.36481309666221073
+  },
+  {
+   "z": 11669,
+   "positives": 8566340,
+   "phantom": 3125968,
+   "phantom_frac": 0.3649129032935886
+  },
+  {
+   "z": 11670,
+   "positives": 8552572,
+   "phantom": 3126236,
+   "phantom_frac": 0.3655316786576015
+  },
+  {
+   "z": 11671,
+   "positives": 8568751,
+   "phantom": 3126738,
+   "phantom_frac": 0.3649000887060436
+  },
+  {
+   "z": 11672,
+   "positives": 8568168,
+   "phantom": 3127134,
+   "phantom_frac": 0.36497113501976153
+  },
+  {
+   "z": 11673,
+   "positives": 8546378,
+   "phantom": 3127376,
+   "phantom_frac": 0.3659299881189435
+  },
+  {
+   "z": 11674,
+   "positives": 8534398,
+   "phantom": 3127588,
+   "phantom_frac": 0.3664684960790439
+  },
+  {
+   "z": 11675,
+   "positives": 8633933,
+   "phantom": 3127995,
+   "phantom_frac": 0.362290858638815
+  },
+  {
+   "z": 11676,
+   "positives": 8664201,
+   "phantom": 3128426,
+   "phantom_frac": 0.3610749565943819
+  },
+  {
+   "z": 11677,
+   "positives": 8635948,
+   "phantom": 3128145,
+   "phantom_frac": 0.362223695649858
+  },
+  {
+   "z": 11678,
+   "positives": 8595740,
+   "phantom": 3127803,
+   "phantom_frac": 0.36387826993371136
+  },
+  {
+   "z": 11679,
+   "positives": 8602209,
+   "phantom": 3128025,
+   "phantom_frac": 0.36363043492665664
+  },
+  {
+   "z": 11680,
+   "positives": 8588389,
+   "phantom": 3128496,
+   "phantom_frac": 0.36427041206447447
+  },
+  {
+   "z": 11681,
+   "positives": 8561672,
+   "phantom": 3129234,
+   "phantom_frac": 0.36549332887314534
+  },
+  {
+   "z": 11682,
+   "positives": 8543769,
+   "phantom": 3129808,
+   "phantom_frac": 0.36632638359019304
+  },
+  {
+   "z": 11683,
+   "positives": 8637884,
+   "phantom": 3130555,
+   "phantom_frac": 0.36242151434309605
+  },
+  {
+   "z": 11684,
+   "positives": 8667191,
+   "phantom": 3131133,
+   "phantom_frac": 0.36126272052848496
+  },
+  {
+   "z": 11685,
+   "positives": 8653703,
+   "phantom": 3131417,
+   "phantom_frac": 0.3618586170567675
+  },
+  {
+   "z": 11686,
+   "positives": 8626298,
+   "phantom": 3131404,
+   "phantom_frac": 0.36300670345494673
+  },
+  {
+   "z": 11687,
+   "positives": 8634431,
+   "phantom": 3131390,
+   "phantom_frac": 0.3626631563793839
+  },
+  {
+   "z": 11688,
+   "positives": 8625712,
+   "phantom": 3127411,
+   "phantom_frac": 0.3625684465236029
+  },
+  {
+   "z": 11689,
+   "positives": 8602700,
+   "phantom": 3126784,
+   "phantom_frac": 0.3634654236460646
+  },
+  {
+   "z": 11690,
+   "positives": 8588322,
+   "phantom": 3127115,
+   "phantom_frac": 0.36411245409755244
+  },
+  {
+   "z": 11691,
+   "positives": 8693025,
+   "phantom": 3127867,
+   "phantom_frac": 0.3598134136275922
+  },
+  {
+   "z": 11692,
+   "positives": 8724243,
+   "phantom": 3128403,
+   "phantom_frac": 0.3585873295826354
+  },
+  {
+   "z": 11693,
+   "positives": 8750170,
+   "phantom": 3180642,
+   "phantom_frac": 0.3634948806708898
+  },
+  {
+   "z": 11694,
+   "positives": 8713769,
+   "phantom": 3179257,
+   "phantom_frac": 0.364854404563628
+  },
+  {
+   "z": 11695,
+   "positives": 8719774,
+   "phantom": 3178676,
+   "phantom_frac": 0.36453651207015225
+  },
+  {
+   "z": 11696,
+   "positives": 8704987,
+   "phantom": 3178087,
+   "phantom_frac": 0.3650880811194778
+  },
+  {
+   "z": 11697,
+   "positives": 8674244,
+   "phantom": 3177917,
+   "phantom_frac": 0.366362417289622
+  },
+  {
+   "z": 11698,
+   "positives": 8652492,
+   "phantom": 3177533,
+   "phantom_frac": 0.3672390566787002
+  },
+  {
+   "z": 11699,
+   "positives": 8742009,
+   "phantom": 3177594,
+   "phantom_frac": 0.36348555578014163
+  },
+  {
+   "z": 11700,
+   "positives": 8762135,
+   "phantom": 3177352,
+   "phantom_frac": 0.36262303650879607
+  },
+  {
+   "z": 11701,
+   "positives": 8741210,
+   "phantom": 3177107,
+   "phantom_frac": 0.36346306747006424
+  },
+  {
+   "z": 11702,
+   "positives": 8704783,
+   "phantom": 3176619,
+   "phantom_frac": 0.3649279941843467
+  },
+  {
+   "z": 11703,
+   "positives": 8704339,
+   "phantom": 3176494,
+   "phantom_frac": 0.3649322481580738
+  },
+  {
+   "z": 11704,
+   "positives": 8686407,
+   "phantom": 3178606,
+   "phantom_frac": 0.36592874361056305
+  },
+  {
+   "z": 11705,
+   "positives": 8651546,
+   "phantom": 3179144,
+   "phantom_frac": 0.36746542178704245
+  },
+  {
+   "z": 11706,
+   "positives": 8625743,
+   "phantom": 3180136,
+   "phantom_frac": 0.3686796604072252
+  },
+  {
+   "z": 11707,
+   "positives": 8715929,
+   "phantom": 3181084,
+   "phantom_frac": 0.36497360178129035
+  },
+  {
+   "z": 11708,
+   "positives": 8730732,
+   "phantom": 3181529,
+   "phantom_frac": 0.3644057565849003
+  },
+  {
+   "z": 11709,
+   "positives": 8688854,
+   "phantom": 3181072,
+   "phantom_frac": 0.36610950074658866
+  },
+  {
+   "z": 11710,
+   "positives": 8639807,
+   "phantom": 3180813,
+   "phantom_frac": 0.36815787667479144
+  },
+  {
+   "z": 11711,
+   "positives": 8639481,
+   "phantom": 3181099,
+   "phantom_frac": 0.3682048724917619
+  },
+  {
+   "z": 13824,
+   "positives": 8129741,
+   "phantom": 3040226,
+   "phantom_frac": 0.373963450988168
+  },
+  {
+   "z": 13825,
+   "positives": 8093344,
+   "phantom": 3040450,
+   "phantom_frac": 0.3756728986189145
+  },
+  {
+   "z": 13826,
+   "positives": 8044834,
+   "phantom": 3039678,
+   "phantom_frac": 0.37784222769543785
+  },
+  {
+   "z": 13827,
+   "positives": 8046703,
+   "phantom": 3040156,
+   "phantom_frac": 0.37781386985452303
+  },
+  {
+   "z": 13828,
+   "positives": 8028362,
+   "phantom": 3040288,
+   "phantom_frac": 0.37869343709214903
+  },
+  {
+   "z": 13829,
+   "positives": 7972163,
+   "phantom": 3040610,
+   "phantom_frac": 0.3814033907736207
+  },
+  {
+   "z": 13830,
+   "positives": 7930494,
+   "phantom": 3040251,
+   "phantom_frac": 0.3833621209473206
+  },
+  {
+   "z": 13831,
+   "positives": 8014353,
+   "phantom": 3040962,
+   "phantom_frac": 0.3794394881283617
+  },
+  {
+   "z": 13832,
+   "positives": 8032747,
+   "phantom": 3041686,
+   "phantom_frac": 0.3786607495542932
+  },
+  {
+   "z": 13833,
+   "positives": 7979917,
+   "phantom": 3041631,
+   "phantom_frac": 0.3811607313710155
+  },
+  {
+   "z": 13834,
+   "positives": 7918429,
+   "phantom": 3041051,
+   "phantom_frac": 0.3840472649309604
+  },
+  {
+   "z": 13835,
+   "positives": 7912914,
+   "phantom": 3042035,
+   "phantom_frac": 0.384439284946102
+  },
+  {
+   "z": 13836,
+   "positives": 7880510,
+   "phantom": 3042571,
+   "phantom_frac": 0.3860880831316755
+  },
+  {
+   "z": 13837,
+   "positives": 7811753,
+   "phantom": 3042718,
+   "phantom_frac": 0.3895051469241283
+  },
+  {
+   "z": 13838,
+   "positives": 7758113,
+   "phantom": 3042218,
+   "phantom_frac": 0.3921337572680367
+  },
+  {
+   "z": 13839,
+   "positives": 7824957,
+   "phantom": 3042416,
+   "phantom_frac": 0.3888092931373297
+  },
+  {
+   "z": 13840,
+   "positives": 7821769,
+   "phantom": 3042150,
+   "phantom_frac": 0.3889337565453544
+  },
+  {
+   "z": 13841,
+   "positives": 7761790,
+   "phantom": 3041506,
+   "phantom_frac": 0.39185625996065343
+  },
+  {
+   "z": 13842,
+   "positives": 7694316,
+   "phantom": 3039819,
+   "phantom_frac": 0.3950733242565031
+  },
+  {
+   "z": 13843,
+   "positives": 7681116,
+   "phantom": 3039883,
+   "phantom_frac": 0.39576058999759933
+  },
+  {
+   "z": 13844,
+   "positives": 7647822,
+   "phantom": 3039815,
+   "phantom_frac": 0.39747460126556294
+  },
+  {
+   "z": 13845,
+   "positives": 7576840,
+   "phantom": 3039747,
+   "phantom_frac": 0.4011892820753771
+  },
+  {
+   "z": 13846,
+   "positives": 7528091,
+   "phantom": 3039026,
+   "phantom_frac": 0.4036914537829046
+  },
+  {
+   "z": 13847,
+   "positives": 7619586,
+   "phantom": 3039238,
+   "phantom_frac": 0.39887180222127555
+  },
+  {
+   "z": 13848,
+   "positives": 7650745,
+   "phantom": 3039139,
+   "phantom_frac": 0.3972343869780002
+  },
+  {
+   "z": 13849,
+   "positives": 7614095,
+   "phantom": 3039111,
+   "phantom_frac": 0.3991427740263288
+  },
+  {
+   "z": 13850,
+   "positives": 7584992,
+   "phantom": 3038015,
+   "phantom_frac": 0.40052975665630236
+  },
+  {
+   "z": 13851,
+   "positives": 7617732,
+   "phantom": 3038536,
+   "phantom_frac": 0.39887672603866875
+  },
+  {
+   "z": 13852,
+   "positives": 7639970,
+   "phantom": 3038691,
+   "phantom_frac": 0.3977359858742901
+  },
+  {
+   "z": 13853,
+   "positives": 7622373,
+   "phantom": 3039099,
+   "phantom_frac": 0.39870772527138204
+  },
+  {
+   "z": 13854,
+   "positives": 7634659,
+   "phantom": 3038760,
+   "phantom_frac": 0.39802170601201703
+  },
+  {
+   "z": 13855,
+   "positives": 7775606,
+   "phantom": 3039353,
+   "phantom_frac": 0.390883102873268
+  },
+  {
+   "z": 13856,
+   "positives": 7854167,
+   "phantom": 3039543,
+   "phantom_frac": 0.3869975008170822
+  },
+  {
+   "z": 13857,
+   "positives": 7866088,
+   "phantom": 3039891,
+   "phantom_frac": 0.38645524942004206
+  },
+  {
+   "z": 13858,
+   "positives": 7872910,
+   "phantom": 3038737,
+   "phantom_frac": 0.3859738013009167
+  },
+  {
+   "z": 13859,
+   "positives": 7924708,
+   "phantom": 3039131,
+   "phantom_frac": 0.383500691760504
+  },
+  {
+   "z": 13860,
+   "positives": 7959085,
+   "phantom": 3039270,
+   "phantom_frac": 0.38186173410637025
+  },
+  {
+   "z": 13861,
+   "positives": 7941486,
+   "phantom": 3039722,
+   "phantom_frac": 0.38276488808265857
+  },
+  {
+   "z": 13862,
+   "positives": 7949230,
+   "phantom": 3039190,
+   "phantom_frac": 0.38232508054239217
+  },
+  {
+   "z": 13863,
+   "positives": 8084338,
+   "phantom": 3039261,
+   "phantom_frac": 0.37594432592996485
+  },
+  {
+   "z": 13864,
+   "positives": 8151057,
+   "phantom": 3039279,
+   "phantom_frac": 0.3728693100784352
+  },
+  {
+   "z": 13865,
+   "positives": 8128837,
+   "phantom": 3039425,
+   "phantom_frac": 0.37390650101607403
+  },
+  {
+   "z": 13866,
+   "positives": 8102139,
+   "phantom": 3038292,
+   "phantom_frac": 0.37499875033000546
+  },
+  {
+   "z": 13867,
+   "positives": 8131304,
+   "phantom": 3038180,
+   "phantom_frac": 0.37363994754100943
+  },
+  {
+   "z": 13868,
+   "positives": 8141931,
+   "phantom": 3038075,
+   "phantom_frac": 0.37313936951811555
+  },
+  {
+   "z": 13869,
+   "positives": 8106235,
+   "phantom": 3038997,
+   "phantom_frac": 0.3748962372790821
+  },
+  {
+   "z": 13870,
+   "positives": 8099280,
+   "phantom": 3038181,
+   "phantom_frac": 0.37511741784454916
+  },
+  {
+   "z": 13871,
+   "positives": 8216808,
+   "phantom": 3037339,
+   "phantom_frac": 0.3696495037975817
+  },
+  {
+   "z": 13872,
+   "positives": 8275510,
+   "phantom": 3036617,
+   "phantom_frac": 0.36694016441282773
+  },
+  {
+   "z": 13873,
+   "positives": 8258057,
+   "phantom": 3036934,
+   "phantom_frac": 0.36775406127615734
+  },
+  {
+   "z": 13874,
+   "positives": 8229162,
+   "phantom": 3035243,
+   "phantom_frac": 0.36883986486108794
+  },
+  {
+   "z": 13875,
+   "positives": 8245261,
+   "phantom": 3035032,
+   "phantom_frac": 0.3680941088462815
+  },
+  {
+   "z": 13876,
+   "positives": 8253536,
+   "phantom": 3034601,
+   "phantom_frac": 0.36767283743597895
+  },
+  {
+   "z": 13877,
+   "positives": 8213568,
+   "phantom": 3035251,
+   "phantom_frac": 0.3695411056437349
+  },
+  {
+   "z": 13878,
+   "positives": 8199576,
+   "phantom": 3034674,
+   "phantom_frac": 0.3701013320688777
+  },
+  {
+   "z": 13879,
+   "positives": 8319649,
+   "phantom": 3034818,
+   "phantom_frac": 0.3647771678829239
+  },
+  {
+   "z": 13880,
+   "positives": 8369177,
+   "phantom": 3034591,
+   "phantom_frac": 0.3625913276777394
+  },
+  {
+   "z": 13881,
+   "positives": 8327296,
+   "phantom": 3034924,
+   "phantom_frac": 0.3644549203006594
+  },
+  {
+   "z": 13882,
+   "positives": 8280077,
+   "phantom": 3034738,
+   "phantom_frac": 0.36651084283394947
+  },
+  {
+   "z": 13883,
+   "positives": 8287452,
+   "phantom": 3035411,
+   "phantom_frac": 0.3662658920980779
+  },
+  {
+   "z": 13884,
+   "positives": 8279324,
+   "phantom": 3036090,
+   "phantom_frac": 0.36670747515135294
+  },
+  {
+   "z": 13885,
+   "positives": 8229350,
+   "phantom": 3038047,
+   "phantom_frac": 0.3691721703415215
+  },
+  {
+   "z": 13886,
+   "positives": 8205249,
+   "phantom": 3037651,
+   "phantom_frac": 0.37020826546519187
+  },
+  {
+   "z": 13887,
+   "positives": 8310184,
+   "phantom": 3036140,
+   "phantom_frac": 0.3653517178440333
+  },
+  {
+   "z": 13888,
+   "positives": 8351617,
+   "phantom": 3035219,
+   "phantom_frac": 0.3634289024508667
+  },
+  {
+   "z": 13889,
+   "positives": 8322883,
+   "phantom": 3034760,
+   "phantom_frac": 0.3646284586723134
+  },
+  {
+   "z": 13890,
+   "positives": 8284640,
+   "phantom": 3034462,
+   "phantom_frac": 0.36627566194789396
+  },
+  {
+   "z": 13891,
+   "positives": 8297579,
+   "phantom": 3034472,
+   "phantom_frac": 0.3657057076527985
+  },
+  {
+   "z": 13892,
+   "positives": 8293454,
+   "phantom": 3034371,
+   "phantom_frac": 0.3658754241598253
+  },
+  {
+   "z": 13893,
+   "positives": 8244500,
+   "phantom": 3034778,
+   "phantom_frac": 0.36809727697252714
+  },
+  {
+   "z": 13894,
+   "positives": 8221312,
+   "phantom": 3035051,
+   "phantom_frac": 0.36916869229631477
+  },
+  {
+   "z": 13895,
+   "positives": 8332941,
+   "phantom": 3035413,
+   "phantom_frac": 0.36426670967669156
+  },
+  {
+   "z": 13896,
+   "positives": 8376687,
+   "phantom": 3035409,
+   "phantom_frac": 0.3623639035337001
+  },
+  {
+   "z": 13897,
+   "positives": 8200212,
+   "phantom": 2901042,
+   "phantom_frac": 0.35377646334021606
+  },
+  {
+   "z": 13898,
+   "positives": 8148561,
+   "phantom": 2900094,
+   "phantom_frac": 0.3559025943353679
+  },
+  {
+   "z": 13899,
+   "positives": 8155233,
+   "phantom": 2899563,
+   "phantom_frac": 0.3555463099582808
+  },
+  {
+   "z": 13900,
+   "positives": 8140797,
+   "phantom": 2899135,
+   "phantom_frac": 0.35612422223524304
+  },
+  {
+   "z": 13901,
+   "positives": 8084987,
+   "phantom": 2899092,
+   "phantom_frac": 0.35857719993860226
+  },
+  {
+   "z": 13902,
+   "positives": 8057147,
+   "phantom": 2898848,
+   "phantom_frac": 0.3597859142944767
+  },
+  {
+   "z": 13903,
+   "positives": 8158420,
+   "phantom": 2898795,
+   "phantom_frac": 0.35531328369953985
+  },
+  {
+   "z": 13904,
+   "positives": 8189858,
+   "phantom": 2898733,
+   "phantom_frac": 0.35394178995533254
+  },
+  {
+   "z": 13905,
+   "positives": 8151169,
+   "phantom": 2898624,
+   "phantom_frac": 0.355608379607882
+  },
+  {
+   "z": 13906,
+   "positives": 8105136,
+   "phantom": 2898140,
+   "phantom_frac": 0.3575683369162467
+  },
+  {
+   "z": 13907,
+   "positives": 8111692,
+   "phantom": 2898000,
+   "phantom_frac": 0.35726208539476106
+  },
+  {
+   "z": 13908,
+   "positives": 8101929,
+   "phantom": 2898763,
+   "phantom_frac": 0.3577867690521603
+  },
+  {
+   "z": 13909,
+   "positives": 8048318,
+   "phantom": 2898950,
+   "phantom_frac": 0.360193272681323
+  },
+  {
+   "z": 13910,
+   "positives": 8018228,
+   "phantom": 2899034,
+   "phantom_frac": 0.3615554459164793
+  },
+  {
+   "z": 13911,
+   "positives": 8121377,
+   "phantom": 2899177,
+   "phantom_frac": 0.35698096517376304
+  },
+  {
+   "z": 13912,
+   "positives": 8156471,
+   "phantom": 2898362,
+   "phantom_frac": 0.3553450996147721
+  },
+  {
+   "z": 13913,
+   "positives": 8110630,
+   "phantom": 2898009,
+   "phantom_frac": 0.35730997468753967
+  },
+  {
+   "z": 13914,
+   "positives": 8061810,
+   "phantom": 2897434,
+   "phantom_frac": 0.3594024170750737
+  },
+  {
+   "z": 13915,
+   "positives": 8068769,
+   "phantom": 2897235,
+   "phantom_frac": 0.35906778344999096
+  },
+  {
+   "z": 13916,
+   "positives": 8054027,
+   "phantom": 2897116,
+   "phantom_frac": 0.3597102418454768
+  },
+  {
+   "z": 13917,
+   "positives": 8001088,
+   "phantom": 2897025,
+   "phantom_frac": 0.362078882272011
+  },
+  {
+   "z": 13918,
+   "positives": 7968575,
+   "phantom": 2897114,
+   "phantom_frac": 0.3635673881465632
+  },
+  {
+   "z": 13919,
+   "positives": 8061000,
+   "phantom": 2898041,
+   "phantom_frac": 0.3595138320307654
+  },
+  {
+   "z": 13920,
+   "positives": 8082936,
+   "phantom": 2899297,
+   "phantom_frac": 0.3586935489777477
+  },
+  {
+   "z": 13921,
+   "positives": 8037542,
+   "phantom": 2899325,
+   "phantom_frac": 0.3607228428790792
+  },
+  {
+   "z": 13922,
+   "positives": 7986732,
+   "phantom": 2899702,
+   "phantom_frac": 0.3630648931252482
+  },
+  {
+   "z": 13923,
+   "positives": 7988559,
+   "phantom": 2901244,
+   "phantom_frac": 0.3631748854831015
+  },
+  {
+   "z": 13924,
+   "positives": 7974407,
+   "phantom": 2901909,
+   "phantom_frac": 0.36390279553075233
+  },
+  {
+   "z": 13925,
+   "positives": 7916092,
+   "phantom": 2901845,
+   "phantom_frac": 0.3665754516243621
+  },
+  {
+   "z": 13926,
+   "positives": 7876881,
+   "phantom": 2902086,
+   "phantom_frac": 0.3684308548015388
+  },
+  {
+   "z": 13927,
+   "positives": 7967300,
+   "phantom": 2902795,
+   "phantom_frac": 0.36433860906455134
+  },
+  {
+   "z": 13928,
+   "positives": 7984327,
+   "phantom": 2902700,
+   "phantom_frac": 0.36354973938316903
+  },
+  {
+   "z": 13929,
+   "positives": 7919736,
+   "phantom": 2902043,
+   "phantom_frac": 0.36643178509990737
+  },
+  {
+   "z": 13930,
+   "positives": 7854264,
+   "phantom": 2901053,
+   "phantom_frac": 0.3693602608723109
+  },
+  {
+   "z": 13931,
+   "positives": 7853112,
+   "phantom": 2900643,
+   "phantom_frac": 0.3693622349967758
+  },
+  {
+   "z": 13932,
+   "positives": 7827864,
+   "phantom": 2899949,
+   "phantom_frac": 0.37046491865469305
+  },
+  {
+   "z": 13933,
+   "positives": 7762784,
+   "phantom": 2899122,
+   "phantom_frac": 0.3734642107779889
+  },
+  {
+   "z": 13934,
+   "positives": 7715808,
+   "phantom": 2898142,
+   "phantom_frac": 0.37561095351258095
+  },
+  {
+   "z": 13935,
+   "positives": 7796980,
+   "phantom": 2897680,
+   "phantom_frac": 0.3716413277961467
+  },
+  {
+   "z": 13936,
+   "positives": 7801180,
+   "phantom": 2897043,
+   "phantom_frac": 0.3713595891903533
+  },
+  {
+   "z": 13937,
+   "positives": 7736793,
+   "phantom": 2896341,
+   "phantom_frac": 0.37435937603603975
+  },
+  {
+   "z": 13938,
+   "positives": 7670578,
+   "phantom": 2895587,
+   "phantom_frac": 0.3774926739549484
+  },
+  {
+   "z": 13939,
+   "positives": 7665807,
+   "phantom": 2895131,
+   "phantom_frac": 0.3776681307003946
+  },
+  {
+   "z": 13940,
+   "positives": 7641038,
+   "phantom": 2894366,
+   "phantom_frac": 0.37879225309440945
+  },
+  {
+   "z": 13941,
+   "positives": 7571024,
+   "phantom": 2893391,
+   "phantom_frac": 0.3821664017971677
+  },
+  {
+   "z": 13942,
+   "positives": 7526551,
+   "phantom": 2892574,
+   "phantom_frac": 0.3843160034390254
+  },
+  {
+   "z": 13943,
+   "positives": 7628045,
+   "phantom": 2892439,
+   "phantom_frac": 0.3791848370060743
+  },
+  {
+   "z": 13944,
+   "positives": 7653826,
+   "phantom": 2892671,
+   "phantom_frac": 0.3779379097460538
+  },
+  {
+   "z": 13945,
+   "positives": 7600611,
+   "phantom": 2892331,
+   "phantom_frac": 0.3805392750661756
+  },
+  {
+   "z": 13946,
+   "positives": 7571826,
+   "phantom": 2892074,
+   "phantom_frac": 0.38195198885975457
+  },
+  {
+   "z": 13947,
+   "positives": 7613264,
+   "phantom": 2892053,
+   "phantom_frac": 0.37987031580672886
+  },
+  {
+   "z": 13948,
+   "positives": 7637993,
+   "phantom": 2892052,
+   "phantom_frac": 0.3786403051168023
+  },
+  {
+   "z": 13949,
+   "positives": 7620023,
+   "phantom": 2892066,
+   "phantom_frac": 0.3795350748941309
+  },
+  {
+   "z": 13950,
+   "positives": 7635519,
+   "phantom": 2892334,
+   "phantom_frac": 0.3787999217865871
+  },
+  {
+   "z": 13951,
+   "positives": 7789629,
+   "phantom": 2893555,
+   "phantom_frac": 0.3714624919877442
+  },
+  {
+   "z": 13952,
+   "positives": 7867950,
+   "phantom": 2895188,
+   "phantom_frac": 0.3679723434948112
+  },
+  {
+   "z": 13953,
+   "positives": 7874097,
+   "phantom": 2895402,
+   "phantom_frac": 0.36771225957719345
+  },
+  {
+   "z": 13954,
+   "positives": 7881564,
+   "phantom": 2895006,
+   "phantom_frac": 0.3673136448552597
+  },
+  {
+   "z": 13955,
+   "positives": 7945793,
+   "phantom": 2895097,
+   "phantom_frac": 0.3643559554093594
+  },
+  {
+   "z": 13956,
+   "positives": 7984082,
+   "phantom": 2895328,
+   "phantom_frac": 0.3626375580811921
+  },
+  {
+   "z": 13957,
+   "positives": 7961772,
+   "phantom": 2896295,
+   "phantom_frac": 0.36377517467217096
+  },
+  {
+   "z": 13958,
+   "positives": 7965289,
+   "phantom": 2896705,
+   "phantom_frac": 0.36366602643042834
+  },
+  {
+   "z": 13959,
+   "positives": 8107318,
+   "phantom": 2897497,
+   "phantom_frac": 0.3573927900694163
+  },
+  {
+   "z": 13960,
+   "positives": 8170700,
+   "phantom": 2897947,
+   "phantom_frac": 0.3546754868003965
+  },
+  {
+   "z": 13961,
+   "positives": 8145091,
+   "phantom": 2897793,
+   "phantom_frac": 0.3557717157487866
+  },
+  {
+   "z": 13962,
+   "positives": 8121347,
+   "phantom": 2897193,
+   "phantom_frac": 0.35673798940003426
+  },
+  {
+   "z": 13963,
+   "positives": 8154373,
+   "phantom": 2896946,
+   "phantom_frac": 0.3552628755147698
+  },
+  {
+   "z": 13964,
+   "positives": 8162572,
+   "phantom": 2896008,
+   "phantom_frac": 0.35479111240917693
+  },
+  {
+   "z": 13965,
+   "positives": 8121365,
+   "phantom": 2895675,
+   "phantom_frac": 0.3565502843425951
+  },
+  {
+   "z": 13966,
+   "positives": 8105314,
+   "phantom": 2894503,
+   "phantom_frac": 0.3571117664287898
+  },
+  {
+   "z": 13967,
+   "positives": 8219173,
+   "phantom": 2894494,
+   "phantom_frac": 0.35216365442119296
+  },
+  {
+   "z": 13968,
+   "positives": 8269675,
+   "phantom": 2894398,
+   "phantom_frac": 0.35000142085390296
+  },
+  {
+   "z": 13969,
+   "positives": 8249949,
+   "phantom": 2894446,
+   "phantom_frac": 0.35084410824842677
+  },
+  {
+   "z": 13970,
+   "positives": 8226607,
+   "phantom": 2894180,
+   "phantom_frac": 0.3518072517624824
+  },
+  {
+   "z": 13971,
+   "positives": 8257961,
+   "phantom": 2895237,
+   "phantom_frac": 0.3505995002882673
+  },
+  {
+   "z": 13972,
+   "positives": 8270478,
+   "phantom": 2895939,
+   "phantom_frac": 0.35015376378487434
+  },
+  {
+   "z": 13973,
+   "positives": 8232108,
+   "phantom": 2896251,
+   "phantom_frac": 0.3518237370063658
+  },
+  {
+   "z": 13974,
+   "positives": 8217179,
+   "phantom": 2896898,
+   "phantom_frac": 0.35254166910566265
+  },
+  {
+   "z": 13975,
+   "positives": 8335734,
+   "phantom": 2898778,
+   "phantom_frac": 0.3477531792641176
+  },
+  {
+   "z": 13976,
+   "positives": 8381187,
+   "phantom": 2900076,
+   "phantom_frac": 0.3460221088015337
+  },
+  {
+   "z": 13977,
+   "positives": 8333935,
+   "phantom": 2899616,
+   "phantom_frac": 0.3479287995406732
+  },
+  {
+   "z": 13978,
+   "positives": 8286267,
+   "phantom": 2899117,
+   "phantom_frac": 0.34987009228643007
+  },
+  {
+   "z": 13979,
+   "positives": 8301419,
+   "phantom": 2899877,
+   "phantom_frac": 0.3493230494690125
+  },
+  {
+   "z": 13980,
+   "positives": 8291450,
+   "phantom": 2900075,
+   "phantom_frac": 0.34976692858305847
+  },
+  {
+   "z": 13981,
+   "positives": 8236511,
+   "phantom": 2899852,
+   "phantom_frac": 0.3520728619193248
+  },
+  {
+   "z": 13982,
+   "positives": 8207651,
+   "phantom": 2899883,
+   "phantom_frac": 0.3533146085280673
+  },
+  {
+   "z": 13983,
+   "positives": 8309351,
+   "phantom": 2901056,
+   "phantom_frac": 0.3491314784993437
+  },
+  {
+   "z": 13984,
+   "positives": 8347230,
+   "phantom": 2901637,
+   "phantom_frac": 0.34761675430052846
+  },
+  {
+   "z": 13985,
+   "positives": 8317244,
+   "phantom": 2901564,
+   "phantom_frac": 0.34886123336047375
+  },
+  {
+   "z": 13986,
+   "positives": 8280667,
+   "phantom": 2901261,
+   "phantom_frac": 0.3503656166828107
+  },
+  {
+   "z": 13987,
+   "positives": 8295164,
+   "phantom": 2902238,
+   "phantom_frac": 0.34987108151207136
+  },
+  {
+   "z": 13988,
+   "positives": 8290949,
+   "phantom": 2902641,
+   "phantom_frac": 0.3500975581926749
+  },
+  {
+   "z": 13989,
+   "positives": 8243109,
+   "phantom": 2902422,
+   "phantom_frac": 0.3521028291631228
+  },
+  {
+   "z": 13990,
+   "positives": 8222509,
+   "phantom": 2902660,
+   "phantom_frac": 0.3530139036637114
+  },
+  {
+   "z": 13991,
+   "positives": 8338123,
+   "phantom": 2904073,
+   "phantom_frac": 0.3482885776571058
+  },
+  {
+   "z": 13992,
+   "positives": 8380181,
+   "phantom": 2904639,
+   "phantom_frac": 0.34660814605317
+  },
+  {
+   "z": 13993,
+   "positives": 8299454,
+   "phantom": 2868021,
+   "phantom_frac": 0.34556743130331224
+  },
+  {
+   "z": 13994,
+   "positives": 8250009,
+   "phantom": 2866566,
+   "phantom_frac": 0.3474621664049094
+  },
+  {
+   "z": 13995,
+   "positives": 8256416,
+   "phantom": 2866684,
+   "phantom_frac": 0.3472068267877975
+  },
+  {
+   "z": 13996,
+   "positives": 8238235,
+   "phantom": 2866032,
+   "phantom_frac": 0.3478939360190623
+  },
+  {
+   "z": 13997,
+   "positives": 8184246,
+   "phantom": 2865073,
+   "phantom_frac": 0.350071710943195
+  },
+  {
+   "z": 13998,
+   "positives": 8150423,
+   "phantom": 2864424,
+   "phantom_frac": 0.351444826851318
+  },
+  {
+   "z": 13999,
+   "positives": 8249432,
+   "phantom": 2865016,
+   "phantom_frac": 0.34729857764752775
+  },
+  {
+   "z": 14000,
+   "positives": 8276442,
+   "phantom": 2864930,
+   "phantom_frac": 0.3461547848701169
+  },
+  {
+   "z": 14001,
+   "positives": 8238508,
+   "phantom": 2864200,
+   "phantom_frac": 0.34766003747280455
+  },
+  {
+   "z": 14002,
+   "positives": 8189704,
+   "phantom": 2863272,
+   "phantom_frac": 0.34961849659035293
+  },
+  {
+   "z": 14003,
+   "positives": 8194452,
+   "phantom": 2863363,
+   "phantom_frac": 0.34942702696897854
+  },
+  {
+   "z": 14004,
+   "positives": 8178715,
+   "phantom": 2863058,
+   "phantom_frac": 0.3500620818796107
+  },
+  {
+   "z": 14005,
+   "positives": 8124523,
+   "phantom": 2862208,
+   "phantom_frac": 0.35229243612209604
+  },
+  {
+   "z": 14006,
+   "positives": 8091506,
+   "phantom": 2861777,
+   "phantom_frac": 0.3536766826842865
+  },
+  {
+   "z": 14007,
+   "positives": 8193967,
+   "phantom": 2862594,
+   "phantom_frac": 0.34935385998015367
+  },
+  {
+   "z": 14008,
+   "positives": 8222063,
+   "phantom": 2862105,
+   "phantom_frac": 0.3481005922722801
+  },
+  {
+   "z": 14009,
+   "positives": 8169609,
+   "phantom": 2861565,
+   "phantom_frac": 0.3502695171825237
+  },
+  {
+   "z": 14010,
+   "positives": 8109636,
+   "phantom": 2860633,
+   "phantom_frac": 0.3527449320783325
+  },
+  {
+   "z": 14011,
+   "positives": 8109421,
+   "phantom": 2860974,
+   "phantom_frac": 0.3527963340416042
+  },
+  {
+   "z": 14012,
+   "positives": 8085671,
+   "phantom": 2860697,
+   "phantom_frac": 0.35379834277204697
+  },
+  {
+   "z": 14013,
+   "positives": 8032765,
+   "phantom": 2860034,
+   "phantom_frac": 0.35604601902333755
+  },
+  {
+   "z": 14014,
+   "positives": 7998843,
+   "phantom": 2859433,
+   "phantom_frac": 0.3574808256644117
+  },
+  {
+   "z": 14015,
+   "positives": 8089439,
+   "phantom": 2859814,
+   "phantom_frac": 0.35352439149364995
+  },
+  {
+   "z": 16128,
+   "positives": 9035854,
+   "phantom": 3067011,
+   "phantom_frac": 0.33942679906071965
+  },
+  {
+   "z": 16129,
+   "positives": 9014127,
+   "phantom": 3066564,
+   "phantom_frac": 0.3401953400479048
+  },
+  {
+   "z": 16130,
+   "positives": 8947285,
+   "phantom": 3066341,
+   "phantom_frac": 0.34271189528443546
+  },
+  {
+   "z": 16131,
+   "positives": 8897334,
+   "phantom": 3066278,
+   "phantom_frac": 0.34462885174367963
+  },
+  {
+   "z": 16132,
+   "positives": 8986708,
+   "phantom": 3066626,
+   "phantom_frac": 0.3412401960762495
+  },
+  {
+   "z": 16133,
+   "positives": 8996118,
+   "phantom": 3066266,
+   "phantom_frac": 0.3408432392727619
+  },
+  {
+   "z": 16134,
+   "positives": 8919382,
+   "phantom": 3065499,
+   "phantom_frac": 0.34368961885475924
+  },
+  {
+   "z": 16135,
+   "positives": 8840368,
+   "phantom": 3064891,
+   "phantom_frac": 0.34669269424078275
+  },
+  {
+   "z": 16136,
+   "positives": 8830134,
+   "phantom": 3064721,
+   "phantom_frac": 0.34707525389761923
+  },
+  {
+   "z": 16137,
+   "positives": 8793929,
+   "phantom": 3064095,
+   "phantom_frac": 0.348432992806742
+  },
+  {
+   "z": 16138,
+   "positives": 8716798,
+   "phantom": 3063885,
+   "phantom_frac": 0.35149202723293577
+  },
+  {
+   "z": 16139,
+   "positives": 8664842,
+   "phantom": 3063750,
+   "phantom_frac": 0.35358405842830143
+  },
+  {
+   "z": 16140,
+   "positives": 8725131,
+   "phantom": 3063898,
+   "phantom_frac": 0.3511578221576272
+  },
+  {
+   "z": 16141,
+   "positives": 8701473,
+   "phantom": 3063851,
+   "phantom_frac": 0.35210716622346583
+  },
+  {
+   "z": 16142,
+   "positives": 8620427,
+   "phantom": 3063572,
+   "phantom_frac": 0.35538517987566043
+  },
+  {
+   "z": 16143,
+   "positives": 8544645,
+   "phantom": 3063120,
+   "phantom_frac": 0.35848417342089695
+  },
+  {
+   "z": 16144,
+   "positives": 8525734,
+   "phantom": 3063157,
+   "phantom_frac": 0.35928366988695637
+  },
+  {
+   "z": 16145,
+   "positives": 8478773,
+   "phantom": 3063209,
+   "phantom_frac": 0.3612797512092846
+  },
+  {
+   "z": 16146,
+   "positives": 8408548,
+   "phantom": 3063199,
+   "phantom_frac": 0.36429583324017417
+  },
+  {
+   "z": 16147,
+   "positives": 8411528,
+   "phantom": 3063122,
+   "phantom_frac": 0.3641576179738093
+  },
+  {
+   "z": 16148,
+   "positives": 8487735,
+   "phantom": 3063389,
+   "phantom_frac": 0.36091949147799735
+  },
+  {
+   "z": 16149,
+   "positives": 8477895,
+   "phantom": 3063543,
+   "phantom_frac": 0.3613565631563024
+  },
+  {
+   "z": 16150,
+   "positives": 8431052,
+   "phantom": 3063344,
+   "phantom_frac": 0.3633406602165424
+  },
+  {
+   "z": 16151,
+   "positives": 8434842,
+   "phantom": 3063080,
+   "phantom_frac": 0.36314610279599785
+  },
+  {
+   "z": 16152,
+   "positives": 8473657,
+   "phantom": 3063217,
+   "phantom_frac": 0.3614988192229164
+  },
+  {
+   "z": 16153,
+   "positives": 8480400,
+   "phantom": 3063066,
+   "phantom_frac": 0.3611935757747276
+  },
+  {
+   "z": 16154,
+   "positives": 8485518,
+   "phantom": 3063058,
+   "phantom_frac": 0.3609747807971181
+  },
+  {
+   "z": 16155,
+   "positives": 8605511,
+   "phantom": 3062925,
+   "phantom_frac": 0.3559259874282887
+  },
+  {
+   "z": 16156,
+   "positives": 8716559,
+   "phantom": 3063043,
+   "phantom_frac": 0.35140506706832364
+  },
+  {
+   "z": 16157,
+   "positives": 8750382,
+   "phantom": 3063247,
+   "phantom_frac": 0.3500700883687135
+  },
+  {
+   "z": 16158,
+   "positives": 8756900,
+   "phantom": 3063020,
+   "phantom_frac": 0.3497835992189017
+  },
+  {
+   "z": 16159,
+   "positives": 8812328,
+   "phantom": 3062752,
+   "phantom_frac": 0.3475531096890629
+  },
+  {
+   "z": 16160,
+   "positives": 8860466,
+   "phantom": 3062729,
+   "phantom_frac": 0.34566229360848516
+  },
+  {
+   "z": 16161,
+   "positives": 8851877,
+   "phantom": 3062791,
+   "phantom_frac": 0.34600469482348206
+  },
+  {
+   "z": 16162,
+   "positives": 8848259,
+   "phantom": 3062897,
+   "phantom_frac": 0.34615815382438514
+  },
+  {
+   "z": 16163,
+   "positives": 8980771,
+   "phantom": 3062841,
+   "phantom_frac": 0.34104432681782
+  },
+  {
+   "z": 16164,
+   "positives": 9061628,
+   "phantom": 3062943,
+   "phantom_frac": 0.3380124410315674
+  },
+  {
+   "z": 16165,
+   "positives": 9052598,
+   "phantom": 3063147,
+   "phantom_frac": 0.3383721446594668
+  },
+  {
+   "z": 16166,
+   "positives": 9029781,
+   "phantom": 3063100,
+   "phantom_frac": 0.33922195898217244
+  },
+  {
+   "z": 16167,
+   "positives": 9068043,
+   "phantom": 3062922,
+   "phantom_frac": 0.33777100527644166
+  },
+  {
+   "z": 16168,
+   "positives": 9086888,
+   "phantom": 3063238,
+   "phantom_frac": 0.33710528841117005
+  },
+  {
+   "z": 16169,
+   "positives": 9058854,
+   "phantom": 3062869,
+   "phantom_frac": 0.33810777831279765
+  },
+  {
+   "z": 16170,
+   "positives": 9047252,
+   "phantom": 3062989,
+   "phantom_frac": 0.338554624100224
+  },
+  {
+   "z": 16171,
+   "positives": 9170056,
+   "phantom": 3063024,
+   "phantom_frac": 0.3340245686613037
+  },
+  {
+   "z": 16172,
+   "positives": 9229837,
+   "phantom": 3063299,
+   "phantom_frac": 0.33189090988280723
+  },
+  {
+   "z": 16173,
+   "positives": 9215189,
+   "phantom": 3063436,
+   "phantom_frac": 0.3324333337059066
+  },
+  {
+   "z": 16174,
+   "positives": 9190442,
+   "phantom": 3063440,
+   "phantom_frac": 0.3333289084464055
+  },
+  {
+   "z": 16175,
+   "positives": 9219864,
+   "phantom": 3063246,
+   "phantom_frac": 0.3322441632544688
+  },
+  {
+   "z": 16176,
+   "positives": 9236695,
+   "phantom": 3063493,
+   "phantom_frac": 0.33166549290628305
+  },
+  {
+   "z": 16177,
+   "positives": 9197986,
+   "phantom": 3063901,
+   "phantom_frac": 0.3331056385604414
+  },
+  {
+   "z": 16178,
+   "positives": 9178309,
+   "phantom": 3064349,
+   "phantom_frac": 0.33386858080284726
+  },
+  {
+   "z": 16179,
+   "positives": 9301572,
+   "phantom": 3064572,
+   "phantom_frac": 0.3294681802172794
+  },
+  {
+   "z": 16180,
+   "positives": 9354771,
+   "phantom": 3064624,
+   "phantom_frac": 0.3276001090780309
+  },
+  {
+   "z": 16181,
+   "positives": 9312064,
+   "phantom": 3064742,
+   "phantom_frac": 0.3291152208575886
+  },
+  {
+   "z": 16182,
+   "positives": 9261461,
+   "phantom": 3064623,
+   "phantom_frac": 0.3309005998081728
+  },
+  {
+   "z": 16183,
+   "positives": 9275426,
+   "phantom": 3064818,
+   "phantom_frac": 0.3304234220616929
+  },
+  {
+   "z": 16184,
+   "positives": 9274800,
+   "phantom": 3065282,
+   "phantom_frac": 0.3304957519299608
+  },
+  {
+   "z": 16185,
+   "positives": 9226353,
+   "phantom": 3065281,
+   "phantom_frac": 0.33223105597628877
+  },
+  {
+   "z": 16186,
+   "positives": 9203617,
+   "phantom": 3065716,
+   "phantom_frac": 0.33309904138775004
+  },
+  {
+   "z": 16187,
+   "positives": 9321953,
+   "phantom": 3065694,
+   "phantom_frac": 0.32886821034175995
+  },
+  {
+   "z": 16188,
+   "positives": 9367419,
+   "phantom": 3065311,
+   "phantom_frac": 0.32723111883860434
+  },
+  {
+   "z": 16189,
+   "positives": 9334133,
+   "phantom": 3065065,
+   "phantom_frac": 0.3283716870115307
+  },
+  {
+   "z": 16190,
+   "positives": 9293157,
+   "phantom": 3064882,
+   "phantom_frac": 0.3297998731754989
+  },
+  {
+   "z": 16191,
+   "positives": 9308809,
+   "phantom": 3064575,
+   "phantom_frac": 0.32921236218296024
+  },
+  {
+   "z": 16192,
+   "positives": 9309327,
+   "phantom": 3064529,
+   "phantom_frac": 0.3291891024990313
+  },
+  {
+   "z": 16193,
+   "positives": 9265028,
+   "phantom": 3065062,
+   "phantom_frac": 0.3308205868347079
+  },
+  {
+   "z": 16194,
+   "positives": 9236740,
+   "phantom": 3065423,
+   "phantom_frac": 0.3318728252608604
+  },
+  {
+   "z": 16195,
+   "positives": 9353546,
+   "phantom": 3065855,
+   "phantom_frac": 0.3277746215178714
+  },
+  {
+   "z": 16196,
+   "positives": 9395965,
+   "phantom": 3066081,
+   "phantom_frac": 0.3263189039124773
+  },
+  {
+   "z": 16197,
+   "positives": 9193911,
+   "phantom": 2916145,
+   "phantom_frac": 0.31718220896417204
+  },
+  {
+   "z": 16198,
+   "positives": 9357988,
+   "phantom": 3137229,
+   "phantom_frac": 0.335246102046722
+  },
+  {
+   "z": 16199,
+   "positives": 9363747,
+   "phantom": 3137490,
+   "phantom_frac": 0.3350677885679739
+  },
+  {
+   "z": 16200,
+   "positives": 9353240,
+   "phantom": 3136529,
+   "phantom_frac": 0.3353414431790481
+  },
+  {
+   "z": 16201,
+   "positives": 9299177,
+   "phantom": 3136298,
+   "phantom_frac": 0.3372661903306067
+  },
+  {
+   "z": 16202,
+   "positives": 9266805,
+   "phantom": 3135996,
+   "phantom_frac": 0.338411782701805
+  },
+  {
+   "z": 16203,
+   "positives": 9374624,
+   "phantom": 3135756,
+   "phantom_frac": 0.33449405544158356
+  },
+  {
+   "z": 16204,
+   "positives": 9413730,
+   "phantom": 3135523,
+   "phantom_frac": 0.3330797675310424
+  },
+  {
+   "z": 16205,
+   "positives": 9375472,
+   "phantom": 3135375,
+   "phantom_frac": 0.33442316290849144
+  },
+  {
+   "z": 16206,
+   "positives": 9323841,
+   "phantom": 3135080,
+   "phantom_frac": 0.3362434001180415
+  },
+  {
+   "z": 16207,
+   "positives": 9334136,
+   "phantom": 3134909,
+   "phantom_frac": 0.3358542236796207
+  },
+  {
+   "z": 16208,
+   "positives": 9332243,
+   "phantom": 3134750,
+   "phantom_frac": 0.33590531236702686
+  },
+  {
+   "z": 16209,
+   "positives": 9280958,
+   "phantom": 3134755,
+   "phantom_frac": 0.33776200689627084
+  },
+  {
+   "z": 16210,
+   "positives": 9249554,
+   "phantom": 3134483,
+   "phantom_frac": 0.3388793665078338
+  },
+  {
+   "z": 16211,
+   "positives": 9363376,
+   "phantom": 3134307,
+   "phantom_frac": 0.3347411232871563
+  },
+  {
+   "z": 16212,
+   "positives": 9401716,
+   "phantom": 3134004,
+   "phantom_frac": 0.33334382787142264
+  },
+  {
+   "z": 16213,
+   "positives": 9344957,
+   "phantom": 3134074,
+   "phantom_frac": 0.3353759680221107
+  },
+  {
+   "z": 16214,
+   "positives": 9279844,
+   "phantom": 3134215,
+   "phantom_frac": 0.33774436294403226
+  },
+  {
+   "z": 16215,
+   "positives": 9284662,
+   "phantom": 3134832,
+   "phantom_frac": 0.33763555420757374
+  },
+  {
+   "z": 16216,
+   "positives": 9270567,
+   "phantom": 3134120,
+   "phantom_frac": 0.33807209418798223
+  },
+  {
+   "z": 16217,
+   "positives": 9211791,
+   "phantom": 3134013,
+   "phantom_frac": 0.3402175537851434
+  },
+  {
+   "z": 16218,
+   "positives": 9171003,
+   "phantom": 3133954,
+   "phantom_frac": 0.34172423670562535
+  },
+  {
+   "z": 16219,
+   "positives": 9271232,
+   "phantom": 3133941,
+   "phantom_frac": 0.33802853817054734
+  },
+  {
+   "z": 16220,
+   "positives": 9301630,
+   "phantom": 3133973,
+   "phantom_frac": 0.3369272912382023
+  },
+  {
+   "z": 16221,
+   "positives": 9255697,
+   "phantom": 3133924,
+   "phantom_frac": 0.33859405726008535
+  },
+  {
+   "z": 16222,
+   "positives": 9195406,
+   "phantom": 3133728,
+   "phantom_frac": 0.3407927828309049
+  },
+  {
+   "z": 16223,
+   "positives": 9201239,
+   "phantom": 3133592,
+   "phantom_frac": 0.3405619612749979
+  },
+  {
+   "z": 16224,
+   "positives": 9184923,
+   "phantom": 3133468,
+   "phantom_frac": 0.34115343155299177
+  },
+  {
+   "z": 16225,
+   "positives": 9119460,
+   "phantom": 3133562,
+   "phantom_frac": 0.34361267004844587
+  },
+  {
+   "z": 16226,
+   "positives": 9071802,
+   "phantom": 3133524,
+   "phantom_frac": 0.34541362344548526
+  },
+  {
+   "z": 16227,
+   "positives": 9170911,
+   "phantom": 3133524,
+   "phantom_frac": 0.3416807774058651
+  },
+  {
+   "z": 16228,
+   "positives": 9193965,
+   "phantom": 3133497,
+   "phantom_frac": 0.34082107121356237
+  },
+  {
+   "z": 16229,
+   "positives": 9121862,
+   "phantom": 3133545,
+   "phantom_frac": 0.34352032512660247
+  },
+  {
+   "z": 16230,
+   "positives": 9043703,
+   "phantom": 3133558,
+   "phantom_frac": 0.3464905912987191
+  },
+  {
+   "z": 16231,
+   "positives": 9038689,
+   "phantom": 3133860,
+   "phantom_frac": 0.34671621072480757
+  },
+  {
+   "z": 16232,
+   "positives": 9014044,
+   "phantom": 3133016,
+   "phantom_frac": 0.347570524395044
+  },
+  {
+   "z": 16233,
+   "positives": 8941993,
+   "phantom": 3133031,
+   "phantom_frac": 0.35037278602208705
+  },
+  {
+   "z": 16234,
+   "positives": 8881417,
+   "phantom": 3132915,
+   "phantom_frac": 0.3527494542819012
+  },
+  {
+   "z": 16235,
+   "positives": 8962164,
+   "phantom": 3132800,
+   "phantom_frac": 0.34955843253928404
+  },
+  {
+   "z": 16236,
+   "positives": 8965472,
+   "phantom": 3132691,
+   "phantom_frac": 0.34941729782882597
+  },
+  {
+   "z": 16237,
+   "positives": 8887563,
+   "phantom": 3132539,
+   "phantom_frac": 0.3524632117938292
+  },
+  {
+   "z": 16238,
+   "positives": 8801682,
+   "phantom": 3132358,
+   "phantom_frac": 0.3558817507835434
+  },
+  {
+   "z": 16239,
+   "positives": 8788280,
+   "phantom": 3132238,
+   "phantom_frac": 0.35641081076160525
+  },
+  {
+   "z": 16240,
+   "positives": 8756828,
+   "phantom": 3132159,
+   "phantom_frac": 0.35768191404467464
+  },
+  {
+   "z": 16241,
+   "positives": 8677910,
+   "phantom": 3132154,
+   "phantom_frac": 0.3609341419765819
+  },
+  {
+   "z": 16242,
+   "positives": 8624015,
+   "phantom": 3131993,
+   "phantom_frac": 0.3631710983805107
+  },
+  {
+   "z": 16243,
+   "positives": 8731783,
+   "phantom": 3131974,
+   "phantom_frac": 0.3586866508249232
+  },
+  {
+   "z": 16244,
+   "positives": 8766965,
+   "phantom": 3131887,
+   "phantom_frac": 0.35723731074550885
+  },
+  {
+   "z": 16245,
+   "positives": 8716145,
+   "phantom": 3131774,
+   "phantom_frac": 0.3593072396110895
+  },
+  {
+   "z": 16246,
+   "positives": 8670312,
+   "phantom": 3131656,
+   "phantom_frac": 0.3611929997444152
+  },
+  {
+   "z": 16247,
+   "positives": 8708632,
+   "phantom": 3131669,
+   "phantom_frac": 0.35960515957041245
+  },
+  {
+   "z": 16248,
+   "positives": 8731977,
+   "phantom": 3132845,
+   "phantom_frac": 0.35877843013100014
+  },
+  {
+   "z": 16249,
+   "positives": 8714199,
+   "phantom": 3132225,
+   "phantom_frac": 0.35943923245269016
+  },
+  {
+   "z": 16250,
+   "positives": 8722568,
+   "phantom": 3131857,
+   "phantom_frac": 0.35905217362593217
+  },
+  {
+   "z": 16251,
+   "positives": 8882070,
+   "phantom": 3131803,
+   "phantom_frac": 0.35259832448967415
+  },
+  {
+   "z": 16252,
+   "positives": 8967546,
+   "phantom": 3131803,
+   "phantom_frac": 0.34923746139690837
+  },
+  {
+   "z": 16253,
+   "positives": 8976910,
+   "phantom": 3131797,
+   "phantom_frac": 0.3488724962152901
+  },
+  {
+   "z": 16254,
+   "positives": 8977636,
+   "phantom": 3131925,
+   "phantom_frac": 0.34885854137993566
+  },
+  {
+   "z": 16255,
+   "positives": 9039588,
+   "phantom": 3132215,
+   "phantom_frac": 0.3464997519798469
+  },
+  {
+   "z": 16256,
+   "positives": 9079314,
+   "phantom": 3132739,
+   "phantom_frac": 0.3450413764740376
+  },
+  {
+   "z": 16257,
+   "positives": 9061100,
+   "phantom": 3132970,
+   "phantom_frac": 0.34576044851066645
+  },
+  {
+   "z": 16258,
+   "positives": 9060860,
+   "phantom": 3133099,
+   "phantom_frac": 0.3457838439176855
+  },
+  {
+   "z": 16259,
+   "positives": 9208230,
+   "phantom": 3133312,
+   "phantom_frac": 0.340272994918676
+  },
+  {
+   "z": 16260,
+   "positives": 9278982,
+   "phantom": 3133252,
+   "phantom_frac": 0.33767195582446435
+  },
+  {
+   "z": 16261,
+   "positives": 9254653,
+   "phantom": 3133277,
+   "phantom_frac": 0.33856234263996715
+  },
+  {
+   "z": 16262,
+   "positives": 9223478,
+   "phantom": 3133513,
+   "phantom_frac": 0.33973225718107636
+  },
+  {
+   "z": 16263,
+   "positives": 9260087,
+   "phantom": 3134119,
+   "phantom_frac": 0.3384545955129795
+  },
+  {
+   "z": 16264,
+   "positives": 9274570,
+   "phantom": 3133828,
+   "phantom_frac": 0.3378946948483865
+  },
+  {
+   "z": 16265,
+   "positives": 9241843,
+   "phantom": 3134081,
+   "phantom_frac": 0.33911861519396075
+  },
+  {
+   "z": 16266,
+   "positives": 9230852,
+   "phantom": 3134245,
+   "phantom_frac": 0.3395401637898647
+  },
+  {
+   "z": 16267,
+   "positives": 9354896,
+   "phantom": 3134372,
+   "phantom_frac": 0.3350515067190485
+  },
+  {
+   "z": 16268,
+   "positives": 9409834,
+   "phantom": 3134545,
+   "phantom_frac": 0.33311374036991515
+  },
+  {
+   "z": 16269,
+   "positives": 9387788,
+   "phantom": 3134632,
+   "phantom_frac": 0.33390528205366377
+  },
+  {
+   "z": 16270,
+   "positives": 9354332,
+   "phantom": 3134466,
+   "phantom_frac": 0.3350817567732255
+  },
+  {
+   "z": 16271,
+   "positives": 9380839,
+   "phantom": 3134728,
+   "phantom_frac": 0.33416286112574795
+  },
+  {
+   "z": 16272,
+   "positives": 9393897,
+   "phantom": 3134953,
+   "phantom_frac": 0.3337223092822925
+  },
+  {
+   "z": 16273,
+   "positives": 9352587,
+   "phantom": 3135604,
+   "phantom_frac": 0.33526595368746637
+  },
+  {
+   "z": 16274,
+   "positives": 9329951,
+   "phantom": 3135814,
+   "phantom_frac": 0.3361018723463821
+  },
+  {
+   "z": 16275,
+   "positives": 9452474,
+   "phantom": 3136426,
+   "phantom_frac": 0.33181006369337807
+  },
+  {
+   "z": 16276,
+   "positives": 9504130,
+   "phantom": 3136679,
+   "phantom_frac": 0.3300332592252
+  },
+  {
+   "z": 16277,
+   "positives": 9459514,
+   "phantom": 3136938,
+   "phantom_frac": 0.3316172479896959
+  },
+  {
+   "z": 16278,
+   "positives": 9405852,
+   "phantom": 3136792,
+   "phantom_frac": 0.33349365905395917
+  },
+  {
+   "z": 16279,
+   "positives": 9420833,
+   "phantom": 3137583,
+   "phantom_frac": 0.33304730059433174
+  },
+  {
+   "z": 16280,
+   "positives": 9419387,
+   "phantom": 3137113,
+   "phantom_frac": 0.3330485306527909
+  },
+  {
+   "z": 16281,
+   "positives": 9373480,
+   "phantom": 3137721,
+   "phantom_frac": 0.33474451324374727
+  },
+  {
+   "z": 16282,
+   "positives": 9349553,
+   "phantom": 3137966,
+   "phantom_frac": 0.3356273823999928
+  },
+  {
+   "z": 16283,
+   "positives": 9467684,
+   "phantom": 3138517,
+   "phantom_frac": 0.33149786156783434
+  },
+  {
+   "z": 16284,
+   "positives": 9512712,
+   "phantom": 3138854,
+   "phantom_frac": 0.32996415743480934
+  },
+  {
+   "z": 16285,
+   "positives": 9480815,
+   "phantom": 3139171,
+   "phantom_frac": 0.3311077159505802
+  },
+  {
+   "z": 16286,
+   "positives": 9435032,
+   "phantom": 3138657,
+   "phantom_frac": 0.332659921026235
+  },
+  {
+   "z": 16287,
+   "positives": 9447580,
+   "phantom": 3139208,
+   "phantom_frac": 0.33227641364243543
+  },
+  {
+   "z": 16288,
+   "positives": 9441639,
+   "phantom": 3139684,
+   "phantom_frac": 0.33253590822525625
+  },
+  {
+   "z": 16289,
+   "positives": 9392567,
+   "phantom": 3140605,
+   "phantom_frac": 0.3343713172341491
+  },
+  {
+   "z": 16290,
+   "positives": 9367204,
+   "phantom": 3140864,
+   "phantom_frac": 0.3353043234672801
+  },
+  {
+   "z": 16291,
+   "positives": 9489423,
+   "phantom": 3141501,
+   "phantom_frac": 0.33105289963362367
+  },
+  {
+   "z": 16292,
+   "positives": 9542354,
+   "phantom": 3141828,
+   "phantom_frac": 0.3292508326561769
+  },
+  {
+   "z": 16293,
+   "positives": 9561666,
+   "phantom": 3204199,
+   "phantom_frac": 0.3351088607361939
+  },
+  {
+   "z": 16294,
+   "positives": 9502426,
+   "phantom": 3203066,
+   "phantom_frac": 0.3370787628338279
+  },
+  {
+   "z": 16295,
+   "positives": 9512079,
+   "phantom": 3203255,
+   "phantom_frac": 0.3367565597384126
+  },
+  {
+   "z": 16296,
+   "positives": 9501736,
+   "phantom": 3203497,
+   "phantom_frac": 0.33714860105563865
+  },
+  {
+   "z": 16297,
+   "positives": 9445051,
+   "phantom": 3203481,
+   "phantom_frac": 0.3391703231671274
+  },
+  {
+   "z": 16298,
+   "positives": 9412473,
+   "phantom": 3202896,
+   "phantom_frac": 0.34028209164584056
+  },
+  {
+   "z": 16299,
+   "positives": 9528679,
+   "phantom": 3202908,
+   "phantom_frac": 0.3361334766340644
+  },
+  {
+   "z": 16300,
+   "positives": 9566722,
+   "phantom": 3202806,
+   "phantom_frac": 0.3347861472299498
+  },
+  {
+   "z": 16301,
+   "positives": 9523262,
+   "phantom": 3202498,
+   "phantom_frac": 0.3362816228304965
+  },
+  {
+   "z": 16302,
+   "positives": 9469196,
+   "phantom": 3201246,
+   "phantom_frac": 0.33806946228592166
+  },
+  {
+   "z": 16303,
+   "positives": 9483943,
+   "phantom": 3201839,
+   "phantom_frac": 0.33760630994935337
+  },
+  {
+   "z": 16304,
+   "positives": 9476104,
+   "phantom": 3201937,
+   "phantom_frac": 0.33789593275886376
+  },
+  {
+   "z": 16305,
+   "positives": 9423668,
+   "phantom": 3202257,
+   "phantom_frac": 0.3398100399971646
+  },
+  {
+   "z": 16306,
+   "positives": 9392145,
+   "phantom": 3201264,
+   "phantom_frac": 0.34084482298772006
+  },
+  {
+   "z": 16307,
+   "positives": 9508414,
+   "phantom": 3201289,
+   "phantom_frac": 0.33667959767002154
+  },
+  {
+   "z": 16308,
+   "positives": 9546428,
+   "phantom": 3201398,
+   "phantom_frac": 0.3353503530325688
+  },
+  {
+   "z": 16309,
+   "positives": 9489715,
+   "phantom": 3201484,
+   "phantom_frac": 0.33736355622903325
+  },
+  {
+   "z": 16310,
+   "positives": 9423369,
+   "phantom": 3200467,
+   "phantom_frac": 0.3396308687476846
+  },
+  {
+   "z": 16311,
+   "positives": 9429197,
+   "phantom": 3200857,
+   "phantom_frac": 0.33946231052336695
+  },
+  {
+   "z": 16312,
+   "positives": 9411931,
+   "phantom": 3201369,
+   "phantom_frac": 0.34013944641115623
+  },
+  {
+   "z": 16313,
+   "positives": 9353018,
+   "phantom": 3201628,
+   "phantom_frac": 0.34230961599774534
+  },
+  {
+   "z": 16314,
+   "positives": 9313733,
+   "phantom": 3201160,
+   "phantom_frac": 0.34370321760351086
+  },
+  {
+   "z": 16315,
+   "positives": 9418432,
+   "phantom": 3201582,
+   "phantom_frac": 0.3399272830127138
+  },
+  {
+   "z": 16316,
+   "positives": 9451072,
+   "phantom": 3201914,
+   "phantom_frac": 0.33878844643232003
+  },
+  {
+   "z": 16317,
+   "positives": 9406927,
+   "phantom": 3201940,
+   "phantom_frac": 0.34038108300404585
+  },
+  {
+   "z": 16318,
+   "positives": 9348416,
+   "phantom": 3200537,
+   "phantom_frac": 0.3423614225126481
+  },
+  {
+   "z": 16319,
+   "positives": 9356140,
+   "phantom": 3200953,
+   "phantom_frac": 0.34212324740758476
+  },
+  {
+   "z": 18432,
+   "positives": 6453140,
+   "phantom": 2456555,
+   "phantom_frac": 0.38067591900997033
+  },
+  {
+   "z": 18433,
+   "positives": 6464469,
+   "phantom": 2456297,
+   "phantom_frac": 0.3799688729267632
+  },
+  {
+   "z": 18434,
+   "positives": 6401987,
+   "phantom": 2455668,
+   "phantom_frac": 0.3835790356962612
+  },
+  {
+   "z": 18435,
+   "positives": 6336754,
+   "phantom": 2454696,
+   "phantom_frac": 0.3873743560188702
+  },
+  {
+   "z": 18436,
+   "positives": 6323432,
+   "phantom": 2454538,
+   "phantom_frac": 0.3881654772281887
+  },
+  {
+   "z": 18437,
+   "positives": 6297353,
+   "phantom": 2454216,
+   "phantom_frac": 0.3897218402716189
+  },
+  {
+   "z": 18438,
+   "positives": 6244088,
+   "phantom": 2454228,
+   "phantom_frac": 0.3930482722216599
+  },
+  {
+   "z": 18439,
+   "positives": 6200071,
+   "phantom": 2453669,
+   "phantom_frac": 0.39574853255712716
+  },
+  {
+   "z": 18440,
+   "positives": 6260017,
+   "phantom": 2455382,
+   "phantom_frac": 0.3922324811577988
+  },
+  {
+   "z": 18441,
+   "positives": 6263975,
+   "phantom": 2453930,
+   "phantom_frac": 0.3917528406483104
+  },
+  {
+   "z": 18442,
+   "positives": 6212613,
+   "phantom": 2453197,
+   "phantom_frac": 0.3948736224194232
+  },
+  {
+   "z": 18443,
+   "positives": 6159354,
+   "phantom": 2452385,
+   "phantom_frac": 0.3981562027446385
+  },
+  {
+   "z": 18444,
+   "positives": 6159148,
+   "phantom": 2451870,
+   "phantom_frac": 0.3980859040893318
+  },
+  {
+   "z": 18445,
+   "positives": 6149061,
+   "phantom": 2451591,
+   "phantom_frac": 0.3986935566259629
+  },
+  {
+   "z": 18446,
+   "positives": 6114737,
+   "phantom": 2451560,
+   "phantom_frac": 0.40092648301962946
+  },
+  {
+   "z": 18447,
+   "positives": 6094432,
+   "phantom": 2451118,
+   "phantom_frac": 0.40218973646764783
+  },
+  {
+   "z": 18448,
+   "positives": 6187363,
+   "phantom": 2451155,
+   "phantom_frac": 0.39615503405893593
+  },
+  {
+   "z": 18449,
+   "positives": 6221010,
+   "phantom": 2451080,
+   "phantom_frac": 0.39400033113594096
+  },
+  {
+   "z": 18450,
+   "positives": 6197810,
+   "phantom": 2451098,
+   "phantom_frac": 0.39547808016057284
+  },
+  {
+   "z": 18451,
+   "positives": 6190397,
+   "phantom": 2450835,
+   "phantom_frac": 0.39590917997666386
+  },
+  {
+   "z": 18452,
+   "positives": 6252021,
+   "phantom": 2450949,
+   "phantom_frac": 0.3920250747718218
+  },
+  {
+   "z": 18453,
+   "positives": 6298862,
+   "phantom": 2451085,
+   "phantom_frac": 0.3891314018309974
+  },
+  {
+   "z": 18454,
+   "positives": 6325650,
+   "phantom": 2451190,
+   "phantom_frac": 0.3875000988040755
+  },
+  {
+   "z": 18455,
+   "positives": 6356169,
+   "phantom": 2451209,
+   "phantom_frac": 0.3856425151691215
+  },
+  {
+   "z": 18456,
+   "positives": 6488853,
+   "phantom": 2455990,
+   "phantom_frac": 0.3784937029703092
+  },
+  {
+   "z": 18457,
+   "positives": 6552103,
+   "phantom": 2454177,
+   "phantom_frac": 0.37456325091348536
+  },
+  {
+   "z": 18458,
+   "positives": 6567989,
+   "phantom": 2454295,
+   "phantom_frac": 0.37367526041837157
+  },
+  {
+   "z": 18459,
+   "positives": 6580622,
+   "phantom": 2452804,
+   "phantom_frac": 0.37273133147596077
+  },
+  {
+   "z": 18460,
+   "positives": 6641670,
+   "phantom": 2451385,
+   "phantom_frac": 0.3690916591760807
+  },
+  {
+   "z": 18461,
+   "positives": 6680372,
+   "phantom": 2451027,
+   "phantom_frac": 0.3668997774375439
+  },
+  {
+   "z": 18462,
+   "positives": 6696162,
+   "phantom": 2451066,
+   "phantom_frac": 0.36604042733733144
+  },
+  {
+   "z": 18463,
+   "positives": 6720097,
+   "phantom": 2450838,
+   "phantom_frac": 0.3647027714034485
+  },
+  {
+   "z": 18464,
+   "positives": 6838766,
+   "phantom": 2450695,
+   "phantom_frac": 0.358353392995169
+  },
+  {
+   "z": 18465,
+   "positives": 6883673,
+   "phantom": 2450783,
+   "phantom_frac": 0.35602838775171336
+  },
+  {
+   "z": 18466,
+   "positives": 6865483,
+   "phantom": 2450885,
+   "phantom_frac": 0.35698653685399845
+  },
+  {
+   "z": 18467,
+   "positives": 6843156,
+   "phantom": 2450762,
+   "phantom_frac": 0.3581332940532117
+  },
+  {
+   "z": 18468,
+   "positives": 6875665,
+   "phantom": 2450800,
+   "phantom_frac": 0.3564455219967814
+  },
+  {
+   "z": 18469,
+   "positives": 6880781,
+   "phantom": 2450990,
+   "phantom_frac": 0.3562081106781338
+  },
+  {
+   "z": 18470,
+   "positives": 6862724,
+   "phantom": 2451216,
+   "phantom_frac": 0.35717828663953266
+  },
+  {
+   "z": 18471,
+   "positives": 6848200,
+   "phantom": 2451243,
+   "phantom_frac": 0.35793975059139627
+  },
+  {
+   "z": 18472,
+   "positives": 6924314,
+   "phantom": 2463549,
+   "phantom_frac": 0.3557823923062992
+  },
+  {
+   "z": 18473,
+   "positives": 6941857,
+   "phantom": 2459413,
+   "phantom_frac": 0.354287476679511
+  },
+  {
+   "z": 18474,
+   "positives": 6916281,
+   "phantom": 2459636,
+   "phantom_frac": 0.35562985367425065
+  },
+  {
+   "z": 18475,
+   "positives": 6879081,
+   "phantom": 2457254,
+   "phantom_frac": 0.3572067257239739
+  },
+  {
+   "z": 18476,
+   "positives": 6895453,
+   "phantom": 2454370,
+   "phantom_frac": 0.3559403566379178
+  },
+  {
+   "z": 18477,
+   "positives": 6895427,
+   "phantom": 2453256,
+   "phantom_frac": 0.35578014240452405
+  },
+  {
+   "z": 18478,
+   "positives": 6867443,
+   "phantom": 2453522,
+   "phantom_frac": 0.35726863695847205
+  },
+  {
+   "z": 18479,
+   "positives": 6850258,
+   "phantom": 2453390,
+   "phantom_frac": 0.35814563480674744
+  },
+  {
+   "z": 18480,
+   "positives": 6924259,
+   "phantom": 2453757,
+   "phantom_frac": 0.3543710597769379
+  },
+  {
+   "z": 18481,
+   "positives": 6935861,
+   "phantom": 2454373,
+   "phantom_frac": 0.35386709739425287
+  },
+  {
+   "z": 18482,
+   "positives": 6892177,
+   "phantom": 2454533,
+   "phantom_frac": 0.3561331927488223
+  },
+  {
+   "z": 18483,
+   "positives": 6839486,
+   "phantom": 2454467,
+   "phantom_frac": 0.35886717218223707
+  },
+  {
+   "z": 18484,
+   "positives": 6840976,
+   "phantom": 2455982,
+   "phantom_frac": 0.3590104686816618
+  },
+  {
+   "z": 18485,
+   "positives": 6817781,
+   "phantom": 2457264,
+   "phantom_frac": 0.36041990788498485
+  },
+  {
+   "z": 18486,
+   "positives": 6775313,
+   "phantom": 2458434,
+   "phantom_frac": 0.36285172360302764
+  },
+  {
+   "z": 18487,
+   "positives": 6736426,
+   "phantom": 2459070,
+   "phantom_frac": 0.3650407500950801
+  },
+  {
+   "z": 18488,
+   "positives": 6794333,
+   "phantom": 2472312,
+   "phantom_frac": 0.363878544074893
+  },
+  {
+   "z": 18489,
+   "positives": 6801841,
+   "phantom": 2469101,
+   "phantom_frac": 0.3630048100212869
+  },
+  {
+   "z": 18490,
+   "positives": 6762930,
+   "phantom": 2469670,
+   "phantom_frac": 0.3651775192113477
+  },
+  {
+   "z": 18491,
+   "positives": 6714003,
+   "phantom": 2467006,
+   "phantom_frac": 0.36744189718116005
+  },
+  {
+   "z": 18492,
+   "positives": 6700063,
+   "phantom": 2455641,
+   "phantom_frac": 0.36651013580021563
+  },
+  {
+   "z": 18493,
+   "positives": 6677765,
+   "phantom": 2454370,
+   "phantom_frac": 0.3675436317390624
+  },
+  {
+   "z": 18494,
+   "positives": 6632979,
+   "phantom": 2455152,
+   "phantom_frac": 0.3701431890557772
+  },
+  {
+   "z": 18495,
+   "positives": 6604093,
+   "phantom": 2455994,
+   "phantom_frac": 0.37188967508482995
+  },
+  {
+   "z": 18496,
+   "positives": 6674810,
+   "phantom": 2456937,
+   "phantom_frac": 0.36809092693275164
+  },
+  {
+   "z": 18497,
+   "positives": 6684013,
+   "phantom": 2457616,
+   "phantom_frac": 0.36768570019238445
+  },
+  {
+   "z": 18498,
+   "positives": 8194717,
+   "phantom": 4015698,
+   "phantom_frac": 0.49003498229408043
+  },
+  {
+   "z": 18499,
+   "positives": 8137699,
+   "phantom": 4015283,
+   "phantom_frac": 0.4934174881621943
+  },
+  {
+   "z": 18500,
+   "positives": 8130136,
+   "phantom": 4015361,
+   "phantom_frac": 0.49388608013445284
+  },
+  {
+   "z": 18501,
+   "positives": 8100814,
+   "phantom": 4015449,
+   "phantom_frac": 0.49568463119879064
+  },
+  {
+   "z": 18502,
+   "positives": 8049893,
+   "phantom": 4015783,
+   "phantom_frac": 0.4988616618879282
+  },
+  {
+   "z": 18503,
+   "positives": 8000853,
+   "phantom": 4015712,
+   "phantom_frac": 0.5019104837946654
+  },
+  {
+   "z": 18504,
+   "positives": 8058145,
+   "phantom": 4020249,
+   "phantom_frac": 0.49890502094464667
+  },
+  {
+   "z": 18505,
+   "positives": 8065844,
+   "phantom": 4017861,
+   "phantom_frac": 0.4981327434549937
+  },
+  {
+   "z": 18506,
+   "positives": 8020882,
+   "phantom": 4017822,
+   "phantom_frac": 0.5009202229879457
+  },
+  {
+   "z": 18507,
+   "positives": 7967011,
+   "phantom": 4016843,
+   "phantom_frac": 0.504184442572001
+  },
+  {
+   "z": 18508,
+   "positives": 7961965,
+   "phantom": 4016135,
+   "phantom_frac": 0.5044150533191241
+  },
+  {
+   "z": 18509,
+   "positives": 7941269,
+   "phantom": 4015807,
+   "phantom_frac": 0.5056883226093966
+  },
+  {
+   "z": 18510,
+   "positives": 7900095,
+   "phantom": 4016050,
+   "phantom_frac": 0.5083546463681766
+  },
+  {
+   "z": 18511,
+   "positives": 7870531,
+   "phantom": 4015936,
+   "phantom_frac": 0.5102496896333932
+  },
+  {
+   "z": 18512,
+   "positives": 7938141,
+   "phantom": 4015970,
+   "phantom_frac": 0.5059081213095106
+  },
+  {
+   "z": 18513,
+   "positives": 7948051,
+   "phantom": 4015894,
+   "phantom_frac": 0.5052677694191947
+  },
+  {
+   "z": 18514,
+   "positives": 7897405,
+   "phantom": 4016160,
+   "phantom_frac": 0.5085417298467028
+  },
+  {
+   "z": 18515,
+   "positives": 7835630,
+   "phantom": 4015798,
+   "phantom_frac": 0.5125048017836472
+  },
+  {
+   "z": 18516,
+   "positives": 7822964,
+   "phantom": 4015856,
+   "phantom_frac": 0.5133420018294856
+  },
+  {
+   "z": 18517,
+   "positives": 7790986,
+   "phantom": 4015823,
+   "phantom_frac": 0.5154447716887183
+  },
+  {
+   "z": 18518,
+   "positives": 7740542,
+   "phantom": 4016048,
+   "phantom_frac": 0.518832918935134
+  },
+  {
+   "z": 18519,
+   "positives": 7695346,
+   "phantom": 4015875,
+   "phantom_frac": 0.5218576266746161
+  },
+  {
+   "z": 18520,
+   "positives": 7749777,
+   "phantom": 4020182,
+   "phantom_frac": 0.5187480878482051
+  },
+  {
+   "z": 18521,
+   "positives": 7753735,
+   "phantom": 4018113,
+   "phantom_frac": 0.5182164466544188
+  },
+  {
+   "z": 18522,
+   "positives": 7712826,
+   "phantom": 4017776,
+   "phantom_frac": 0.520921384716834
+  },
+  {
+   "z": 18523,
+   "positives": 7661878,
+   "phantom": 4017200,
+   "phantom_frac": 0.52431009734167
+  },
+  {
+   "z": 18524,
+   "positives": 7651104,
+   "phantom": 4016421,
+   "phantom_frac": 0.5249465959422327
+  },
+  {
+   "z": 18525,
+   "positives": 7627725,
+   "phantom": 4015824,
+   "phantom_frac": 0.5264772917219748
+  },
+  {
+   "z": 18526,
+   "positives": 7582312,
+   "phantom": 4016175,
+   "phantom_frac": 0.5296768320797139
+  },
+  {
+   "z": 18527,
+   "positives": 7545419,
+   "phantom": 4015901,
+   "phantom_frac": 0.5322303506273144
+  },
+  {
+   "z": 18528,
+   "positives": 7593006,
+   "phantom": 4015926,
+   "phantom_frac": 0.5288980411710461
+  },
+  {
+   "z": 18529,
+   "positives": 7590593,
+   "phantom": 4015853,
+   "phantom_frac": 0.5290565572413117
+  },
+  {
+   "z": 18530,
+   "positives": 7528007,
+   "phantom": 4016093,
+   "phantom_frac": 0.5334868843772329
+  },
+  {
+   "z": 18531,
+   "positives": 7465646,
+   "phantom": 4015743,
+   "phantom_frac": 0.5378962517108365
+  },
+  {
+   "z": 18532,
+   "positives": 7450042,
+   "phantom": 4015759,
+   "phantom_frac": 0.5390250148925335
+  },
+  {
+   "z": 18533,
+   "positives": 7418436,
+   "phantom": 4015605,
+   "phantom_frac": 0.5413007539594599
+  },
+  {
+   "z": 18534,
+   "positives": 7368873,
+   "phantom": 4015710,
+   "phantom_frac": 0.5449557890331398
+  },
+  {
+   "z": 18535,
+   "positives": 7334446,
+   "phantom": 4015492,
+   "phantom_frac": 0.5474840226514722
+  },
+  {
+   "z": 18536,
+   "positives": 7369258,
+   "phantom": 4017310,
+   "phantom_frac": 0.5451444365226459
+  },
+  {
+   "z": 18537,
+   "positives": 7360133,
+   "phantom": 4015932,
+   "phantom_frac": 0.5456330748370988
+  },
+  {
+   "z": 18538,
+   "positives": 7312950,
+   "phantom": 4015471,
+   "phantom_frac": 0.5490904491347541
+  },
+  {
+   "z": 18539,
+   "positives": 7273505,
+   "phantom": 4014889,
+   "phantom_frac": 0.5519882092608722
+  },
+  {
+   "z": 18540,
+   "positives": 7262868,
+   "phantom": 4014846,
+   "phantom_frac": 0.5527907157337845
+  },
+  {
+   "z": 18541,
+   "positives": 7246847,
+   "phantom": 4014709,
+   "phantom_frac": 0.5539938955520932
+  },
+  {
+   "z": 18542,
+   "positives": 7219470,
+   "phantom": 4014861,
+   "phantom_frac": 0.5561157536495062
+  },
+  {
+   "z": 18543,
+   "positives": 7236168,
+   "phantom": 4014693,
+   "phantom_frac": 0.5548092581598437
+  },
+  {
+   "z": 18544,
+   "positives": 7292919,
+   "phantom": 4014770,
+   "phantom_frac": 0.550502480556825
+  },
+  {
+   "z": 18545,
+   "positives": 7307533,
+   "phantom": 4014629,
+   "phantom_frac": 0.5493822607438106
+  },
+  {
+   "z": 18546,
+   "positives": 7294554,
+   "phantom": 4014786,
+   "phantom_frac": 0.5503812844486449
+  },
+  {
+   "z": 18547,
+   "positives": 7322777,
+   "phantom": 4014331,
+   "phantom_frac": 0.5481979036095186
+  },
+  {
+   "z": 18548,
+   "positives": 7363046,
+   "phantom": 4014538,
+   "phantom_frac": 0.5452278853072492
+  },
+  {
+   "z": 18549,
+   "positives": 7395433,
+   "phantom": 4014648,
+   "phantom_frac": 0.5428550295837985
+  },
+  {
+   "z": 18550,
+   "positives": 7405489,
+   "phantom": 4014847,
+   "phantom_frac": 0.5421447523586896
+  },
+  {
+   "z": 18551,
+   "positives": 7475701,
+   "phantom": 4014845,
+   "phantom_frac": 0.5370526456314932
+  },
+  {
+   "z": 18552,
+   "positives": 7527375,
+   "phantom": 4016025,
+   "phantom_frac": 0.5335226423554028
+  },
+  {
+   "z": 18553,
+   "positives": 7556535,
+   "phantom": 4015181,
+   "phantom_frac": 0.5313521342784755
+  },
+  {
+   "z": 18554,
+   "positives": 7561943,
+   "phantom": 4014957,
+   "phantom_frac": 0.5309425104103536
+  },
+  {
+   "z": 18555,
+   "positives": 7606868,
+   "phantom": 4014705,
+   "phantom_frac": 0.5277737171198449
+  },
+  {
+   "z": 18556,
+   "positives": 7632813,
+   "phantom": 4014648,
+   "phantom_frac": 0.5259722726077529
+  },
+  {
+   "z": 18557,
+   "positives": 7649685,
+   "phantom": 4014562,
+   "phantom_frac": 0.5248009558563522
+  },
+  {
+   "z": 18558,
+   "positives": 7659072,
+   "phantom": 4014656,
+   "phantom_frac": 0.5241700299984123
+  },
+  {
+   "z": 18559,
+   "positives": 7746951,
+   "phantom": 4014441,
+   "phantom_frac": 0.518196255533306
+  },
+  {
+   "z": 18560,
+   "positives": 7778814,
+   "phantom": 4014627,
+   "phantom_frac": 0.516097569629509
+  },
+  {
+   "z": 18561,
+   "positives": 7773711,
+   "phantom": 4014639,
+   "phantom_frac": 0.5164379020521859
+  },
+  {
+   "z": 18562,
+   "positives": 7753429,
+   "phantom": 4014754,
+   "phantom_frac": 0.5178036711240923
+  },
+  {
+   "z": 18563,
+   "positives": 7776902,
+   "phantom": 4014602,
+   "phantom_frac": 0.516221240797428
+  },
+  {
+   "z": 18564,
+   "positives": 7770424,
+   "phantom": 4014807,
+   "phantom_frac": 0.51667798308046
+  },
+  {
+   "z": 18565,
+   "positives": 7751181,
+   "phantom": 4014682,
+   "phantom_frac": 0.5179445558038188
+  },
+  {
+   "z": 18566,
+   "positives": 7718514,
+   "phantom": 4014751,
+   "phantom_frac": 0.5201455876092211
+  },
+  {
+   "z": 18567,
+   "positives": 7763495,
+   "phantom": 4015061,
+   "phantom_frac": 0.5171718407753209
+  },
+  {
+   "z": 18568,
+   "positives": 7763228,
+   "phantom": 4016898,
+   "phantom_frac": 0.5174262561913678
+  },
+  {
+   "z": 18569,
+   "positives": 7740609,
+   "phantom": 4015551,
+   "phantom_frac": 0.518764221264761
+  },
+  {
+   "z": 18570,
+   "positives": 7708035,
+   "phantom": 4014859,
+   "phantom_frac": 0.5208667319232463
+  },
+  {
+   "z": 18571,
+   "positives": 7719161,
+   "phantom": 4015555,
+   "phantom_frac": 0.5202061467561047
+  },
+  {
+   "z": 18572,
+   "positives": 7712606,
+   "phantom": 4016540,
+   "phantom_frac": 0.5207759867417058
+  },
+  {
+   "z": 18573,
+   "positives": 7692667,
+   "phantom": 4017830,
+   "phantom_frac": 0.5222935036704436
+  },
+  {
+   "z": 18574,
+   "positives": 7675703,
+   "phantom": 4018068,
+   "phantom_frac": 0.5234788266299517
+  },
+  {
+   "z": 18575,
+   "positives": 7736123,
+   "phantom": 4019571,
+   "phantom_frac": 0.5195846808537041
+  },
+  {
+   "z": 18576,
+   "positives": 7740001,
+   "phantom": 4020571,
+   "phantom_frac": 0.5194535504581976
+  },
+  {
+   "z": 18577,
+   "positives": 7706730,
+   "phantom": 4021300,
+   "phantom_frac": 0.5217906946266445
+  },
+  {
+   "z": 18578,
+   "positives": 7665315,
+   "phantom": 4020630,
+   "phantom_frac": 0.5245224755929796
+  },
+  {
+   "z": 18579,
+   "positives": 7670826,
+   "phantom": 4022898,
+   "phantom_frac": 0.5244413052779453
+  },
+  {
+   "z": 18580,
+   "positives": 7653742,
+   "phantom": 4024686,
+   "phantom_frac": 0.5258455275863754
+  },
+  {
+   "z": 18581,
+   "positives": 7623134,
+   "phantom": 4026529,
+   "phantom_frac": 0.5281986385127166
+  },
+  {
+   "z": 18582,
+   "positives": 7577293,
+   "phantom": 4026531,
+   "phantom_frac": 0.5313943911103873
+  },
+  {
+   "z": 18583,
+   "positives": 7612343,
+   "phantom": 4028348,
+   "phantom_frac": 0.5291863490649331
+  },
+  {
+   "z": 18584,
+   "positives": 7615477,
+   "phantom": 4031341,
+   "phantom_frac": 0.5293615882498234
+  },
+  {
+   "z": 18585,
+   "positives": 7587067,
+   "phantom": 4031374,
+   "phantom_frac": 0.53134814810519
+  },
+  {
+   "z": 18586,
+   "positives": 7548383,
+   "phantom": 4030030,
+   "phantom_frac": 0.5338931530103864
+  },
+  {
+   "z": 18587,
+   "positives": 7553546,
+   "phantom": 4032489,
+   "phantom_frac": 0.5338537688126874
+  },
+  {
+   "z": 18588,
+   "positives": 7543766,
+   "phantom": 4034486,
+   "phantom_frac": 0.5348105972534143
+  },
+  {
+   "z": 18589,
+   "positives": 7517061,
+   "phantom": 4036771,
+   "phantom_frac": 0.5370145326744056
+  },
+  {
+   "z": 18590,
+   "positives": 7496301,
+   "phantom": 4036877,
+   "phantom_frac": 0.5385158626901454
+  },
+  {
+   "z": 18591,
+   "positives": 7561380,
+   "phantom": 4039427,
+   "phantom_frac": 0.5342182247155942
+  },
+  {
+   "z": 18592,
+   "positives": 7575325,
+   "phantom": 4041240,
+   "phantom_frac": 0.5334741413734724
+  },
+  {
+   "z": 18593,
+   "positives": 7539121,
+   "phantom": 4042081,
+   "phantom_frac": 0.5361475164014479
+  },
+  {
+   "z": 18594,
+   "positives": 9033001,
+   "phantom": 5580742,
+   "phantom_frac": 0.6178170466271398
+  },
+  {
+   "z": 18595,
+   "positives": 9029481,
+   "phantom": 5583236,
+   "phantom_frac": 0.61833409915808
+  },
+  {
+   "z": 18596,
+   "positives": 9007500,
+   "phantom": 5584644,
+   "phantom_frac": 0.6199993338884263
+  },
+  {
+   "z": 18597,
+   "positives": 8969927,
+   "phantom": 5585826,
+   "phantom_frac": 0.6227281448332858
+  },
+  {
+   "z": 18598,
+   "positives": 8927110,
+   "phantom": 5584078,
+   "phantom_frac": 0.6255191209697203
+  },
+  {
+   "z": 18599,
+   "positives": 8972692,
+   "phantom": 5585285,
+   "phantom_frac": 0.6224759525903709
+  },
+  {
+   "z": 18600,
+   "positives": 8974850,
+   "phantom": 5587711,
+   "phantom_frac": 0.6225965893580394
+  },
+  {
+   "z": 18601,
+   "positives": 8942923,
+   "phantom": 5587084,
+   "phantom_frac": 0.6247492011280875
+  },
+  {
+   "z": 18602,
+   "positives": 8896810,
+   "phantom": 5583175,
+   "phantom_frac": 0.6275479638207403
+  },
+  {
+   "z": 18603,
+   "positives": 8895496,
+   "phantom": 5585438,
+   "phantom_frac": 0.627895060601455
+  },
+  {
+   "z": 18604,
+   "positives": 8879068,
+   "phantom": 5586369,
+   "phantom_frac": 0.6291616417398763
+  },
+  {
+   "z": 18605,
+   "positives": 8847013,
+   "phantom": 5587465,
+   "phantom_frac": 0.6315651395561417
+  },
+  {
+   "z": 18606,
+   "positives": 8818926,
+   "phantom": 5585574,
+   "phantom_frac": 0.6333621577049178
+  },
+  {
+   "z": 18607,
+   "positives": 8872114,
+   "phantom": 5586936,
+   "phantom_frac": 0.6297186893676073
+  },
+  {
+   "z": 18608,
+   "positives": 8880346,
+   "phantom": 5587757,
+   "phantom_frac": 0.6292273972207839
+  },
+  {
+   "z": 18609,
+   "positives": 8843763,
+   "phantom": 5587309,
+   "phantom_frac": 0.6317795942745187
+  },
+  {
+   "z": 18610,
+   "positives": 8792280,
+   "phantom": 5583587,
+   "phantom_frac": 0.6350556397203001
+  },
+  {
+   "z": 18611,
+   "positives": 8783071,
+   "phantom": 5586285,
+   "phantom_frac": 0.6360286737975818
+  },
+  {
+   "z": 18612,
+   "positives": 8759136,
+   "phantom": 5587618,
+   "phantom_frac": 0.6379188540970251
+  },
+  {
+   "z": 18613,
+   "positives": 8719023,
+   "phantom": 5588816,
+   "phantom_frac": 0.6409910835193346
+  },
+  {
+   "z": 18614,
+   "positives": 8672239,
+   "phantom": 5586816,
+   "phantom_frac": 0.6442184077260786
+  },
+  {
+   "z": 18615,
+   "positives": 8714977,
+   "phantom": 5588121,
+   "phantom_frac": 0.6412089211480421
+  },
+  {
+   "z": 18616,
+   "positives": 8717711,
+   "phantom": 5590712,
+   "phantom_frac": 0.6413050398206593
+  },
+  {
+   "z": 18617,
+   "positives": 8685539,
+   "phantom": 5589584,
+   "phantom_frac": 0.6435506190231832
+  },
+  {
+   "z": 18618,
+   "positives": 8637991,
+   "phantom": 5585426,
+   "phantom_frac": 0.6466116947794921
+  },
+  {
+   "z": 18619,
+   "positives": 8630132,
+   "phantom": 5587817,
+   "phantom_frac": 0.6474775820346664
+  },
+  {
+   "z": 18620,
+   "positives": 8607849,
+   "phantom": 5588607,
+   "phantom_frac": 0.6492454735207367
+  },
+  {
+   "z": 18621,
+   "positives": 8569017,
+   "phantom": 5589528,
+   "phantom_frac": 0.6522951232329216
+  },
+  {
+   "z": 18622,
+   "positives": 8534027,
+   "phantom": 5587488,
+   "phantom_frac": 0.6547305275692238
+  },
+  {
+   "z": 18623,
+   "positives": 8582063,
+   "phantom": 5588843,
+   "phantom_frac": 0.6512237209165209
+  }
+ ]
+}

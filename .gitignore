@@ -3,3 +3,6 @@ __pycache__/
 *.npz
 scan/
 data/
+*.log
+box_logs/
+salvaged_partial.json

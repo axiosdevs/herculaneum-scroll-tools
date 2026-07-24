@@ -104,6 +104,65 @@ def cmd_survey(a):
           f"(support {report['sampled_support_frac']:.4f})")
 
 
+
+def cmd_slabs(a):
+    """Chunk-aligned slab survey: read full z-chunk slabs (preds+CT), compute exact
+    per-plane stats for EVERY plane in the slab. Uses 100% of transferred bytes
+    (plane-mode wastes ~chunk_depth x traffic). Slab stride controls coverage."""
+    P, C = open_arrays(a.preds, a.ct, a.preds_level, a.ct_level)
+    Z = P.shape[0]
+    pcz = P.chunks[0]
+    step = max(a.slab_stride, 1) * pcz
+    rows, t0 = [], time.time()
+    tot_pos = tot_ph = 0
+    slabs = list(range(0, Z, step))
+    Y = P.shape[1]
+    pcy = P.chunks[1]
+    # Y-striped reads: identical bytes transferred (still chunk-aligned), but the
+    # in-RAM working set is capped near STRIPE_BYTES instead of the whole slab.
+    STRIPE_BYTES = 2e9
+    ystep = max(pcy, int(STRIPE_BYTES / max(1, pcz * P.shape[2])) // pcy * pcy)
+    for i, z0 in enumerate(slabs):
+        z1 = min(z0 + pcz, Z)
+        pos_z = np.zeros(z1 - z0, dtype=np.int64)
+        ph_z = np.zeros(z1 - z0, dtype=np.int64)
+        for y0 in range(0, Y, ystep):
+            y1 = min(y0 + ystep, Y)
+            for attempt in range(5):
+                try:
+                    p = np.asarray(P[z0:z1, y0:y1]) > a.thr
+                    c = np.asarray(C[z0:z1, y0:y1]) > 0
+                    break
+                except Exception as e:
+                    print(f"  slab {z0} y{y0} retry {attempt+1}: {type(e).__name__}",
+                          flush=True)
+                    time.sleep(min(60, 3 * 2 ** attempt))
+            else:
+                raise RuntimeError(f"slab {z0} y{y0} unreadable")
+            pos_z += p.sum(axis=(1, 2))
+            ph_z += (p & ~c).sum(axis=(1, 2))
+            del p, c
+        for k in range(z1 - z0):
+            rows.append({"z": int(z0 + k), "positives": int(pos_z[k]),
+                         "phantom": int(ph_z[k]),
+                         "phantom_frac": float(ph_z[k] / pos_z[k]) if pos_z[k] else 0.0})
+        tot_pos += int(pos_z.sum()); tot_ph += int(ph_z.sum())
+        print(f"[{i+1}/{len(slabs)}] slab z={z0}:{z1} planes+={z1-z0} "
+              f"cum_phantom={tot_ph/max(1,tot_pos):.4f} ({time.time()-t0:.0f}s)", flush=True)
+    report = {"preds": a.preds, "ct": a.ct, "threshold": a.thr,
+              "mode": "slabs", "slab_stride": a.slab_stride,
+              "planes_sampled": len(rows),
+              "sampled_positives": tot_pos, "sampled_phantom": tot_ph,
+              "sampled_phantom_frac": (tot_ph / tot_pos) if tot_pos else 0.0,
+              "sampled_support_frac": 1 - ((tot_ph / tot_pos) if tot_pos else 0.0),
+              "per_plane": rows}
+    if a.out:
+        json.dump(report, open(a.out, "w"), indent=1)
+        print(f"wrote {a.out}")
+    print(f"SAMPLED phantom fraction: {report['sampled_phantom_frac']:.4f} "
+          f"(support {report['sampled_support_frac']:.4f})")
+
+
 def iter_chunks(shape, cz, z0, z1):
     for zc in range(z0, z1, cz):
         for yc in range(0, shape[1], cz):
@@ -172,6 +231,12 @@ def main():
     s.add_argument("--stride", type=int, default=100)
     s.add_argument("--out", help="write JSON report + CSV")
     s.set_defaults(f=cmd_survey)
+
+    sl = sub.add_parser("slabs"); common(sl)
+    sl.add_argument("--slab-stride", type=int, default=4,
+                    help="take every Nth z-chunk slab (default 4)")
+    sl.add_argument("--out")
+    sl.set_defaults(f=cmd_slabs)
 
     c = sub.add_parser("chunks"); common(c)
     c.add_argument("--z0", type=int, required=True)
