@@ -161,27 +161,30 @@ threshold 127. Every 12th z-chunk slab, all planes inside each slab measured
 exactly (`full_batch.py` is the driver; per-plane data in each
 `ct_support/survey_PHerc*.json`):
 
-| scroll (GP-eligible) | phantom voxels | planes measured |
-|---|---|---|
-| PHerc1218 | **50.2%** | 224 |
-| PHerc0358 | **49.3%** | 148 |
-| PHerc0257 | **48.4%** | 1728 |
-| PHerc1545 | **48.4%** | 1920 |
-| PHerc0826 | **48.4%** | 1536 |
-| PHerc0125 | **47.6%** | 182 |
-| PHerc1447 | **43.9%** | 2112 |
-| PHerc0813 | **43.4%** | 1536 |
-| PHerc0211 | **43.4%** | 1728 |
-| PHerc0800 | **41.7%** | 2112 |
-| PHerc0191 | **39.9%** | 1728 |
-| PHerc0268 | **33.2%** | 1344 |
-| PHerc1203 | **30.2%** | 38 |
+| scroll (GP-eligible) | positive voxels sampled | phantom voxels | phantom % | planes measured |
+|---|---|---|---|---|
+| PHerc1218 | 1,199,708,221 | 602,514,869 | **50.2%** | 224 |
+| PHerc0358 | 1,021,436,239 | 503,603,333 | **49.3%** | 148 |
+| PHerc0257 | 9,596,604,615 | 4,643,455,605 | **48.4%** | 1728 |
+| PHerc1545 | 8,511,544,764 | 4,116,708,043 | **48.4%** | 1920 |
+| PHerc0826 | 9,617,341,090 | 4,651,998,256 | **48.4%** | 1536 |
+| PHerc0125 | 1,177,475,648 | 559,842,643 | **47.5%** | 182 |
+| PHerc1447 | 14,344,637,261 | 6,290,066,086 | **43.8%** | 2112 |
+| PHerc0813 | 9,077,181,876 | 3,936,984,632 | **43.4%** | 1536 |
+| PHerc0211 | 8,665,801,539 | 3,756,497,458 | **43.3%** | 1728 |
+| PHerc0800 | 27,053,626,452 | 11,281,693,092 | **41.7%** | 2112 |
+| PHerc0191 | 12,232,136,550 | 4,874,448,732 | **39.8%** | 1728 |
+| PHerc0268 | 23,824,135,553 | 7,919,731,041 | **33.2%** | 1344 |
+| PHerc1203 | 136,835,937 | 41,379,993 | **30.2%** | 38 |
+| **total** | **126,458,465,745** | **53,178,923,783** | **42.1%** | **16,336** |
 
 Additional measured anchors: PHerc0139 37.1%, PHerc0332 69.4%, PHercMANBp 95.5%.
 
-In other words: **in every grand-prize scroll, 30–50% of the positive voxels in the
-published surface predictions sit outside the scroll** (masked CT reads exactly 0).
-Any grower/trainer consuming these predictions without a CT filter inherits that
+In other words: across 16,336 exactly-measured planes of the 13 grand-prize scrolls,
+**126.5 billion prediction-positive voxels were checked and 53.2 billion of them
+(42.1%) sit outside the scroll** (masked CT reads exactly 0). Roughly every second
+"papyrus surface" voxel handed to teams for these scrolls is phantom. Any
+grower/trainer consuming these predictions without a CT filter inherits that
 contamination; `clean` mode removes it in one pass.
 
 **Chunk→voxel calibration** (`ct_support/calibrate.py`): fitting
