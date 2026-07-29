@@ -229,6 +229,32 @@ samples gives k = 3.32 but a **max residual of 28.5 points** — e.g. PHercMANB 
 measure 43–50%. Chunk-level counts cannot reliably predict voxel-level contamination;
 `calibration_m7_batch.json` now carries the measured value for every sample.
 
+### Root cause verified: the phantom halo is exactly one blend-chunk wide
+
+The proposed mechanism in villa#1114 (empty chunks pulled into the blend window one
+chunk too far in every direction, whose tiny blended values then survive the
+softmax) makes a hard geometric prediction: phantom-bearing chunks can exist **only
+within one chunk-width of real data** — never farther.
+
+`ct_support/halo_analysis.py` tests this with **zero voxel downloads**: zarr stores
+omit all-zero chunks, so an S3 key listing is an exact map of data-bearing chunks
+for both the prediction volume and the masked CT. Classifying every
+prediction-bearing chunk in **all 36 samples** by voxel-space Chebyshev distance to
+the nearest CT-bearing chunk box:
+
+- **1,662,405 prediction chunks total**: 83.1% overlap CT data, 16.9% sit in the
+  one-chunk halo ring, and **0 chunks (0.0000, in every one of the 36 samples) lie
+  beyond one 192³ chunk** of CT data.
+- The per-sample halo fractions independently reproduce the villa#1114 chunk-level
+  audit within rounding (e.g. PHerc0332 25.9%, PHercMANBp 48.5%, PHerc0500P2 39.8%)
+  — two unrelated methods, same numbers.
+
+Consequence for the fix: all phantom mass is the blend margin — CT-masking after
+inference (or `clean` mode here) removes exactly it, and since every phantom chunk
+touches the mask boundary, even a conservatively dilated mask (to respect imperfect
+masks near the case/wrapping) still eliminates essentially all of it. Per-sample
+reports: `ct_support/halo_*.json`.
+
 ```bash
 PRED=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/representations/predictions/surfaces/20251211183505-surface-20260413222639-surface-m7-L2-th0.2.zarr
 CT=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/volumes/20251211183505-2.399um-0.2m-78keV-masked.zarr

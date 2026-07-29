@@ -1,0 +1,23 @@
+{
+ "sample": "PHercMANB",
+ "preds_chunk_shape": [
+  192,
+  192,
+  192
+ ],
+ "ct_chunk_shape": [
+  128,
+  128,
+  128
+ ],
+ "preds_chunks": 71729,
+ "ct_chunks": 157234,
+ "dense_store_warning": false,
+ "supported_overlap": 58433,
+ "halo_within_1chunk": 13296,
+ "within_2chunks": 0,
+ "beyond_2chunks": 0,
+ "frac_supported": 0.8146356424876967,
+ "frac_halo_1chunk": 0.18536435751230326,
+ "frac_beyond_blend": 0.0
+}

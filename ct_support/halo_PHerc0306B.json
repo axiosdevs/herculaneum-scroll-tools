@@ -1,0 +1,23 @@
+{
+ "sample": "PHerc0306B",
+ "preds_chunk_shape": [
+  192,
+  192,
+  192
+ ],
+ "ct_chunk_shape": [
+  128,
+  128,
+  128
+ ],
+ "preds_chunks": 64614,
+ "ct_chunks": 162412,
+ "dense_store_warning": false,
+ "supported_overlap": 53166,
+ "halo_within_1chunk": 11448,
+ "within_2chunks": 0,
+ "beyond_2chunks": 0,
+ "frac_supported": 0.8228247748166032,
+ "frac_halo_1chunk": 0.1771752251833968,
+ "frac_beyond_blend": 0.0
+}

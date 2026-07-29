@@ -1,0 +1,23 @@
+{
+ "sample": "PHercParis4",
+ "preds_chunk_shape": [
+  192,
+  192,
+  192
+ ],
+ "ct_chunk_shape": [
+  128,
+  128,
+  128
+ ],
+ "preds_chunks": 63195,
+ "ct_chunks": 166258,
+ "dense_store_warning": false,
+ "supported_overlap": 53578,
+ "halo_within_1chunk": 9617,
+ "within_2chunks": 0,
+ "beyond_2chunks": 0,
+ "frac_supported": 0.8478202389429543,
+ "frac_halo_1chunk": 0.15217976105704564,
+ "frac_beyond_blend": 0.0
+}
