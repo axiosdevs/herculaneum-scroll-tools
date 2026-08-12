@@ -236,9 +236,9 @@ chunk too far in every direction, whose tiny blended values then survive the
 softmax) makes a hard geometric prediction: phantom-bearing chunks can exist **only
 within one chunk-width of real data** — never farther.
 
-`ct_support/halo_analysis.py` tests this with **zero voxel downloads**: zarr stores
-omit all-zero chunks, so an S3 key listing is an exact map of data-bearing chunks
-for both the prediction volume and the masked CT. Classifying every
+`ct_support/audit_ct_support.py` tests this with **zero voxel downloads**: zarr
+stores omit all-zero chunks, so a key listing is an exact map of data-bearing
+chunks for both the prediction volume and the masked CT. Classifying every
 prediction-bearing chunk in **all 36 samples** by voxel-space Chebyshev distance to
 the nearest CT-bearing chunk box:
 
@@ -254,6 +254,27 @@ inference (or `clean` mode here) removes exactly it, and since every phantom chu
 touches the mask boundary, even a conservatively dilated mask (to respect imperfect
 masks near the case/wrapping) still eliminates essentially all of it. Per-sample
 reports: `ct_support/halo_*.json`.
+
+### `audit_ct_support` — one command for both questions
+
+`ct_support/audit_ct_support.py` packages this as a two-mode CLI with a covering
+test suite (10 cases on synthetic zarrs, no network), usable on any prediction
+volume — local, HTTP, or object storage:
+
+```bash
+# zero-download triage: is this volume contaminated, and is it confined to the margin?
+python ct_support/audit_ct_support.py chunks --anon \
+  --predictions s3://vesuvius-challenge-open-data/PHerc1203/representations/predictions/surfaces/20260319130212-surface-20260413222639-surface-m7-L2-th0.2.zarr/0 \
+  --ct s3://vesuvius-challenge-open-data/PHerc1203/volumes/20260319130212-2.403um-0.2m-77keV-masked.zarr/2
+# prediction chunks: 7,830 | supported 0.9079 | one-chunk halo 0.0921 | beyond blend margin 0.0000 (0 chunks)   [~10 s]
+
+# exact voxel-level fractions, every 12th chunk-aligned slab, per-plane JSON
+python ct_support/audit_ct_support.py voxels --predictions preds.zarr/0 --ct ct.zarr/2 --output survey.json
+```
+
+`beyond_blend_margin` is the number to watch once the upstream fixes land: a
+healthy volume should report no halo either. Run the tests with
+`python -m pytest ct_support/test_audit_ct_support.py`.
 
 ```bash
 PRED=https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc0332/representations/predictions/surfaces/20251211183505-surface-20260413222639-surface-m7-L2-th0.2.zarr
