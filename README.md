@@ -255,6 +255,38 @@ touches the mask boundary, even a conservatively dilated mask (to respect imperf
 masks near the case/wrapping) still eliminates essentially all of it. Per-sample
 reports: `ct_support/halo_*.json`.
 
+### `surface_support` — the same question, one layer down
+
+`audit_ct_support` measures a prediction volume. `ct_support/surface_support.py`
+measures what a tracer built from one: given a tifxyz surface and the CT it
+should rest on, it reports how much of the surface has material under it, writes
+a per-quad map, and can emit a trimmed copy.
+
+This is the layer where the contamination actually costs you. Traced from the
+published m7 predictions of PHerc1218, **55.0% of a surface stood over voxels
+where the masked CT reads exactly 0** — the 50.2% voxel-level phantom share of
+that scroll propagating almost one-for-one into the geometry that ink detection
+then runs on.
+
+```bash
+# how much of this surface is real?
+python ct_support/surface_support.py report \
+  --surface path/to/segment --ct s3://vesuvius-challenge-open-data/PHerc1218/volumes/20250521120456-8.640um-1.2m-116keV-masked.zarr/0 \
+  --anon --map support.png
+# quads 39,204 | supported 0.4500 | unsupported 0.5500 (21,562 quads)
+
+# keep only the part that stands on something, with a voxel of slack for mask edges
+python ct_support/surface_support.py trim \
+  --surface path/to/segment --ct <ct> --out trimmed/ --dilation 1
+```
+
+`--dilation` is the dial between "the mask is tight here" and "growth has left
+the scroll"; a contributor calibrating the same rule on three PHerc1218 seeds
+reports one voxel of slack retaining as much surface as post-hoc trimming while
+leaving the survivor 99% supported. Reads are grouped by CT chunk, so a remote
+volume costs one request per touched chunk rather than one per quad. Tests:
+`python -m pytest ct_support/test_surface_support.py`.
+
 ### `audit_ct_support` — one command for both questions
 
 `ct_support/audit_ct_support.py` packages this as a two-mode CLI with a covering
