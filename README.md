@@ -189,13 +189,47 @@ rows. Calibrated on windows of PHerc0139 where the answer is known:
 | periodicity peak only | 0.828 | — |
 | periodicity + three-row gate (shipped) | **0.885** | **92%**, losing 18% of true text |
 
+### An ink-detectability atlas for the published corpus
+
+Nobody had measured, systematically, where this model finds ink and where it does not.
+`ink/atlas.py` samples random 512-pixel windows from the finest surface volume each scroll
+publishes, runs the checkpoint, and records what comes back. 95 windows, 12 per scroll:
+
+| scroll | µm | keV | windows | max p | windows with ink | per-window ink share (%) |
+|---|---|---|---|---|---|---|
+| PHerc0814 | 1.129 | 59 | 12 | 0.96 | 7/12 | 91 59 34 27 13 7 3 0 0 0 0 0 |
+| PHerc0139 | 1.129 | 59 | 12 | 0.95 | 5/12 | 84 16 16 11 3 1 0 0 0 0 0 0 |
+| PHerc1667 | 1.129 | 59 | 12 | 0.95 | 7/12 | 89 32 26 22 20 4 3 1 1 0 0 0 |
+| PHercParis4 | 1.129 | 78 | 12 | 0.95 | 4/12 | 47 20 18 12 0 0 0 0 0 0 0 0 |
+| PHerc0500P2 | 2.215 | 111 | 11 | 0.94 | 4/11 | 44 38 13 10 0 0 0 0 0 0 0 |
+| PHerc0343P | 2.215 | 111 | 12 | 0.94 | 7/12 | 48 29 12 11 8 6 2 0 0 0 0 0 |
+| PHerc0172 | 7.91 | 53 | 12 | 0.96 | 12/12 | 100 100 100 100 100 100 100 100 100 99 64 63 |
+| PHerc1447 | 8.64 | 116 | 12 | 0.88 | 2/12 | 8 2 0 0 0 0 0 0 0 0 0 0 |
+
+Two things fall out, and the second matters more than the ranking.
+
+**Ink is localised, and small samples lie.** The 1.1-2.2 µm scans give a heavy-tailed
+distribution — one or two windows carrying most of the ink, the rest empty. An earlier
+three-window pass called PHerc0814 blank; twelve windows put it at the top of the table with a
+91% window. Three windows is not a measurement.
+
+**At ~8 µm the checkpoint saturates and must not be trusted.** PHerc0172 at 7.91 µm returns
+100% ink in ten of twelve windows — not a discovery, an out-of-domain failure, since the model
+was trained at ~2 µm. The practical consequence: a positive from this model on any 8-9 µm scan
+carries no information, so the 113-116 keV scrolls cannot be cleared or claimed with it. That
+is a caveat worth having before someone announces ink on a coarse scan.
+
+Regenerate with `PER_SCROLL=12 python ink/atlas.py`; raw measurements are in `ink/atlas.json`.
+
 ### What the maps say so far
 
 - **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
 - **PHerc0009B** — first windows of the 77 keV scan, reachable only through the
   registration above: maximum ink probability 0.18-0.20 against a 0.5 threshold.
-- **PHerc1447, PHerc1218, PHerc0800** — stuck at 116 keV, no ink signal at all. That is a
-  measured reason those scrolls are blank, not an untested assumption.
+- **PHerc1447** — 8.64 µm / 116 keV: two of twelve windows return 8% and 2%, the rest nothing.
+  Read together with the saturation result above, a coarse scan cannot settle the question
+  either way; what it does settle is that these scrolls need a finer rescan before any ink
+  claim about them means anything.
 
 These are the first ink maps published for any of them, and they ship with the repo:
 `ink/maps/<scroll>/` holds one 8-bit PNG per window plus a `manifest.json` giving the window
