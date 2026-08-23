@@ -140,6 +140,17 @@ bucket: a 34 x 32 mm segment takes about a minute on a laptop.
 python ink/render_surface.py MESH_DIR VOLUME_ZARR_LEVEL0_URL OUT_DIR ROW COL ROWS COLS 20 62 0
 ```
 
+Don't take the number on trust — check it:
+
+```bash
+python ink/reproduce.py
+```
+
+It downloads the checkpoint, picks a window of PHerc0139 with a moderate ink share, pulls the
+team's own surface volume for it, runs the model and prints the correlation against their
+published map. A clean run ends with `r = +0.915`. Anything below 0.5 means one of the four
+conventions above has been broken.
+
 ### Cross-scan registration for scrolls that have no surfaces where the ink is
 
 PHerc0009B, PHerc1203 and PHerc1451 each carry a fine 77-78 keV rescan in which ink is
