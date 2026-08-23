@@ -175,8 +175,15 @@ a cut *across* papyrus is fibrous too. The numbers are unambiguous. `seat_mesh.s
 measures how much brighter the middle of a rendered stack is than ±25 layers out; correctly seated
 surfaces give **+30.0** (PHerc0139) and **+38.7** (PHercMANBp), a surface known to cut across the
 windings gives **−0.1**, and this registration gives **−0.2**. So the ink maps computed from it
-carry no information, and PHerc0009B stays closed until the transform includes whatever rotation
-the translation-with-tilt model is missing. Eyeballing a render is not a check; this is.
+carry no information. Eyeballing a render is not a check; this is.
+
+`ink/fit_seating.py` then optimises the seating score directly — rotation about z plus a
+translation, coarse to fine — instead of optimising slice similarity and hoping. That is the right
+objective, and on PHerc0009B it still tops out at **6.2** against the threshold of 15, from 180° of
+rotation and 25 mm of shift. The conclusion is not that the search is too weak but that **the map
+between these two scans is not rigid**: the scroll is handled between visits, and a rotation with a
+translation cannot express what happens to it. Transferring segmentation across scans of these
+scrolls needs a non-rigid method, and a slice-correlation score of 0.86 will happily hide that.
 
 Snapping surface points onto the local sheet maximum was tried and **rejected**: on an
 already correct mesh every variant (global maximum, nearest local maximum, centre of mass)
