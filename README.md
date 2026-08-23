@@ -1,6 +1,6 @@
 # Herculaneum Scroll Tools
 
-Four open-source utilities for the Vesuvius Challenge, built to attack problems the
+Five open-source utilities for the Vesuvius Challenge, built to attack problems the
 current pipeline does not address directly:
 
 1. **Dual-energy co-rendering** — combine the two X-ray energies a scroll was scanned
@@ -17,6 +17,9 @@ current pipeline does not address directly:
 4. **Winding-constraint annotator + verifier** — annotate winding constraints on
    flattened renders and export native spiral-input files; validated 125/125 on the
    released PHercParis4 annotations.
+5. **Ink recovery at 77-78 keV** — a rendering path that reproduces the team's published
+   ink maps at **r = 0.963** from the public checkpoint, the four undocumented conventions
+   it depends on, and a text score calibrated at **AUC 0.885** on known writing.
 
 Both stream data directly from the public `vesuvius-challenge-open-data` S3 bucket and
 `dl.ash2txt.org` — no local copy of a full scroll is needed. Everything runs on a laptop.
@@ -112,6 +115,80 @@ python registration/render_new_scan.py --u0 <col> --v0 <row> --w 1500 --h 1245 -
 ```
 
 ---
+
+---
+
+## 5. Ink recovery at 77-78 keV (`ink/`)
+
+`scrollprize/ink_canonical_2um` is public, and so are the surface volumes it consumes.
+Reproducing its output from your own surfaces is another matter: four conventions decide
+the result, none of them written down anywhere, and each one is silently fatal.
+
+| convention | getting it wrong costs |
+|---|---|
+| normal = `d/dcol x d/drow` of central differences on the tifxyz grid | flipping one component gives a vector that is not perpendicular to the sheet: **r = −0.18** against the published map |
+| sample the volume **trilinearly**, not at the nearest voxel | r = 0.33 -> 0.44 on the same window |
+| grid coordinate for output pixel `p` is `p / upsample` (cell **corner**) | the usual centre convention is off by 10 voxels at 2.4 um; layer agreement drops 0.96 -> 0.72 |
+| published surface volumes index depth **opposite** to the geometric normal, one voxel per step, mesh at the centre of the 109-layer stack | the model sees the sheet inside out |
+
+With all four right, `ink/render_surface.py` plus that checkpoint reproduces the team's
+production output at **r = 0.963** on an identical crop of PHerc0139, with layer-for-layer
+agreement of **0.95-0.97**. The renderer streams ranged reads straight from the public
+bucket: a 34 x 32 mm segment takes about a minute on a laptop.
+
+```bash
+python ink/render_surface.py MESH_DIR VOLUME_ZARR_LEVEL0_URL OUT_DIR ROW COL ROWS COLS 20 62 0
+```
+
+### Cross-scan registration for scrolls that have no surfaces where the ink is
+
+PHerc0009B, PHerc1203 and PHerc1451 each carry a fine 77-78 keV rescan in which ink is
+visible, and segmentation **only** in the coarse 8.6-9.4 um / 113-116 keV frame. That gap,
+not the ink model, is why those scrolls have no published ink.
+
+`ink/register_scans.py` recovers the map from the volumes alone — the two scans differ by a
+translation with a small linear tilt and no rotation. Match pyramid levels to a common
+voxel size, cross-correlate occupancy profiles for the z shift, then cross-correlate
+slices in plane. On PHerc0009B slices match at **r = 0.86**, giving
+
+```
+z_fine = z_coarse + 1376 um
+y_fine = y_coarse - 1391 um + 0.0351 * z_fine
+x_fine = x_coarse + 11 um
+```
+
+Applied to a mesh, this renders clean papyrus with fibre texture in a volume that had no
+surfaces at all.
+
+Snapping surface points onto the local sheet maximum was tried and **rejected**: on an
+already correct mesh every variant (global maximum, nearest local maximum, centre of mass)
+degraded the render to r = 0.34-0.71 against the unsnapped reference, because neighbouring
+windings sit inside the search radius. The global transform is enough.
+
+### Is there text here?
+
+Ranking windows by ink fraction misleads — the highest-coverage windows are broad material
+responses and the sparsest are isolated specks. `ink/text_score.py` scores line
+periodicity as spectral purity in the 1.0-3.5 mm band, gated on at least three resolved
+rows. Calibrated on windows of PHerc0139 where the answer is known:
+
+| scoring rule | AUC | blank windows sent to exactly 0 |
+|---|---|---|
+| letter-sized blob counting | 0.699 | — |
+| periodicity peak only | 0.828 | — |
+| periodicity + three-row gate (shipped) | **0.885** | **92%**, losing 18% of true text |
+
+### What the maps say so far
+
+- **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
+- **PHerc0009B** — first windows of the 77 keV scan, reachable only through the
+  registration above: maximum ink probability 0.18-0.20 against a 0.5 threshold.
+- **PHerc1447, PHerc1218, PHerc0800** — stuck at 116 keV, no ink signal at all. That is a
+  measured reason those scrolls are blank, not an untested assumption.
+
+These are the first ink maps published for any of them.
+
+`python ink/test_ink.py` covers all four conventions plus the registration primitives.
 
 ## Why these help the challenge
 
