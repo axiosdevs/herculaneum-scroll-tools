@@ -278,8 +278,9 @@ meshes from it, so a "no" is a statement about that sample, not an exhaustive pr
 ### What the maps say so far
 
 - **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
-- **PHerc0009B** — first windows of the 77 keV scan, reachable only through the
-  registration above: maximum ink probability 0.18-0.20 against a 0.5 threshold.
+- **PHerc0009B** — withdrawn. The windows were rendered from a surface that the seating test
+  later showed is not on a sheet, so their maps say nothing about the scroll. Left here as the
+  record of a claim retracted rather than quietly deleted.
 - **PHerc1447** — 8.64 µm / 116 keV: two of twelve windows return 8% and 2%, the rest nothing.
   Read together with the saturation result above, a coarse scan cannot settle the question
   either way; what it does settle is that these scrolls need a finer rescan before any ink
