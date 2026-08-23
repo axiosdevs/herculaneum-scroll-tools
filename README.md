@@ -186,7 +186,11 @@ rows. Calibrated on windows of PHerc0139 where the answer is known:
 - **PHerc1447, PHerc1218, PHerc0800** — stuck at 116 keV, no ink signal at all. That is a
   measured reason those scrolls are blank, not an untested assumption.
 
-These are the first ink maps published for any of them.
+These are the first ink maps published for any of them, and they ship with the repo:
+`ink/maps/<scroll>/` holds one 8-bit PNG per window plus a `manifest.json` giving the window
+id, ink fraction above 0.5, maximum probability, text score and fitted line period, so every
+number quoted here can be checked without rerunning anything. Regenerate with
+`python ink/export_maps.py "out/*.npy" ink/maps/SCROLL SCROLL`.
 
 `python ink/test_ink.py` covers all four conventions plus the registration primitives.
 

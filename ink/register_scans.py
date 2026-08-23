@@ -82,10 +82,16 @@ def plane_shift(a, b):
 
 
 def rescale(volume, factor):
-    out = np.stack([cv2.resize(volume[z], (int(volume.shape[2] * factor), int(volume.shape[1] * factor)),
-                               interpolation=cv2.INTER_AREA) for z in range(volume.shape[0])])
-    return np.stack([cv2.resize(out[:, :, x], (int(volume.shape[0] * factor), out.shape[1]),
-                                interpolation=cv2.INTER_AREA) for x in range(out.shape[2])], axis=2)
+    """Resample a (z, y, x) volume by `factor` on every axis, keeping the axis order."""
+    height = int(volume.shape[1] * factor)
+    width = int(volume.shape[2] * factor)
+    depth = int(volume.shape[0] * factor)
+    plane = np.stack([cv2.resize(volume[z], (width, height), interpolation=cv2.INTER_AREA)
+                      for z in range(volume.shape[0])])
+    out = np.empty((depth, height, width), np.float32)
+    for y in range(height):
+        out[:, y, :] = cv2.resize(plane[:, y, :], (width, depth), interpolation=cv2.INTER_AREA)
+    return out
 
 
 def estimate(coarse_url, fine_url, coarse_um, fine_um, samples=6):
@@ -99,9 +105,13 @@ def estimate(coarse_url, fine_url, coarse_um, fine_um, samples=6):
         zc = zf + lag
         if not (0 <= zc < scaled.shape[0]):
             continue
+        # центральные вырезки: свиток лежит в середине кадра, углы пусты
         h = min(scaled.shape[1], fine.shape[1])
         w = min(scaled.shape[2], fine.shape[2])
-        a, b = scaled[zc, :h, :w], fine[zf, :h, :w]
+        ay = (scaled.shape[1] - h) // 2; ax = (scaled.shape[2] - w) // 2
+        by = (fine.shape[1] - h) // 2; bx = (fine.shape[2] - w) // 2
+        a = scaled[zc, ay:ay + h, ax:ax + w]
+        b = fine[zf, by:by + h, bx:bx + w]
         if a.std() < 1 or b.std() < 1:
             continue
         dy, dx, r = plane_shift(a, b)
