@@ -168,8 +168,15 @@ y_fine = y_coarse - 1391 um + 0.0351 * z_fine
 x_fine = x_coarse + 11 um
 ```
 
-Applied to a mesh, this renders clean papyrus with fibre texture in a volume that had no
-surfaces at all.
+Applied to a mesh it lands in the right region — but it does **not** seat the surface on a
+sheet, and I only found that out by building the test in the next section and turning it on my own
+work. The rendered window looks like papyrus, complete with fibre texture, which is what fooled me:
+a cut *across* papyrus is fibrous too. The numbers are unambiguous. `seat_mesh.sheet_contrast()`
+measures how much brighter the middle of a rendered stack is than ±25 layers out; correctly seated
+surfaces give **+30.0** (PHerc0139) and **+38.7** (PHercMANBp), a surface known to cut across the
+windings gives **−0.1**, and this registration gives **−0.2**. So the ink maps computed from it
+carry no information, and PHerc0009B stays closed until the transform includes whatever rotation
+the translation-with-tilt model is missing. Eyeballing a render is not a check; this is.
 
 Snapping surface points onto the local sheet maximum was tried and **rejected**: on an
 already correct mesh every variant (global maximum, nearest local maximum, centre of mass)

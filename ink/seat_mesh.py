@@ -22,6 +22,21 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render_surface import ChunkedVolume, grid_normals  # noqa: E402
 
 
+def sheet_contrast(stack, span=25):
+    """The same question asked of an already-rendered stack: is the middle brighter than
+    +-`span` layers out? Seated surfaces give +30 to +39; a cut across the windings gives 0."""
+    import numpy as np
+    stack = np.asarray(stack, np.float32)
+    inside = (stack > 0).all(0)
+    if inside.sum() < 1000:
+        return float("nan")
+    profile = np.array([stack[i][inside].mean() for i in range(stack.shape[0])])
+    mid = len(profile) // 2
+    lo = max(0, mid - span)
+    hi = min(len(profile) - 1, mid + span)
+    return float(profile[mid] - 0.5 * (profile[lo] + profile[hi]))
+
+
 def sample_points(mesh_dir, count=800, seed=0):
     x, y, z = (tifffile.imread(f"{mesh_dir}/{a}.tif").astype(np.float64) for a in "xyz")
     valid = (x > 0) & (y > 0) & (z > 0)
