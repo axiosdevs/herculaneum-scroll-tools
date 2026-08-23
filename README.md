@@ -221,6 +221,53 @@ is a caveat worth having before someone announces ink on a coarse scan.
 
 Regenerate with `PER_SCROLL=12 python ink/atlas.py`; raw measurements are in `ink/atlas.json`.
 
+### Which published surfaces actually sit on a sheet, and in which scan
+
+A tifxyz file records no trace of the frame it was built in. A surface published beside a scroll
+is therefore not necessarily renderable in that scroll's newest scan, and a mis-seated mesh does
+not fail loudly — it renders a convincing-looking cross-section straight through the windings.
+I lost most of a day to exactly that before building a test for it.
+
+`ink/seat_mesh.py` asks the right question. Not "are these points inside material" — a cut across
+the windings is inside material too — but "does the sheet run along us": sample each surface point
+at 0 and at ±60 µm along its own normal, and measure how much brighter the surface is than its own
+surroundings. On a seated sheet the centre sits in papyrus and both sides fall into the gaps.
+Calibration: meshes known to be correct score 19-35 (PHerc0139 21.3, PHercMANBp 24.0,
+PHerc1667 24.2), while a surface visibly cutting across the windings scores 8.5. The threshold is
+15.
+
+`ink/seat_survey.py` runs it over the corpus — every mesh of a scroll against every volume of that
+scroll, at each plausible binning. 172 pairs, 14 scrolls (`ink/seating.json`):
+
+| scroll | best-seating volume | scale | score | verdict |
+|---|---|---|---|---|
+| PHerc1667 | 20251217075048-2.399um-0.2m-78keV | 1.0 | 24.2 | **seats** |
+| PHercMANBp | 20251216152116-2.399um-0.2m-78keV | 1.0 | 24.0 | **seats** |
+| PHerc0139 | 20260102150214-2.399um-0.2m-78keV | 1.0 | 21.3 | **seats** |
+| PHercParis4 | 20260411134726-2.400um-0.2m-78keV | 1.0 | 17.0 | **seats** |
+| PHerc0814 | 20260521123630-1.129um-0.2m-59keV | 1.0 | 13.3 | partial |
+| PHerc0009B | 20250521125136-8.640um-1.2m-116keV | 1.0 | 11.8 | partial |
+| PHerc0500P2 | 20250526151718-2.215um-0.4m-111keV | 1.0 | 11.7 | partial |
+| PHerc0172 | 20241024131839-7.910um-53keV | 1.0 | 11.5 | partial |
+| PHerc1451 | 20260319101107-2.399um-0.2m-78keV | 2.0 | 9.7 | partial |
+| PHerc0343P | 20260304131111-2.215um-0.4m-111keV | 1.0 | 7.3 | partial |
+| PHerc0332 | 20251211183505-2.399um-0.2m-78keV | 4.0 | 4.8 | partial |
+| PHerc1203 | 20250820131727-9.362um-1.2m-113keV | 1.0 | 4.3 | partial |
+| PHerc0800 | 20250521135224-8.640um-1.2m-116keV | 1.0 | 2.0 | no |
+| PHerc1447 | 20250521151220-8.640um-1.2m-116keV | 0.5 | 1.2 | no |
+
+The method validates itself on the way through: for PHerc0139, whose meshes are named
+`...-on-<volume-id>-...`, the search independently picks out the volume named in the filename and
+rejects the other six.
+
+**Only four of fourteen scrolls have a published surface that cleanly seats in any of their own
+volumes.** For the other ten the bottleneck is not ink detection at all — there is no seated
+surface in a scan fine enough to read ink from, which is a different problem needing different
+work. PHerc0800 and PHerc1447 have no seated surface anywhere in the sample.
+
+Caveat worth stating: this samples the first segment carrying meshes on each scroll and up to six
+meshes from it, so a "no" is a statement about that sample, not an exhaustive proof for the scroll.
+
 ### What the maps say so far
 
 - **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
