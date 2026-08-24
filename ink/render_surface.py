@@ -125,11 +125,17 @@ class ChunkedVolume:
 def grid_normals(x, y, z):
     """Unit normals from central differences, matching volume-cartographer's grid_normal."""
     def central(m, axis):
+        """Central differences, one-sided at the border — a zero gradient there would leave the
+        outermost cell of every window unrendered and stitch into a visible seam."""
         g = np.zeros_like(m)
         if axis == 1:
             g[:, 1:-1] = m[:, 2:] - m[:, :-2]
+            g[:, 0] = 2.0 * (m[:, 1] - m[:, 0])
+            g[:, -1] = 2.0 * (m[:, -1] - m[:, -2])
         else:
             g[1:-1] = m[2:] - m[:-2]
+            g[0] = 2.0 * (m[1] - m[0])
+            g[-1] = 2.0 * (m[-1] - m[-2])
         return g
 
     ux, uy, uz = central(x, 1), central(y, 1), central(z, 1)

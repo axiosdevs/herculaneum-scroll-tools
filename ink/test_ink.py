@@ -31,6 +31,18 @@ def test_normal_is_perpendicular_to_a_tilted_plane():
         assert abs(float(n @ tangent)) < 1e-4
 
 
+def test_normals_are_defined_at_the_grid_border():
+    """A zero gradient at the border leaves the outermost cell unrendered — a visible seam
+    once windows are stitched together."""
+    u = np.arange(8, dtype=np.float32)
+    x = np.tile(u, (8, 1))
+    y = np.tile(u[:, None], (1, 8))
+    z = np.zeros((8, 8), np.float32)
+    nx, ny, nz = grid_normals(x, y, z)
+    for r, c in ((0, 0), (0, 7), (7, 0), (7, 7)):
+        assert abs(abs(nz[r, c]) - 1.0) < 1e-5, (r, c, nz[r, c])
+
+
 def test_upsample_uses_the_cell_corner_convention():
     row = np.tile(np.arange(4, dtype=np.float32), (4, 1))
     out = upsample_grid(row, 2, 8, 8)
