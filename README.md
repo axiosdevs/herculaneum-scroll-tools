@@ -282,6 +282,22 @@ work. PHerc0800 and PHerc1447 have no seated surface anywhere in the sample.
 Caveat worth stating: this samples the first segment carrying meshes on each scroll and up to six
 meshes from it, so a "no" is a statement about that sample, not an exhaustive proof for the scroll.
 
+### Stitching windows back into a page
+
+The sweep writes one map per window, and the windows tile the mesh grid contiguously — window
+(r, c) covers cells [r, r+N) and the next starts at r+N. A line of script crossing that boundary is
+broken only by how the pieces were stored, so `ink/stitch.py` puts them back together. It matters
+because the prize asks for ten letters inside 4 cm² and a single window is 0.24 cm²: you cannot see
+lines in a tile, only fragments. Stitched, PHercMANBp's first segment becomes one 29.4 x 29.4 mm
+canvas — 8.6 cm², large enough for the text score to see many line spacings at once instead of two.
+
+Assembling that canvas is also what exposed a defect in my own renderer: every window had a dead
+border exactly one grid cell wide, which stitched into a visible seam. The cause was `grid_normals`
+using plain central differences, which are zero on the border row and column, leaving those cells
+with no normal to sample along. They now use a one-sided difference at the edge, and
+`test_ink.py::test_normals_are_defined_at_the_grid_border` keeps it that way. Nothing about a single
+window looked wrong; only the join did.
+
 ### What the maps say so far
 
 - **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
