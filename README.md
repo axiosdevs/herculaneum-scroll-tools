@@ -529,9 +529,13 @@ export **native spiral-input files**.
   (>12σ trend outliers); honest scope note in the docstring: subtle single-gap
   hops need the spiral fit itself — the overlay is the fast human check.
 
-Validation: on the released human-verified PHercParis4 `same_windings.json`
-(125 collections, ~6k points) the verifier reports **125/125 CONSISTENT**, and
-the annotator's exported files match the native schema exactly.
+Validation, both directions. On the released human-verified PHercParis4
+`same_windings.json` (125 collections, ~6k points) the verifier reports **125/125
+CONSISTENT** — no false alarms on clean data. Detection power is tested separately:
+`winding/test_winding.py` plants the canonical annotation error — one point taken from the
+neighbouring wrap — into a synthetic spiral and requires the verdict to flip to SUSPECT,
+which it does at every seeded position. The annotator's exported files match the native
+schema exactly.
 
 ```bash
 # annotate (GUI): draw on a flattened render, export native constraint JSONs

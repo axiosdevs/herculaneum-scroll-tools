@@ -20,26 +20,6 @@ ratio, residual changepoint) are reported to assist manual review.
 
 Validation: on the released, human-verified PHercParis4 same_windings.json
 (125 collections) this reports 125/125 CONSISTENT.
-"""Verify winding-constraint files against the scroll geometry.
-
-Checks exported same_windings.json / relative_windings.json (native spiral-input
-schema) using the scroll's umbilicus:
-
-For every point we compute the polar angle and radius around the umbilicus axis
-at the point's z. For a *same-winding* collection traced along one wrap, radius
-should vary smoothly with unwrapped angle — big radius jumps at similar angles
-mean the path hopped wraps. We report, per collection:
-
-  - n points, z-range
-  - radius vs unwrapped-angle monotonic smoothness (max |dr| between angular
-    neighbours, in wrap-gap units estimated from the local radius spacing)
-  - CONSISTENT / SUSPECT verdict
-
-plus an overlay PNG: points coloured by collection drawn over the scroll
-cross-section at the median z (streamed from the CT zarr at a coarse level).
-
-This gives annotators and reviewers a fast, GPU-free sanity check — the
-"easy to verify" property an ideal winding-constraint generator needs.
 """
 import argparse
 import json
