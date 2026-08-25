@@ -127,6 +127,26 @@ already correct mesh every variant (global maximum, nearest local maximum, centr
 degraded the render to r = 0.34-0.71 against the unsnapped reference, because neighbouring
 windings sit inside the search radius. The global transform is enough.
 
+### The registration was unnecessary: growing surfaces natively in the ink-visible scan
+
+The transfer problem above dissolves once you notice what else is published: the team ships m7
+surface *predictions* for PHerc0009B's 77 keV volume itself
+(`representations/predictions/surfaces/...-m7-L2-th0.2.zarr`, with matching normal grids). Running
+villa's own `vc_grow_seg_from_seed` directly on those predictions grows fresh surfaces natively in
+the scan where ink is visible — no cross-scan transform at all. Three traces from verified seeds:
+**5.15 + 5.10 + 5.09 cm² — 15.3 cm² of seated surface on a scroll that had none**, each single
+trace already larger than the 4 cm² the First Letters prize asks for. The first scores **14.17** on
+the seating test (threshold 15, cross-cut reference 8.5, the registered mesh −0.2), before any of
+the refinement the team's production surfaces get.
+
+Two traps cost hours and are worth writing down. The prediction zarr ships without the
+`metadata.json` the tracer requires — it refuses to open until you add one carrying `type: "vol"`,
+`voxelsize`, `width`, `height`, `slices`. And seeds must be verified against the CT before tracing:
+the densest prediction block in the whole volume gave a seed sitting on **CT = 0** with an entirely
+empty neighbourhood — the 43.3% phantom failure mode measured in section 2, met in the wild exactly
+where it hurts. The working seeds (CT 141-156) came from moderate-density blocks cross-checked
+against the CT.
+
 ### Is there text here?
 
 Ranking windows by ink fraction misleads — the highest-coverage windows are broad material
