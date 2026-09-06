@@ -1,0 +1,18 @@
+[
+ {
+  "scroll": "PHerc0009B",
+  "surface": "natively traced (vc_grow_seg_from_seed on published m7 predictions)",
+  "window": "grid 1,1 of trace 1",
+  "shape": [
+   2040,
+   2040
+  ],
+  "micron_per_pixel": 2.401,
+  "ink_fraction_over_0.5": 0.02588,
+  "max_probability": 0.9053,
+  "text_score": 0.0,
+  "line_period_mm": 0.0,
+  "sheet_contrast": 10.0,
+  "note": "the bright region sits at the sheet broken edge; no text in this window"
+ }
+]

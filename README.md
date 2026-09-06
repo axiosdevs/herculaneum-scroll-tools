@@ -147,6 +147,11 @@ empty neighbourhood — the 43.3% phantom failure mode measured in section 2, me
 where it hurts. The working seeds (CT 141-156) came from moderate-density blocks cross-checked
 against the CT.
 
+The first ink map from these surfaces is in `ink/maps/PHerc0009B_traced/` with its manifest: a
+4.9 x 4.9 mm window off trace 1, maximum probability 0.905, 2.6% above threshold — concentrated at
+the sheet's broken edge — text score 0. No text in this first window; 15.3 cm² of traced surface
+remain to survey, and the mid-layer render above shows what the model is reading from.
+
 ### Is there text here?
 
 Ranking windows by ink fraction misleads — the highest-coverage windows are broad material

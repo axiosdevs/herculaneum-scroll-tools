@@ -162,6 +162,6 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.path.insert(0, os.environ.get("VILLA_INFERENCE",
-                                      "/Users/pc/defi/vesuvius/villa/ink-detection/optimized_inference"))
+    from inference_env import ensure
+    ensure()
     main()
