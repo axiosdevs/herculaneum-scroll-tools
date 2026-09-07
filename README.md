@@ -270,7 +270,9 @@ window looked wrong; only the join did.
 
 ### What the maps say so far
 
-- **PHercMANBp** — all 11 segments sampled (24 windows of 0.24 cm2 each): no text.
+- **PHercMANBp** — surveyed in full: 67 of 71 windows across all 11 segments (4 render
+  failures, logged), stitched into per-segment canvases up to 34 x 34 mm
+  (`ink/maps/PHercMANBp_canvases/`): no text found anywhere.
 - **PHerc0009B** — withdrawn. The windows were rendered from a surface that the seating test
   later showed is not on a sheet, so their maps say nothing about the scroll. Left here as the
   record of a claim retracted rather than quietly deleted.
