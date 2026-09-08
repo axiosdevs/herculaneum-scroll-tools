@@ -147,9 +147,30 @@ def main():
                 row["seat_error"] = str(exc)[:120]
         else:
             row["area_cm2"], row["seating"] = 0.0, -1.0
+        # притяжка к листу как «шаг с проверкой»: до двух проходов, остаётся лучший
+        if row.get("seating", -1) >= SEAT_KEEP and row.get("dir"):
+            best_dir, best_score = row["dir"], row["seating"]
+            src = row["dir"]
+            for p in (1, 2):
+                dst = os.path.join(out_dir, f"snap{p}")
+                r = subprocess.run(["nice", "-n", "20", sys.executable,
+                                    os.path.join(os.path.dirname(os.path.abspath(__file__)), "snap_refine.py"),
+                                    src, dst], capture_output=True, text=True,
+                                   env=dict(os.environ, RAD="8"))
+                score = None
+                for line in r.stdout.splitlines():
+                    if "посадка" in line:
+                        try: score = float(line.split(":")[1])
+                        except Exception: pass
+                if score is None:
+                    break
+                if score > best_score:
+                    best_dir, best_score = dst, score
+                src = dst
+            row["refined_dir"], row["refined_seating"] = best_dir, round(best_score, 2)
         ledger.append(row)
         json.dump(ledger, open(args.ledger, "w"), indent=1)
-        kept = [r for r in ledger if r.get("seating", -1) >= SEAT_KEEP]
+        kept = [r for r in ledger if max(r.get("refined_seating", 0), r.get("seating", -1)) >= SEAT_KEEP]
         print(f"  сид {i}: {row['area_cm2']} см², посадка {row['seating']} | "
               f"принято {len(kept)}, площадь {sum(r['area_cm2'] for r in kept):.1f} см²", flush=True)
     kept = [r for r in ledger if r.get("seating", -1) >= SEAT_KEEP]
