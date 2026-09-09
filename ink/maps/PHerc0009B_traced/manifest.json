@@ -14,5 +14,21 @@
   "line_period_mm": 0.0,
   "sheet_contrast": 10.0,
   "note": "the bright region sits at the sheet broken edge; no text in this window"
+ },
+ {
+  "scroll": "PHerc0009B",
+  "surface": "support-gated native trace (require_volume_support, threshold 20, dilation 3)",
+  "surface_area_cm2": 7.07,
+  "seating": 16.0,
+  "sheet_contrast": 8.5,
+  "window_mm": [
+   6.8,
+   6.8
+  ],
+  "micron_per_pixel": 2.401,
+  "max_probability": 0.6542,
+  "ink_fraction_over_0.5": 0.00036,
+  "text_score": 0.0,
+  "note": "model silent: max 0.65 against a 0.5 threshold, no text"
  }
 ]

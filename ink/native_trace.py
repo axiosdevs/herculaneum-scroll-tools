@@ -47,7 +47,8 @@ SEAT_KEEP = 12.0        # keep for refinement; >= 15 is cleanly seated
 CT_MATERIAL = 100.0     # median CT a seed neighbourhood must exceed
 
 
-def generate_seeds(pred_path, ct_l2_url, count, seed=23):
+def generate_seeds(pred_path, ct_l2_url, count, seed=None):
+    seed = int(os.environ.get("SEED", "23")) if seed is None else seed
     import zarr
     pred = zarr.open(os.path.join(pred_path, "0"), mode="r")
     ct = ChunkedVolume(ct_l2_url, threads=8)
