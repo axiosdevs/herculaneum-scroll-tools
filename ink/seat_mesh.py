@@ -51,14 +51,49 @@ def sample_points(mesh_dir, count=800, seed=0):
             np.stack([nx[r, c], ny[r, c], nz[r, c]], 1))
 
 
+def probe_gap(points, normals, volume, scale, offset=(0.0, 0.0, 0.0), level=0, span=60.0):
+    """Half-distance to the neighbouring winding, measured rather than assumed.
+
+    A fixed probe distance silently breaks across scan resolutions: at 2.4 um, +-60 um lands in
+    the gap between sheets, but on an 8 um scan the same distance is already inside the next
+    winding, and every surface scores as if it were cutting across. This walks the mean profile
+    outward from the surface and takes the first minimum on each side.
+    """
+    div = 2.0 ** level
+    px = (points[:, 0] * scale + offset[0]) / div
+    py = (points[:, 1] * scale + offset[1]) / div
+    pz = (points[:, 2] * scale + offset[2]) / div
+    steps = np.arange(2.0, span, 2.0)
+    means = []
+    for t in steps:
+        a = volume.at(np.rint(pz + normals[:, 2] * t).astype(np.int64),
+                      np.rint(py + normals[:, 1] * t).astype(np.int64),
+                      np.rint(px + normals[:, 0] * t).astype(np.int64))
+        b = volume.at(np.rint(pz - normals[:, 2] * t).astype(np.int64),
+                      np.rint(py - normals[:, 1] * t).astype(np.int64),
+                      np.rint(px - normals[:, 0] * t).astype(np.int64))
+        means.append(0.5 * (a.mean() + b.mean()))
+    means = np.array(means)
+    if len(means) < 3:
+        return 25.0
+    smooth = np.convolve(means, np.ones(3) / 3, mode="same")
+    for i in range(1, len(smooth) - 1):
+        if smooth[i] <= smooth[i - 1] and smooth[i] <= smooth[i + 1]:
+            return float(steps[i])
+    return float(steps[int(np.argmin(smooth))])
+
+
 def seating_score(points, normals, volume, scale, offset=(0.0, 0.0, 0.0), level=0,
-                  gap_voxels=25.0):
+                  gap_voxels=None):
     """Higher is better. Returns (score, mean intensity on the surface, coverage)."""
     div = 2.0 ** level
     px = (points[:, 0] * scale + offset[0]) / div
     py = (points[:, 1] * scale + offset[1]) / div
     pz = (points[:, 2] * scale + offset[2]) / div
-    gap = gap_voxels / div
+    if gap_voxels is None:
+        gap = probe_gap(points, normals, volume, scale, offset, level)
+    else:
+        gap = gap_voxels / div
     read = lambda t: volume.at(
         np.rint(pz + normals[:, 2] * t).astype(np.int64),
         np.rint(py + normals[:, 1] * t).astype(np.int64),

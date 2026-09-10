@@ -152,6 +152,32 @@ The first ink map from these surfaces is in `ink/maps/PHerc0009B_traced/` with i
 the sheet's broken edge — text score 0. No text in this first window; 15.3 cm² of traced surface
 remain to survey, and the mid-layer render above shows what the model is reading from.
 
+### The support test, measured: it is off by default and it should not be
+
+`vc_grow_seg_from_seed` accepts `require_volume_support` — a frontier check we contributed in
+[villa#1451](https://github.com/ScrollPrize/villa/pull/1451) that refuses to grow a patch over
+voxels with no material under them. It ships **off**, and nobody had measured what turning it on
+does to the resulting surface.
+
+Controlled run on PHerc0009B: six identical seeds, traced twice, once with the flag and once
+without, scored by the seating test (`ink/support_comparison.json`):
+
+| | flag off | flag on |
+|---|---|---|
+| seating, mean | 10.9 | **18.9** |
+| seating, median | 9.3 | **17.2** |
+| surfaces clearing the bar (>=12) | 2 of 6 | **5 of 6** |
+| area per trace | 5.2 cm² | 1.8 cm² |
+
+Improved on **6 of 6 seeds**, and on the best of them seating went 14.2 -> 30.3 with coverage
+72% -> 92% — the range the team's own production surfaces occupy. The cost is honest: patches come
+out roughly a third of the size, because growth stops where the CT says there is nothing to grow
+on. That is the trade the flag exists to make, and with `ink/native_trace.py` retrying seeds the
+area comes back while the quality stays.
+
+Tuned on the same seed: `volume_support_threshold` 20 with `volume_support_dilation` 3 beat both
+the strict setting (60/1, seating 17.7 but only 0.8 cm²) and the loose one.
+
 ### Is there text here?
 
 Ranking windows by ink fraction misleads — the highest-coverage windows are broad material
