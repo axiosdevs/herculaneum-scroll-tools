@@ -83,6 +83,34 @@ def test_text_score_separates_rows_from_noise():
     assert 1.0 <= period <= 3.5
 
 
+def test_sheet_offset_recovers_a_known_displacement():
+    """A bright sheet displaced by a smooth field is found where it was put."""
+    from flatten_stack import sheet_offset, gather
+    depth, size = 120, 256
+    yy, xx = np.mgrid[0:size, 0:size].astype(np.float32)
+    truth = 6.0 * np.sin(2 * np.pi * yy / size) * np.cos(2 * np.pi * xx / size)
+    centre = (depth - 1) / 2.0 + truth
+    z = np.arange(depth, dtype=np.float32)[:, None, None]
+    stack = (180.0 * np.exp(-0.5 * ((z - centre[None]) / 2.5) ** 2) + 30.0).astype(np.uint8)
+    found = sheet_offset(stack, max_shift=12, smooth_px=4, search=12)
+    assert np.abs(found - truth).mean() < 1.0, np.abs(found - truth).mean()
+
+
+def test_flattening_cannot_manufacture_contrast():
+    """On a stack whose sheet is destroyed, re-centring must invent nothing.
+
+    Guards the obvious failure mode: picking each pixel's brightest depth raises any
+    contrast statistic by construction. Smoothing the shift field is what stops it.
+    """
+    from flatten_stack import sheet_offset, gather
+    from seat_mesh import sheet_contrast
+    rng = np.random.default_rng(11)
+    depth, size = 120, 256
+    noise = rng.integers(0, 255, (depth, size, size)).astype(np.uint8)
+    flat = gather(noise, sheet_offset(noise, max_shift=12, smooth_px=4, search=12), 62)
+    assert abs(sheet_contrast(flat)) < 1.0, sheet_contrast(flat)
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):

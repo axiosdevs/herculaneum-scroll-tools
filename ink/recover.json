@@ -1,0 +1,38 @@
+{
+ "window": [
+  24064,
+  21504,
+  1024
+ ],
+ "grid_um": 192.0,
+ "clean": {
+  "contrast": 11.17,
+  "r": 0.877
+ },
+ "rows": [
+  {
+   "amp_um": 4.8,
+   "contrast_damaged": 11.06,
+   "r_damaged": 0.817,
+   "contrast_fixed": 35.67,
+   "r_fixed": 0.598,
+   "recovered_pct": -362.3
+  },
+  {
+   "amp_um": 9.6,
+   "contrast_damaged": 10.25,
+   "r_damaged": 0.803,
+   "contrast_fixed": 34.94,
+   "r_fixed": 0.567,
+   "recovered_pct": -318.2
+  },
+  {
+   "amp_um": 14.39,
+   "contrast_damaged": 9.3,
+   "r_damaged": 0.737,
+   "contrast_fixed": 33.51,
+   "r_fixed": 0.375,
+   "recovered_pct": -257.4
+  }
+ ]
+}
