@@ -1,0 +1,1602 @@
+[
+ {
+  "dir": "n1451_r2/002/auto_grown_20260923163400386",
+  "seating": 64.07,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/008/auto_grown_20260923170819161",
+  "seating": 58.44,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r12/017/auto_grown_20260923213302018",
+  "seating": 57.05,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r15/004/auto_grown_20260923190832223",
+  "seating": 57.04,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/078/auto_grown_20260924032310259",
+  "seating": 56.25,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/068/auto_grown_20260924021029988",
+  "seating": 55.22,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r8/055/auto_grown_20260924002707604",
+  "seating": 53.49,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/067/auto_grown_20260924015658644",
+  "seating": 52.88,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r1/049/auto_grown_20260923233822650",
+  "seating": 51.07,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r12/005/auto_grown_20260923190754048",
+  "seating": 50.12,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/065/auto_grown_20260924014838669",
+  "seating": 47.85,
+  "area_cm2": 2.16
+ },
+ {
+  "dir": "n1451_r13/006/auto_grown_20260923192909019",
+  "seating": 47.14,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/034/auto_grown_20260923215855013",
+  "seating": 47.04,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r14/022/auto_grown_20260923223852623",
+  "seating": 46.86,
+  "area_cm2": 2.17
+ },
+ {
+  "dir": "n1451_r7/060/auto_grown_20260924012308947",
+  "seating": 46.4,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r5/014/auto_grown_20260923174926002",
+  "seating": 45.45,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/004/auto_grown_20260923164628204",
+  "seating": 45.25,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/048/auto_grown_20260923233705936",
+  "seating": 45.03,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/006/auto_grown_20260923164911038",
+  "seating": 44.85,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/019/auto_grown_20260923185217628",
+  "seating": 44.63,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r1/009/auto_grown_20260923171046164",
+  "seating": 44.54,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r3/032/auto_grown_20260923214619615",
+  "seating": 44.26,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/036/auto_grown_20260923222652847",
+  "seating": 43.98,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/013/auto_grown_20260923174248003",
+  "seating": 43.71,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r16/025/auto_grown_20260923225933305",
+  "seating": 43.23,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r1/063/auto_grown_20260924013454670",
+  "seating": 43.19,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r15/000/auto_grown_20260923180100261",
+  "seating": 41.79,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r11/017/auto_grown_20260923215434106",
+  "seating": 41.48,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r11/014/auto_grown_20260923212101614",
+  "seating": 41.35,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/051/auto_grown_20260924000024772",
+  "seating": 41.34,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r6/027/auto_grown_20260923203436152",
+  "seating": 41.13,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/005/auto_grown_20260923164702943",
+  "seating": 40.91,
+  "area_cm2": 2.4
+ },
+ {
+  "dir": "n1451_r7/000/auto_grown_20260923162433054",
+  "seating": 40.4,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/076/auto_grown_20260924031102913",
+  "seating": 39.9,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/012/auto_grown_20260923173412903",
+  "seating": 39.09,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/036/auto_grown_20260923221804135",
+  "seating": 38.85,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/009/auto_grown_20260923171814547",
+  "seating": 38.21,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r3/007/auto_grown_20260923170419007",
+  "seating": 37.17,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r8/008/auto_grown_20260923170956639",
+  "seating": 36.62,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/052/auto_grown_20260924000904160",
+  "seating": 36.14,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r6/053/auto_grown_20260924000119542",
+  "seating": 36.1,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r4/044/auto_grown_20260923231704634",
+  "seating": 35.23,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r16/005/auto_grown_20260923190744722",
+  "seating": 34.1,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/044/auto_grown_20260923231341579",
+  "seating": 33.63,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/012/auto_grown_20260923173226513",
+  "seating": 33.45,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r2/020/auto_grown_20260923190034619",
+  "seating": 32.46,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/027/auto_grown_20260923204133732",
+  "seating": 32.26,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r16/013/auto_grown_20260923205123419",
+  "seating": 32.16,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/020/auto_grown_20260923185949747",
+  "seating": 32.01,
+  "area_cm2": 2.34
+ },
+ {
+  "dir": "n1451_r14/013/auto_grown_20260923210550163",
+  "seating": 31.58,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/070/auto_grown_20260924023119063",
+  "seating": 31.26,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/032/auto_grown_20260923215430641",
+  "seating": 30.95,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r4/002/auto_grown_20260923163517910",
+  "seating": 30.78,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/051/auto_grown_20260924000349123",
+  "seating": 30.52,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r6/024/auto_grown_20260923195118927",
+  "seating": 30.19,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/056/auto_grown_20260924002859859",
+  "seating": 29.91,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r13/015/auto_grown_20260923213254974",
+  "seating": 29.89,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r11/005/auto_grown_20260923192551944",
+  "seating": 29.84,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/068/auto_grown_20260924023754003",
+  "seating": 29.36,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/041/auto_grown_20260923230017227",
+  "seating": 28.96,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/068/auto_grown_20260924020405643",
+  "seating": 28.49,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r5/040/auto_grown_20260923224637252",
+  "seating": 27.96,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r8/062/auto_grown_20260924011909235",
+  "seating": 27.95,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r6/033/auto_grown_20260923214740431",
+  "seating": 27.9,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/050/auto_grown_20260923235215681",
+  "seating": 27.7,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/037/auto_grown_20260923223202563",
+  "seating": 27.63,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r3/028/auto_grown_20260923205326956",
+  "seating": 27.1,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/044/auto_grown_20260923232406663",
+  "seating": 25.91,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r1/056/auto_grown_20260924003626955",
+  "seating": 25.83,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r13/016/auto_grown_20260923214607065",
+  "seating": 25.59,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/069/auto_grown_20260924021154935",
+  "seating": 25.52,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r5/027/auto_grown_20260923202341452",
+  "seating": 25.35,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/023/auto_grown_20260923193847425",
+  "seating": 24.92,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r7/044/auto_grown_20260923231933563",
+  "seating": 24.88,
+  "area_cm2": 2.33
+ },
+ {
+  "dir": "n1451_r6/036/auto_grown_20260923220942619",
+  "seating": 24.84,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r13/020/auto_grown_20260923221800878",
+  "seating": 24.47,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r6/006/auto_grown_20260923165137555",
+  "seating": 24.43,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/007/auto_grown_20260923170020906",
+  "seating": 24.12,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/014/auto_grown_20260923174959447",
+  "seating": 23.66,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r11/025/auto_grown_20260923230030564",
+  "seating": 23.6,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r4/032/auto_grown_20260923214730215",
+  "seating": 23.54,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r5/015/auto_grown_20260923175602319",
+  "seating": 23.48,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r13/008/auto_grown_20260923195300735",
+  "seating": 23.46,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r3/043/auto_grown_20260923231905056",
+  "seating": 23.46,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/049/auto_grown_20260923234252505",
+  "seating": 23.36,
+  "area_cm2": 2.17
+ },
+ {
+  "dir": "n1451_r1/032/auto_grown_20260923213650341",
+  "seating": 23.28,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/071/auto_grown_20260924022919418",
+  "seating": 23.23,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/054/auto_grown_20260924001853040",
+  "seating": 22.87,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r2/014/auto_grown_20260923175002823",
+  "seating": 22.48,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r1/022/auto_grown_20260923192428153",
+  "seating": 22.39,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r15/009/auto_grown_20260923202209210",
+  "seating": 21.92,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r7/001/auto_grown_20260923162910150",
+  "seating": 21.92,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/018/auto_grown_20260923183759635",
+  "seating": 21.73,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r3/074/auto_grown_20260924030410336",
+  "seating": 21.66,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/048/auto_grown_20260923234300125",
+  "seating": 21.65,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r1/016/auto_grown_20260923181041349",
+  "seating": 21.63,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/050/auto_grown_20260923235317059",
+  "seating": 21.62,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/065/auto_grown_20260924014403265",
+  "seating": 21.37,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r15/022/auto_grown_20260923224243703",
+  "seating": 21.25,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r2/073/auto_grown_20260924025518670",
+  "seating": 21.25,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/030/auto_grown_20260923213313713",
+  "seating": 21.16,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r16/015/auto_grown_20260923212047715",
+  "seating": 21.1,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r2/071/auto_grown_20260924023840950",
+  "seating": 21.05,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r16/014/auto_grown_20260923210538409",
+  "seating": 21.0,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/059/auto_grown_20260924010721904",
+  "seating": 20.85,
+  "area_cm2": 2.37
+ },
+ {
+  "dir": "n1451_r6/046/auto_grown_20260923232319490",
+  "seating": 20.81,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r16/001/auto_grown_20260923182217650",
+  "seating": 20.78,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r15/018/auto_grown_20260923220800934",
+  "seating": 20.71,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r3/023/auto_grown_20260923195401904",
+  "seating": 20.68,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/062/auto_grown_20260924012751631",
+  "seating": 20.68,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/004/auto_grown_20260923164528945",
+  "seating": 20.62,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r2/030/auto_grown_20260923212147423",
+  "seating": 20.61,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/036/auto_grown_20260923222723392",
+  "seating": 20.58,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/075/auto_grown_20260924031456639",
+  "seating": 20.36,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/030/auto_grown_20260923212026476",
+  "seating": 20.35,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r7/069/auto_grown_20260924024628053",
+  "seating": 20.32,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/067/auto_grown_20260924020233104",
+  "seating": 20.28,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/068/auto_grown_20260924021400331",
+  "seating": 20.25,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/019/auto_grown_20260923184625108",
+  "seating": 20.21,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/004/auto_grown_20260923164205975",
+  "seating": 20.17,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r8/020/auto_grown_20260923191558604",
+  "seating": 20.11,
+  "area_cm2": 2.31
+ },
+ {
+  "dir": "n1451_r3/031/auto_grown_20260923213502938",
+  "seating": 20.09,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/054/auto_grown_20260924001301855",
+  "seating": 20.08,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/074/auto_grown_20260924030638634",
+  "seating": 20.04,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/076/auto_grown_20260924032343077",
+  "seating": 20.04,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r11/004/auto_grown_20260923191151607",
+  "seating": 20.02,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r8/059/auto_grown_20260924005644392",
+  "seating": 20.01,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r3/049/auto_grown_20260923235135123",
+  "seating": 19.97,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/047/auto_grown_20260923233018999",
+  "seating": 19.73,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r12/025/auto_grown_20260923224815554",
+  "seating": 19.67,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/000/auto_grown_20260923162426032",
+  "seating": 19.66,
+  "area_cm2": 2.31
+ },
+ {
+  "dir": "n1451_r11/020/auto_grown_20260923221858319",
+  "seating": 19.66,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/018/auto_grown_20260923190608326",
+  "seating": 19.65,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r3/058/auto_grown_20260924005708196",
+  "seating": 19.58,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r8/056/auto_grown_20260924003223138",
+  "seating": 19.5,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r12/000/auto_grown_20260923180040751",
+  "seating": 19.45,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r16/004/auto_grown_20260923185635410",
+  "seating": 19.37,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/027/auto_grown_20260923204041441",
+  "seating": 19.3,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/009/auto_grown_20260923171430627",
+  "seating": 19.18,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r6/062/auto_grown_20260924011639704",
+  "seating": 19.17,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/015/auto_grown_20260923180321944",
+  "seating": 19.13,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/049/auto_grown_20260923234448505",
+  "seating": 19.13,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/005/auto_grown_20260923165110746",
+  "seating": 19.13,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r15/013/auto_grown_20260923211900411",
+  "seating": 19.05,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r3/029/auto_grown_20260923210613029",
+  "seating": 19.03,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/005/auto_grown_20260923164735980",
+  "seating": 18.97,
+  "area_cm2": 2.43
+ },
+ {
+  "dir": "n1451_r7/045/auto_grown_20260923232515037",
+  "seating": 18.85,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r5/049/auto_grown_20260923233531148",
+  "seating": 18.78,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/008/auto_grown_20260923170527423",
+  "seating": 18.77,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r11/010/auto_grown_20260923203100934",
+  "seating": 18.74,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r3/071/auto_grown_20260924023738735",
+  "seating": 18.72,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r14/009/auto_grown_20260923201936903",
+  "seating": 18.71,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r5/016/auto_grown_20260923180353420",
+  "seating": 18.69,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/053/auto_grown_20260924002302461",
+  "seating": 18.68,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/000/auto_grown_20260923162437062",
+  "seating": 18.68,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/016/auto_grown_20260923181042209",
+  "seating": 18.66,
+  "area_cm2": 2.31
+ },
+ {
+  "dir": "n1451_r5/057/auto_grown_20260924003919665",
+  "seating": 18.64,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/016/auto_grown_20260923182240643",
+  "seating": 18.61,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r2/024/auto_grown_20260923195315823",
+  "seating": 18.56,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/055/auto_grown_20260924002031165",
+  "seating": 18.47,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r3/039/auto_grown_20260923225253369",
+  "seating": 18.46,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r8/000/auto_grown_20260923162447051",
+  "seating": 18.43,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/027/auto_grown_20260923203706710",
+  "seating": 18.4,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r15/001/auto_grown_20260923182222635",
+  "seating": 18.4,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/008/auto_grown_20260923171147017",
+  "seating": 18.39,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/026/auto_grown_20260923202137631",
+  "seating": 18.35,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r5/020/auto_grown_20260923185659519",
+  "seating": 18.28,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r5/055/auto_grown_20260924002512254",
+  "seating": 18.26,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/019/auto_grown_20260923185140526",
+  "seating": 18.22,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r3/047/auto_grown_20260923233746852",
+  "seating": 18.18,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/076/auto_grown_20260924032109967",
+  "seating": 18.15,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/067/auto_grown_20260924021055039",
+  "seating": 18.12,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r13/013/auto_grown_20260923210521904",
+  "seating": 18.11,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r15/024/auto_grown_20260923225933598",
+  "seating": 18.0,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r3/022/auto_grown_20260923194239131",
+  "seating": 17.95,
+  "area_cm2": 2.3
+ },
+ {
+  "dir": "n1451_r4/003/auto_grown_20260923164024353",
+  "seating": 17.9,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r12/003/auto_grown_20260923184643653",
+  "seating": 17.9,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/023/auto_grown_20260923193713020",
+  "seating": 17.87,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/070/auto_grown_20260924025347061",
+  "seating": 17.82,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/036/auto_grown_20260923222636330",
+  "seating": 17.8,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/023/auto_grown_20260923195352203",
+  "seating": 17.77,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r1/007/auto_grown_20260923165614829",
+  "seating": 17.72,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/052/auto_grown_20260923235412808",
+  "seating": 17.71,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r16/018/auto_grown_20260923220012041",
+  "seating": 17.7,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r11/023/auto_grown_20260923224124067",
+  "seating": 17.7,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r5/072/auto_grown_20260924024349960",
+  "seating": 17.7,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/048/auto_grown_20260923233737322",
+  "seating": 17.67,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r15/012/auto_grown_20260923210533603",
+  "seating": 17.66,
+  "area_cm2": 2.17
+ },
+ {
+  "dir": "n1451_r14/015/auto_grown_20260923213411023",
+  "seating": 17.52,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r5/022/auto_grown_20260923192133117",
+  "seating": 17.48,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/048/auto_grown_20260923233822516",
+  "seating": 17.46,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/017/auto_grown_20260923183827846",
+  "seating": 17.45,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r13/010/auto_grown_20260923202048737",
+  "seating": 17.43,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r14/021/auto_grown_20260923222834535",
+  "seating": 17.43,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r11/008/auto_grown_20260923200602400",
+  "seating": 17.41,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r2/075/auto_grown_20260924031332339",
+  "seating": 17.35,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r16/020/auto_grown_20260923221747141",
+  "seating": 17.34,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/067/auto_grown_20260924021352920",
+  "seating": 17.27,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/042/auto_grown_20260923230228451",
+  "seating": 17.26,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r15/007/auto_grown_20260923195107314",
+  "seating": 17.22,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r12/009/auto_grown_20260923200006504",
+  "seating": 17.21,
+  "area_cm2": 2.31
+ },
+ {
+  "dir": "n1451_r5/058/auto_grown_20260924004959607",
+  "seating": 17.2,
+  "area_cm2": 2.31
+ },
+ {
+  "dir": "n1451_r5/038/auto_grown_20260923222756410",
+  "seating": 17.2,
+  "area_cm2": 2.27
+ },
+ {
+  "dir": "n1451_r4/023/auto_grown_20260923193629324",
+  "seating": 17.2,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/014/auto_grown_20260923175726009",
+  "seating": 17.18,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/046/auto_grown_20260923232939803",
+  "seating": 17.08,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r11/015/auto_grown_20260923213407324",
+  "seating": 17.04,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r14/004/auto_grown_20260923191054333",
+  "seating": 17.03,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r16/000/auto_grown_20260923180032321",
+  "seating": 16.97,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/045/auto_grown_20260923231850140",
+  "seating": 16.95,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r2/011/auto_grown_20260923172418436",
+  "seating": 16.93,
+  "area_cm2": 2.33
+ },
+ {
+  "dir": "n1451_r12/016/auto_grown_20260923212041240",
+  "seating": 16.93,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/076/auto_grown_20260924032454663",
+  "seating": 16.93,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/035/auto_grown_20260923220857242",
+  "seating": 16.91,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r15/002/auto_grown_20260923183840609",
+  "seating": 16.89,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r4/053/auto_grown_20260924001845183",
+  "seating": 16.85,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/011/auto_grown_20260923172955331",
+  "seating": 16.79,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r1/021/auto_grown_20260923191316805",
+  "seating": 16.79,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/057/auto_grown_20260924003602559",
+  "seating": 16.77,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r13/005/auto_grown_20260923191632824",
+  "seating": 16.74,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r14/001/auto_grown_20260923182230304",
+  "seating": 16.7,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r14/016/auto_grown_20260923214345813",
+  "seating": 16.7,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/012/auto_grown_20260923173226671",
+  "seating": 16.69,
+  "area_cm2": 2.3
+ },
+ {
+  "dir": "n1451_r13/022/auto_grown_20260923223801404",
+  "seating": 16.68,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/064/auto_grown_20260924020234106",
+  "seating": 16.64,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/001/auto_grown_20260923163035726",
+  "seating": 16.6,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/021/auto_grown_20260923193040428",
+  "seating": 16.55,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r14/024/auto_grown_20260923225756174",
+  "seating": 16.54,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/066/auto_grown_20260924021856118",
+  "seating": 16.5,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r7/042/auto_grown_20260923230905159",
+  "seating": 16.48,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r6/050/auto_grown_20260923234006413",
+  "seating": 16.45,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r8/042/auto_grown_20260923230805576",
+  "seating": 16.44,
+  "area_cm2": 2.32
+ },
+ {
+  "dir": "n1451_r3/069/auto_grown_20260924022458327",
+  "seating": 16.39,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/072/auto_grown_20260924030634972",
+  "seating": 16.38,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/024/auto_grown_20260923202133710",
+  "seating": 16.35,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/047/auto_grown_20260923233121647",
+  "seating": 16.34,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r5/047/auto_grown_20260923232807579",
+  "seating": 16.34,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/020/auto_grown_20260923190053544",
+  "seating": 16.33,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/013/auto_grown_20260923174110349",
+  "seating": 16.32,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r7/041/auto_grown_20260923230353348",
+  "seating": 16.3,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/059/auto_grown_20260924005817323",
+  "seating": 16.29,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/054/auto_grown_20260924003341210",
+  "seating": 16.29,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r4/046/auto_grown_20260923232650802",
+  "seating": 16.28,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r5/011/auto_grown_20260923172409763",
+  "seating": 16.27,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r1/058/auto_grown_20260924005007831",
+  "seating": 16.27,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r12/008/auto_grown_20260923194826661",
+  "seating": 16.27,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/013/auto_grown_20260923175737329",
+  "seating": 16.25,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r8/012/auto_grown_20260923174121959",
+  "seating": 16.25,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r12/011/auto_grown_20260923202245553",
+  "seating": 16.24,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r4/064/auto_grown_20260924014949621",
+  "seating": 16.23,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r14/006/auto_grown_20260923193513753",
+  "seating": 16.23,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r5/003/auto_grown_20260923164010047",
+  "seating": 16.22,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/004/auto_grown_20260923164549562",
+  "seating": 16.22,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/069/auto_grown_20260924022159303",
+  "seating": 16.22,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/070/auto_grown_20260924022805298",
+  "seating": 16.19,
+  "area_cm2": 2.36
+ },
+ {
+  "dir": "n1451_r8/003/auto_grown_20260923163859287",
+  "seating": 16.18,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/073/auto_grown_20260924030319327",
+  "seating": 16.16,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r14/002/auto_grown_20260923184044412",
+  "seating": 16.14,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/029/auto_grown_20260923210559835",
+  "seating": 16.1,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r4/052/auto_grown_20260924001050903",
+  "seating": 16.09,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r1/054/auto_grown_20260924001949475",
+  "seating": 16.08,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/072/auto_grown_20260924023719604",
+  "seating": 16.05,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r1/045/auto_grown_20260923231957630",
+  "seating": 16.04,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r5/023/auto_grown_20260923193738617",
+  "seating": 16.04,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r1/023/auto_grown_20260923193704903",
+  "seating": 16.01,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r3/063/auto_grown_20260924013913936",
+  "seating": 16.0,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r7/029/auto_grown_20260923212142224",
+  "seating": 15.98,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r5/002/auto_grown_20260923163518433",
+  "seating": 15.98,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/044/auto_grown_20260923231306467",
+  "seating": 15.92,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r14/011/auto_grown_20260923203835440",
+  "seating": 15.88,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r6/059/auto_grown_20260924005126403",
+  "seating": 15.87,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r14/023/auto_grown_20260923224916363",
+  "seating": 15.87,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r5/033/auto_grown_20260923213715905",
+  "seating": 15.85,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r8/037/auto_grown_20260923222936221",
+  "seating": 15.81,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/003/auto_grown_20260923164019946",
+  "seating": 15.8,
+  "area_cm2": 2.27
+ },
+ {
+  "dir": "n1451_r2/067/auto_grown_20260924020306916",
+  "seating": 15.79,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r1/069/auto_grown_20260924022727645",
+  "seating": 15.74,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/019/auto_grown_20260923185320249",
+  "seating": 15.73,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r11/016/auto_grown_20260923214357422",
+  "seating": 15.73,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/013/auto_grown_20260923175049459",
+  "seating": 15.71,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r7/021/auto_grown_20260923194901715",
+  "seating": 15.71,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/065/auto_grown_20260924015334049",
+  "seating": 15.7,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/005/auto_grown_20260923165240416",
+  "seating": 15.69,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r7/047/auto_grown_20260923233404475",
+  "seating": 15.68,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r4/001/auto_grown_20260923162959447",
+  "seating": 15.67,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/048/auto_grown_20260923233827874",
+  "seating": 15.66,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r7/020/auto_grown_20260923193656120",
+  "seating": 15.65,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r14/005/auto_grown_20260923192230714",
+  "seating": 15.63,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r2/062/auto_grown_20260924012824204",
+  "seating": 15.58,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r12/014/auto_grown_20260923205348023",
+  "seating": 15.54,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r3/018/auto_grown_20260923185500128",
+  "seating": 15.54,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r8/074/auto_grown_20260924030557303",
+  "seating": 15.53,
+  "area_cm2": 2.27
+ },
+ {
+  "dir": "n1451_r8/025/auto_grown_20260923201940040",
+  "seating": 15.52,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r13/003/auto_grown_20260923185157458",
+  "seating": 15.46,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r3/066/auto_grown_20260924020103468",
+  "seating": 15.42,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r16/011/auto_grown_20260923202145718",
+  "seating": 15.42,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r11/009/auto_grown_20260923201926641",
+  "seating": 15.42,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/021/auto_grown_20260923191136639",
+  "seating": 15.41,
+  "area_cm2": 2.28
+ },
+ {
+  "dir": "n1451_r2/044/auto_grown_20260923231850141",
+  "seating": 15.41,
+  "area_cm2": 2.23
+ },
+ {
+  "dir": "n1451_r1/033/auto_grown_20260923214950303",
+  "seating": 15.38,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/074/auto_grown_20260924030310575",
+  "seating": 15.36,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r3/062/auto_grown_20260924013228803",
+  "seating": 15.31,
+  "area_cm2": 2.21
+ },
+ {
+  "dir": "n1451_r7/012/auto_grown_20260923174933034",
+  "seating": 15.26,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r4/016/auto_grown_20260923180648044",
+  "seating": 15.22,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r6/040/auto_grown_20260923224305010",
+  "seating": 15.21,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/012/auto_grown_20260923173540131",
+  "seating": 15.21,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r2/026/auto_grown_20260923202306220",
+  "seating": 15.2,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r4/070/auto_grown_20260924023659853",
+  "seating": 15.18,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r3/037/auto_grown_20260923223548972",
+  "seating": 15.18,
+  "area_cm2": 2.18
+ },
+ {
+  "dir": "n1451_r8/019/auto_grown_20260923190412204",
+  "seating": 15.13,
+  "area_cm2": 2.19
+ },
+ {
+  "dir": "n1451_r6/065/auto_grown_20260924013907065",
+  "seating": 15.11,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r6/031/auto_grown_20260923212157038",
+  "seating": 15.1,
+  "area_cm2": 2.22
+ },
+ {
+  "dir": "n1451_r6/041/auto_grown_20260923224957503",
+  "seating": 15.08,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r4/033/auto_grown_20260923215852428",
+  "seating": 15.07,
+  "area_cm2": 2.24
+ },
+ {
+  "dir": "n1451_r4/075/auto_grown_20260924032004536",
+  "seating": 15.05,
+  "area_cm2": 2.25
+ },
+ {
+  "dir": "n1451_r2/001/auto_grown_20260923162939262",
+  "seating": 15.05,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r5/075/auto_grown_20260924030604461",
+  "seating": 15.04,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r13/007/auto_grown_20260923194208303",
+  "seating": 15.03,
+  "area_cm2": 2.26
+ },
+ {
+  "dir": "n1451_r8/047/auto_grown_20260923233216411",
+  "seating": 15.03,
+  "area_cm2": 2.2
+ },
+ {
+  "dir": "n1451_r14/000/auto_grown_20260923180115321",
+  "seating": 15.0,
+  "area_cm2": 2.19
+ }
+]

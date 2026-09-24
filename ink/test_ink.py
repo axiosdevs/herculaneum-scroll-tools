@@ -111,6 +111,29 @@ def test_flattening_cannot_manufacture_contrast():
     assert abs(sheet_contrast(flat)) < 1.0, sheet_contrast(flat)
 
 
+def test_voxel_size_recovered_from_mesh_metadata():
+    """area_cm2 / area_vx2 gives the frame a mesh was laid out in, to three digits."""
+    import json, tempfile
+    from resolve_frame import voxel_size_from_meta
+    d = tempfile.mkdtemp()
+    # the published PHerc0009B segment: 26.24 cm2 over 29,937,600 voxel^2
+    json.dump({"area_cm2": 26.239425659179688, "area_vx2": 29937600.0},
+              open(os.path.join(d, "meta.json"), "w"))
+    um = voxel_size_from_meta(d)
+    assert abs(um - 9.363) < 0.01, um
+
+
+def test_residual_shift_recovers_a_known_offset():
+    """The leftover a chunk test cannot see is found by one cross-correlation."""
+    from resolve_frame import residual_shift
+    rng = np.random.default_rng(3)
+    a = rng.random((256, 256)).astype(np.float32)
+    b = np.roll(np.roll(a, 17, axis=0), -23, axis=1)
+    r, dy, dx = residual_shift(b, a)
+    assert (dy, dx) == (17, -23), (dy, dx)
+    assert r > 0.9, r
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
