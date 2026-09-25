@@ -57,6 +57,34 @@ out (PNG maps, NumPy arrays).
 
 ---
 
+## What was measured and ruled out
+
+A month of this cycle went into one question — why a pipeline that reproduces the team's
+published letters at r = 0.963 says nothing on PHerc1451 — and most of the answer is a list
+of things it is not. Each line is a measurement, and each is here so nobody repeats it.
+
+| direction | measurement | verdict |
+|---|---|---|
+| the model, window or polarity | reproduces their published letters at **r = 0.996** from their surface volume, layers 24–86 forward | correct |
+| brightness | their stack rescaled to median 128 holds **r = 0.994** | not it |
+| contrast | scaled 0.25×–2.0×, holds **r = 0.918–0.996** | not it |
+| depth of the window | planted ink recovered at no offset from −216 µm to +216 µm; the original geometry is the best of them | not it |
+| a loose mesh | our surface drifts **6.3 µm** across a canvas against the team's **9.9 µm** | not it |
+| the renderer's sampling | four samples per pixel averaged back: scatter 36.30 → **36.22** | not it |
+| a noisy scan | PHerc1451's raw scan scatters **30.8** where PHerc0139's raw scan scatters **32.3** | not it |
+| coverage holes | 0.1–0.7% of a canvas | not it |
+| tightening the mesh onto the sheet | sheet contrast anti-correlates with ink readability, **r = −0.900** | harmful |
+| centring the window on the sheet's brightest layer | planted-ink lift +0.027 → **+0.000** | harmful |
+| smoothing the stack | our planted-ink threshold goes from nothing to 16, and the reference loses its letters, **0.858 → 0.448** | a trap |
+| scan quality as a go/no-go | the sheet-to-gap proxy correlates with published-map readability at **r = −0.436** across eight scrolls | refuted |
+
+Two of those refute claims this repo made first, and both retractions are in the modules
+that made them. The margin that makes all of this so easy to get wrong is in `scan_cnr.py`:
+on a scroll the published checkpoint reads confidently, ink is worth **0.54** of a single
+layer's noise.
+
+---
+
 ## 1. Ink recovery at 77-78 keV (`ink/`)
 
 `scrollprize/ink_canonical_2um` is public, and so are the surface volumes it consumes.
