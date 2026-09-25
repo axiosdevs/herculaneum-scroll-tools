@@ -149,6 +149,35 @@ def sheet_cnr(stack, micron_per_pixel=2.399, sub=8):
             "sheet_layer": int(np.argmax(prof)), "window": verdict}
 
 
+REFERENCE_SCATTER = 26.4   # this renderer on the team's own PHerc0139 mesh, from their volume
+
+
+def seating_from_scatter(stack, micron_per_pixel=2.399, reference=REFERENCE_SCATTER,
+                         tolerance=1.15):
+    """Does this surface lie flat enough on its sheet for a stroke to survive?
+
+    A surface lying along a sheet renders material. One running slightly across the windings
+    renders material mixed with gap, and mixes it at the scale a stroke lives at -- so the
+    scatter is the seating, measured against a reference rather than against a threshold
+    someone chose. `reference` is what this renderer produces on a mesh known to be seated,
+    the team's own PHerc0139 segment.
+
+    Cheap enough to gate on: a 12x12-cell patch at the model's own scale takes about a minute
+    and a half where a full 14.4 mm canvas takes ninety, and a survey that renders everything
+    spends almost all of that time on surfaces a stroke could not have survived.
+
+    Returns (verdict, scatter, window) where verdict is 'flat', 'rough' or 'unseated'.
+    """
+    from center_window import depth_profile, window_verdict
+    a = np.asarray(stack)
+    prof = depth_profile(a, sub=4)
+    window = window_verdict(prof)[0]
+    scatter = stroke_noise(np.asarray(a[int(np.argmax(prof))]), micron_per_pixel)
+    if window != "centred":
+        return "unseated", scatter, window
+    return ("flat" if scatter <= reference * tolerance else "rough"), scatter, window
+
+
 def ink_cnr(stack, ink_map, micron_per_pixel=2.399, ink_percentile=90):
     """Ink-to-papyrus separation over stroke-scale noise, from a published ink map.
 

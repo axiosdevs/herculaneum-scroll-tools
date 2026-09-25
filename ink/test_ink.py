@@ -335,6 +335,31 @@ def test_sheet_cnr_flags_a_window_the_sheet_is_not_centred_in():
     assert b["window"] == "centred", b
 
 
+def test_seating_from_scatter_separates_a_flat_surface_from_a_mixed_one():
+    """A surface across the windings mixes material with gap at stroke scale; one along a
+    sheet does not. That difference is the seating, and it is what the scatter reads."""
+    from scan_cnr import seating_from_scatter
+    rng = np.random.default_rng(23)
+    z = np.arange(62, dtype=np.float32)[:, None, None]
+    sheet = 40 + 40 * np.exp(-0.5 * ((z - 31) / 8.0) ** 2) + np.zeros((62, 400, 400), np.float32)
+    flat = sheet + rng.normal(0, 3.0, sheet.shape)
+    # across the windings: the same sheet plus gap patches mixed in at stroke scale
+    patch = (rng.random((400 // 60 + 1, 400 // 60 + 1)) < 0.5).astype(np.float32)
+    patch = np.repeat(np.repeat(patch, 60, 0), 60, 1)[:400, :400]
+    mixed = sheet - 35 * patch[None] + rng.normal(0, 3.0, sheet.shape)
+    va, sa, _ = seating_from_scatter(np.clip(flat, 1, 255).astype(np.uint8))
+    vb, sb, _ = seating_from_scatter(np.clip(mixed, 1, 255).astype(np.uint8))
+    assert va == "flat", (va, sa)
+    assert sb > sa * 2, (sa, sb)
+    # the reference is what a renderer produces on real papyrus known to be seated, which is
+    # far noisier than any synthetic sheet -- so the rule is exercised against this pair's own
+    # clean member rather than against that constant
+    vb2 = seating_from_scatter(np.clip(mixed, 1, 255).astype(np.uint8), reference=sa)[0]
+    assert vb2 == "rough", (vb2, sa, sb)
+    assert seating_from_scatter(np.clip(flat, 1, 255).astype(np.uint8),
+                                reference=sa)[0] == "flat"
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
