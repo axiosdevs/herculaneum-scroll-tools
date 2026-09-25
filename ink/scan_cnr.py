@@ -44,6 +44,20 @@ That also settles a claim I was about to make and should not have: PHerc1451's 7
 reads 0.52 on the proxy, next to PHercParis4's 0.59, so a blank survey there cannot be
 attributed to the scan on this evidence. Why that scroll stays silent is open.
 
+Two things the noise is *not*, both measured so that nobody spends a week on them:
+
+- **Not the renderer's sampling.** A render takes one trilinear sample per output pixel, so
+  sampling four and averaging back to scale is the obvious suspect. It changes nothing:
+  36.30 grey levels against 36.22 on the same patch of PHerc1451.
+- **Not a loose mesh.** A sheet drifting in depth under the window would smear strokes across
+  layers. Measured, our automatically grown PHerc1451 surface drifts *less* than the team's
+  own reference: 6.3 um against 9.9 um across the canvas.
+
+What is true is that our PHerc1451 renders scatter by 42.6 grey levels where every published
+surface volume measured sits between 18.6 and 33.1 -- and that noise alone does not predict
+readability either (r = +0.031 against the same eight maps). The scan-level statistics
+available here do not determine whether a segment can be read.
+
     python ink/scan_cnr.py <stack.npy> [ink_map.tif]
 """
 from __future__ import annotations
