@@ -44,6 +44,21 @@ That also settles a claim I was about to make and should not have: PHerc1451's 7
 reads 0.52 on the proxy, next to PHercParis4's 0.59, so a blank survey there cannot be
 attributed to the scan on this evidence. Why that scroll stays silent is open.
 
+**The renderer is not one of them either.** Rendering the team's own PHerc0139 mesh from the
+team's own volume with this renderer reproduces their published surface volume: stroke-scale
+scatter **26.44 against their 26.43**, our layer 31 matching their layer 54 at **r = 0.893**
+with a residual shift of one pixel. Their published surface volume is a product rather than a
+scan, and it was worth establishing that ours is the same product before comparing anything
+through it.
+
+That leaves the excess as a property of the surfaces themselves. The same renderer gives 26.4
+on the team's PHerc0139 mesh and **42.6** on our automatically grown PHerc1451 ones, while the
+two raw scans scatter within 5% of each other. A surface lying flat along a sheet renders
+material; one running slightly across the windings renders material mixed with gap, and mixes
+it at exactly the scale a stroke lives at. Stroke-scale scatter is therefore usable as a
+seating check with a known-good reference on one side of it, which is what `seat_mesh.py`'s
+threshold could not offer.
+
 Two things the noise is *not*, both measured so that nobody spends a week on them:
 
 - **Not the renderer's sampling.** A render takes one trilinear sample per output pixel, so
