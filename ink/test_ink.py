@@ -134,6 +134,147 @@ def test_residual_shift_recovers_a_known_offset():
     assert r > 0.9, r
 
 
+# -- detectability: the probe has to be able to say "blind", and has to not be fooled by a
+# -- detector whose output already resembles the planted mask.
+
+TEST_UM = 40.0   # coarse, so a 200 px test window is 8 mm across and holds several lines
+
+
+def _sheet_stack(C=62, H=200, W=200, centre=31.0):
+    """A stack with a bright sheet at a known depth and nothing written on it."""
+    z = np.arange(C, dtype=np.float32)[:, None, None]
+    return (40 + 120 * np.exp(-0.5 * ((z - centre) / 4.0) ** 2)
+            + np.zeros((C, H, W), np.float32)).astype(np.uint8)
+
+
+def test_planted_ink_lands_on_the_sheet_not_in_the_middle_of_the_stack():
+    from detectability import plant_ink
+    stack = _sheet_stack(centre=40.0)
+    planted, mask = plant_ink(stack, 60, micron_per_pixel=TEST_UM)
+    delta = planted.astype(np.float32) - stack.astype(np.float32)
+    inked = delta[:, mask.astype(bool)].mean(axis=1)
+    peak = float(np.argmax(inked))
+    # on the near face of the sheet, not at its bright centre and not at the stack's middle
+    assert 33 <= peak <= 40, peak
+    assert peak < 40.0, peak
+
+
+def test_probe_reports_blind_when_the_model_ignores_the_stack():
+    from detectability import probe
+    stack = _sheet_stack()
+    rng = np.random.default_rng(3)
+    fixed = rng.random((200, 200)).astype(np.float32) * 0.2
+
+    def deaf(_stack):
+        return fixed
+
+    out = probe(stack, deaf, amplitudes=(8, 32, 64), micron_per_pixel=TEST_UM)
+    assert out["sensitivity"] is None, out
+    assert all(abs(r["ink_lift"]) < 1e-9 for r in out["rows"]), out["rows"]
+
+
+def test_probe_finds_the_threshold_when_the_model_responds():
+    from detectability import probe
+    stack = _sheet_stack()
+
+    def sees(s):
+        # responds to whatever was added on the sheet's near face
+        return np.clip((s[30:38].astype(np.float32).max(0) - 150.0) / 40.0, 0, 1)
+
+    out = probe(stack, sees, amplitudes=(2, 64), micron_per_pixel=TEST_UM)
+    assert out["sensitivity"] == 64.0, out
+
+
+def test_probe_lift_is_before_versus_after_not_inside_versus_outside():
+    """The bug this metric had: a detector already brighter where the mask is scores a lift
+    without responding to the plant at all. Measured on PHerc1451 that confound gave the
+    same lift at every amplitude."""
+    from detectability import probe, script_mask
+    stack = _sheet_stack()
+    biased = script_mask((200, 200), TEST_UM).astype(np.float32) * 0.9
+
+    def biased_but_deaf(_stack):
+        return biased
+
+    out = probe(stack, biased_but_deaf, amplitudes=(8, 64), micron_per_pixel=TEST_UM)
+    assert out["sensitivity"] is None, out
+    assert all(abs(r["ink_lift"]) < 1e-9 for r in out["rows"]), out["rows"]
+
+
+def test_probe_refuses_a_window_too_narrow_to_hold_a_line_of_text():
+    from detectability import script_mask
+    try:
+        script_mask((40, 40), TEST_UM)
+    except ValueError:
+        return
+    raise AssertionError("узкое окно должно быть отклонено, а не размечено пустой маской")
+
+
+# -- center_window: the failure that made a whole scroll's survey meaningless
+
+def _profile_with_sheet_at(n, peak_index, floor=30.0, peak=90.0, width=12.0):
+    z = np.arange(n, dtype=np.float32)
+    return floor + (peak - floor) * np.exp(-0.5 * ((z - peak_index) / width) ** 2)
+
+
+def test_sheet_offset_recovers_a_known_displacement():
+    from center_window import sheet_offset
+    for true_off in (-62, -20, 0, 35):
+        prof = _profile_with_sheet_at(301, 150 + true_off)
+        off, contrast = sheet_offset(prof)
+        assert abs(off - true_off) <= 2, (true_off, off)
+        assert contrast > 0.5, contrast
+
+
+def test_sheet_offset_picks_the_nearer_winding_not_the_brighter_one():
+    """At a ~700 um winding period a wide probe sees more than one sheet. The neighbour is
+    the wrong answer even when it is denser."""
+    from center_window import sheet_offset
+    near = _profile_with_sheet_at(601, 300 + 40, floor=30.0, peak=80.0)
+    far = _profile_with_sheet_at(601, 300 - 290, floor=0.0, peak=60.0)
+    off, _ = sheet_offset(near + far)
+    assert abs(off - 40) <= 3, off
+
+
+def test_sheet_offset_declines_to_guess_on_a_flat_window():
+    from center_window import sheet_offset
+    rng = np.random.default_rng(5)
+    prof = 100.0 + rng.normal(0, 0.4, 200).astype(np.float32)
+    off, contrast = sheet_offset(prof)
+    assert off == 0, off
+    assert contrast < 0.10, contrast
+
+
+def test_window_verdict_calls_a_gap_render_by_its_name():
+    """The PHerc1451 case, to its measured numbers: the sheet peak sat 62 layers outside a
+    62-layer window, and what the window held was the sheet's flank -- brightest at its own
+    edge, 58 falling to 47 across the window."""
+    from center_window import window_verdict
+    deep = _profile_with_sheet_at(301, 150 - 62, width=25.0)
+    window = deep[150 - 31:150 + 31]
+    verdict, off, contrast = window_verdict(window)
+    assert verdict == "edge", (verdict, off, contrast)
+    assert off < 0, off
+    assert contrast > 0.15, contrast
+
+
+def test_window_verdict_calls_a_window_with_no_sheet_in_it_flat():
+    """Far enough into the gap there is not even a flank -- and 'flat' is the honest word
+    for a render that never met material."""
+    from center_window import window_verdict
+    deep = _profile_with_sheet_at(301, 150 - 62, width=12.0)
+    verdict, _, contrast = window_verdict(deep[150 - 31:150 + 31])
+    assert verdict == "flat", (verdict, contrast)
+
+
+def test_window_verdict_accepts_a_window_on_the_sheet():
+    from center_window import window_verdict
+    deep = _profile_with_sheet_at(301, 150)
+    verdict, off, _ = window_verdict(deep[150 - 31:150 + 31])
+    assert verdict == "centred", verdict
+    assert abs(off) <= 2, off
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):

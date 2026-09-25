@@ -5,6 +5,10 @@ and the sparsest are isolated specks. Script instead shows up as periodic rows. 
 is the share of profile energy concentrated at one period in the 1.0-3.5 mm band, gated on
 at least three resolved rows. Calibrated against windows of PHerc0139 where the answer is
 known: AUC 0.885, with 92% of blank windows scoring exactly zero.
+
+The window has to be wide enough for the band to hold resolvable periods. At 4.8 mm it
+holds three FFT bins and the reported period is pinned to 1.20 mm no matter what the map
+contains -- a degenerate answer that reads as a detection. Below MIN_BINS the score is 0.
 """
 from __future__ import annotations
 
@@ -13,6 +17,7 @@ import numpy as np
 
 MIN_ROWS = 3
 PERIOD_MM = (1.0, 3.5)
+MIN_BINS = 8          # resolvable periods the band must contain for a peak to mean anything
 
 
 def text_score(prob_map, micron_per_pixel=2.399, threshold=0.5):
@@ -20,6 +25,12 @@ def text_score(prob_map, micron_per_pixel=2.399, threshold=0.5):
     mask = (prob_map > threshold).astype(np.float32)
     coverage = mask.mean()
     if coverage < 0.01 or coverage > 0.85:
+        return 0.0, 0.0
+    # A window narrower than about 15 mm puts too few FFT bins inside the band for a peak
+    # to carry information: at 4.8 mm the band holds three, and the answer is pinned to
+    # 1.20 mm whatever the map contains. Refuse rather than report that artefact.
+    span_mm = max(mask.shape) * micron_per_pixel / 1000.0
+    if span_mm * (1 / PERIOD_MM[0] - 1 / PERIOD_MM[1]) < MIN_BINS:
         return 0.0, 0.0
     best = (0.0, 0.0)
     for turn in range(4):
