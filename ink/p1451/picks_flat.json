@@ -1,0 +1,346 @@
+[
+ {
+  "dir": "n1451_r6/056/auto_grown_20260924002859859",
+  "seating": 29.91,
+  "area_cm2": 2.25,
+  "noise": 12.31,
+  "sheet_cnr": 0.814,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r11/025/auto_grown_20260923230030564",
+  "seating": 23.6,
+  "area_cm2": 2.21,
+  "noise": 13.24,
+  "sheet_cnr": 0.171,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/014/auto_grown_20260923174926002",
+  "seating": 45.45,
+  "area_cm2": 2.19,
+  "noise": 20.96,
+  "sheet_cnr": 3.102,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r1/020/auto_grown_20260923190053544",
+  "seating": 16.33,
+  "area_cm2": 2.19,
+  "noise": 21.41,
+  "sheet_cnr": 0.178,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r2/002/auto_grown_20260923163400386",
+  "seating": 64.07,
+  "area_cm2": 2.2,
+  "noise": 21.65,
+  "sheet_cnr": 3.903,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r3/049/auto_grown_20260923235135123",
+  "seating": 19.97,
+  "area_cm2": 2.2,
+  "noise": 23.18,
+  "sheet_cnr": 0.069,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r4/009/auto_grown_20260923171814547",
+  "seating": 38.21,
+  "area_cm2": 2.22,
+  "noise": 24.12,
+  "sheet_cnr": 0.849,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r7/051/auto_grown_20260924000349123",
+  "seating": 30.52,
+  "area_cm2": 2.22,
+  "noise": 24.92,
+  "sheet_cnr": 0.465,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r3/027/auto_grown_20260923204041441",
+  "seating": 19.3,
+  "area_cm2": 2.19,
+  "noise": 25.69,
+  "sheet_cnr": 0.532,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r2/005/auto_grown_20260923164702943",
+  "seating": 40.91,
+  "area_cm2": 2.4,
+  "noise": 26.46,
+  "sheet_cnr": 0.43,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r7/045/auto_grown_20260923232515037",
+  "seating": 18.85,
+  "area_cm2": 2.23,
+  "noise": 26.85,
+  "sheet_cnr": 0.248,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/072/auto_grown_20260924024349960",
+  "seating": 17.7,
+  "area_cm2": 2.19,
+  "noise": 27.1,
+  "sheet_cnr": 2.042,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/057/auto_grown_20260924003919665",
+  "seating": 18.64,
+  "area_cm2": 2.19,
+  "noise": 27.15,
+  "sheet_cnr": 1.208,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/075/auto_grown_20260924030604461",
+  "seating": 15.04,
+  "area_cm2": 2.2,
+  "noise": 27.5,
+  "sheet_cnr": 0.617,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r4/023/auto_grown_20260923193629324",
+  "seating": 17.2,
+  "area_cm2": 2.19,
+  "noise": 27.72,
+  "sheet_cnr": 0.98,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r1/033/auto_grown_20260923214950303",
+  "seating": 15.38,
+  "area_cm2": 2.19,
+  "noise": 27.78,
+  "sheet_cnr": 0.8,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r14/002/auto_grown_20260923184044412",
+  "seating": 16.14,
+  "area_cm2": 2.19,
+  "noise": 27.89,
+  "sheet_cnr": 0.733,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r3/023/auto_grown_20260923195401904",
+  "seating": 20.68,
+  "area_cm2": 2.19,
+  "noise": 28.09,
+  "sheet_cnr": 0.682,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r2/004/auto_grown_20260923164205975",
+  "seating": 20.17,
+  "area_cm2": 2.26,
+  "noise": 28.12,
+  "sheet_cnr": 0.749,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/047/auto_grown_20260923232807579",
+  "seating": 16.34,
+  "area_cm2": 2.19,
+  "noise": 28.29,
+  "sheet_cnr": 0.482,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/013/auto_grown_20260923174110349",
+  "seating": 16.32,
+  "area_cm2": 2.22,
+  "noise": 28.31,
+  "sheet_cnr": 0.466,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r8/065/auto_grown_20260924014403265",
+  "seating": 21.37,
+  "area_cm2": 2.21,
+  "noise": 28.39,
+  "sheet_cnr": 0.916,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r14/001/auto_grown_20260923182230304",
+  "seating": 16.7,
+  "area_cm2": 2.2,
+  "noise": 28.5,
+  "sheet_cnr": 1.505,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r2/014/auto_grown_20260923175002823",
+  "seating": 22.48,
+  "area_cm2": 2.18,
+  "noise": 28.62,
+  "sheet_cnr": 0.496,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r4/041/auto_grown_20260923230017227",
+  "seating": 28.96,
+  "area_cm2": 2.19,
+  "noise": 28.92,
+  "sheet_cnr": 1.509,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r2/074/auto_grown_20260924030310575",
+  "seating": 15.36,
+  "area_cm2": 2.2,
+  "noise": 29.11,
+  "sheet_cnr": 0.397,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r5/016/auto_grown_20260923180353420",
+  "seating": 18.69,
+  "area_cm2": 2.2,
+  "noise": 29.19,
+  "sheet_cnr": 0.704,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r3/037/auto_grown_20260923223548972",
+  "seating": 15.18,
+  "area_cm2": 2.18,
+  "noise": 29.27,
+  "sheet_cnr": 0.39,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r3/029/auto_grown_20260923210613029",
+  "seating": 19.03,
+  "area_cm2": 2.19,
+  "noise": 29.31,
+  "sheet_cnr": 0.749,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r7/004/auto_grown_20260923164549562",
+  "seating": 16.22,
+  "area_cm2": 2.19,
+  "noise": 29.4,
+  "sheet_cnr": 0.347,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r6/033/auto_grown_20260923214740431",
+  "seating": 27.9,
+  "area_cm2": 2.19,
+  "noise": 29.58,
+  "sheet_cnr": 0.414,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r14/009/auto_grown_20260923201936903",
+  "seating": 18.71,
+  "area_cm2": 2.2,
+  "noise": 29.58,
+  "sheet_cnr": 0.51,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r6/052/auto_grown_20260923235412808",
+  "seating": 17.71,
+  "area_cm2": 2.21,
+  "noise": 29.58,
+  "sheet_cnr": 0.6,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r7/070/auto_grown_20260924025347061",
+  "seating": 17.82,
+  "area_cm2": 2.2,
+  "noise": 29.61,
+  "sheet_cnr": 0.523,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r4/001/auto_grown_20260923162959447",
+  "seating": 15.67,
+  "area_cm2": 2.19,
+  "noise": 29.64,
+  "sheet_cnr": 0.615,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r14/024/auto_grown_20260923225756174",
+  "seating": 16.54,
+  "area_cm2": 2.19,
+  "noise": 29.8,
+  "sheet_cnr": 0.891,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r4/052/auto_grown_20260924001050903",
+  "seating": 16.09,
+  "area_cm2": 2.25,
+  "noise": 29.89,
+  "sheet_cnr": 0.769,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r14/016/auto_grown_20260923214345813",
+  "seating": 16.7,
+  "area_cm2": 2.19,
+  "noise": 29.99,
+  "sheet_cnr": 0.494,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r8/074/auto_grown_20260924030557303",
+  "seating": 15.53,
+  "area_cm2": 2.27,
+  "noise": 30.05,
+  "sheet_cnr": 0.37,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r1/047/auto_grown_20260923233018999",
+  "seating": 19.73,
+  "area_cm2": 2.19,
+  "noise": 30.21,
+  "sheet_cnr": 1.018,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r6/071/auto_grown_20260924022919418",
+  "seating": 23.23,
+  "area_cm2": 2.19,
+  "noise": 30.21,
+  "sheet_cnr": 0.801,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r12/011/auto_grown_20260923202245553",
+  "seating": 16.24,
+  "area_cm2": 2.21,
+  "noise": 30.24,
+  "sheet_cnr": 0.603,
+  "window": "centred"
+ },
+ {
+  "dir": "n1451_r8/068/auto_grown_20260924021400331",
+  "seating": 20.25,
+  "area_cm2": 2.19,
+  "noise": 30.29,
+  "sheet_cnr": 0.542,
+  "window": "centred"
+ }
+]

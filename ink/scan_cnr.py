@@ -167,6 +167,13 @@ def seating_from_scatter(stack, micron_per_pixel=2.399, reference=REFERENCE_SCAT
     spends almost all of that time on surfaces a stroke could not have survived.
 
     Returns (verdict, scatter, window) where verdict is 'flat', 'rough' or 'unseated'.
+
+    Measured over all 320 surfaces grown on PHerc1451 (ink/p1451/seating_scan.json): scatter
+    runs from 5.9 to 60.2 with a median of 33.1, 167 windows centred, 78 flat and 75 at an
+    edge. Thirty-one surfaces come in under the reference, and forty-three are both centred
+    and within 15% of it -- 94.9 of 706.8 square centimetres. A survey that rendered all of
+    them would have spent seven eighths of its time where a stroke could not have survived,
+    which is what the first one did.
     """
     from center_window import depth_profile, window_verdict
     a = np.asarray(stack)
