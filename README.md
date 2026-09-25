@@ -1,51 +1,54 @@
 # Herculaneum Scroll Tools
 
-Five open-source utilities for the Vesuvius Challenge, built to attack problems the
-current pipeline does not address directly:
+Open-source utilities for the Vesuvius Challenge. The first three answer a question the
+current pipeline leaves unanswered — **could this surface have shown ink at all?** — because
+a blind pipeline and a blank scroll produce the same output, and nothing in that output says
+which one you have.
 
-1. **Ink recovery at 77-78 keV** — a rendering path that reproduces the team's published
-   ink maps at **r = 0.963** from the public checkpoint, the four undocumented conventions
-   it depends on, and a text score calibrated on known writing.
-2. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
+1. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth on a
+   given scan against that scan's own noise. On PHerc0139, which the published checkpoint
+   reads confidently, ink beats bare papyrus by 13.3 levels against 24.6 of scatter at a
+   stroke's width: a single-layer CNR of **0.54**. That is the whole margin the field works
+   with. Three scrolls measured, the two with published letters at 1.15 and 2.33 on the
+   no-ink-map proxy and PHerc1451 at **0.52**.
+2. **Detectability probe** (`ink/detectability.py`) — plant ink of known contrast where ink
+   physically sits and see whether the model recovers it. Turns "no ink found" into "no ink
+   found, and here is the faintest writing that would have been found". Validated against the
+   team's own surface volume, where it fires at an amplitude of 32.
+3. **Window centring** (`ink/center_window.py`) — is the depth window on the sheet, or in the
+   gap between windings? One coarse probe gives the offset; `window_verdict` reads a render
+   already in hand and calls it `centred`, `edge` or `flat`.
+4. **Ink recovery at 77-78 keV** (`ink/`) — a rendering path that reproduces the team's
+   published ink maps at **r = 0.963** from the public checkpoint, the four undocumented
+   conventions it depends on, a mesh-frame resolver (`ink/resolve_frame.py`) and a seating
+   gate (`ink/seat_mesh.py`).
+5. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
    measure and clean *phantom* voxels in published surface predictions; exact voxel-level
    phantom fractions for **the entire published m7 batch — all 36 samples**, including all
    13 grand-prize-eligible scrolls.
-3. **Cross-scan registration** — align an *old* scan's coordinate frame (and every
-   segmentation built on it) to a *newer, higher-resolution* scan of the same scroll —
-   including the seating test that showed where this works and where it provably cannot.
-4. **Winding-constraint annotator + verifier** — annotate winding constraints on
-   flattened renders and export native spiral-input files; validated on the released
-   PHercParis4 annotations.
-5. **Dual-energy co-rendering** — combine the two X-ray energies a scroll was scanned
-   at into a single "high-Z contrast" map, surfacing metal-bearing material directly
-   from physics, with no ML.
-2. **Cross-scan registration** — align an *old* scan's coordinate frame (and every
-   segmentation / label built on it) to a *newer, higher-resolution* scan of the same
-   scroll, so years of prior segmentation work transfers onto the new data instead of
-   being redone.
-3. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
-   measure and clean *phantom* voxels in published surface predictions; includes exact
-   voxel-level phantom fractions for **the entire published m7 batch — all 36 samples**,
-   including all 13 grand-prize-eligible scrolls (below).
-4. **Winding-constraint annotator + verifier** — annotate winding constraints on
-   flattened renders and export native spiral-input files; validated 125/125 on the
-   released PHercParis4 annotations.
-5. **Ink recovery at 77-78 keV** — a rendering path that reproduces the team's published
-   ink maps at **r = 0.963** from the public checkpoint, the four undocumented conventions
-   it depends on, and a text score calibrated at **AUC 0.885** on known writing.
+6. **Cross-scan registration** — align an *old* scan's coordinate frame, and every
+   segmentation built on it, to a newer higher-resolution scan of the same scroll, including
+   the seating test that showed where this works and where it provably cannot.
+7. **Winding-constraint annotator + verifier** — annotate winding constraints on flattened
+   renders and export native spiral-input files; validated on the released PHercParis4
+   annotations.
+8. **Dual-energy co-rendering** — combine the two X-ray energies a scroll was scanned at into
+   a single high-Z contrast map, surfacing metal-bearing material from physics alone.
 
-Both stream data directly from the public `vesuvius-challenge-open-data` S3 bucket and
-`dl.ash2txt.org` — no local copy of a full scroll is needed. Everything runs on a laptop.
+Everything streams directly from the public `vesuvius-challenge-open-data` S3 bucket and
+`dl.ash2txt.org` — no local copy of a full scroll is needed, and it runs on a laptop.
 
 **Quick start** — verify the headline claim before reading anything else:
 
 ```bash
 pip install -r requirements.txt
-python ink/reproduce.py     # downloads the checkpoint and public data, prints r ~ +0.9
+python ink/reproduce.py     # downloads the checkpoint and public data, prints r ~ +0.96
+python ink/scan_cnr.py <stack.npy> [ink_map.tif]   # can this scan carry ink at all?
 ```
 
 The loader for the published checkpoint is fetched from ScrollPrize/villa automatically; no
-local villa checkout is needed. `python ink/test_ink.py` runs the offline test suite.
+local villa checkout is needed. `python ink/test_ink.py` runs the offline test suite — 26
+tests, no network.
 
 MIT-licensed. Standard formats in (OME-Zarr, tifxyz, `.volpkg` affines), standard formats
 out (PNG maps, NumPy arrays).
