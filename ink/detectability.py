@@ -22,6 +22,19 @@ pipeline can and cannot see; carried to an unread scroll, it turns "no text foun
 
 `predict_fn(stack) -> probability map` is whatever inference path is already in use, so the
 probe measures the pipeline as it actually runs rather than an idealised copy of it.
+
+**A sensitivity gained by preprocessing is not a sensitivity gained.** The probe answers for
+the pipeline it is handed, and a pipeline can be made more sensitive to planted ink while
+becoming worse at real letters. Measured: smoothing our PHerc1451 stack with a Gaussian far
+narrower than a stroke -- sigma 19 um against a 350 um stroke -- took its planted-ink
+threshold from nothing at all to 16, better than the unsmoothed reference. The same smoothing
+applied to the team's PHerc0139 surface volume took agreement with their published ink map
+from **0.858 down to 0.448**, and the ink fraction from 2.0% to 6.6%. The model reads
+something finer than stroke shape, and the probe cannot see that being destroyed.
+
+So any change that moves this number should be checked against a reference where the truth is
+published, and `reproduce.py` exists for exactly that. The probe tells you a window is blind;
+it does not tell you a pipeline is good.
 """
 from __future__ import annotations
 
