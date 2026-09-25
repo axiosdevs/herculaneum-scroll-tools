@@ -174,6 +174,12 @@ def seating_from_scatter(stack, micron_per_pixel=2.399, reference=REFERENCE_SCAT
     and within 15% of it -- 94.9 of 706.8 square centimetres. A survey that rendered all of
     them would have spent seven eighths of its time where a stroke could not have survived,
     which is what the first one did.
+
+    And the criterion holds where it matters. The flattest surface the scan picked, scatter
+    14.1 and window centred, recovers planted ink at an amplitude of 32 -- the same threshold
+    the team's own published surface volume gives, the one the checkpoint reads letters from.
+    A surface the first survey rendered, scatter 42.6, recovered nothing at any amplitude.
+    Seating, measured this way, is what separated them.
     """
     from center_window import depth_profile, window_verdict
     a = np.asarray(stack)
