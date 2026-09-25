@@ -9,8 +9,10 @@ which one you have.
    given scan against that scan's own noise. On PHerc0139, which the published checkpoint
    reads confidently, ink beats bare papyrus by 13.3 levels against 24.6 of scatter at a
    stroke's width: a single-layer CNR of **0.54**. That is the whole margin the field works
-   with. Three scrolls measured, the two with published letters at 1.15 and 2.33 on the
-   no-ink-map proxy and PHerc1451 at **0.52**.
+   with. The no-ink-map proxy that comes with it is shipped **with its own refutation**:
+   across the eight scrolls that have a fine-resolution surface volume it correlates with
+   the readability of their published ink maps at r = −0.436, so it compares windows of one
+   scan and does not decide a scroll (`ink/scan_survey.json`).
 2. **Detectability probe** (`ink/detectability.py`) — plant ink of known contrast where ink
    physically sits and see whether the model recovers it. Turns "no ink found" into "no ink
    found, and here is the faintest writing that would have been found". Validated against the
