@@ -4,8 +4,8 @@ Before committing a month to a scroll it is worth knowing whether its scan can c
 all. Brightness cannot tell you and contrast in the large cannot either: what decides it is
 how far ink moves a voxel compared with how far noise moves one, at the width of a stroke.
 
-Measured on PHerc0139, the scroll the published `ink_canonical_2um` checkpoint reads
-confidently, against its own published ink map:
+Measured on PHerc0139, one of the scrolls the published `ink_canonical_2um` checkpoint
+reads confidently, against that scroll's own published ink map:
 
     ink is brighter than bare papyrus by   13.3 grey levels
     scatter at a 0.35 mm stroke scale      24.6 grey levels
@@ -13,7 +13,7 @@ confidently, against its own published ink map:
 
 That is the whole margin the field works with. One layer is well under a coin toss, and the
 reason the recipe reads 62 of them is that averaging buys the factor of about eight that
-makes it legible -- roughly 4.3 by the time the model sees it. Any change that costs a
+makes it legible -- roughly 4.3 by the time the model sees anything. Anything that costs a
 factor of two here costs more than it looks.
 
 Two measurements, because most scrolls have no published ink map:
@@ -21,15 +21,26 @@ Two measurements, because most scrolls have no published ink map:
     ink_cnr(stack, ink_map)   direct, where a map exists
     sheet_cnr(stack)          proxy, from the sheet-to-gap contrast, needs nothing
 
-On PHerc0139 they stand at 0.54 and 1.15. On PHerc1451's 78 keV scan -- which has surface
-predictions, no ink output, and is where this was needed -- the proxy reads **0.52, less
-than half**, which puts its implied single-layer ink CNR near 0.24 and its 62-layer figure
-near 1.9. A planted-ink probe on those renders came in at about half the reference's
-sensitivity independently. A null result on that scroll is what a scan at that CNR
-produces whether or not there is writing under it.
+On three scrolls, every window centred on its sheet:
 
-The factor survives the choice of scale: filtering at 50 um instead of at a stroke's width
-gives 2.83 against 1.43, the same two to one.
+    PHerc0009B 77 keV   ink/noise 0.69   sheet/noise 2.33   letters published
+    PHerc0139  78 keV   ink/noise 0.54   sheet/noise 1.15   letters published
+    PHerc1451  78 keV        --          sheet/noise 0.52   no ink output at all
+
+Both scans with published letters sit between 1.15 and 2.33 on the proxy. PHerc1451's 78 keV
+scan -- surface predictions published, no ink output, the scroll this was needed for -- reads
+**0.52, below the readable pair by a factor of 2.2**. A planted-ink probe on the same renders
+came in at about half the PHerc0139 reference's sensitivity independently, and the factor
+survives the choice of filter scale: at 50 um instead of a stroke's width it is 2.83 against
+1.43 for those two, the same two to one.
+
+Three points order correctly and that is what the proxy is offered for. They are not enough
+to convert a proxy reading into an ink CNR, and this module does not try; it reports the
+measurement and the reference scans beside it.
+
+So a null on PHerc1451 is a property of its scan rather than a statement about its papyrus --
+a different and more useful sentence than "no text found", and one line of measurement to
+obtain before committing a month to a scroll.
 
     python ink/scan_cnr.py <stack.npy> [ink_map.tif]
 """
@@ -40,8 +51,9 @@ import sys
 import numpy as np
 
 STROKE_MM = 0.35        # stroke width on these scrolls
-REFERENCE = {           # measured, for comparison against a scan in hand
-    "PHerc0139 78 keV (читаемый)": {"ink_cnr": 0.541, "sheet_cnr": 1.153},
+REFERENCE = {           # measured on centred windows, for comparison against a scan in hand
+    "PHerc0009B 77 keV (буквы опубликованы)": {"ink_cnr": 0.687, "sheet_cnr": 2.333},
+    "PHerc0139 78 keV (буквы опубликованы)": {"ink_cnr": 0.541, "sheet_cnr": 1.153},
     "PHerc1451 78 keV (не прочитан)": {"ink_cnr": None, "sheet_cnr": 0.516},
 }
 
@@ -84,15 +96,26 @@ def sheet_cnr(stack, micron_per_pixel=2.399, sub=8):
     A proxy, and named as one: it measures the dose the scan delivered to this material,
     which is what sets the ink margin, without claiming to measure ink. Use it to compare
     scans, not to predict a number of letters.
+
+    It is only comparable between windows the sheet is centred in. A window running off the
+    sheet has a ramp across it rather than a peak, and the ramp is larger than the sheet's
+    own contrast: a PHerc0009B window whose sheet sat at layer 5 of 62 read 3.03, and the
+    same data centred reads something else entirely. `window` carries that verdict, and a
+    reading taken on anything but 'centred' should not be compared with one that is.
     """
     a = np.asarray(stack)
     prof = np.array([a[i, ::sub, ::sub].astype(np.float32).mean() for i in range(a.shape[0])])
     contrast = float(prof.max() - prof.min())
     layer = np.asarray(a[int(np.argmax(prof))])
     noise = stroke_noise(layer, micron_per_pixel)
+    try:
+        from center_window import window_verdict
+        verdict = window_verdict(prof)[0]
+    except Exception:
+        verdict = None
     return {"contrast": round(contrast, 2), "noise": round(noise, 2),
             "sheet_cnr": round(contrast / max(noise, 1e-6), 3),
-            "sheet_layer": int(np.argmax(prof))}
+            "sheet_layer": int(np.argmax(prof)), "window": verdict}
 
 
 def ink_cnr(stack, ink_map, micron_per_pixel=2.399, ink_percentile=90):

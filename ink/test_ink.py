@@ -322,6 +322,19 @@ def test_sheet_cnr_is_higher_for_a_cleaner_scan():
     assert a > b * 1.5, (a, b)
 
 
+def test_sheet_cnr_flags_a_window_the_sheet_is_not_centred_in():
+    """An off-centre window reads a ramp, not a sheet, and its number is not comparable."""
+    from scan_cnr import sheet_cnr
+    rng = np.random.default_rng(17)
+    z = np.arange(62, dtype=np.float32)[:, None, None]
+    ramp = 40 + 40 * np.exp(-0.5 * ((z - 3) / 8.0) ** 2) + np.zeros((62, 300, 300), np.float32)
+    centred = 40 + 40 * np.exp(-0.5 * ((z - 31) / 8.0) ** 2) + np.zeros((62, 300, 300), np.float32)
+    a = sheet_cnr(np.clip(ramp + rng.normal(0, 3, ramp.shape), 1, 255).astype(np.uint8))
+    b = sheet_cnr(np.clip(centred + rng.normal(0, 3, centred.shape), 1, 255).astype(np.uint8))
+    assert a["window"] == "edge", a
+    assert b["window"] == "centred", b
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
