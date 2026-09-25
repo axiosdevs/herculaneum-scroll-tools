@@ -37,29 +37,62 @@ import numpy as np
 # --------------------------------------------------------------------------- #
 
 def read_tif(path: Path) -> np.ndarray:
-    """Read a single-channel float32 TIFF (strip or tile layout, no compression)."""
+    """Read a single-channel float32 TIFF.
+
+    The published segments are BigTIFF, tiled and LZW-compressed with a
+    floating-point predictor, so `tifffile` is used when it is installed. The
+    reader below covers the uncompressed strip/tile cases on its own, which is
+    enough for surfaces a tracer just wrote.
+    """
+    try:
+        import tifffile
+        return np.asarray(tifffile.imread(str(path)), dtype=np.float32)
+    except ImportError:
+        pass
+
     data = path.read_bytes()
     order = "<" if data[:2] == b"II" else ">"
-    ifd = struct.unpack(order + "I", data[4:8])[0]
-    count = struct.unpack(order + "H", data[ifd:ifd + 2])[0]
+    # BigTIFF (version 43) is what the published tifxyz segments use: 8-byte
+    # offsets, an 8-byte entry count, and 20-byte directory entries.
+    big = struct.unpack(order + "H", data[2:4])[0] == 43
+    if big:
+        ifd = struct.unpack(order + "Q", data[8:16])[0]
+        count = struct.unpack(order + "Q", data[ifd:ifd + 8])[0]
+        entry_size, header = 20, 8
+    else:
+        ifd = struct.unpack(order + "I", data[4:8])[0]
+        count = struct.unpack(order + "H", data[ifd:ifd + 2])[0]
+        entry_size, header = 12, 2
 
     tags: Dict[int, Tuple[int, int, int]] = {}
     for i in range(count):
-        entry = ifd + 2 + i * 12
-        tag, typ, n = struct.unpack(order + "HHI", data[entry:entry + 8])
-        value = struct.unpack(order + "I", data[entry + 8:entry + 12])[0]
-        if typ == 3 and n == 1:
-            value = struct.unpack(order + "H", data[entry + 8:entry + 10])[0]
+        entry = ifd + header + i * entry_size
+        if big:
+            tag, typ, n = struct.unpack(order + "HHQ", data[entry:entry + 12])
+            value = struct.unpack(order + "Q", data[entry + 12:entry + 20])[0]
+            if n == 1 and typ in (3, 4):
+                fmt = {3: "H", 4: "I"}[typ]
+                value = struct.unpack(order + fmt, data[entry + 12:entry + 12 + struct.calcsize(fmt)])[0]
+        else:
+            tag, typ, n = struct.unpack(order + "HHI", data[entry:entry + 8])
+            value = struct.unpack(order + "I", data[entry + 8:entry + 12])[0]
+            if typ == 3 and n == 1:
+                value = struct.unpack(order + "H", data[entry + 8:entry + 10])[0]
         tags[tag] = (typ, n, value)
 
     width, height = tags[256][2], tags[257][2]
     if tags.get(259, (0, 0, 1))[2] != 1:
-        raise ValueError(f"{path}: compressed TIFFs are not supported")
+        raise ValueError(f"{path}: compressed TIFF — install tifffile to read it")
+
+    width_fmt = "Q" if big else "I"
+    width_size = 8 if big else 4
 
     def offsets(tag: Tuple[int, int, int]) -> list:
         if tag[1] == 1:
             return [tag[2]]
-        return list(struct.unpack(order + f"{tag[1]}I", data[tag[2]:tag[2] + 4 * tag[1]]))
+        start, n = tag[2], tag[1]
+        return list(struct.unpack(order + f"{n}{width_fmt}",
+                                  data[start:start + width_size * n]))
 
     if 273 in tags:                                   # strip layout
         chunks = offsets(tags[273])
@@ -202,7 +235,7 @@ def _shift(block: np.ndarray, dz: int, dy: int, dx: int) -> np.ndarray:
 
 
 def report(points: np.ndarray, valid: np.ndarray, supported: np.ndarray,
-           voxelsize_um: Optional[float] = None) -> dict:
+           voxelsize_um: Optional[float] = None, scale: float = 1.0) -> dict:
     total = int(valid.sum())
     kept = int((valid & supported).sum())
     out = {
@@ -213,8 +246,10 @@ def report(points: np.ndarray, valid: np.ndarray, supported: np.ndarray,
         "frac_unsupported": ((total - kept) / total) if total else 0.0,
     }
     if voxelsize_um:
-        # one quad spans one grid step; area in cm2 at the surface's own sampling
-        area = (voxelsize_um * 1e-4) ** 2
+        # a quad spans one grid cell, and `scale` counts cells per voxel, so the
+        # cell is voxelsize/scale across (a segment at scale 0.05 steps 20 voxels)
+        step_um = voxelsize_um / (scale if scale else 1.0)
+        area = (step_um * 1e-4) ** 2
         out["area_cm2"] = total * area
         out["supported_area_cm2"] = kept * area
     return out
@@ -231,20 +266,26 @@ def _load(args):
     supported = support_map(points, valid, ct, threshold=args.threshold,
                             dilation=args.dilation)
     meta_path = directory / "meta.json"
-    voxelsize = None
+    voxelsize, scale = None, 1.0
     if meta_path.exists():
         try:
-            voxelsize = json.loads(meta_path.read_text()).get("voxelsize")
+            meta = json.loads(meta_path.read_text())
+            voxelsize = meta.get("voxelsize")
+            raw_scale = meta.get("scale")
+            if isinstance(raw_scale, (list, tuple)) and raw_scale:
+                scale = float(raw_scale[0])
+            elif isinstance(raw_scale, (int, float)):
+                scale = float(raw_scale)
         except Exception:
-            voxelsize = None
+            pass
     if args.voxelsize:
         voxelsize = args.voxelsize
-    return directory, points, valid, supported, voxelsize
+    return directory, points, valid, supported, voxelsize, scale
 
 
 def cmd_report(args):
-    _, points, valid, supported, voxelsize = _load(args)
-    result = report(points, valid, supported, voxelsize)
+    _, points, valid, supported, voxelsize, scale = _load(args)
+    result = report(points, valid, supported, voxelsize, scale)
     print(f"quads {result['quads']:,} | supported {result['frac_supported']:.4f} "
           f"| unsupported {result['frac_unsupported']:.4f} "
           f"({result['unsupported']:,} quads)")
@@ -260,8 +301,8 @@ def cmd_report(args):
 
 
 def cmd_trim(args):
-    _, points, valid, supported, voxelsize = _load(args)
-    before = report(points, valid, supported, voxelsize)
+    _, points, valid, supported, voxelsize, scale = _load(args)
+    before = report(points, valid, supported, voxelsize, scale)
     keep = valid & supported
     write_surface(Path(args.out), points, keep,
                   meta={"voxelsize": voxelsize} if voxelsize else None)
