@@ -1,0 +1,98 @@
+[
+ {
+  "scroll": "PHerc0009B",
+  "segment": "20250510172639",
+  "volume": "2.401um-0.35m-77keV-volume-20250820154339.zarr",
+  "sheet_cnr": 2.409,
+  "noise": 26.6,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.0,
+  "map_period_mm": 0.0,
+  "map_ink_pct": 0.24
+ },
+ {
+  "scroll": "PHerc0139",
+  "segment": "20250108000000-w025_2025010863",
+  "volume": "1.129um-0.22m-59keV-volume-20260413113053-L1.z",
+  "sheet_cnr": 1.279,
+  "noise": 24.27,
+  "window": "edge",
+  "ink_published": true,
+  "map_text": 0.317,
+  "map_period_mm": 1.03,
+  "map_ink_pct": 2.69
+ },
+ {
+  "scroll": "PHerc0343P",
+  "segment": "20250511003658-tifxyz",
+  "volume": "2.215um-0.4m-111keV-volume-20260304131111.zarr",
+  "sheet_cnr": 0.581,
+  "noise": 18.62,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.487,
+  "map_period_mm": 1.31,
+  "map_ink_pct": 8.11
+ },
+ {
+  "scroll": "PHerc0500P2",
+  "segment": "20250609204953-z_dbg_gen_00612",
+  "volume": "2.215um-0.4m-111keV-volume-20250526151718.zarr",
+  "sheet_cnr": 0.666,
+  "noise": 23.86,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.285,
+  "map_period_mm": 1.44,
+  "map_ink_pct": 4.15
+ },
+ {
+  "scroll": "PHerc0814",
+  "segment": "20250925161630-auto_grown_20250925161630635",
+  "volume": "1.129um-0.22m-59keV-volume-20260521123630-L1.z",
+  "sheet_cnr": 0.967,
+  "noise": 27.24,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.464,
+  "map_period_mm": 1.11,
+  "map_ink_pct": 10.12
+ },
+ {
+  "scroll": "PHerc0841",
+  "segment": "20260220213127-w00",
+  "volume": "2.403um-0.22m-77keV-volume-20260319124803.zarr",
+  "sheet_cnr": 0.595,
+  "noise": 26.16,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.346,
+  "map_period_mm": 1.03,
+  "map_ink_pct": 13.35
+ },
+ {
+  "scroll": "PHerc1667",
+  "segment": "20240304141531-w013_20240304141531_flatboi",
+  "volume": "1.129um-0.22m-59keV-volume-20260323082859-L1.z",
+  "sheet_cnr": 2.098,
+  "noise": 25.02,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.562,
+  "map_period_mm": 1.03,
+  "map_ink_pct": 5.33
+ },
+ {
+  "scroll": "PHercParis4",
+  "segment": "20230702185753",
+  "volume": "1.129um-0.23m-78keV-volume-20260608103018-L1.z",
+  "sheet_cnr": 0.589,
+  "noise": 33.12,
+  "window": "centred",
+  "ink_published": true,
+  "map_text": 0.516,
+  "map_period_mm": 1.11,
+  "map_ink_pct": 17.18
+ }
+]

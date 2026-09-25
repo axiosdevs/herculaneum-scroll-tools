@@ -21,26 +21,28 @@ Two measurements, because most scrolls have no published ink map:
     ink_cnr(stack, ink_map)   direct, where a map exists
     sheet_cnr(stack)          proxy, from the sheet-to-gap contrast, needs nothing
 
-On three scrolls, every window centred on its sheet:
+**The proxy does not predict readability, and the measurement saying so ships with it.**
+Run over one published segment of each of the eight scrolls that have a fine-resolution
+surface volume, and scored against the line-periodicity of each scroll's own published ink
+map, the sheet-to-gap proxy correlates at **r = -0.436** -- if anything the wrong way
+(`ink/scan_survey.json`):
 
-    PHerc0009B 77 keV   ink/noise 0.69   sheet/noise 2.33   letters published
-    PHerc0139  78 keV   ink/noise 0.54   sheet/noise 1.15   letters published
-    PHerc1451  78 keV        --          sheet/noise 0.52   no ink output at all
+    PHerc0009B   sheet/noise 2.41   its map's text score 0.00
+    PHerc1667    sheet/noise 2.10   its map's text score 0.56
+    PHerc0139    sheet/noise 1.28   its map's text score 0.32
+    PHerc0814    sheet/noise 0.97   its map's text score 0.46
+    PHercParis4  sheet/noise 0.59   its map's text score 0.52
+    PHerc0343P   sheet/noise 0.58   its map's text score 0.49
 
-Both scans with published letters sit between 1.15 and 2.33 on the proxy. PHerc1451's 78 keV
-scan -- surface predictions published, no ink output, the scroll this was needed for -- reads
-**0.52, below the readable pair by a factor of 2.2**. A planted-ink probe on the same renders
-came in at about half the PHerc0139 reference's sensitivity independently, and the factor
-survives the choice of filter scale: at 50 um instead of a stroke's width it is 2.83 against
-1.43 for those two, the same two to one.
+PHercParis4 reads well at 0.59 and PHerc0009B's sampled segment reads nothing at 2.41. Use
+`sheet_cnr` to compare windows of one scan or to catch a scan with no material contrast at
+all, not as a go/no-go on a scroll -- and prefer `ink_cnr` wherever a map exists. The
+labelling is one segment per scroll and a published map's periodicity is an imperfect stand
+-in for legibility, so the negative is reported as a warning rather than as a law.
 
-Three points order correctly and that is what the proxy is offered for. They are not enough
-to convert a proxy reading into an ink CNR, and this module does not try; it reports the
-measurement and the reference scans beside it.
-
-So a null on PHerc1451 is a property of its scan rather than a statement about its papyrus --
-a different and more useful sentence than "no text found", and one line of measurement to
-obtain before committing a month to a scroll.
+That also settles a claim I was about to make and should not have: PHerc1451's 78 keV scan
+reads 0.52 on the proxy, next to PHercParis4's 0.59, so a blank survey there cannot be
+attributed to the scan on this evidence. Why that scroll stays silent is open.
 
     python ink/scan_cnr.py <stack.npy> [ink_map.tif]
 """
