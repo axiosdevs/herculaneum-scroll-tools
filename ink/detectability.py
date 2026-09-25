@@ -35,6 +35,18 @@ something finer than stroke shape, and the probe cannot see that being destroyed
 So any change that moves this number should be checked against a reference where the truth is
 published, and `reproduce.py` exists for exactly that. The probe tells you a window is blind;
 it does not tell you a pipeline is good.
+
+**What it is good for is catching a choice no other signal can see.** The depth order along
+the normal -- which face of the sheet the model reads -- is a free parameter that a survey has
+to fix, and a text score cannot fix it. Measured on the flattest PHerc1451 surface:
+
+    forward   3.2% ink reported,  planted ink recovered at 32, the reference's own threshold
+    reverse  26.6% ink reported,  no threshold at all, lifts negative at every amplitude
+
+The blind direction is the one that reports eight times more ink. A survey that picks its
+order by how much ink it sees, or by a periodicity score over what it sees, will choose
+reverse and read the wrong face of every sheet after it -- which is what mine did for
+twenty-four canvases before this probe was pointed at the question.
 """
 from __future__ import annotations
 
