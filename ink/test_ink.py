@@ -275,6 +275,53 @@ def test_window_verdict_accepts_a_window_on_the_sheet():
     assert abs(off) <= 2, off
 
 
+# -- scan_cnr: the margin the field actually works with
+
+def test_stroke_noise_ignores_structure_coarser_than_a_stroke():
+    """A smooth gradient across the whole image is not what competes with a stroke."""
+    from scan_cnr import stroke_noise
+    y, x = np.mgrid[0:400, 0:400].astype(np.float32)
+    ramp = 40.0 + x * 0.2 + y * 0.1
+    rng = np.random.default_rng(7)
+    speckle = rng.normal(0, 5.0, ramp.shape).astype(np.float32)
+    assert stroke_noise(ramp) < 0.5, stroke_noise(ramp)
+    n = stroke_noise(ramp + speckle)
+    assert 3.5 < n < 5.5, n
+
+
+def test_ink_cnr_recovers_a_planted_separation():
+    from scan_cnr import ink_cnr
+    rng = np.random.default_rng(11)
+    mask = np.zeros((300, 300), np.uint8)
+    mask[50:250:20, 40:260] = 255          # rows of "ink"
+    stack = np.full((10, 300, 300), 80.0, np.float32)
+    stack += rng.normal(0, 4.0, stack.shape)
+    stack[5][mask > 0] += 12.0             # ink only on one layer
+    out = ink_cnr(np.clip(stack, 0, 255).astype(np.uint8), mask)
+    assert out["layer"] == 5, out
+    assert 9.0 < out["contrast"] < 15.0, out
+    assert out["ink_cnr"] > 1.5, out
+
+
+def test_ink_cnr_declines_when_the_map_marks_nothing():
+    from scan_cnr import ink_cnr
+    stack = np.full((6, 200, 200), 90, np.uint8)
+    assert ink_cnr(stack, np.zeros((200, 200), np.uint8)) is None
+
+
+def test_sheet_cnr_is_higher_for_a_cleaner_scan():
+    """The comparison the tool exists to make: same sheet, twice the noise."""
+    from scan_cnr import sheet_cnr
+    rng = np.random.default_rng(13)
+    z = np.arange(62, dtype=np.float32)[:, None, None]
+    sheet = 40 + 40 * np.exp(-0.5 * ((z - 31) / 8.0) ** 2) + np.zeros((62, 300, 300), np.float32)
+    clean = sheet + rng.normal(0, 3.0, sheet.shape)
+    noisy = sheet + rng.normal(0, 6.0, sheet.shape)
+    a = sheet_cnr(np.clip(clean, 1, 255).astype(np.uint8))["sheet_cnr"]
+    b = sheet_cnr(np.clip(noisy, 1, 255).astype(np.uint8))["sheet_cnr"]
+    assert a > b * 1.5, (a, b)
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
