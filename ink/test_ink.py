@@ -360,6 +360,12 @@ def test_seating_from_scatter_separates_a_flat_surface_from_a_mixed_one():
                                 reference=sa)[0] == "flat"
 
 
+def test_probe_cli_self_test_passes():
+    """The runnable entry point has to keep working, not just the module behind it."""
+    import probe
+    assert probe.self_test() == 0
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
