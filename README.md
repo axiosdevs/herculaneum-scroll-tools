@@ -18,7 +18,7 @@ papyrus. Pointed at my own survey, it caught two errors nothing else could see:
   and the one combination that answers is the order and the face. It says forward on
   PHerc0139 as published, which the team's ink map confirms; reverse on the same stack flipped
   in depth, which it must; and forward on PHerc1451's flattest surfaces. Sixteen of the flat
-  surfaces had been read in reverse.
+  surfaces had been read in reverse; all are now re-read forward.
 - **Most grown surfaces could not have shown a stroke.** Stroke-scale scatter measures seating
   against a reference: this renderer on the team's seated mesh gives 26.4. Across all 320
   surfaces grown on PHerc1451 it runs 5.9 to 60.2. The flattest recovers planted ink at 32 —
@@ -29,9 +29,9 @@ the wrong way gave 20 times *less* ink than the right way on PHerc0139, and 8 ti
 a PHerc1451 surface. I had published the second as a rule before the flipped reference
 refuted it; the retraction is in `ink/detectability.py`.
 
-Read forward, on the 43 surfaces flat enough to carry a stroke, **no writing** has shown so
-far. That is a measurement rather than a silence: ink of PHerc0139's strength would have shown
-there.
+Read forward, all 43 surfaces flat enough to carry a stroke — **94.9 cm² — show no
+writing** (`ink/p1451/survey_forward.json`, contact sheets beside it). That is a measurement
+rather than a silence: ink of PHerc0139's strength would have shown there.
 
 The tools, all of which run on a laptop:
 
@@ -99,7 +99,7 @@ Every line is a measurement, kept so nobody repeats it. The last two are what th
 | smoothing the stack | our threshold goes from nothing to 16, and the reference loses its letters, **0.858 → 0.448** | a trap |
 | scan quality as a go/no-go | the sheet-to-gap proxy against published-map readability, **r = −0.436** over eight scrolls | refuted |
 | **seating** | scatter 5.9–60.2 against the reference 26.4; the flattest surface recovers planted ink at **32** | **the cause** |
-| **which way the layers are read** | `orientation`: forward on PHerc0139 and on PHerc1451's flattest surfaces, reverse on PHerc0139 flipped; sixteen flat surfaces had been read in reverse | **the cause** |
+| **which way the layers are read** | `orientation`: forward on PHerc0139 and on PHerc1451's flattest surfaces, reverse on PHerc0139 flipped; sixteen flat surfaces had been read in reverse, and are re-read forward | **the cause** |
 | ink quantity as a direction signal | the wrong order reports 20× *less* ink on PHerc0139, 8× *more* on a PHerc1451 surface | refuted (it was a claim here) |
 
 Four of those refute claims this repo made first, and each retraction is in the module that
