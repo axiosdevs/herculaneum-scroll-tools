@@ -19,6 +19,7 @@ VOL = os.environ["VOLURL"]
 SHARD = int(os.environ.get("SHARD", "0"))
 NSHARD = int(os.environ.get("NSHARD", "1"))
 THREADS = os.environ.get("THREADS", "10")
+W_ID = os.environ.get("WORKTAG", "") + str(SHARD)   # work directories, per survey
 VOXEL_UM = float(os.environ.get("VOXEL_UM", "2.399"))   # the scan's level-0 voxel
 STEP_UM = VOXEL_UM * 4                                  # surfaces are grown at level 2
 CELLS, NLAY = 12, 62
@@ -36,7 +37,7 @@ def surfaces():
 done = {}
 if os.path.exists(LEDGER):
     try:
-        done = {r["dir"]: r for r in json.load(open(LEDGER))}
+        done = {(r["dir"], r.get("y0"), r.get("x0")): r for r in json.load(open(LEDGER))}
     except Exception:
         done = {}
 rows = list(done.values())
@@ -44,7 +45,7 @@ todo = surfaces()
 print(f"шард {SHARD}: поверхностей {len(todo)}, уже посчитано {len(done)}", flush=True)
 
 for s in todo:
-    if s["dir"] in done:
+    if (s["dir"], s.get("y0"), s.get("x0")) in done:
         continue
     src = s["dir"] if s["dir"].startswith("/") else os.path.join(HERE, s["dir"])
     try:
@@ -62,20 +63,23 @@ for s in todo:
     if not g.size:
         continue
     up = max(1, int(round(float(np.median(g)) * STEP_UM / VOXEL_UM)))
-    work = f"{HERE}/pm_{SHARD}"
+    work = f"{HERE}/pm_{W_ID}"
     os.makedirs(work, exist_ok=True)
     for a, M in zip("xyz", (X, Y, Z)):
         tifffile.imwrite(os.path.join(work, f"{a}.tif"),
                          np.where(M > 0, M * 4.0, 0.0).astype(np.float32))
-    # the most complete patch, not the geometric middle
+    # the most complete patch, not the geometric middle -- inside the window, for a window pick
+    ry0, rx0 = s.get("y0", 0), s.get("x0", 0)
+    ry1 = min(H, ry0 + s.get("cells", 75)) if "y0" in s else H
+    rx1 = min(W, rx0 + s.get("cells", 75)) if "x0" in s else W
     best = None
-    for r in range(0, H - CELLS, 3):
-        for c in range(0, W - CELLS, 3):
+    for r in range(ry0, max(ry0 + 1, ry1 - CELLS), 3):
+        for c in range(rx0, max(rx0 + 1, rx1 - CELLS), 3):
             sc = v[r:r + CELLS, c:c + CELLS].mean()
             if best is None or sc > best[0]:
                 best = (sc, r, c)
     cover, y0, x0 = best
-    out = f"{HERE}/pt_{SHARD}"
+    out = f"{HERE}/pt_{W_ID}"
     subprocess.run(["rm", "-rf", out])
     t0 = time.time()
     subprocess.run([sys.executable, f"{HERE}/render_tri.py", work, VOL, out,
@@ -91,7 +95,8 @@ for s in todo:
     subprocess.run(["rm", "-rf", out])
     prof = depth_profile(stack, sub=4)
     q = sheet_cnr(stack)
-    row = {"dir": s["dir"], "seating": s.get("seating"), "area_cm2": s.get("area_cm2"), "up": up,
+    row = {"dir": s["dir"], "y0": s.get("y0"), "x0": s.get("x0"),
+           "seating": s.get("seating"), "area_cm2": s.get("area_cm2"), "up": up,
            "cover": round(float(cover), 3),
            "noise": q["noise"], "sheet_cnr": q["sheet_cnr"],
            "window": window_verdict(prof)[0],

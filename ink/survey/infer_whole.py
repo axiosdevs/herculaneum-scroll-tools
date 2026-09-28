@@ -92,7 +92,7 @@ QSUB = 8        # in-plane subsample for the per-canvas quality read
 os.makedirs(MAPS, exist_ok=True)
 os.makedirs(CANV, exist_ok=True)
 ledger = json.load(open(LEDGER)) if os.path.exists(LEDGER) else []
-done = {r["dir"] for r in ledger if r.get("whole")}
+done = {r.get("key", r["dir"]) for r in ledger if r.get("whole")}
 # The layer order is fixed up front and not settled by a text score on the first canvas, which
 # is what the first survey did: it locked onto reverse on its first canvas. Nothing measured
 # here settles the order for PHerc1451 -- detectability.orientation was meant to and fails its
@@ -120,7 +120,7 @@ while True:
         if os.path.getsize(job) != size:
             continue
         meta = json.load(open(meta_p))
-        if meta["dir"] in done:
+        if meta.get("key", meta["dir"]) in done:
             os.remove(job); os.remove(meta_p); continue
         free_gb = int(open("/proc/meminfo").read().split("MemAvailable:")[1].split()[0]) / 1048576
         waited = 0
@@ -135,10 +135,22 @@ while True:
         per_order = {}
         best = None
         for tag, rev in orders:
-            try:
-                p = predict_banded(stack, CKPT, rev)
-            except Exception as exc:
-                print(f"  {name}: инференс не удался — {exc}", flush=True)
+            p = None
+            # a card shared with other readers can run out for a moment; that is a reason to
+            # wait, not to mark the canvas done and lose it
+            for attempt in range(6):
+                try:
+                    p = predict_banded(stack, CKPT, rev)
+                    break
+                except Exception as exc:
+                    if "out of memory" not in str(exc).lower() or attempt == 5:
+                        print(f"  {name}: инференс не удался — {exc}", flush=True)
+                        break
+                    import torch
+                    torch.cuda.empty_cache()
+                    print(f"  {name}: карте не хватило памяти, жду ({attempt + 1})", flush=True)
+                    time.sleep(60)
+            if p is None:
                 continue
             ts = text_score(p)
             cand = {"order": tag, "text": round(float(ts[0]), 3), "period_mm": round(float(ts[1]), 2),
@@ -173,7 +185,7 @@ while True:
             {"sheet_cnr": q.get("sheet_cnr"), "window": q.get("window"),
              "noise": q.get("noise")})
         ledger.append(row)
-        done.add(meta["dir"])
+        done.add(meta.get("key", meta["dir"]))
         json.dump(ledger, open(LEDGER, "w"), indent=1)
         print(f"ПОЛОТНО {meta['dir']}: {mm:.1f} мм, чернил {row['ink_pct']:.2f}%, "
               f"текст {row['text']:.3f} период {row['period_mm']:.2f} мм", flush=True)

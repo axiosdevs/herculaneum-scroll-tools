@@ -21,6 +21,8 @@ SHARD = int(os.environ.get("SHARD", "0"))
 NSHARD = int(os.environ.get("NSHARD", "1"))
 THREADS = os.environ.get("THREADS", "32")
 MAXQ = int(os.environ.get("MAXQ", "6"))
+# two surveys on one box must not share work directories; WORKTAG keeps them apart
+W_ID = os.environ.get("WORKTAG", "") + str(SHARD)
 
 
 def surfaces():
@@ -42,14 +44,14 @@ def find_zoff(work, y0, x0, up, shard):
     so the render was of the gap, and every ink map over it was a picture of air. This runs
     one coarse, deep probe first and returns the offset that puts the sheet in the middle.
     """
-    out = os.path.join(HERE, f"wp_{shard}")
+    out = os.path.join(HERE, f"wp_{W_ID}")
     subprocess.run(["rm", "-rf", out])
     cy, cx = y0 + (CELLS - PROBE_CELLS) // 2, x0 + (CELLS - PROBE_CELLS) // 2
     r = subprocess.run([sys.executable, f"{HERE}/" + os.environ.get("RENDERER", "render_tri.py"), work, VOL, out,
                         str(cy), str(cx), str(PROBE_CELLS), str(PROBE_CELLS),
                         str(PROBE_UP), str(PROBE_LAYERS), "0"],
                        env=dict(os.environ, THREADS=THREADS, BAND="64", ZOFF="0"),
-                       stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{SHARD}.log", "ab"))
+                       stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{W_ID}.log", "ab"))
     files = sorted(glob.glob(os.path.join(out, "layers", "*.tif")))
     if r.returncode != 0 or len(files) != PROBE_LAYERS:
         subprocess.run(["rm", "-rf", out])
@@ -67,7 +69,8 @@ def main():
     print(f"шард {SHARD}: поверхностей {len(todo)}", flush=True)
     for s in todo:
         src = os.path.join(HERE, s["dir"])
-        tag = s["dir"].replace("/", "_") + "_whole"
+        win = s.get("y0") is not None
+        tag = s["dir"].replace("/", "_") + (f"_{s['y0']}_{s['x0']}" if win else "") + "_whole"
         if os.path.exists(os.path.join(QUEUE, tag + ".done")):
             continue
         X, Y, Z = (tifffile.imread(os.path.join(src, f"{a}.tif")).astype(np.float32) for a in "xyz")
@@ -80,12 +83,12 @@ def main():
         if not g.size:
             continue
         up = max(1, int(round(float(np.median(g)) * STEP_UM / VOXEL_UM)))
-        work = os.path.join(HERE, f"wm_{SHARD}")
+        work = os.path.join(HERE, f"wm_{W_ID}")
         os.makedirs(work, exist_ok=True)
         for a, M in zip("xyz", (X, Y, Z)):
             tifffile.imwrite(os.path.join(work, f"{a}.tif"),
                              np.where(M > 0, M * 4.0, 0.0).astype(np.float32))
-        y0, x0 = (H - CELLS) // 2, (W - CELLS) // 2
+        y0, x0 = (s["y0"], s["x0"]) if win else ((H - CELLS) // 2, (W - CELLS) // 2)
         while len(glob.glob(os.path.join(QUEUE, "*.npy"))) >= MAXQ:
             time.sleep(20)
         # the deep probe costs as much as the render on a slow line, and the clamp below
@@ -102,25 +105,25 @@ def main():
             zoff = 0
         print(f"  {s['dir']}: лист на {zoff} слоёв ({zoff*VOXEL_UM:+.0f} мкм), "
               f"контраст {sheet_contrast:.2f}", flush=True)
-        out = os.path.join(HERE, f"wt_{SHARD}")
+        out = os.path.join(HERE, f"wt_{W_ID}")
         subprocess.run(["rm", "-rf", out])
         t0 = time.time()
         subprocess.run([sys.executable, f"{HERE}/" + os.environ.get("RENDERER", "render_tri.py"), work, VOL, out,
                         str(y0), str(x0), str(CELLS), str(CELLS), str(up), str(NLAY), "0"],
                        env=dict(os.environ, THREADS=THREADS, BAND="192", ZOFF=str(zoff)),
-                       stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{SHARD}.log", "ab"))
+                       stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{W_ID}.log", "ab"))
         files = sorted(glob.glob(os.path.join(out, "layers", "*.tif")),
                        key=lambda f: int(re.findall(r"\d+", os.path.basename(f))[-1]))
         if len(files) < NLAY:
             print(f"  {tag}: рендер не удался ({len(files)})", flush=True)
-            print(f"  {s['dir']}: рендер не дал слоёв — см. rerr_{SHARD}.log", flush=True)
-            print(f"  {s['dir']}: основной рендер пуст — см. rerr_{SHARD}.log", flush=True)
+            print(f"  {s['dir']}: рендер не дал слоёв — см. rerr_{W_ID}.log", flush=True)
+            print(f"  {s['dir']}: основной рендер пуст — см. rerr_{W_ID}.log", flush=True)
             subprocess.run(["rm", "-rf", out]); continue
         stack = np.stack([tifffile.imread(f) for f in files])
         tmp = os.path.join(QUEUE, tag + ".part")
         np.save(tmp, stack)
         os.rename(tmp + ".npy", os.path.join(QUEUE, tag + ".npy"))
-        json.dump({"dir": s["dir"], "y": y0, "x": x0, "seating": s["seating"],
+        json.dump({"dir": s["dir"], "key": tag, "y": y0, "x": x0, "seating": s["seating"],
                    "area_cm2": s["area_cm2"], "up": up, "whole": True,
                    "zoff": int(zoff), "sheet_contrast": round(float(sheet_contrast), 3)},
                   open(os.path.join(QUEUE, tag + ".json"), "w"))

@@ -17,14 +17,18 @@ for f in glob.glob(f"/workspace/{os.environ.get('SCAN', 'seating_scan')}_*.json"
 ok = [r for r in rows if r.get("noise") and np.isfinite(r["noise"])]
 print(f"отранжировано {len(ok)} поверхностей", flush=True)
 
-REF = 26.4
-picked = [r for r in ok if r["window"] == "centred" and r["noise"] <= REF * 1.15]
+# the reference is this renderer on the team's seated PHerc0139 mesh; another scan can be
+# noisier or quieter as a whole, so REF and TOL can be set for it
+REF = float(os.environ.get("REF", "26.4"))
+TOL = float(os.environ.get("TOL", "1.15"))
+picked = [r for r in ok if r["window"] == "centred" and r["noise"] <= REF * TOL]
 picked.sort(key=lambda r: r["noise"])
-print(f"окно centred и шум <= {REF*1.15:.1f}: {len(picked)}", flush=True)
+print(f"окно centred и шум <= {REF*TOL:.1f}: {len(picked)}", flush=True)
 area = sum(r.get("area_cm2") or 0 for r in picked)
 print(f"суммарная площадь отобранного: {area:.1f} см²", flush=True)
 
-out = [{"dir": r["dir"], "seating": r.get("seating") or 0.0,
+out = [{"dir": r["dir"], **({"y0": r["y0"], "x0": r["x0"]} if r.get("y0") is not None else {}),
+        "seating": r.get("seating") or 0.0,
         "area_cm2": r.get("area_cm2") or 0.0, "noise": r["noise"],
         "sheet_cnr": r["sheet_cnr"], "window": r["window"]} for r in picked]
 json.dump(out, open(os.environ.get("PICKS_OUT", "/workspace/picks_flat.json"), "w"),
