@@ -1,8 +1,8 @@
-__pycache__/
-*.pyc
-*.npz
-scan/
-data/
 *.log
+*.npz
+*.pyc
+__pycache__/
 box_logs/
+data/
 salvaged_partial.json
+scan/

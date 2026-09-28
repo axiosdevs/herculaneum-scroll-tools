@@ -1,6 +1,0 @@
-skip PHercMANBp
-skip PHerc1203
-=== SURVEY PHerc0257 (ct-level 0) ===
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-CALIB_BATCH_COMPLETE
