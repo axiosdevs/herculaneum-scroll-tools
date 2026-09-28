@@ -1,7 +1,7 @@
 #!/bin/bash
 # Batch surveys for the 2026-04-13 m7 prediction batch (villa#1114)
 cd "$(dirname "$0")"
-PY=/Users/pc/defi/vesuvius/.venv/bin/python
+PY=${PY:-python3}
 S3=https://vesuvius-challenge-open-data.s3.amazonaws.com
 
 run () {

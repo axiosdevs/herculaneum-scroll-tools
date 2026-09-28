@@ -1,0 +1,45 @@
+{
+    "area_cm2": 2.191711867948537,
+    "area_vx2": 2380142.7579339347,
+    "bbox": [
+        [
+            1513.936767578125,
+            2270.537353515625,
+            6301.61865234375
+        ],
+        [
+            2992.524169921875,
+            3298.004150390625,
+            8416.7421875
+        ]
+    ],
+    "elapsed_time_s": 431.009195104,
+    "format": "tifxyz",
+    "max_gen": 40,
+    "scale": [
+        0.05000000074505806,
+        0.05000000074505806
+    ],
+    "seed": [
+        2225.0,
+        3056.0,
+        7357.0
+    ],
+    "source": "vc_grow_seg_from_seed",
+    "target_volume": "p1451_pred.zarr",
+    "type": "seg",
+    "uuid": "auto_grown_20260923214357422",
+    "vc_gsfs_mode": "explicit_seed",
+    "vc_gsfs_params": {
+        "cache_size": 24000000000,
+        "generations": 40,
+        "min_area_cm": 0.05,
+        "normal_grid_path": "/workspace/p1451_pred.normal-grids",
+        "search_effort": 5,
+        "tgt_overlap_count": 20,
+        "thread_limit": 6,
+        "use_cuda": false,
+        "voxelsize": 9.596
+    },
+    "vc_gsfs_version": "dev"
+}

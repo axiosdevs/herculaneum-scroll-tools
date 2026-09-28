@@ -9,7 +9,7 @@ Measured on native PHerc0009B traces: 18.06 -> 24.57 over two passes on one surf
 original was kept. The gate decides, not the pass count."""
 import sys, os, json
 import numpy as np, tifffile
-sys.path.insert(0, '/Users/pc/defi/vesuvius/scroll-tools/ink')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from render_surface import ChunkedVolume, grid_normals
 from seat_mesh import sample_points, seating_score
 

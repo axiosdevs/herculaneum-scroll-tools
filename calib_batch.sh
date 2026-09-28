@@ -1,6 +1,6 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-PY=/Users/pc/defi/vesuvius/.venv/bin/python
+PY=${PY:-python3}
 S3=https://vesuvius-challenge-open-data.s3.amazonaws.com
 run () {
   NAME=$1; PRED=$2; CT=$3; CTLVL=$4
