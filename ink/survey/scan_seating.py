@@ -19,9 +19,10 @@ VOL = os.environ["VOLURL"]
 SHARD = int(os.environ.get("SHARD", "0"))
 NSHARD = int(os.environ.get("NSHARD", "1"))
 THREADS = os.environ.get("THREADS", "10")
-VOXEL_UM, STEP_UM = 2.399, 9.596
+VOXEL_UM = float(os.environ.get("VOXEL_UM", "2.399"))   # the scan's level-0 voxel
+STEP_UM = VOXEL_UM * 4                                  # surfaces are grown at level 2
 CELLS, NLAY = 12, 62
-LEDGER = f"{HERE}/seating_scan_{SHARD}.json"
+LEDGER = f"{HERE}/{os.environ.get('SCAN', 'seating_scan')}_{SHARD}.json"
 
 
 def surfaces():

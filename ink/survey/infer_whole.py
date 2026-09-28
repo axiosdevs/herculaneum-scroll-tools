@@ -1,7 +1,7 @@
 """One GPU process behind the render queue: a whole surface per job, scored as one canvas.
 
-Depth order is a property of the surface, so it is settled once on the first job and costs
-one inference per surface after that. The canvas is 75 cells wide -- about 18 mm at 2.4 um
+The layer order is given, not guessed: POLARITY=fwd or rev reads each surface one way,
+POLARITY=both reads it both ways and keeps both maps. The canvas is 75 cells wide -- about 18 mm at 2.4 um
 -- which puts twelve FFT bins inside the 1.0-3.5 mm line band, where a single 4.8 mm window
 puts three and pins every period to 1.20 mm whatever the map holds.
 """
@@ -86,7 +86,7 @@ QUEUE = os.environ.get("QUEUE", "/workspace/queue")   # one queue per layer orde
 MAPS, CANV = "/workspace/scan_maps", "/workspace/canvases"
 LEDGER = os.environ.get("LEDGER", "/workspace/ink_scan.json")
 CKPT = "/workspace/r152.ckpt"
-VOXEL_UM = 2.399
+VOXEL_UM = float(os.environ.get("VOXEL_UM", "2.399"))
 QSUB = 8        # in-plane subsample for the per-canvas quality read
 
 os.makedirs(MAPS, exist_ok=True)
@@ -97,7 +97,7 @@ done = {r["dir"] for r in ledger if r.get("whole")}
 # is what the first survey did: it locked onto reverse on its first canvas. Nothing measured
 # here settles the order for PHerc1451 -- detectability.orientation was meant to and fails its
 # audit -- so a survey runs once per order, POLARITY=fwd and POLARITY=rev.
-polarity = os.environ.get("POLARITY", "fwd")
+polarity = os.environ.get("POLARITY", "fwd")   # fwd, rev, or both: every surface read each way
 idle = 0
 print("инференс запущен", flush=True)
 while True:
@@ -130,7 +130,9 @@ while True:
             free_gb = int(open("/proc/meminfo").read().split("MemAvailable:")[1].split()[0]) / 1048576
         print(f"  {name}: старт, свободно {free_gb:.0f} ГБ", flush=True)
         stack = np.load(job, mmap_mode="r")
-        orders = (("rev", True), ("fwd", False)) if polarity is None else ((polarity, polarity == "rev"),)
+        orders = ((("fwd", False), ("rev", True)) if polarity in (None, "both")
+                  else ((polarity, polarity == "rev"),))
+        per_order = {}
         best = None
         for tag, rev in orders:
             try:
@@ -144,6 +146,7 @@ while True:
                     "max": round(float(p.max()), 3), "median": round(float(np.median(p)), 3),
                     "map": os.path.relpath(os.path.join(CANV, name + f"_{tag}.npy"), HERE)}
             np.save(os.path.join(CANV, name + f"_{tag}.npy"), p)
+            per_order[tag] = {k: cand[k] for k in ("text", "period_mm", "ink_pct", "max", "median")}
             if best is None or (cand["text"], cand["max"]) > (best["text"], best["max"]):
                 best = cand
                 mm = p.shape[0] * VOXEL_UM / 1000
@@ -157,6 +160,7 @@ while True:
         if best is None:
             continue
         polarity = polarity or best["order"]
+        best = dict(best, orders=per_order)
         # Every canvas carries what its own null is worth: a window the sheet is not in,
         # or a scan without the margin to hold ink, cannot report an absence of writing.
         try:

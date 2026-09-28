@@ -14,7 +14,8 @@ import numpy as np, tifffile
 HERE = "/workspace"
 QUEUE = os.environ.get("QUEUE", "/workspace/queue")   # one queue per layer order
 VOL = os.environ.get("VOLURL", "")
-VOXEL_UM, STEP_UM, NLAY = 2.399, 9.596, 62
+VOXEL_UM = float(os.environ.get("VOXEL_UM", "2.399"))   # the scan's level-0 voxel
+STEP_UM, NLAY = VOXEL_UM * 4, 62                        # surfaces are grown at level 2
 CELLS = 75                      # 3x3 blocks of 25, rendered as one
 SHARD = int(os.environ.get("SHARD", "0"))
 NSHARD = int(os.environ.get("NSHARD", "1"))

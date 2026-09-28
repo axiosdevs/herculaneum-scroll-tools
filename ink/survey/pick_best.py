@@ -5,11 +5,11 @@ half and says whether the surface lies flat enough on its sheet for a stroke to 
 rendering the team's own PHerc0139 mesh with this renderer scatters 26.4 at stroke scale, and
 our surfaces range from 7 to 46. Only the flat, centred ones get the ninety minutes.
 """
-import glob, json
+import glob, json, os
 import numpy as np
 
 rows = []
-for f in glob.glob("/workspace/seating_scan_*.json"):
+for f in glob.glob(f"/workspace/{os.environ.get('SCAN', 'seating_scan')}_*.json"):
     try:
         rows += json.load(open(f))
     except Exception:
@@ -27,7 +27,8 @@ print(f"суммарная площадь отобранного: {area:.1f} с�
 out = [{"dir": r["dir"], "seating": r.get("seating") or 0.0,
         "area_cm2": r.get("area_cm2") or 0.0, "noise": r["noise"],
         "sheet_cnr": r["sheet_cnr"], "window": r["window"]} for r in picked]
-json.dump(out, open("/workspace/picks_flat.json", "w"), ensure_ascii=False, indent=1)
+json.dump(out, open(os.environ.get("PICKS_OUT", "/workspace/picks_flat.json"), "w"),
+          ensure_ascii=False, indent=1)
 for r in out[:15]:
     print(f"  {r['dir'].split('/workspace/')[-1][:34]:36s} шум {r['noise']:6.2f} "
           f"лист/шум {r['sheet_cnr']:5.2f}")
