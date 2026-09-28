@@ -21,9 +21,13 @@ print(f"отранжировано {len(ok)} поверхностей", flush=Tr
 # noisier or quieter as a whole, so REF and TOL can be set for it
 REF = float(os.environ.get("REF", "26.4"))
 TOL = float(os.environ.get("TOL", "1.15"))
-picked = [r for r in ok if r["window"] == "centred" and r["noise"] <= REF * TOL]
+# which window verdicts qualify: PHerc0846A's sheets are thicker than the 62-layer window, so a
+# window inside one reads "flat"; MINNOISE keeps out windows smooth because they are air
+WINDOWS = set(os.environ.get("WINDOWS", "centred").split(","))
+MINNOISE = float(os.environ.get("MINNOISE", "0"))
+picked = [r for r in ok if r["window"] in WINDOWS and MINNOISE <= r["noise"] <= REF * TOL]
 picked.sort(key=lambda r: r["noise"])
-print(f"окно centred и шум <= {REF*TOL:.1f}: {len(picked)}", flush=True)
+print(f"окно {'/'.join(sorted(WINDOWS))} и шум {MINNOISE:.0f}..{REF*TOL:.1f}: {len(picked)}", flush=True)
 area = sum(r.get("area_cm2") or 0 for r in picked)
 print(f"суммарная площадь отобранного: {area:.1f} см²", flush=True)
 

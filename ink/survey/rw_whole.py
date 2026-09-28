@@ -28,7 +28,10 @@ W_ID = os.environ.get("WORKTAG", "") + str(SHARD)
 def surfaces():
     rows = json.load(open(os.environ.get("PICKS", f"{HERE}/picks1451.json")))
     rows = [r for r in rows if os.path.exists(os.path.join(HERE, r["dir"], "x.tif"))]
-    rows.sort(key=lambda r: (-r["seating"], -r["area_cm2"]))
+    if os.environ.get("ORDER") == "noise" and all("noise" in r for r in rows):
+        rows.sort(key=lambda r: r["noise"])      # the flattest windows first
+    else:
+        rows.sort(key=lambda r: (-r["seating"], -r["area_cm2"]))
     return rows[SHARD::NSHARD]
 
 
@@ -106,18 +109,22 @@ def main():
         print(f"  {s['dir']}: лист на {zoff} слоёв ({zoff*VOXEL_UM:+.0f} мкм), "
               f"контраст {sheet_contrast:.2f}", flush=True)
         out = os.path.join(HERE, f"wt_{W_ID}")
-        subprocess.run(["rm", "-rf", out])
         t0 = time.time()
-        subprocess.run([sys.executable, f"{HERE}/" + os.environ.get("RENDERER", "render_tri.py"), work, VOL, out,
-                        str(y0), str(x0), str(CELLS), str(CELLS), str(up), str(NLAY), "0"],
-                       env=dict(os.environ, THREADS=THREADS, BAND="192", ZOFF=str(zoff)),
-                       stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{W_ID}.log", "ab"))
-        files = sorted(glob.glob(os.path.join(out, "layers", "*.tif")),
-                       key=lambda f: int(re.findall(r"\d+", os.path.basename(f))[-1]))
+        # a card shared with other surveys can refuse a tile for a moment; try again before
+        # giving the window up
+        for attempt in range(3):
+            subprocess.run(["rm", "-rf", out])
+            subprocess.run([sys.executable, f"{HERE}/" + os.environ.get("RENDERER", "render_tri.py"), work, VOL, out,
+                            str(y0), str(x0), str(CELLS), str(CELLS), str(up), str(NLAY), "0"],
+                           env=dict(os.environ, THREADS=THREADS, BAND="192", ZOFF=str(zoff)),
+                           stdout=subprocess.DEVNULL, stderr=open(f"{HERE}/rerr_{W_ID}.log", "ab"))
+            files = sorted(glob.glob(os.path.join(out, "layers", "*.tif")),
+                           key=lambda f: int(re.findall(r"\d+", os.path.basename(f))[-1]))
+            if len(files) >= NLAY:
+                break
+            time.sleep(60)
         if len(files) < NLAY:
-            print(f"  {tag}: рендер не удался ({len(files)})", flush=True)
-            print(f"  {s['dir']}: рендер не дал слоёв — см. rerr_{W_ID}.log", flush=True)
-            print(f"  {s['dir']}: основной рендер пуст — см. rerr_{W_ID}.log", flush=True)
+            print(f"  {tag}: рендер не удался ({len(files)}) — см. rerr_{W_ID}.log", flush=True)
             subprocess.run(["rm", "-rf", out]); continue
         stack = np.stack([tifffile.imread(f) for f in files])
         tmp = os.path.join(QUEUE, tag + ".part")

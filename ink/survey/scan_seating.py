@@ -82,7 +82,7 @@ for s in todo:
     out = f"{HERE}/pt_{W_ID}"
     subprocess.run(["rm", "-rf", out])
     t0 = time.time()
-    subprocess.run([sys.executable, f"{HERE}/render_tri.py", work, VOL, out,
+    subprocess.run([sys.executable, f"{HERE}/" + os.environ.get("RENDERER", "render_tri.py"), work, VOL, out,
                     str(y0), str(x0), str(CELLS), str(CELLS), str(up), str(NLAY), "0"],
                    env=dict(os.environ, THREADS=THREADS, BAND="96", ZOFF="0"),
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
