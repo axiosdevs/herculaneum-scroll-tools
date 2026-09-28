@@ -168,6 +168,10 @@ for r0 in range(0, H, TILE):
         out[~mm] = 0
         stack[:, r0:r1, c0:c1] = out
         del vt, g, vals
+        # Several renderers share one card, and each holding on to its allocator's cache grew
+        # twelve of them to 20 GB of a 24 GB card with nothing in use. Give it back per tile.
+        if dev.type == "cuda":
+            torch.cuda.empty_cache()
         tiles += 1
         if len(cache) > 3000:
             cache.clear()
