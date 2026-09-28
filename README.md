@@ -38,6 +38,9 @@ The tools, all of which run on a laptop:
 1. **Detectability probe** (`ink/detectability.py`, `ink/probe.py`) — would this window have
    shown ink, and which way should it be read? Self-test in seconds with no network; reference
    run on PHerc0139; `--orientation` on your own stack settles the layer order without labels.
+   The orientation check is also proposed for villa's own inference, where it returns the
+   `FORCE_REVERSE` value a segment needs:
+   [ScrollPrize/villa#1917](https://github.com/ScrollPrize/villa/pull/1917).
 2. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth against the
    scan's own noise: **0.54** of a single layer on PHerc0139, the whole margin the field works
    with. Also the seating check by scatter, and a scan-quality proxy shipped **with its own
