@@ -11,6 +11,7 @@ from __future__ import annotations
 import io
 import os
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
@@ -41,37 +42,65 @@ def fetch_checkpoint(path="r152.ckpt"):
     return path
 
 
-def fetch_surface_window(y0, x0, size):
+def fetch_surface_window(y0, x0, size, cache_dir=None):
+    """Read a window of the published surface volume, block by block.
+
+    The first version asked each block with a 240 s timeout and urllib3's own retries, and on a
+    slow line it sat silent for twenty minutes with nothing to say it was alive. The same window
+    fetched block by block with a short timeout, retried with backoff and counted aloud, took 47
+    seconds. Blocks are kept in `cache_dir` so a second run does not fetch them again.
+    """
     import numcodecs
     session = requests.Session()
-    session.mount("https://", requests.adapters.HTTPAdapter(pool_maxsize=24, max_retries=3))
+    session.mount("https://", requests.adapters.HTTPAdapter(pool_maxsize=32, max_retries=0))
     meta = session.get(SURFACE + ".zarray", timeout=60).json()
     shape = np.array(meta["shape"])
     chunks = np.array(meta["chunks"])
     sep = meta.get("dimension_separator", "/")
     codec = numcodecs.get_codec(meta["compressor"]) if meta["compressor"] else None
+    cache_dir = cache_dir or os.path.join(os.path.expanduser("~"), ".cache", "scroll-tools-blocks")
+    os.makedirs(cache_dir, exist_ok=True)
     out = np.zeros((shape[0], size, size), np.uint8)
     keys = [(0, b, c)
             for b in range(y0 // chunks[1], (y0 + size - 1) // chunks[1] + 1)
             for c in range(x0 // chunks[2], (x0 + size - 1) // chunks[2] + 1)]
 
-    def get(key):
-        r = session.get(SURFACE + sep.join(map(str, key)), timeout=240)
-        if r.status_code != 200:
+    def block(key):
+        path = os.path.join(cache_dir, "_".join(map(str, key)) + ".bin")
+        if os.path.exists(path) and os.path.getsize(path) == int(np.prod(chunks)):
+            return np.fromfile(path, np.uint8).reshape(tuple(chunks))
+        for attempt in range(6):
+            try:
+                r = session.get(SURFACE + sep.join(map(str, key)), timeout=45)
+                if r.status_code == 404:
+                    return None
+                if r.status_code == 200:
+                    raw = codec.decode(r.content) if codec else r.content
+                    buf = np.frombuffer(raw, np.uint8)
+                    if buf.size == int(np.prod(chunks)):
+                        buf.tofile(path + ".part")
+                        os.replace(path + ".part", path)
+                        return buf.reshape(tuple(chunks))
+            except requests.RequestException:
+                pass
+            time.sleep(2 * (attempt + 1))
+        raise RuntimeError(f"блок {key} не скачался за шесть попыток")
+
+    def place(key):
+        b = block(key)
+        if b is None:
             return
-        raw = codec.decode(r.content) if codec else r.content
-        buf = np.frombuffer(raw, np.uint8)
-        if buf.size != int(np.prod(chunks)):
-            return
-        block = buf.reshape(tuple(chunks))
         _, yy, xx = np.array(key) * chunks
         ys, ye = max(y0, yy), min(y0 + size, yy + chunks[1])
         xs, xe = max(x0, xx), min(x0 + size, xx + chunks[2])
         if ye > ys and xe > xs:
-            out[:, ys - y0:ye - y0, xs - x0:xe - x0] = block[:, ys - yy:ye - yy, xs - xx:xe - xx]
+            out[:, ys - y0:ye - y0, xs - x0:xe - x0] = b[:, ys - yy:ye - yy, xs - xx:xe - xx]
 
-    with ThreadPoolExecutor(12) as pool:
-        list(pool.map(get, keys))
+    t0 = time.time()
+    with ThreadPoolExecutor(16) as pool:
+        for i, _ in enumerate(pool.map(place, keys), 1):
+            if i % 32 == 0 or i == len(keys):
+                print(f"  блоков {i}/{len(keys)} за {time.time() - t0:.0f} с", flush=True)
     return out
 
 
