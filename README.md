@@ -1,87 +1,96 @@
 # Herculaneum Scroll Tools
 
-Open-source utilities for the Vesuvius Challenge. The first three answer a question the
-current pipeline leaves unanswered — **could this surface have shown ink at all?** — because
-a blind pipeline and a blank scroll produce the same output, and nothing in that output says
-which one you have.
+Open-source utilities for the Vesuvius Challenge, built around one question the current
+pipeline leaves unanswered — **could this surface have shown ink at all?** A blind pipeline
+and a blank scroll produce the same output, and nothing in that output says which one you
+have. This cycle that question was asked of a whole scroll, PHerc1451, and answered.
 
-1. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth on a
-   given scan against that scan's own noise. On PHerc0139, which the published checkpoint
-   reads confidently, ink beats bare papyrus by 13.3 levels against 24.6 of scatter at a
-   stroke's width: a single-layer CNR of **0.54**. That is the whole margin the field works
-   with. The no-ink-map proxy that comes with it is shipped **with its own refutation**:
-   across the eight scrolls that have a fine-resolution surface volume it correlates with
-   the readability of their published ink maps at r = −0.436, so it compares windows of one
-   scan and does not decide a scroll (`ink/scan_survey.json`).
-2. **Detectability probe** (`ink/detectability.py`) — plant ink of known contrast where ink
-   physically sits and see whether the model recovers it. Turns "no ink found" into "no ink
-   found, and here is the faintest writing that would have been found". Validated against the
-   team's own surface volume, where it fires at an amplitude of 32.
-3. **Window centring** (`ink/center_window.py`) — is the depth window on the sheet, or in the
-   gap between windings? One coarse probe gives the offset; `window_verdict` reads a render
-   already in hand and calls it `centred`, `edge` or `flat`.
-4. **Ink recovery at 77-78 keV** (`ink/`) — a rendering path that reproduces the team's
-   published ink maps at **r = 0.963** from the public checkpoint, the four undocumented
-   conventions it depends on, a mesh-frame resolver (`ink/resolve_frame.py`) and a seating
-   gate (`ink/seat_mesh.py`).
-5. **CT-consistency QA** ([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)) —
-   measure and clean *phantom* voxels in published surface predictions; exact voxel-level
-   phantom fractions for **the entire published m7 batch — all 36 samples**, including all
-   13 grand-prize-eligible scrolls.
-6. **Cross-scan registration** — align an *old* scan's coordinate frame, and every
-   segmentation built on it, to a newer higher-resolution scan of the same scroll, including
-   the seating test that showed where this works and where it provably cannot.
-7. **Winding-constraint annotator + verifier** — annotate winding constraints on flattened
-   renders and export native spiral-input files; validated on the released PHercParis4
-   annotations.
-8. **Dual-energy co-rendering** — combine the two X-ray energies a scroll was scanned at into
-   a single high-Z contrast map, surfacing metal-bearing material from physics alone.
+**The tool** is `ink/detectability.py`, run through `ink/probe.py`. It plants synthetic ink of
+known contrast where ink physically sits — on the sheet's face, following the measured sheet
+depth — runs the same model again, and reports the faintest contrast that comes back. On the
+team's own PHerc0139 surface volume, where the published checkpoint reads letters, that is
+**32 of 255**. A window that cannot reach it is blind, and its emptiness says nothing about the
+papyrus. Pointed at my own survey, it caught two errors nothing else could see:
 
-Everything streams directly from the public `vesuvius-challenge-open-data` S3 bucket and
-`dl.ash2txt.org` — no local copy of a full scroll is needed, and it runs on a laptop.
+- **The survey was reading the wrong face of the sheet.** Which face the model reads is a free
+  parameter, and I had it settled by whichever order scored higher. Forward reports 3.2% ink
+  and recovers planted ink at 32; reverse reports **26.6%** and recovers none at all. The blind
+  direction is the one that reports eight times more ink — so any survey that picks its order
+  by how much it finds will pick it.
+- **Most grown surfaces could not have shown a stroke.** Stroke-scale scatter measures seating
+  against a reference: this renderer on the team's seated mesh gives 26.4. Across all 320
+  surfaces grown on PHerc1451 it runs 5.9 to 60.2. The flattest recovers planted ink at 32 —
+  the reference's own threshold. A surface the first survey rendered, at 42.6, recovered none.
 
-**Quick start** — verify the headline claim before reading anything else:
+Read from the correct face, on the 43 surfaces flat enough to carry a stroke, the first 24 —
+52.8 cm² — show **no writing**. That is now a measurement rather than a silence: ink of
+PHerc0139's strength would have shown there.
+
+The tools, all of which run on a laptop:
+
+1. **Detectability probe** (`ink/detectability.py`, `ink/probe.py`) — would this window have
+   shown ink? Self-test in seconds with no network; reference run on PHerc0139; your own stack.
+2. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth against the
+   scan's own noise: **0.54** of a single layer on PHerc0139, the whole margin the field works
+   with. Also the seating check by scatter, and a scan-quality proxy shipped **with its own
+   refutation** (r = −0.436 against the readability of eight scrolls' published maps).
+3. **Window centring** (`ink/center_window.py`) — is the depth window on the sheet or in the gap
+   between windings; `window_verdict` reads a render already in hand.
+4. **Frame resolution** (`ink/resolve_frame.py`) — which volume's voxel grid a published mesh is
+   written in, from its metadata and from the store itself.
+5. **Seating gate** (`ink/seat_mesh.py`) — does a surface lie on a sheet or cut the windings.
+6. **GPU renderer** (`ink/render_gpu.py`) — the surface render on the card, validated against the
+   CPU renderer at r = 0.999994 and about seventy-five times faster.
+
+Older work in the same repository: ink recovery at 77–78 keV reproducing the team's maps at
+**r = 0.963**, CT-consistency QA over the whole published m7 batch
+([villa#1114](https://github.com/ScrollPrize/villa/issues/1114)), cross-scan registration, a
+winding-constraint annotator, and dual-energy co-rendering. Sections below.
+
+**Quick start:**
 
 ```bash
 pip install -r requirements.txt
-python ink/reproduce.py     # downloads the checkpoint and public data, prints r ~ +0.96
-python ink/scan_cnr.py <stack.npy> [ink_map.tif]   # can this scan carry ink at all?
+python ink/probe.py --self-test     # seconds, no network: the probe on detectors with known answers
+python ink/probe.py --reference     # PHerc0139, where letters read: expect a threshold of 32
+python ink/reproduce.py             # the renderer against the team's production ink map, r ~ +0.96
+python ink/test_ink.py              # 28 offline tests
 ```
 
-The loader for the published checkpoint is fetched from ScrollPrize/villa automatically; no
-local villa checkout is needed. `python ink/test_ink.py` runs the offline test suite — 26
-tests, no network.
+The published checkpoint's loader is fetched from ScrollPrize/villa on first use; no villa
+checkout is needed. The PHerc1451 survey is reproducible from this repository alone — the 320
+grown meshes ship in `ink/p1451/meshes` (28 MB), the pipeline in `ink/survey`, and
+`ink/box/bootstrap.sh` stages and runs all of it on a rented GPU box.
 
-MIT-licensed. Standard formats in (OME-Zarr, tifxyz, `.volpkg` affines), standard formats
-out (PNG maps, NumPy arrays).
+MIT-licensed. Standard formats in (OME-Zarr, tifxyz, `.volpkg` affines), standard formats out
+(PNG maps, NumPy arrays).
 
 ---
 
-## What was measured and ruled out
+## What was measured on the way
 
-A month of this cycle went into one question — why a pipeline that reproduces the team's
-published letters at r = 0.963 says nothing on PHerc1451 — and most of the answer is a list
-of things it is not. Each line is a measurement, and each is here so nobody repeats it.
+Every line is a measurement, kept so nobody repeats it. The last two are what the answer was.
 
 | direction | measurement | verdict |
 |---|---|---|
-| the model, window or polarity | reproduces their published letters at **r = 0.996** from their surface volume, layers 24–86 forward | correct |
+| the model, window or polarity recipe | reproduces their published letters at **r = 0.996** from their surface volume, layers 24–86 forward | correct |
+| the renderer | on the team's own mesh and volume it reproduces their surface volume: scatter **26.44** against **26.43**, r = 0.893, one-pixel residual | correct |
 | brightness | their stack rescaled to median 128 holds **r = 0.994** | not it |
 | contrast | scaled 0.25×–2.0×, holds **r = 0.918–0.996** | not it |
-| depth of the window | planted ink recovered at no offset from −216 µm to +216 µm; the original geometry is the best of them | not it |
+| depth of the window | planted ink recovered at no offset from −216 µm to +216 µm; the original geometry is best | not it |
 | a loose mesh | our surface drifts **6.3 µm** across a canvas against the team's **9.9 µm** | not it |
 | the renderer's sampling | four samples per pixel averaged back: scatter 36.30 → **36.22** | not it |
-| a noisy scan | PHerc1451's raw scan scatters **30.8** where PHerc0139's raw scan scatters **32.3** | not it |
+| a noisy scan | PHerc1451's raw scan scatters **30.8** where PHerc0139's scatters **32.3** | not it |
 | coverage holes | 0.1–0.7% of a canvas | not it |
 | tightening the mesh onto the sheet | sheet contrast anti-correlates with ink readability, **r = −0.900** | harmful |
 | centring the window on the sheet's brightest layer | planted-ink lift +0.027 → **+0.000** | harmful |
-| smoothing the stack | our planted-ink threshold goes from nothing to 16, and the reference loses its letters, **0.858 → 0.448** | a trap |
-| scan quality as a go/no-go | the sheet-to-gap proxy correlates with published-map readability at **r = −0.436** across eight scrolls | refuted |
+| smoothing the stack | our threshold goes from nothing to 16, and the reference loses its letters, **0.858 → 0.448** | a trap |
+| scan quality as a go/no-go | the sheet-to-gap proxy against published-map readability, **r = −0.436** over eight scrolls | refuted |
+| **seating** | scatter 5.9–60.2 against the reference 26.4; the flattest surface recovers planted ink at **32** | **the cause** |
+| **which face is read** | forward 3.2% ink, threshold 32; reverse 26.6% ink, **no threshold** | **the cause** |
 
-Two of those refute claims this repo made first, and both retractions are in the modules
-that made them. The margin that makes all of this so easy to get wrong is in `scan_cnr.py`:
-on a scroll the published checkpoint reads confidently, ink is worth **0.54** of a single
-layer's noise.
+Three of those refute claims this repo made first, and each retraction is in the module that
+made the claim.
 
 ---
 
