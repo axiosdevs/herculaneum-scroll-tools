@@ -17,9 +17,10 @@ Two things the reference run taught, both worth having before trusting your own 
   * **Above about 32 the test inverts.** Planting 64 on the reference moved the recovered ink
     *down*, lift -0.163. Planting harder than the physics is a different experiment, not a
     stronger one, and a check run only at large amplitudes reports failure on a sound pipeline.
-  * **The blind direction reports more ink.** Reading the sheet from the wrong face gave 26.6%
-    ink against the right face's 3.2%, and recovered no planted ink at all. A survey that picks
-    its depth order by how much it finds will pick the blind one.
+  * **The amount of ink reported says nothing about which way to read.** The wrong layer
+    order reported 20 times less ink than the right one on PHerc0139 and 8 times more on a
+    PHerc1451 surface. `--orientation` settles it instead: ink planted on each face, the stack
+    read both ways, and the one combination that answers is the order and the face.
 
 Needs torch and the published checkpoint for the reference and stack modes (downloaded once,
 1.4 GB). The self-test needs neither.
@@ -113,6 +114,8 @@ def main():
     ap.add_argument("--reference", action="store_true",
                     help="прогнать на томе PHerc0139, где модель читает буквы")
     ap.add_argument("--stack", help="свой стек: .npy формы (слои, H, W)")
+    ap.add_argument("--orientation", action="store_true",
+                    help="решить без разметки, в какую сторону читать стек и на какой грани чернила")
     ap.add_argument("--amplitudes", default="8,16,32,64",
                     help="силы посаженных чернил в уровнях серого")
     ap.add_argument("--reverse", action="store_true",
@@ -149,11 +152,25 @@ def main():
                   "  а не в папирусе. Сначала почините это.")
 
     if args.stack:
-        stack = np.load(args.stack, mmap_mode="r")
+        stack = np.array(np.load(args.stack, mmap_mode="r"))
         print(f"\nваш стек {tuple(stack.shape)}", flush=True)
-        res = run(np.array(stack), ckpt, amps, args.reverse, args.device, args.micron_per_pixel)
-        report(res, os.path.basename(args.stack))
-        out["stack"] = res
+        if args.orientation:
+            from detectability import orientation
+            res = orientation(stack, lambda rev: _predict_fn(ckpt, rev, args.device),
+                              amplitude=32, micron_per_pixel=args.micron_per_pixel)
+            for combo, v in res["combinations"].items():
+                print(f"  {combo:14s} подъём {v['lift']:+.3f}   фон {v['baseline_ink_pct']:.2f}%")
+            if res["verdict"] is None:
+                print("  ни одно сочетание не отвечает — стек слеп в обе стороны")
+            else:
+                order, face = res["verdict"]
+                print(f"  читать: {'вперёд' if order == 'forward' else 'назад'}, "
+                      f"чернила на {'ближней' if face == 'near' else 'дальней'} грани")
+            out["orientation"] = res
+        else:
+            res = run(stack, ckpt, amps, args.reverse, args.device, args.micron_per_pixel)
+            report(res, os.path.basename(args.stack))
+            out["stack"] = res
 
     if args.json:
         json.dump(out, open(args.json, "w"), ensure_ascii=False, indent=1)

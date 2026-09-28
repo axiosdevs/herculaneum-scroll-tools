@@ -36,17 +36,20 @@ So any change that moves this number should be checked against a reference where
 published, and `reproduce.py` exists for exactly that. The probe tells you a window is blind;
 it does not tell you a pipeline is good.
 
-**What it is good for is catching a choice no other signal can see.** The depth order along
-the normal -- which face of the sheet the model reads -- is a free parameter that a survey has
-to fix, and a text score cannot fix it. Measured on the flattest PHerc1451 surface:
+**What it is good for is settling a choice no other signal can.** The layer order along the
+normal -- which way the model reads the sheet -- is a free parameter every survey has to fix,
+and `orientation` fixes it without labels: plant ink on each face, read both ways, and the one
+combination that answers positively is the order and the face. On PHerc0139 as published it
+says forward, which the team's ink map confirms; on the same stack flipped in depth it says
+reverse, which it has to. Neither the amount of ink reported nor a periodicity score over it
+can do this -- the wrong order reported 20 times less ink than the right one on PHerc0139 and
+8 times more on a PHerc1451 surface.
 
-    forward   3.2% ink reported,  planted ink recovered at 32, the reference's own threshold
-    reverse  26.6% ink reported,  no threshold at all, lifts negative at every amplitude
-
-The blind direction is the one that reports eight times more ink. A survey that picks its
-order by how much ink it sees, or by a periodicity score over what it sees, will choose
-reverse and read the wrong face of every sheet after it -- which is what mine did for
-twenty-four canvases before this probe was pointed at the question.
+A retraction belongs here. An earlier version of this docstring said the wrong order always
+reports more ink, from that one PHerc1451 surface. The flipped reference refutes it, and the
+same test showed why the claim could not have been checked with this module as it then was:
+it planted ink on one face only, and so reported a readable stack whose ink is on the other
+face as blind.
 """
 from __future__ import annotations
 
@@ -101,18 +104,27 @@ def script_mask(shape, micron_per_pixel=2.401, seed=0):
     return mask
 
 
-def plant_ink(stack, amplitude, micron_per_pixel=2.401, seed=0, band=SHEET_BAND):
-    """Add a synthetic ink layer of the given contrast on the sheet's face.
+def plant_ink(stack, amplitude, micron_per_pixel=2.401, seed=0, band=SHEET_BAND, face="near"):
+    """Add a synthetic ink layer of the given contrast on one face of the sheet.
 
-    Ink lies on the surface, not in the middle of the sheet, so the layer is placed on the
-    face nearer the reader and follows the measured sheet depth rather than a flat plane --
-    a flat layer would be a test of the renderer's geometry, not of the detector.
+    Ink lies on the surface, not in the middle of the sheet, so the layer follows the measured
+    sheet depth rather than a flat plane -- a flat layer would be a test of the renderer's
+    geometry, not of the detector. `face` is which side of the sheet's centre it goes on:
+    'near' toward layer 0, 'far' toward the last layer.
+
+    Which face is right is a property of the segment, not of this function, and the first
+    version of this module hard-coded 'near'. Measured on PHerc0139's published surface volume
+    flipped in depth -- a stack that reads its letters perfectly well in reverse -- that made
+    the probe report no threshold in either order: its ink was being planted on the face the
+    model does not read ink from. `orientation` below plants on both faces.
     """
+    if face not in ("near", "far"):
+        raise ValueError(f"face must be 'near' or 'far', not {face!r}")
     out = stack.astype(np.float32).copy()
     C, H, W = out.shape
     centre = sheet_depth(stack)
     mask = script_mask((H, W), micron_per_pixel, seed)
-    face = centre - band / 2.0
+    face = centre - band / 2.0 if face == "near" else centre + band / 2.0
     zz = np.arange(C, dtype=np.float32)[:, None, None]
     profile = np.exp(-0.5 * ((zz - face[None]) / (band / 2.0)) ** 2)
     out += amplitude * profile * mask[None]
@@ -120,7 +132,7 @@ def plant_ink(stack, amplitude, micron_per_pixel=2.401, seed=0, band=SHEET_BAND)
 
 
 def probe(stack, predict_fn, amplitudes=(4, 8, 16, 32), micron_per_pixel=2.401,
-          seed=0, threshold=0.5, margin=0.05):
+          seed=0, threshold=0.5, margin=0.05, face="near"):
     """Smallest planted contrast this pipeline recovers on this window.
 
     Returns a dict with one row per amplitude -- the correlation between the recovered map
@@ -139,7 +151,7 @@ def probe(stack, predict_fn, amplitudes=(4, 8, 16, 32), micron_per_pixel=2.401,
     rows = []
     sensitivity = None
     for amp in amplitudes:
-        planted, mask = plant_ink(stack, amp, micron_per_pixel, seed)
+        planted, mask = plant_ink(stack, amp, micron_per_pixel, seed, face=face)
         got = predict_fn(planted)
         delta = got.astype(np.float32) - base.astype(np.float32)
         m = mask.astype(bool)
@@ -160,3 +172,52 @@ def probe(stack, predict_fn, amplitudes=(4, 8, 16, 32), micron_per_pixel=2.401,
             sensitivity = float(amp)
     return {"sensitivity": sensitivity, "baseline_ink_pct": round(float((base > threshold).mean()) * 100, 2),
             "rows": rows}
+
+
+def orientation(stack, predict_for, amplitude=32, micron_per_pixel=2.401, seed=0,
+                threshold=0.5, margin=0.02, gap=0.01):
+    """Which way to read this stack, and on which face its ink should be -- without labels.
+
+    `predict_for(reverse)` returns the pipeline's predict function for one layer order. Ink is
+    planted on each face in turn and the stack read both ways, four runs in all. On a stack the
+    model can read, one combination answers with a positive lift; the wrong order answers with
+    nothing at all, on either face; and the right order with ink on the wrong face answers with
+    a *negative* lift, because a bright layer where the model expects bare papyrus reads as the
+    absence of ink.
+
+    Measured at amplitude 32 on PHerc0139's published surface volume, as published and flipped
+    in depth -- so the right answer is known both ways from the team's own ink map -- and on
+    two PHerc1451 surfaces that have no labels at all:
+
+                          fwd near   fwd far   rev near   rev far    verdict
+        PHerc0139          +0.056    -0.233     0.000      0.000     forward  (letters read so)
+        same, flipped       0.000     0.000    -0.091     +0.025     reverse  (must be, by construction)
+        PHerc1451 r5/014   +0.231    +0.048     0.000     +0.001     forward
+        PHerc1451 r6/056   +0.183    +0.006    -0.161     -0.066     forward
+
+    The flipped row is the one that matters: the verdict follows the data and not the side the
+    ink is planted on, which is what a one-face probe could not show.
+
+    Two things this is *not* measured by. The amount of ink the model reports says nothing about
+    order: reading the wrong way reported 20 times less ink than the right way on PHerc0139, and
+    8 times more on r6/056. And a probe planting on one face only -- the first version of this
+    module -- answers 'blind' on a perfectly readable stack whose ink is on the other face.
+
+    Returns every combination's lift and baseline ink, and `verdict`: the winning (order, face)
+    if its lift clears `margin` and beats the runner-up by `gap`, else None.
+    """
+    combos = {}
+    for reverse in (False, True):
+        fn = predict_for(reverse)
+        for face in ("near", "far"):
+            res = probe(stack, fn, amplitudes=(amplitude,), micron_per_pixel=micron_per_pixel,
+                        seed=seed, threshold=threshold, margin=margin, face=face)
+            lift = res["rows"][0]["ink_lift"] if res["rows"] else 0.0
+            combos[("reverse" if reverse else "forward", face)] = {
+                "lift": lift, "baseline_ink_pct": res["baseline_ink_pct"]}
+    ranked = sorted(combos.items(), key=lambda kv: kv[1]["lift"], reverse=True)
+    best, runner = ranked[0], ranked[1]
+    clear = best[1]["lift"] >= margin and best[1]["lift"] - runner[1]["lift"] >= gap
+    verdict = best[0] if clear else None
+    return {"verdict": verdict, "amplitude": float(amplitude),
+            "combinations": {f"{o} {f}": v for (o, f), v in combos.items()}}

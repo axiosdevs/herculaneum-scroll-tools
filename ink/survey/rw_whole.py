@@ -86,7 +86,12 @@ def main():
         y0, x0 = (H - CELLS) // 2, (W - CELLS) // 2
         while len(glob.glob(os.path.join(QUEUE, "*.npy"))) >= MAXQ:
             time.sleep(20)
-        zoff, sheet_contrast = find_zoff(work, y0, x0, up, SHARD)
+        # the deep probe costs as much as the render on a slow line, and the clamp below
+        # zeroes its answer on almost every surface -- skippable when re-reading a known set
+        if os.environ.get("SKIP_PROBE") == "1":
+            zoff, sheet_contrast = 0, 0.0
+        else:
+            zoff, sheet_contrast = find_zoff(work, y0, x0, up, SHARD)
         # Only move a window that is genuinely somewhere else. Nudging one that already
         # holds the sheet measured *harmful* on PHerc0139: sheet contrast anti-correlates
         # with ink readability at r = -0.900, and centring on the sheet's bright middle

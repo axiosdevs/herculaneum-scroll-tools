@@ -91,12 +91,10 @@ os.makedirs(MAPS, exist_ok=True)
 os.makedirs(CANV, exist_ok=True)
 ledger = json.load(open(LEDGER)) if os.path.exists(LEDGER) else []
 done = {r["dir"] for r in ledger if r.get("whole")}
-# The depth order is not a free choice and it must not be settled by a text score. Measured
-# on the flattest PHerc1451 surface: forward recovers planted ink at an amplitude of 32, the
-# same threshold the team's own readable surface volume gives, and reverse recovers none at
-# all -- negative lifts at every amplitude -- while reporting 26.6% "ink" against forward's
-# 3.2%. A text score cannot tell those apart, and the first survey locked onto reverse on its
-# first canvas and read the wrong face of every sheet after it.
+# The layer order is fixed up front and not settled by a text score on the first canvas, which
+# is what the first survey did: it locked onto reverse and read sixteen of the flat surfaces
+# the wrong way. The order for PHerc1451 comes from detectability.orientation, which answers
+# without labels -- forward on the two flattest surfaces, with reverse silent on one of them.
 polarity = os.environ.get("POLARITY", "fwd")
 idle = 0
 print("инференс запущен", flush=True)

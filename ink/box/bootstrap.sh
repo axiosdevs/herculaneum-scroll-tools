@@ -17,12 +17,15 @@
 set -e
 REPO=$(cd "$(dirname "$0")/../.." && pwd)
 WS=/workspace
-VENV=${VENV:-python3}
+# the rented images keep torch in a venv, not in the system python
+if [ -z "$VENV" ]; then
+  if [ -x /venv/main/bin/python ]; then VENV=/venv/main/bin/python; else VENV=python3; fi
+fi
 VOL=${VOL:-https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1451/volumes/20260319101107-2.399um-0.2m-78keV-masked.zarr/0/}
 CKPT_URL=https://huggingface.co/scrollprize/ink_canonical_2um/resolve/main/r152_3ddec_v2_l5_epoch13.ckpt
 NSH=${NSH:-6}            # GPU renderers; each holds 2-3 GB of card, six fit 24 GB beside inference
 THR=${THR:-32}           # fetch threads per renderer: S3, not the card, is the bottleneck
-POLARITY=${POLARITY:-fwd}   # measured: reverse is the blind face -- see ink/detectability.py
+POLARITY=${POLARITY:-fwd}   # PHerc1451 reads forward, by detectability.orientation, no labels
 STAGE=${STAGE:-all}
 PICKS=${PICKS:-flat}
 

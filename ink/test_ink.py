@@ -366,6 +366,39 @@ def test_probe_cli_self_test_passes():
     assert probe.self_test() == 0
 
 
+def test_orientation_follows_the_data_not_the_side_ink_is_planted_on():
+    """The property the one-face probe lacked. A stack and the same stack flipped in depth
+    must get opposite orders -- measured on PHerc0139, where the flipped stack reads its
+    letters only in reverse."""
+    from detectability import orientation
+    TEST_UM = 40.0
+    C, H, W = 62, 200, 200
+    z = np.arange(C, dtype=np.float32)[:, None, None]
+    # an asymmetric sheet: brighter on the near side, the orientation the fake model knows
+    sheet = 40 + 120 * np.exp(-0.5 * ((z - 31) / 4.0) ** 2) + 30 * (z < 31)
+    stack = (sheet + np.zeros((C, H, W), np.float32)).astype(np.uint8)
+
+    def model(clean):
+        """A fake that reads ink only on the near face, and only in the sheet's own
+        orientation -- the two things the real checkpoint was measured to do."""
+        def predict_for(reverse):
+            ref = (clean[::-1] if reverse else clean).astype(np.float32)
+            def fn(s):
+                v = (s[::-1] if reverse else s).astype(np.float32)
+                # out of its domain the model answers nothing, as the real one does
+                if v[18:31].mean() <= v[32:45].mean():
+                    return np.zeros(v.shape[1:], np.float32)
+                return np.clip((v[22:27] - ref[22:27]).max(0) / 20.0, 0, 1)
+            return fn
+        return predict_for
+
+    flipped = np.ascontiguousarray(stack[::-1])
+    a = orientation(stack, model(stack), amplitude=64, micron_per_pixel=TEST_UM)
+    b = orientation(flipped, model(flipped), amplitude=64, micron_per_pixel=TEST_UM)
+    assert a["verdict"] == ("forward", "near"), a
+    assert b["verdict"] == ("reverse", "far"), b
+
+
 if __name__ == "__main__":
     passed = failed = 0
     for name, fn in sorted(globals().items()):
