@@ -81,9 +81,11 @@ def predict_banded(stack, ckpt, reverse, band=BAND_PX, overlap=BAND_OVERLAP):
         y += band
     return out
 
-HERE, QUEUE = "/workspace", "/workspace/queue"
+HERE = "/workspace"
+QUEUE = os.environ.get("QUEUE", "/workspace/queue")   # one queue per layer order
 MAPS, CANV = "/workspace/scan_maps", "/workspace/canvases"
-LEDGER, CKPT = "/workspace/ink_scan.json", "/workspace/r152.ckpt"
+LEDGER = os.environ.get("LEDGER", "/workspace/ink_scan.json")
+CKPT = "/workspace/r152.ckpt"
 VOXEL_UM = 2.399
 QSUB = 8        # in-plane subsample for the per-canvas quality read
 
@@ -92,9 +94,9 @@ os.makedirs(CANV, exist_ok=True)
 ledger = json.load(open(LEDGER)) if os.path.exists(LEDGER) else []
 done = {r["dir"] for r in ledger if r.get("whole")}
 # The layer order is fixed up front and not settled by a text score on the first canvas, which
-# is what the first survey did: it locked onto reverse and read sixteen of the flat surfaces
-# the wrong way. The order for PHerc1451 comes from detectability.orientation, which answers
-# without labels -- forward on the two flattest surfaces, with reverse silent on one of them.
+# is what the first survey did: it locked onto reverse on its first canvas. Nothing measured
+# here settles the order for PHerc1451 -- detectability.orientation was meant to and fails its
+# audit -- so a survey runs once per order, POLARITY=fwd and POLARITY=rev.
 polarity = os.environ.get("POLARITY", "fwd")
 idle = 0
 print("инференс запущен", flush=True)

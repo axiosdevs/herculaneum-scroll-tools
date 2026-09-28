@@ -4,6 +4,7 @@
 #   git clone https://github.com/axiosdevs/herculaneum-scroll-tools && cd herculaneum-scroll-tools
 #   ./ink/box/bootstrap.sh                 # stage, rank all 320 surfaces, survey the flat ones
 #   STAGE=survey PICKS=all ./ink/box/bootstrap.sh   # every surface, not only the flat 43
+#   STAGE=survey POLARITY=rev ./ink/box/bootstrap.sh  # the same surfaces, layers read in reverse
 #
 # The survey scripts expect the layout they ran in, /workspace, so that is where this stages
 # them. Everything they need ships here: the 320 grown meshes (ink/p1451/meshes, 28 MB), the
@@ -25,7 +26,7 @@ VOL=${VOL:-https://vesuvius-challenge-open-data.s3.amazonaws.com/PHerc1451/volum
 CKPT_URL=https://huggingface.co/scrollprize/ink_canonical_2um/resolve/main/r152_3ddec_v2_l5_epoch13.ckpt
 NSH=${NSH:-6}            # GPU renderers; each holds 2-3 GB of card, six fit 24 GB beside inference
 THR=${THR:-32}           # fetch threads per renderer: S3, not the card, is the bottleneck
-POLARITY=${POLARITY:-fwd}   # PHerc1451 reads forward, by detectability.orientation, no labels
+POLARITY=${POLARITY:-fwd}   # no measurement settles the order; run the survey once with each
 STAGE=${STAGE:-all}
 PICKS=${PICKS:-flat}
 
@@ -71,6 +72,8 @@ if [ "$STAGE" = "all" ] || [ "$STAGE" = "survey" ]; then
   stop_all
   cd "$WS"
   if [ "$PICKS" = "all" ]; then PICKSF=$WS/picks1451.json; else PICKSF=$WS/picks_flat.json; fi
+  # each order keeps its own queue and ledger, so reading in reverse does not skip what forward read
+  if [ "$POLARITY" = "rev" ]; then export QUEUE=$WS/queue_rev LEDGER=$WS/ink_scan_rev.json; fi
   CKPT=$WS/r152.ckpt BATCH=4 POLARITY=$POLARITY \
     setsid $VENV -u "$WS/infer_whole.py" > "$WS/inf.log" 2>&1 < /dev/null &
   sleep 8

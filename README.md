@@ -10,37 +10,35 @@ known contrast where ink physically sits — on the sheet's face, following the 
 depth — runs the same model again, and reports the faintest contrast that comes back. On the
 team's own PHerc0139 surface volume, where the published checkpoint reads letters, that is
 **32 of 255**. A window that cannot reach it is blind, and its emptiness says nothing about the
-papyrus. Pointed at my own survey, it caught two errors nothing else could see:
+papyrus. Pointed at my own survey, it caught the error nothing else could see:
 
-- **Half the first survey read the sheet the wrong way.** Which way the model reads the layers
-  is a free parameter, and I had it settled by whichever order scored higher on the first
-  canvas. `orientation` settles it without labels — plant ink on each face, read both ways,
-  and the one combination that answers is the order and the face. It says forward on
-  PHerc0139 as published, which the team's ink map confirms; reverse on the same stack flipped
-  in depth, which it must; and forward on PHerc1451's flattest surfaces. Sixteen of the flat
-  surfaces had been read in reverse; all are now re-read forward.
 - **Most grown surfaces could not have shown a stroke.** Stroke-scale scatter measures seating
   against a reference: this renderer on the team's seated mesh gives 26.4. Across all 320
   surfaces grown on PHerc1451 it runs 5.9 to 60.2. The flattest recovers planted ink at 32 —
   the reference's own threshold. A surface the first survey rendered, at 42.6, recovered none.
 
-One thing that looks like a direction signal is not one: the amount of ink reported. Reading
-the wrong way gave 20 times *less* ink than the right way on PHerc0139, and 8 times *more* on
-a PHerc1451 surface. I had published the second as a rule before the flipped reference
-refuted it; the retraction is in `ink/detectability.py`.
+**Which way to read the layers is not settled here, and the answer I first published was
+wrong.** The model reads a sheet in one layer order and nothing in a new segment says which.
+`orientation` plants ink on each face and reads both ways; on the PHerc0139 window it was built
+on it is right as published and right again with the stack flipped in depth. It does not
+generalise. On 44 published segments of PHerc0009B and PHerc0139 — every one of which the
+team's own maps show to be read forward — it says forward on 12, reverse on 16 and nothing on
+16 (`ink/audit/`). The amount of ink reported is no better: the wrong order gave 20 times
+*less* ink than the right one on PHerc0139 and 8 times *more* on a PHerc1451 surface. Both
+retractions are in `ink/detectability.py`.
 
-Read forward, all 43 surfaces flat enough to carry a stroke — **94.9 cm² — show no
-writing** (`ink/p1451/survey_forward.json`, contact sheets beside it). That is a measurement
-rather than a silence: ink of PHerc0139's strength would have shown there.
+So the survey does not trust an order. Read forward, all 43 surfaces flat enough to carry a
+stroke — **94.9 cm² — show no writing** (`ink/p1451/survey_forward.json`, contact sheets beside
+it); 16 of them read in reverse show none either, and the other 27 are being read in reverse.
+That is a measurement rather than a silence: ink of PHerc0139's strength would have shown
+there.
 
 The tools, all of which run on a laptop:
 
 1. **Detectability probe** (`ink/detectability.py`, `ink/probe.py`) — would this window have
-   shown ink, and which way should it be read? Self-test in seconds with no network; reference
-   run on PHerc0139; `--orientation` on your own stack settles the layer order without labels.
-   The orientation check is also proposed for villa's own inference, where it returns the
-   `FORCE_REVERSE` value a segment needs:
-   [ScrollPrize/villa#1917](https://github.com/ScrollPrize/villa/pull/1917).
+   shown ink? Self-test in seconds with no network; reference run on PHerc0139. The
+   orientation check beside it is kept with its audit (`ink/audit/`) as a measured failure:
+   do not use it to choose a layer order.
 2. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth against the
    scan's own noise: **0.54** of a single layer on PHerc0139, the whole margin the field works
    with. Also the seating check by scatter, and a scan-quality proxy shipped **with its own
@@ -64,7 +62,7 @@ winding-constraint annotator, and dual-energy co-rendering. Sections below.
 pip install -r requirements.txt
 python ink/probe.py --self-test     # seconds, no network: the probe on detectors with known answers
 python ink/probe.py --reference     # PHerc0139, where letters read: expect a threshold of 32
-python ink/probe.py --stack s.npy --orientation   # which way to read it, no labels needed
+python ink/probe.py --stack s.npy  # your own rendered stack: the faintest ink it would show
 python ink/reproduce.py             # the renderer against the team's production ink map, r ~ +0.96
 python ink/test_ink.py              # 29 offline tests
 ```
@@ -81,7 +79,7 @@ MIT-licensed. Standard formats in (OME-Zarr, tifxyz, `.volpkg` affines), standar
 
 ## What was measured on the way
 
-Every line is a measurement, kept so nobody repeats it. The last two are what the answer was.
+Every line is a measurement, kept so nobody repeats it. The seating row is what the answer was.
 
 | direction | measurement | verdict |
 |---|---|---|
@@ -99,10 +97,11 @@ Every line is a measurement, kept so nobody repeats it. The last two are what th
 | smoothing the stack | our threshold goes from nothing to 16, and the reference loses its letters, **0.858 → 0.448** | a trap |
 | scan quality as a go/no-go | the sheet-to-gap proxy against published-map readability, **r = −0.436** over eight scrolls | refuted |
 | **seating** | scatter 5.9–60.2 against the reference 26.4; the flattest surface recovers planted ink at **32** | **the cause** |
-| **which way the layers are read** | `orientation`: forward on PHerc0139 and on PHerc1451's flattest surfaces, reverse on PHerc0139 flipped; sixteen flat surfaces had been read in reverse, and are re-read forward | **the cause** |
+| which way the layers are read | read both ways: sixteen flat surfaces first read in reverse, re-read forward — no writing either way | not it |
+| `orientation` as a direction test | right on its PHerc0139 window as published and flipped; on 44 published segments the team reads forward it says forward 12, reverse 16, nothing 16 | refuted (it was a claim here) |
 | ink quantity as a direction signal | the wrong order reports 20× *less* ink on PHerc0139, 8× *more* on a PHerc1451 surface | refuted (it was a claim here) |
 
-Four of those refute claims this repo made first, and each retraction is in the module that
+Five of those refute claims this repo made first, and each retraction is in the module that
 made the claim.
 
 ---

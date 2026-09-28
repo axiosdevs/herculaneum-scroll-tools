@@ -1,0 +1,1241 @@
+[
+ {
+  "segment": "PHerc0009B/segments/20250510172639/",
+  "volume": "PHerc0009B/segments/20250510172639/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250510172639/ink-detection/PHerc0009B-20250510172639-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250510172804/",
+  "volume": "PHerc0009B/segments/20250510172804/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250510172804/ink-detection/PHerc0009B-20250510172804-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250511200236/",
+  "volume": "PHerc0009B/segments/20250511200236/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250511200236/ink-detection/PHerc0009B-20250511200236-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919064353-auto_grown_20250918234353791/",
+  "volume": "PHerc0009B/segments/20250919064353-auto_grown_20250918234353791/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919064353-auto_grown_20250918234353791/ink-detection/PHerc0009B-20250919064353-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919123506-auto_grown_20250919053506178_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919123506-auto_grown_20250919053506178_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919123506-auto_grown_20250919053506178_inp_hr/ink-detection/PHerc0009B-20250919123506-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919124722-auto_grown_20250919054722721_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919124722-auto_grown_20250919054722721_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919124722-auto_grown_20250919054722721_inp_hr/ink-detection/PHerc0009B-20250919124722-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919124917-auto_grown_20250919054917419_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919124917-auto_grown_20250919054917419_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919124917-auto_grown_20250919054917419_inp_hr/ink-detection/PHerc0009B-20250919124917-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919125302-auto_grown_20250919055302061/",
+  "volume": "PHerc0009B/segments/20250919125302-auto_grown_20250919055302061/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919125302-auto_grown_20250919055302061/ink-detection/PHerc0009B-20250919125302-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919125605-auto_grown_20250919055605407/",
+  "volume": "PHerc0009B/segments/20250919125605-auto_grown_20250919055605407/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919125605-auto_grown_20250919055605407/ink-detection/PHerc0009B-20250919125605-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919125754-auto_grown_20250919055754487_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919125754-auto_grown_20250919055754487_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919125754-auto_grown_20250919055754487_inp_hr/ink-detection/PHerc0009B-20250919125754-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919130642-auto_grown_20250919060642061/",
+  "volume": "PHerc0009B/segments/20250919130642-auto_grown_20250919060642061/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919130642-auto_grown_20250919060642061/ink-detection/PHerc0009B-20250919130642-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919131352-auto_grown_20250919061352722_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919131352-auto_grown_20250919061352722_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919131352-auto_grown_20250919061352722_inp_hr/ink-detection/PHerc0009B-20250919131352-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919131642-auto_grown_20250919061642215_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919131642-auto_grown_20250919061642215_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919131642-auto_grown_20250919061642215_inp_hr/ink-detection/PHerc0009B-20250919131642-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919132115-auto_grown_20250919062115592_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919132115-auto_grown_20250919062115592_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919132115-auto_grown_20250919062115592_inp_hr/ink-detection/PHerc0009B-20250919132115-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919133208-auto_grown_20250919063208154_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919133208-auto_grown_20250919063208154_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919133208-auto_grown_20250919063208154_inp_hr/ink-detection/PHerc0009B-20250919133208-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919135433-auto_grown_20250919065433578_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919135433-auto_grown_20250919065433578_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919135433-auto_grown_20250919065433578_inp_hr/ink-detection/PHerc0009B-20250919135433-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919135915-auto_grown_20250919065915092_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919135915-auto_grown_20250919065915092_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919135915-auto_grown_20250919065915092_inp_hr/ink-detection/PHerc0009B-20250919135915-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0009B/segments/20250919140325-auto_grown_20250919070325767_inp_hr/",
+  "volume": "PHerc0009B/segments/20250919140325-auto_grown_20250919070325767_inp_hr/surface-volumes/2.401um-0.35m-77keV-volume-20250820154339.zarr/",
+  "ink_maps": [
+   "PHerc0009B/segments/20250919140325-auto_grown_20250919070325767_inp_hr/ink-detection/PHerc0009B-20250919140325-2.401um-0.35m-77keV-volume-20250820154339-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000000-w025_2025010863/",
+  "volume": "PHerc0139/segments/20250108000000-w025_2025010863/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000000-w025_2025010863/ink-detection/PHerc0139-20250108000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000001-w026_2025010854/",
+  "volume": "PHerc0139/segments/20250108000001-w026_2025010854/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000001-w026_2025010854/ink-detection/PHerc0139-20250108000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000002-w027_2025010845/",
+  "volume": "PHerc0139/segments/20250108000002-w027_2025010845/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000002-w027_2025010845/ink-detection/PHerc0139-20250108000002-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000003-w028_2025010836/",
+  "volume": "PHerc0139/segments/20250108000003-w028_2025010836/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000003-w028_2025010836/ink-detection/PHerc0139-20250108000003-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000004-w029_2025010827/",
+  "volume": "PHerc0139/segments/20250108000004-w029_2025010827/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000004-w029_2025010827/ink-detection/PHerc0139-20250108000004-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250108000005-w030_2025010818/",
+  "volume": "PHerc0139/segments/20250108000005-w030_2025010818/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250108000005-w030_2025010818/ink-detection/PHerc0139-20250108000005-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250223000000-w059_2025022312/",
+  "volume": "PHerc0139/segments/20250223000000-w059_2025022312/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250223000000-w059_2025022312/ink-detection/PHerc0139-20250223000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20250831000000-w040_2025083102/",
+  "volume": "PHerc0139/segments/20250831000000-w040_2025083102/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20250831000000-w040_2025083102/ink-detection/PHerc0139-20250831000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20251226000000-w055_2025122611/",
+  "volume": "PHerc0139/segments/20251226000000-w055_2025122611/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20251226000000-w055_2025122611/ink-detection/PHerc0139-20251226000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260108000000-w041_2026010816/",
+  "volume": "PHerc0139/segments/20260108000000-w041_2026010816/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260108000000-w041_2026010816/ink-detection/PHerc0139-20260108000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260112000000-w043_2026011217/",
+  "volume": "PHerc0139/segments/20260112000000-w043_2026011217/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260112000000-w043_2026011217/ink-detection/PHerc0139-20260112000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260115000000-w044_2026011522/",
+  "volume": "PHerc0139/segments/20260115000000-w044_2026011522/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260115000000-w044_2026011522/ink-detection/PHerc0139-20260115000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260115000001-w056_2026011514/",
+  "volume": "PHerc0139/segments/20260115000001-w056_2026011514/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260115000001-w056_2026011514/ink-detection/PHerc0139-20260115000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260126000000-w045_2026012619/",
+  "volume": "PHerc0139/segments/20260126000000-w045_2026012619/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260126000000-w045_2026012619/ink-detection/PHerc0139-20260126000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260127000000-w057_2026012713/",
+  "volume": "PHerc0139/segments/20260127000000-w057_2026012713/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260127000000-w057_2026012713/ink-detection/PHerc0139-20260127000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260130000000-w031_2026013019/",
+  "volume": "PHerc0139/segments/20260130000000-w031_2026013019/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260130000000-w031_2026013019/ink-detection/PHerc0139-20260130000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260203000000-w032_2026020303/",
+  "volume": "PHerc0139/segments/20260203000000-w032_2026020303/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260203000000-w032_2026020303/ink-detection/PHerc0139-20260203000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260206000000-w042_2026020613/",
+  "volume": "PHerc0139/segments/20260206000000-w042_2026020613/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260206000000-w042_2026020613/ink-detection/PHerc0139-20260206000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260206000001-w047_2026020613/",
+  "volume": "PHerc0139/segments/20260206000001-w047_2026020613/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260206000001-w047_2026020613/ink-detection/PHerc0139-20260206000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260206000002-w054_2026020617/",
+  "volume": "PHerc0139/segments/20260206000002-w054_2026020617/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260206000002-w054_2026020617/ink-detection/PHerc0139-20260206000002-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260210000000-w058_2026021020/",
+  "volume": "PHerc0139/segments/20260210000000-w058_2026021020/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260210000000-w058_2026021020/ink-detection/PHerc0139-20260210000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260215000000-w024_2026021572/",
+  "volume": "PHerc0139/segments/20260215000000-w024_2026021572/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260215000000-w024_2026021572/ink-detection/PHerc0139-20260215000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260219000000-w033_2026021913/",
+  "volume": "PHerc0139/segments/20260219000000-w033_2026021913/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260219000000-w033_2026021913/ink-detection/PHerc0139-20260219000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260219000001-w048_2026021912/",
+  "volume": "PHerc0139/segments/20260219000001-w048_2026021912/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260219000001-w048_2026021912/ink-detection/PHerc0139-20260219000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260220000000-w053_2026022021/",
+  "volume": "PHerc0139/segments/20260220000000-w053_2026022021/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260220000000-w053_2026022021/ink-detection/PHerc0139-20260220000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260227000000-w052_2026022705/",
+  "volume": "PHerc0139/segments/20260227000000-w052_2026022705/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260227000000-w052_2026022705/ink-detection/PHerc0139-20260227000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260302000000-w039_2026030210/",
+  "volume": "PHerc0139/segments/20260302000000-w039_2026030210/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260302000000-w039_2026030210/ink-detection/PHerc0139-20260302000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260302000001-w050_2026030220/",
+  "volume": "PHerc0139/segments/20260302000001-w050_2026030220/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260302000001-w050_2026030220/ink-detection/PHerc0139-20260302000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260303000000-w034_2026030317/",
+  "volume": "PHerc0139/segments/20260303000000-w034_2026030317/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260303000000-w034_2026030317/ink-detection/PHerc0139-20260303000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260306000000-w038_2026030608/",
+  "volume": "PHerc0139/segments/20260306000000-w038_2026030608/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260306000000-w038_2026030608/ink-detection/PHerc0139-20260306000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260306000001-w051_2026030600/",
+  "volume": "PHerc0139/segments/20260306000001-w051_2026030600/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260306000001-w051_2026030600/ink-detection/PHerc0139-20260306000001-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260310000000-w037_2026031015/",
+  "volume": "PHerc0139/segments/20260310000000-w037_2026031015/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260310000000-w037_2026031015/ink-detection/PHerc0139-20260310000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260311000000-w023_202603112281/",
+  "volume": "PHerc0139/segments/20260311000000-w023_202603112281/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260311000000-w023_202603112281/ink-detection/PHerc0139-20260311000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260316000000-w036_2026031607/",
+  "volume": "PHerc0139/segments/20260316000000-w036_2026031607/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260316000000-w036_2026031607/ink-detection/PHerc0139-20260316000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260317000000-w035_2026031718/",
+  "volume": "PHerc0139/segments/20260317000000-w035_2026031718/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260317000000-w035_2026031718/ink-detection/PHerc0139-20260317000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260318000000-w049_20260318/",
+  "volume": "PHerc0139/segments/20260318000000-w049_20260318/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260318000000-w049_20260318/ink-detection/PHerc0139-20260318000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260325000000-w046_20260325/",
+  "volume": "PHerc0139/segments/20260325000000-w046_20260325/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260325000000-w046_20260325/ink-detection/PHerc0139-20260325000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi/",
+  "volume": "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20260102150214.zarr/",
+  "ink_maps": [
+   "PHerc0139/segments/20260422000000-title_2026042222_zmid_flatboi/ink-detection/PHerc0139-20260422000000-2.399um-0.22m-78keV-volume-20260102150214-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/",
+  "volume": "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250925161630-auto_grown_20250925161630635/ink-detection/PHerc0814-20250925161630-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/",
+  "volume": "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250925182632-auto_grown_20250925182632715/ink-detection/PHerc0814-20250925182632-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950/",
+  "volume": "PHerc0814/segments/20250925204843-auto_grown_20250925204843950/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250925204843-auto_grown_20250925204843950/ink-detection/PHerc0814-20250925204843-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/",
+  "volume": "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250925212701-auto_grown_20250925212701145/ink-detection/PHerc0814-20250925212701-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459/",
+  "volume": "PHerc0814/segments/20250925222237-auto_grown_20250925222237459/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250925222237-auto_grown_20250925222237459/ink-detection/PHerc0814-20250925222237-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829/",
+  "volume": "PHerc0814/segments/20250926051122-auto_grown_20250926051122829/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250926051122-auto_grown_20250926051122829/ink-detection/PHerc0814-20250926051122-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789/",
+  "volume": "PHerc0814/segments/20250926165636-auto_trace_20250926165636789/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250926165636-auto_trace_20250926165636789/ink-detection/PHerc0814-20250926165636-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932/",
+  "volume": "PHerc0814/segments/20250926203608-auto_grown_20250926203608932/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250926203608-auto_grown_20250926203608932/ink-detection/PHerc0814-20250926203608-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250928235953-auto_grown_20250928235953722/",
+  "volume": "PHerc0814/segments/20250928235953-auto_grown_20250928235953722/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250928235953-auto_grown_20250928235953722/ink-detection/PHerc0814-20250928235953-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/",
+  "volume": "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250928235954-auto_grown_20250928235953722_copy/ink-detection/PHerc0814-20250928235954-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260/",
+  "volume": "PHerc0814/segments/20250929040153-auto_grown_20250929040153260/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250929040153-auto_grown_20250929040153260/ink-detection/PHerc0814-20250929040153-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882/",
+  "volume": "PHerc0814/segments/20250930083742-auto_grown_20250930083742882/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20250930083742-auto_grown_20250930083742882/ink-detection/PHerc0814-20250930083742-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760/",
+  "volume": "PHerc0814/segments/20251001060526-auto_grown_20251001060526760/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20251001060526-auto_grown_20251001060526760/ink-detection/PHerc0814-20251001060526-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/",
+  "volume": "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260225160055-auto_grown_20260225160055913/ink-detection/PHerc0814-20260225160055-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260226000000-46527_2um_try2/",
+  "volume": "PHerc0814/segments/20260226000000-46527_2um_try2/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260226000000-46527_2um_try2/ink-detection/PHerc0814-20260226000000-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/",
+  "volume": "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260226110425-auto_grown_20260226110425097_abf/ink-detection/PHerc0814-20260226110425-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/",
+  "volume": "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260226113324-auto_grown_20260226113324624_abf/ink-detection/PHerc0814-20260226113324-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/",
+  "volume": "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260226121302-auto_grown_20260226121302716_abf/ink-detection/PHerc0814-20260226121302-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/",
+  "volume": "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/surface-volumes/2.399um-0.22m-78keV-volume-20260309142202.zarr/",
+  "ink_maps": [
+   "PHerc0814/segments/20260226123353-auto_grown_20260226123353106/ink-detection/PHerc0814-20260226123353-2.399um-0.22m-78keV-volume-20260309142202-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0841/segments/20260220213127-w00/",
+  "volume": "PHerc0841/segments/20260220213127-w00/surface-volumes/2.403um-0.22m-77keV-volume-20260319124803.zarr/",
+  "ink_maps": [
+   "PHerc0841/segments/20260220213127-w00/ink-detection/PHerc0841-20260220213127-2.403um-0.22m-77keV-volume-20260319124803-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0841/segments/20260220214732-auto_grown_20260220144552896/",
+  "volume": "PHerc0841/segments/20260220214732-auto_grown_20260220144552896/surface-volumes/2.403um-0.22m-77keV-volume-20260319124803.zarr/",
+  "ink_maps": [
+   "PHerc0841/segments/20260220214732-auto_grown_20260220144552896/ink-detection/PHerc0841-20260220214732-2.403um-0.22m-77keV-volume-20260319124803-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc0841/segments/20260221022814-auto_grown_20260220174252405/",
+  "volume": "PHerc0841/segments/20260221022814-auto_grown_20260220174252405/surface-volumes/2.403um-0.22m-77keV-volume-20260319124803.zarr/",
+  "ink_maps": [
+   "PHerc0841/segments/20260221022814-auto_grown_20260220174252405/ink-detection/PHerc0841-20260221022814-2.403um-0.22m-77keV-volume-20260319124803-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi/",
+  "volume": "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi/ink-detection/PHerc1667-20240304141531-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi/",
+  "volume": "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi/ink-detection/PHerc1667-20240304144031-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/",
+  "volume": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/ink-detection/PHerc1667-20240304161941-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi/",
+  "volume": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi/ink-detection/PHerc1667-20251206103305-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi/",
+  "volume": "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi/ink-detection/PHerc1667-20251208130119-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi/",
+  "volume": "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi/ink-detection/PHerc1667-20251212185248-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20251220020000-w030_2025122002_flatboi/",
+  "volume": "PHerc1667/segments/20251220020000-w030_2025122002_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20251220020000-w030_2025122002_flatboi/ink-detection/PHerc1667-20251220020000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20251223230000-w031_2025122323_flatboi/",
+  "volume": "PHerc1667/segments/20251223230000-w031_2025122323_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20251223230000-w031_2025122323_flatboi/ink-detection/PHerc1667-20251223230000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/",
+  "volume": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/ink-detection/PHerc1667-20260105050000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/",
+  "volume": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/ink-detection/PHerc1667-20260108140509-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260110010000-w033_2026011001_flatboi/",
+  "volume": "PHerc1667/segments/20260110010000-w033_2026011001_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260110010000-w033_2026011001_flatboi/ink-detection/PHerc1667-20260110010000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260115160000-w034_2026011516_flatboi/",
+  "volume": "PHerc1667/segments/20260115160000-w034_2026011516_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260115160000-w034_2026011516_flatboi/ink-detection/PHerc1667-20260115160000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260116230000-w035_2026011623_flatboi/",
+  "volume": "PHerc1667/segments/20260116230000-w035_2026011623_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260116230000-w035_2026011623_flatboi/ink-detection/PHerc1667-20260116230000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/",
+  "volume": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/ink-detection/PHerc1667-20260119120000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi/",
+  "volume": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260123230000-w037_2026012323_flatboi/ink-detection/PHerc1667-20260123230000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/",
+  "volume": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/ink-detection/PHerc1667-20260128140000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/",
+  "volume": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/ink-detection/PHerc1667-20260130150000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/",
+  "volume": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/ink-detection/PHerc1667-20260203210000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi/",
+  "volume": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi/surface-volumes/2.399um-0.22m-78keV-volume-20251217075048.zarr/",
+  "ink_maps": [
+   "PHerc1667/segments/20260205070000-w041_2026020507_flatboi/ink-detection/PHerc1667-20260205070000-2.399um-0.22m-78keV-volume-20251217075048-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20230702185753/",
+  "volume": "PHercParis4/segments/20230702185753/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20230702185753/ink-detection/PHercParis4-20230702185753-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20230929220926/",
+  "volume": "PHercParis4/segments/20230929220926/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20230929220926/ink-detection/PHercParis4-20230929220926-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231005123336/",
+  "volume": "PHercParis4/segments/20231005123336/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231005123336/ink-detection/PHercParis4-20231005123336-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231007101619/",
+  "volume": "PHercParis4/segments/20231007101619/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231007101619/ink-detection/PHercParis4-20231007101619-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231012184424/",
+  "volume": "PHercParis4/segments/20231012184424/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231012184424/ink-detection/PHercParis4-20231012184424-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231016151002/",
+  "volume": "PHercParis4/segments/20231016151002/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231016151002/ink-detection/PHercParis4-20231016151002-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231022170901/",
+  "volume": "PHercParis4/segments/20231022170901/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231022170901/ink-detection/PHercParis4-20231022170901-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231031143852/",
+  "volume": "PHercParis4/segments/20231031143852/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231031143852/ink-detection/PHercParis4-20231031143852-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231106155351/",
+  "volume": "PHercParis4/segments/20231106155351/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231106155351/ink-detection/PHercParis4-20231106155351-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231210121321/",
+  "volume": "PHercParis4/segments/20231210121321/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231210121321/ink-detection/PHercParis4-20231210121321-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20231221180251/",
+  "volume": "PHercParis4/segments/20231221180251/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20231221180251/ink-detection/PHercParis4-20231221180251-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260602204401-5753_-7/",
+  "volume": "PHercParis4/segments/20260602204401-5753_-7/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260602204401-5753_-7/ink-detection/PHercParis4-20260602204401-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260602225659-5753_0/",
+  "volume": "PHercParis4/segments/20260602225659-5753_0/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260602225659-5753_0/ink-detection/PHercParis4-20260602225659-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260602230115-20230702185753_v14/",
+  "volume": "PHercParis4/segments/20260602230115-20230702185753_v14/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260602230115-20230702185753_v14/ink-detection/PHercParis4-20260602230115-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603005223-5753_-1/",
+  "volume": "PHercParis4/segments/20260603005223-5753_-1/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603005223-5753_-1/ink-detection/PHercParis4-20260603005223-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603024952-5753_-2/",
+  "volume": "PHercParis4/segments/20260603024952-5753_-2/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603024952-5753_-2/ink-detection/PHercParis4-20260603024952-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603042357-5753_-3/",
+  "volume": "PHercParis4/segments/20260603042357-5753_-3/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603042357-5753_-3/ink-detection/PHercParis4-20260603042357-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603145540-5753_-4/",
+  "volume": "PHercParis4/segments/20260603145540-5753_-4/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603145540-5753_-4/ink-detection/PHercParis4-20260603145540-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603185441-5753_-6/",
+  "volume": "PHercParis4/segments/20260603185441-5753_-6/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603185441-5753_-6/ink-detection/PHercParis4-20260603185441-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603190005-5753_-5/",
+  "volume": "PHercParis4/segments/20260603190005-5753_-5/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603190005-5753_-5/ink-detection/PHercParis4-20260603190005-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603193311-5753_-1_copy/",
+  "volume": "PHercParis4/segments/20260603193311-5753_-1_copy/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603193311-5753_-1_copy/ink-detection/PHercParis4-20260603193311-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi/",
+  "volume": "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260603222816-20231005123336_v2_flatboi/ink-detection/PHercParis4-20260603222816-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260604223808-20231210121321_v8/",
+  "volume": "PHercParis4/segments/20260604223808-20231210121321_v8/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260604223808-20231210121321_v8/ink-detection/PHercParis4-20260604223808-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623141135-w046-052_jordi/",
+  "volume": "PHercParis4/segments/20260623141135-w046-052_jordi/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623141135-w046-052_jordi/ink-detection/PHercParis4-20260623141135-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623141649-w053-058_jordi/",
+  "volume": "PHercParis4/segments/20260623141649-w053-058_jordi/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623141649-w053-058_jordi/ink-detection/PHercParis4-20260623141649-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623141924-w010-027/",
+  "volume": "PHercParis4/segments/20260623141924-w010-027/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623141924-w010-027/ink-detection/PHercParis4-20260623141924-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623142658-w028-037/",
+  "volume": "PHercParis4/segments/20260623142658-w028-037/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623142658-w028-037/ink-detection/PHercParis4-20260623142658-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623143441-w038-045/",
+  "volume": "PHercParis4/segments/20260623143441-w038-045/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623143441-w038-045/ink-detection/PHercParis4-20260623143441-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623144224-w046-052/",
+  "volume": "PHercParis4/segments/20260623144224-w046-052/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623144224-w046-052/ink-detection/PHercParis4-20260623144224-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623144957-w053-058/",
+  "volume": "PHercParis4/segments/20260623144957-w053-058/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623144957-w053-058/ink-detection/PHercParis4-20260623144957-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623145652-w059-063/",
+  "volume": "PHercParis4/segments/20260623145652-w059-063/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623145652-w059-063/ink-detection/PHercParis4-20260623145652-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623150417-w064-068/",
+  "volume": "PHercParis4/segments/20260623150417-w064-068/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623150417-w064-068/ink-detection/PHercParis4-20260623150417-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623151041-w069-072/",
+  "volume": "PHercParis4/segments/20260623151041-w069-072/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623151041-w069-072/ink-detection/PHercParis4-20260623151041-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623151729-w073-076/",
+  "volume": "PHercParis4/segments/20260623151729-w073-076/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623151729-w073-076/ink-detection/PHercParis4-20260623151729-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623152443-w077-080/",
+  "volume": "PHercParis4/segments/20260623152443-w077-080/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623152443-w077-080/ink-detection/PHercParis4-20260623152443-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623153216-w081-084/",
+  "volume": "PHercParis4/segments/20260623153216-w081-084/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623153216-w081-084/ink-detection/PHercParis4-20260623153216-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623154006-w085-088/",
+  "volume": "PHercParis4/segments/20260623154006-w085-088/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623154006-w085-088/ink-detection/PHercParis4-20260623154006-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623154617-w089-091/",
+  "volume": "PHercParis4/segments/20260623154617-w089-091/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623154617-w089-091/ink-detection/PHercParis4-20260623154617-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623155240-w092-094/",
+  "volume": "PHercParis4/segments/20260623155240-w092-094/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623155240-w092-094/ink-detection/PHercParis4-20260623155240-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623155914-w095-097/",
+  "volume": "PHercParis4/segments/20260623155914-w095-097/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623155914-w095-097/ink-detection/PHercParis4-20260623155914-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623160554-w098-100/",
+  "volume": "PHercParis4/segments/20260623160554-w098-100/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623160554-w098-100/ink-detection/PHercParis4-20260623160554-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623161233-w101-103/",
+  "volume": "PHercParis4/segments/20260623161233-w101-103/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623161233-w101-103/ink-detection/PHercParis4-20260623161233-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623162614-w107-109/",
+  "volume": "PHercParis4/segments/20260623162614-w107-109/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623162614-w107-109/ink-detection/PHercParis4-20260623162614-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623163339-w110-112/",
+  "volume": "PHercParis4/segments/20260623163339-w110-112/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623163339-w110-112/ink-detection/PHercParis4-20260623163339-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623164141-w113-115/",
+  "volume": "PHercParis4/segments/20260623164141-w113-115/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623164141-w113-115/ink-detection/PHercParis4-20260623164141-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623164704-w116-117/",
+  "volume": "PHercParis4/segments/20260623164704-w116-117/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623164704-w116-117/ink-detection/PHercParis4-20260623164704-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623165230-w118-119/",
+  "volume": "PHercParis4/segments/20260623165230-w118-119/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623165230-w118-119/ink-detection/PHercParis4-20260623165230-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623165742-w120-121/",
+  "volume": "PHercParis4/segments/20260623165742-w120-121/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623165742-w120-121/ink-detection/PHercParis4-20260623165742-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623170305-w122-123/",
+  "volume": "PHercParis4/segments/20260623170305-w122-123/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623170305-w122-123/ink-detection/PHercParis4-20260623170305-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623170833-w124-125/",
+  "volume": "PHercParis4/segments/20260623170833-w124-125/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623170833-w124-125/ink-detection/PHercParis4-20260623170833-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623171400-w126-127/",
+  "volume": "PHercParis4/segments/20260623171400-w126-127/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623171400-w126-127/ink-detection/PHercParis4-20260623171400-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260623171929-w128-129/",
+  "volume": "PHercParis4/segments/20260623171929-w128-129/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260623171929-w128-129/ink-detection/PHercParis4-20260623171929-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183124-w010-027/",
+  "volume": "PHercParis4/segments/20260701183124-w010-027/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183124-w010-027/ink-detection/PHercParis4-20260701183124-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183125-w028-037/",
+  "volume": "PHercParis4/segments/20260701183125-w028-037/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183125-w028-037/ink-detection/PHercParis4-20260701183125-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183126-w038-045/",
+  "volume": "PHercParis4/segments/20260701183126-w038-045/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183126-w038-045/ink-detection/PHercParis4-20260701183126-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183127-w046-052/",
+  "volume": "PHercParis4/segments/20260701183127-w046-052/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183127-w046-052/ink-detection/PHercParis4-20260701183127-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183128-w053-058/",
+  "volume": "PHercParis4/segments/20260701183128-w053-058/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183128-w053-058/ink-detection/PHercParis4-20260701183128-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183129-w059-063/",
+  "volume": "PHercParis4/segments/20260701183129-w059-063/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183129-w059-063/ink-detection/PHercParis4-20260701183129-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183130-w064-068/",
+  "volume": "PHercParis4/segments/20260701183130-w064-068/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183130-w064-068/ink-detection/PHercParis4-20260701183130-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183131-w069-072/",
+  "volume": "PHercParis4/segments/20260701183131-w069-072/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183131-w069-072/ink-detection/PHercParis4-20260701183131-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183132-w073-076/",
+  "volume": "PHercParis4/segments/20260701183132-w073-076/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183132-w073-076/ink-detection/PHercParis4-20260701183132-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183133-w077-080/",
+  "volume": "PHercParis4/segments/20260701183133-w077-080/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183133-w077-080/ink-detection/PHercParis4-20260701183133-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183134-w081-084/",
+  "volume": "PHercParis4/segments/20260701183134-w081-084/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183134-w081-084/ink-detection/PHercParis4-20260701183134-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183135-w085-088/",
+  "volume": "PHercParis4/segments/20260701183135-w085-088/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183135-w085-088/ink-detection/PHercParis4-20260701183135-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183136-w089-091/",
+  "volume": "PHercParis4/segments/20260701183136-w089-091/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183136-w089-091/ink-detection/PHercParis4-20260701183136-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183137-w092-094/",
+  "volume": "PHercParis4/segments/20260701183137-w092-094/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183137-w092-094/ink-detection/PHercParis4-20260701183137-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183138-w095-097/",
+  "volume": "PHercParis4/segments/20260701183138-w095-097/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183138-w095-097/ink-detection/PHercParis4-20260701183138-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183139-w098-100/",
+  "volume": "PHercParis4/segments/20260701183139-w098-100/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183139-w098-100/ink-detection/PHercParis4-20260701183139-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183140-w101-103/",
+  "volume": "PHercParis4/segments/20260701183140-w101-103/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183140-w101-103/ink-detection/PHercParis4-20260701183140-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183141-w104-106/",
+  "volume": "PHercParis4/segments/20260701183141-w104-106/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183141-w104-106/ink-detection/PHercParis4-20260701183141-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183142-w107-109/",
+  "volume": "PHercParis4/segments/20260701183142-w107-109/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183142-w107-109/ink-detection/PHercParis4-20260701183142-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183143-w110-112/",
+  "volume": "PHercParis4/segments/20260701183143-w110-112/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183143-w110-112/ink-detection/PHercParis4-20260701183143-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183144-w113-115/",
+  "volume": "PHercParis4/segments/20260701183144-w113-115/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183144-w113-115/ink-detection/PHercParis4-20260701183144-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183145-w116-117/",
+  "volume": "PHercParis4/segments/20260701183145-w116-117/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183145-w116-117/ink-detection/PHercParis4-20260701183145-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183146-w118-119/",
+  "volume": "PHercParis4/segments/20260701183146-w118-119/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183146-w118-119/ink-detection/PHercParis4-20260701183146-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183147-w120-121/",
+  "volume": "PHercParis4/segments/20260701183147-w120-121/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183147-w120-121/ink-detection/PHercParis4-20260701183147-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183148-w122-123/",
+  "volume": "PHercParis4/segments/20260701183148-w122-123/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183148-w122-123/ink-detection/PHercParis4-20260701183148-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183149-w124-125/",
+  "volume": "PHercParis4/segments/20260701183149-w124-125/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183149-w124-125/ink-detection/PHercParis4-20260701183149-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183150-w126-127/",
+  "volume": "PHercParis4/segments/20260701183150-w126-127/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183150-w126-127/ink-detection/PHercParis4-20260701183150-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ },
+ {
+  "segment": "PHercParis4/segments/20260701183151-w128-129/",
+  "volume": "PHercParis4/segments/20260701183151-w128-129/surface-volumes/2.4um-0.22m-78keV-volume-20260411134726.zarr/",
+  "ink_maps": [
+   "PHercParis4/segments/20260701183151-w128-129/ink-detection/PHercParis4-20260701183151-2.4um-0.22m-78keV-volume-20260411134726-20260417190342-new_canon_autoresearch_recipe-tile256-stride128.tif"
+  ]
+ }
+]

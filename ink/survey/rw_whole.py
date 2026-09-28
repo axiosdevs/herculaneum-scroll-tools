@@ -11,7 +11,8 @@ sys.path.insert(0, "/workspace/ink")
 from center_window import sheet_offset
 import numpy as np, tifffile
 
-HERE, QUEUE = "/workspace", "/workspace/queue"
+HERE = "/workspace"
+QUEUE = os.environ.get("QUEUE", "/workspace/queue")   # one queue per layer order
 VOL = os.environ.get("VOLURL", "")
 VOXEL_UM, STEP_UM, NLAY = 2.399, 9.596, 62
 CELLS = 75                      # 3x3 blocks of 25, rendered as one

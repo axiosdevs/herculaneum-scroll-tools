@@ -36,20 +36,19 @@ So any change that moves this number should be checked against a reference where
 published, and `reproduce.py` exists for exactly that. The probe tells you a window is blind;
 it does not tell you a pipeline is good.
 
-**What it is good for is settling a choice no other signal can.** The layer order along the
-normal -- which way the model reads the sheet -- is a free parameter every survey has to fix,
-and `orientation` fixes it without labels: plant ink on each face, read both ways, and the one
-combination that answers positively is the order and the face. On PHerc0139 as published it
-says forward, which the team's ink map confirms; on the same stack flipped in depth it says
-reverse, which it has to. Neither the amount of ink reported nor a periodicity score over it
-can do this -- the wrong order reported 20 times less ink than the right one on PHerc0139 and
-8 times more on a PHerc1451 surface.
+**It does not settle which way to read the layers.** The layer order along the normal is a
+free parameter every survey has to fix, and `orientation` was written to fix it without labels:
+plant ink on each face, read both ways, take the one combination that answers positively. On
+the PHerc0139 window it was built on it is right as published and right again with the stack
+flipped in depth. Audited on 44 published segments of PHerc0009B and PHerc0139, all of which
+the team's maps show to be read forward, it says forward on 12, reverse on 16 and nothing on 16
+(`audit/orientation_audit.py`, `audit/orientation_audit.jsonl`). It is kept, with that
+result, as a measured failure; nothing here uses it to choose an order.
 
-A retraction belongs here. An earlier version of this docstring said the wrong order always
-reports more ink, from that one PHerc1451 surface. The flipped reference refutes it, and the
-same test showed why the claim could not have been checked with this module as it then was:
-it planted ink on one face only, and so reported a readable stack whose ink is on the other
-face as blind.
+Two retractions belong here. An earlier version of this docstring said the wrong order always
+reports more ink, from one PHerc1451 surface; the flipped reference refutes it -- the wrong
+order reported 20 times *less* ink than the right one on PHerc0139. The version after it said
+`orientation` settles the order; the audit above refutes that.
 """
 from __future__ import annotations
 
@@ -195,8 +194,11 @@ def orientation(stack, predict_for, amplitude=32, micron_per_pixel=2.401, seed=0
         PHerc1451 r5/014   +0.231    +0.048     0.000     +0.001     forward
         PHerc1451 r6/056   +0.183    +0.006    -0.161     -0.066     forward
 
-    The flipped row is the one that matters: the verdict follows the data and not the side the
-    ink is planted on, which is what a one-face probe could not show.
+    The flipped row shows the verdict following the data and not the side the ink is planted
+    on. It does not show that the verdict is right elsewhere, and it is not: on 44 published
+    segments whose maps are read forward it says forward on 12, reverse on 16 and nothing on
+    16 (`audit/orientation_audit.jsonl`). The PHerc1451 rows above are therefore no evidence of
+    order either. Do not use this to choose one.
 
     Two things this is *not* measured by. The amount of ink the model reports says nothing about
     order: reading the wrong way reported 20 times less ink than the right way on PHerc0139, and

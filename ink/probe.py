@@ -17,10 +17,12 @@ Two things the reference run taught, both worth having before trusting your own 
   * **Above about 32 the test inverts.** Planting 64 on the reference moved the recovered ink
     *down*, lift -0.163. Planting harder than the physics is a different experiment, not a
     stronger one, and a check run only at large amplitudes reports failure on a sound pipeline.
-  * **The amount of ink reported says nothing about which way to read.** The wrong layer
-    order reported 20 times less ink than the right one on PHerc0139 and 8 times more on a
-    PHerc1451 surface. `--orientation` settles it instead: ink planted on each face, the stack
-    read both ways, and the one combination that answers is the order and the face.
+  * **Nothing here says which way to read.** The amount of ink reported does not: the wrong
+    layer order reported 20 times less ink than the right one on PHerc0139 and 8 times more on
+    a PHerc1451 surface. `--orientation` does not either. It plants ink on each face and reads
+    both ways, and is right on the reference window; on 44 published segments the team reads
+    forward it says forward on 12, reverse on 16 and nothing on 16 (`ink/audit/`). It stays as
+    an experiment, not as a way to choose an order.
 
 Needs torch and the published checkpoint for the reference and stack modes (downloaded once,
 1.4 GB). The self-test needs neither.
@@ -115,7 +117,8 @@ def main():
                     help="прогнать на томе PHerc0139, где модель читает буквы")
     ap.add_argument("--stack", help="свой стек: .npy формы (слои, H, W)")
     ap.add_argument("--orientation", action="store_true",
-                    help="решить без разметки, в какую сторону читать стек и на какой грани чернила")
+                    help="эксперимент: четыре сочетания порядка и грани. Направление НЕ определяет — "
+                         "на 44 опубликованных сегментах не лучше монетки (ink/audit)")
     ap.add_argument("--amplitudes", default="8,16,32,64",
                     help="силы посаженных чернил в уровнях серого")
     ap.add_argument("--reverse", action="store_true",
@@ -164,8 +167,9 @@ def main():
                 print("  ни одно сочетание не отвечает — стек слеп в обе стороны")
             else:
                 order, face = res["verdict"]
-                print(f"  читать: {'вперёд' if order == 'forward' else 'назад'}, "
-                      f"чернила на {'ближней' if face == 'near' else 'дальней'} грани")
+                print(f"  сильнее всех: {'вперёд' if order == 'forward' else 'назад'}, "
+                      f"{'ближняя' if face == 'near' else 'дальняя'} грань — это не направление "
+                      f"чтения: на 44 опубликованных сегментах проверка не лучше монетки (ink/audit)")
             out["orientation"] = res
         else:
             res = run(stack, ckpt, amps, args.reverse, args.device, args.micron_per_pixel)
