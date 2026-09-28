@@ -6,6 +6,10 @@ POLARITY=both reads it both ways and keeps both maps. The canvas is 75 cells wid
 puts three and pins every period to 1.20 mm whatever the map holds.
 """
 import glob, json, os, sys, time
+# many of these share one box: left alone, every numpy/torch process starts one BLAS thread
+# per core, and 128-thread pools in a dozen renderers exhausted the thread limit
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_v, "2")
 import numpy as np
 
 sys.path.insert(0, "/workspace/ink")

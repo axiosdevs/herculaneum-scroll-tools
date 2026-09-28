@@ -7,6 +7,10 @@ window, this roughly halves the traffic for the same pixels, and the canvas come
 without seams because it was never cut.
 """
 import glob, json, os, re, subprocess, sys, time
+# many of these share one box: left alone, every numpy/torch process starts one BLAS thread
+# per core, and 128-thread pools in a dozen renderers exhausted the thread limit
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_v, "2")
 sys.path.insert(0, "/workspace/ink")
 from center_window import sheet_offset
 import numpy as np, tifffile

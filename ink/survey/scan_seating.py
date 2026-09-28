@@ -9,6 +9,10 @@ Writes one line per surface to seating_scan_<shard>.json so the full survey can 
 the flattest ones instead of at all of them.
 """
 import glob, json, os, subprocess, sys, time
+# many of these share one box: left alone, every numpy/torch process starts one BLAS thread
+# per core, and 128-thread pools in a dozen renderers exhausted the thread limit
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_v, "2")
 import numpy as np, tifffile
 sys.path.insert(0, "/workspace/ink")
 from scan_cnr import stroke_noise, sheet_cnr

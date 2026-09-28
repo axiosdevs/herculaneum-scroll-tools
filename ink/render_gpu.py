@@ -15,11 +15,16 @@ array's own (z, y, x) -- getting it backwards renders something plausible that c
 -origin remap, the layer offsets -- is the same code path as before.
 """
 import glob, os, sys, time
+# many of these share one box: left alone, every numpy/torch process starts one BLAS thread
+# per core, and 128-thread pools in a dozen renderers exhausted the thread limit
+for _v in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+    os.environ.setdefault(_v, "2")
 from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np, requests, numcodecs, tifffile, cv2
 import torch
 import torch.nn.functional as F
+torch.set_num_threads(int(os.environ.get("OMP_NUM_THREADS", "2")))
 
 mesh_dir, base, out_dir = sys.argv[1], sys.argv[2].rstrip('/') + '/', sys.argv[3]
 cy, cx, rows_n, cols_n, up, nlay, level = (int(v) for v in sys.argv[4:11])
