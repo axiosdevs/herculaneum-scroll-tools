@@ -36,9 +36,12 @@ there.
 The tools, all of which run on a laptop:
 
 1. **Detectability probe** (`ink/detectability.py`, `ink/probe.py`) — would this window have
-   shown ink? Self-test in seconds with no network; reference run on PHerc0139. The
-   orientation check beside it is kept with its audit (`ink/audit/`) as a measured failure:
-   do not use it to choose a layer order.
+   shown ink? Self-test in seconds with no network; reference run on PHerc0139. Also in
+   villa's own inference as `optimized_inference/detectability_probe.py`
+   ([ScrollPrize/villa#1924](https://github.com/ScrollPrize/villa/pull/1924)): with
+   `run_inference` on the same window the threshold is again 32, and read with
+   `FORCE_REVERSE=true` the window is blind. The orientation check beside it is kept with its
+   audit (`ink/audit/`) as a measured failure: do not use it to choose a layer order.
 2. **Scan contrast-to-noise** (`ink/scan_cnr.py`) — how many grey levels ink is worth against the
    scan's own noise: **0.54** of a single layer on PHerc0139, the whole margin the field works
    with. Also the seating check by scatter, and a scan-quality proxy shipped **with its own

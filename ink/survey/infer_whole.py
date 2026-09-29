@@ -123,6 +123,13 @@ while True:
         time.sleep(1.5)
         if os.path.getsize(job) != size:
             continue
+        # several readers can share a queue: whoever renames the stack first reads it
+        taken = job + ".taken"
+        try:
+            os.rename(job, taken)
+        except FileNotFoundError:
+            continue
+        job = taken
         meta = json.load(open(meta_p))
         if meta.get("key", meta["dir"]) in done:
             os.remove(job); os.remove(meta_p); continue
@@ -188,8 +195,13 @@ while True:
         row = dict(meta); row.update(best); row.update(
             {"sheet_cnr": q.get("sheet_cnr"), "window": q.get("window"),
              "noise": q.get("noise")})
-        ledger.append(row)
+        # re-read under a lock: another reader of the same queue writes the same ledger
+        import fcntl
+        with open(LEDGER + ".lock", "w") as lk:
+            fcntl.flock(lk, fcntl.LOCK_EX)
+            ledger = json.load(open(LEDGER)) if os.path.exists(LEDGER) else []
+            ledger.append(row)
+            json.dump(ledger, open(LEDGER, "w"), indent=1)
         done.add(meta.get("key", meta["dir"]))
-        json.dump(ledger, open(LEDGER, "w"), indent=1)
         print(f"ПОЛОТНО {meta['dir']}: {mm:.1f} мм, чернил {row['ink_pct']:.2f}%, "
               f"текст {row['text']:.3f} период {row['period_mm']:.2f} мм", flush=True)

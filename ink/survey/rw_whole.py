@@ -27,6 +27,7 @@ THREADS = os.environ.get("THREADS", "32")
 MAXQ = int(os.environ.get("MAXQ", "6"))
 # two surveys on one box must not share work directories; WORKTAG keeps them apart
 W_ID = os.environ.get("WORKTAG", "") + str(SHARD)
+CLAIM = os.environ.get("CLAIM") == "1"
 
 
 def surfaces():
@@ -36,7 +37,41 @@ def surfaces():
         rows.sort(key=lambda r: r["noise"])      # the flattest windows first
     else:
         rows.sort(key=lambda r: (-r["seating"], -r["area_cm2"]))
-    return rows[SHARD::NSHARD]
+    return rows if CLAIM else rows[SHARD::NSHARD]
+
+
+def tag_of(s):
+    win = s.get("y0") is not None
+    return s["dir"].replace("/", "_") + (f"_{s['y0']}_{s['x0']}" if win else "") + "_whole"
+
+
+def claimed():
+    """CLAIM=1: a fixed set of workers shares one list that keeps growing while tracers run.
+
+    Each takes the first window nobody has read or taken, claiming it with a file only one of
+    them can create, and reads the list again after every window, so a flatter window that
+    arrives later is next rather than last. Starting a new set of workers per batch instead
+    split the line between nineteen renders and finished none of them in an hour.
+    """
+    idle = 0
+    while idle < int(os.environ.get("IDLE_ROUNDS", "12")):
+        took = None
+        for s in surfaces():
+            tag = tag_of(s)
+            if os.path.exists(os.path.join(QUEUE, tag + ".done")):
+                continue
+            try:
+                os.close(os.open(os.path.join(QUEUE, tag + ".claim"), os.O_CREAT | os.O_EXCL | os.O_WRONLY))
+            except FileExistsError:
+                continue
+            took = s
+            break
+        if took is None:
+            idle += 1
+            time.sleep(300)
+            continue
+        idle = 0
+        yield took
 
 
 
@@ -72,13 +107,13 @@ def find_zoff(work, y0, x0, up, shard):
 
 def main():
     os.makedirs(QUEUE, exist_ok=True)
-    todo = surfaces()
-    print(f"шард {SHARD}: поверхностей {len(todo)}", flush=True)
+    todo = claimed() if CLAIM else surfaces()
+    print(f"шард {SHARD}: " + ("берёт окна из общего списка" if CLAIM else f"поверхностей {len(todo)}"), flush=True)
     for s in todo:
         src = os.path.join(HERE, s["dir"])
         win = s.get("y0") is not None
-        tag = s["dir"].replace("/", "_") + (f"_{s['y0']}_{s['x0']}" if win else "") + "_whole"
-        if os.path.exists(os.path.join(QUEUE, tag + ".done")):
+        tag = tag_of(s)
+        if not CLAIM and os.path.exists(os.path.join(QUEUE, tag + ".done")):
             continue
         X, Y, Z = (tifffile.imread(os.path.join(src, f"{a}.tif")).astype(np.float32) for a in "xyz")
         v = (X > 0) & (Y > 0) & (Z > 0)
