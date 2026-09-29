@@ -29,9 +29,13 @@ retractions are in `ink/detectability.py`.
 
 So the survey does not trust an order. Read forward, all 43 surfaces flat enough to carry a
 stroke — **94.9 cm² — show no writing** (`ink/p1451/survey_forward.json`, contact sheets beside
-it); 16 of them read in reverse show none either, and the other 27 are being read in reverse.
-That is a measurement rather than a silence: ink of PHerc0139's strength would have shown
-there.
+it); 16 of them read in reverse show none either. That is a measurement rather than a
+silence: ink of PHerc0139's strength would have shown there.
+
+PHercMANBp's 11 published segments, read in full in both layer orders, show no writing either
+-- but there the probe says the null is uninformative: on the block probed, the model does not
+respond to planted ink at any contrast up to 32, in either order or on either face, even with
+the scan's levels matched to PHerc0139's.
 
 The tools, all of which run on a laptop:
 
